@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3.00cm, right=3.00cm, top=2.50cm, bottom=2.50cm]{geometry}
+\author{Caamiña Quineros, Daniela Beatriz \and Yapura, Cristian Alejandro}
+\title{Proyecto final}
+\newcommand{\grad}{$^{\circ}$}
+\begin{document}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+	\section{Agradecimientos}
+	\section{Introducción}
+	\section{Objetivo}
+	\section{Palabras claves}
+	\part{Marco teórico}
+	\section{Túnel del viento}
+	\subsection{¿Qué es?}
+	\subsection{Clasificación}
+	\subsection{Historia del Túnel UNPSJB}
+	\section{Cálculo de la densidad del aire}
+	\section{Variador de velocidad}
+	\subsection{¿Qué es y para que se utiliza?}
+	\subsection{Variador ----- modelo que tenemos}
+	\part{Desarrollo}
+	\section{Primeras pruebas}
+	\subsection{Electrónica- Placas}
+	\subsubsection{SHT31-SHT21}
+	SHT31 es un sensor digital de temperatura y humedad relativa. Posee protocolo I2C.
+	\paragraph*{Especificaciones}
+	\begin{itemize}
+		\item   Voltaje de operación: 2.4 V a 5.5 V.
+		\item	Rango de temperatura: -40\grad C a 12\grad C.
+		\item   Resolución de temperatura: 0.015\grad C
+		\item	Precisión de temperatura: 0.2\grad C 
+		\item	Rango de humedad: 0 a 100\% RH
+		\item   Resolución HR: 0.01 \% RH
+		\item   Precisión HR: 2\% RH
+	\end{itemize}
+	
+	\subsubsection{BME280}
+	\subsection{Matlab}
+	\subsection{Arduino}
+	\section{Lazo de control}
+	\subsection{Comunicación del variador de Velocidad}
+	\subsubsection{0-10V}
+	\subsubsection{4-20mA}
+	\subsubsection{MODBUS}
+	\section{Microcontrolador}
+	\subsection{Arduino- CIAA}
+	HOLA CHAU ESTUDIA\\ hola que hacers
+	HOLA HOLA CHAY\\  %COMENTARIOS //PUNTO FINAL
+	\section{dosdos}
+	hola esto es una ecuacion en el renglon $a=\int_{0}^{\infty}+55^2 x-y$
+	ecuacion aparte: 
+	\begin{equation}
+		n=\frac{55555}{11} %Con equation* no pone numero la ecuacion
+	\end{equation}
+	Para escribir varias ecuaciones:
+	%
+	\begin{align}
+		a+b=c\\
+		a^2+56*\sin(5)\\
+		V_diodo\\
+		v_{diodo} subindice
+	\end{align}
+	%
+	\begin{center}
+		\includegraphics[scale=0.5]{1001.jpeg}
+	\end{center}
+
+
+\begin{tabular}{|c|c|c|}
+	\hline 
+	columna1 & nombre & lucas \\ 
+	\hline 
+	44 & 55 & lucas \\ 
+	\hline 
+\end{tabular} 
+
+\end{document}
