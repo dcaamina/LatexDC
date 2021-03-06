@@ -144,6 +144,28 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
@@ -293,7 +315,6 @@ INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\pro
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.toc
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.toc
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -311,30 +332,93 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.toc
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT .\secciones\Introduccion.tex
+INPUT secciones\Introduccion.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT .\secciones\Objetivo.tex
+INPUT secciones\Objetivo.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT .\secciones\Palabras.tex
+INPUT secciones\Palabras.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT .\secciones\Tunel.tex
+INPUT secciones\Tunel.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT .\secciones\Motor.tex
+INPUT secciones\Motor.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT .\secciones\Variador.tex
+INPUT secciones\Variador.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
-INPUT .\SHT31.png
-INPUT .\SHT31.png
-INPUT SHT31.png
-INPUT .\SHT31.png
-INPUT .\SHT31.png
-INPUT .\SHT31.png
-INPUT .\SHT31.png
-INPUT .\bme280.png
-INPUT .\bme280.png
-INPUT bme280.png
-INPUT .\bme280.png
-INPUT .\bme280.png
-INPUT .\bme280.png
-INPUT .\bme280.png
-INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.bbl
-INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.bbl
-INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.bbl
-INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.bbl
+INPUT .\imagenes\\SHT31.png
+INPUT .\imagenes\\SHT31.png
+INPUT imagenes\\SHT31.png
+INPUT .\imagenes\\SHT31.png
+INPUT .\imagenes\\SHT31.png
+INPUT .\imagenes\\SHT31.png
+INPUT .\imagenes\\SHT31.png
+INPUT .\imagenes\\bme280.png
+INPUT .\imagenes\\bme280.png
+INPUT imagenes\\bme280.png
+INPUT .\imagenes\\bme280.png
+INPUT .\imagenes\\bme280.png
+INPUT .\imagenes\\bme280.png
+INPUT .\imagenes\\bme280.png
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk

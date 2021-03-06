@@ -5,10 +5,14 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{comment}
+\usepackage{float} 
 \usepackage{graphicx}
 \usepackage[left=3.00cm, right=3.00cm, top=2.50cm, bottom=2.50cm]{geometry}
 \author{Caamiña Quineros, Daniela Beatriz\\ \and Yapura, Cristian Alejandro}
 \title{Proyecto final}
+\graphicspath{ {imagenes/} }
+
 \newcommand{\grad}{$^{\circ}$}
 \begin{document}
 	\maketitle
@@ -19,39 +23,33 @@
 	\newpage
 	\listoffigures
 	\newpage
+
 	\section{Introducción}
+	\input{secciones/Introduccion}
+
 	\section{Objetivo}
+	\input{secciones/Objetivo}
+
 	\section{Palabras claves}
-	\newpage
-	\part{Marco teórico}
-	\section{Túnel del viento}
-	\subsection{¿Qué es?}
-	\subsection{Clasificación}
-	\subsection{Historia del Túnel UNPSJB}
-	\cite{TunelUNPSJB} El túnel aerodinámico del Laboratorio de Mecánica de Fluidos (LMF) de la Facultad de Ingeniería de la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB) es un circuito abierto (tipo Eiffel) con cámara de ensayos cerrada. Puede clasificarse como un túnel “pequeño de baja velocidad”, con una longitud total de 11m, una velocidad máxima de 18 m/s y una cámara de ensayos con un área de 0,8m2.
-	\\
-	La entrada del túnel cuenta con canalizadores, comúnmente denominados "panal de abejas", que favorecen la formación de un flujo uniforme y homogéneo propiciando mejores resultados en los experimentos.
-	\\
-	La cámara de ensayos es vidriada para poder observar con claridad el flujo y está incorporada en un módulo extraíble del túnel, lo cual permite fácil acceso para el armado de los distintos objetos a ensayar.
-	\\
-	La variación de la velocidad del aire dentro de la cámara se consigue por dos vías: modificando la velocidad del motor para lograr una aproximación, y mediante la apertura de compuertas ubicadas entre el rodete y la zona de ensayo, para el ajuste fino. La toma aire desde el exterior a través de las compuertas actúa como by-pass, modificando el flujo principal del túnel y controlando su velocidad.
-	\\
-	Los distintos ensayos que se realizan en el túnel son:
-	\\
-	- Determinación de coeficientes de resistencia y sustentación de distintos cuerpos y perfiles aerodinámicos.
-	- Determinación de distribución de presiones a través de diferentes objetos como perfiles aerodinámicos, edificios, puentes, automóviles, etc.
-	- Visualización con humo del flujo a través de distintos obstáculos.
-	- Estudio del comportamiento dinámico de generadores eólicos.
-	- Calibración de anemómetros. 
+	\input{secciones/Palabras}
+
+	\section{Tunel}
+	\input{secciones/Tunel}	
+
+	\section{Motor}
+	\input{secciones/Motor}
+
+	\section{Variador}
+	\input{secciones/Variador}
+	
+
+
+	
 	\section{Cálculo de la densidad del aire}
-	\section{Variador de velocidad}
-	\subsection{¿Qué es y para que se utiliza?}
-	\subsection{Variador ----- modelo que tenemos}
-	\section{Comunicación I2C}
-	\newpage
+		
 	\part{Desarrollo}
 	\section{Primeras pruebas}
-	\subsection{Electrónica- Placas}
+	\subsection{Sensores}
 	\subsubsection{SHT31-SHT21}
 	SHT31 es un sensor digital de temperatura y humedad relativa. Posee protocolo I2C.
 	\paragraph*{Especificaciones}
@@ -106,6 +104,8 @@
 	\subsection{Arduino- CIAA}
 
 \newpage
+
+ \begin{comment}
 \bibliography{biblio}
 https://mauricioanderson.com/curso-latex-referencias-bibliografia-bibtex/ ver esto
 \begin{thebibliography}{0}
@@ -116,7 +116,7 @@ https://mauricioanderson.com/curso-latex-referencias-bibliografia-bibtex/ ver es
 \newpage
 \part{Anexos}
 
-
+\end{comment}
 
 
 

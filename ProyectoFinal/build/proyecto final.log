@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  6 MAR 2021 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  6 MAR 2021 17:39
 entering extended mode
 **"c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex"
 (c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex
@@ -113,11 +113,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (C:\Program Files\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (C:\Program Files\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count268
+\float@exts=\toks23
+\float@box=\box49
+\@float@everytoks=\toks24
+\@floatcapt=\box50
 ) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
  (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
+\KV@toks@=\toks25
 ) (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
  (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
@@ -138,9 +147,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
+\Gm@cnth=\count269
+\Gm@cntv=\count270
+\c@Gm@tempcnt=\count271
 \Gm@bindingoffset=\dimen151
 \Gm@wd@mp=\dimen152
 \Gm@odd@mp=\dimen153
@@ -149,46 +158,46 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen156
 \Gm@layouthoffset=\dimen157
 \Gm@layoutvoffset=\dimen158
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks26
  (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count271
-\l__pdf_internal_box=\box49
+\l__color_backend_stack_int=\count272
+\l__pdf_internal_box=\box51
 ) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `"proyecto final.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
+\scratchcounter=\count273
 \scratchdimen=\dimen159
-\scratchbox=\box50
-\nofMPsegments=\count273
-\nofMParguments=\count274
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count275
+\scratchbox=\box52
+\nofMPsegments=\count274
+\nofMParguments=\count275
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count276
 \MPscratchDim=\dimen160
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count277
+\makeMPintoPDFobject=\count278
+\everyMPtoPDFconversion=\toks28
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -227,11 +236,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -240,49 +249,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@toc=\write3
-\openout3 = `"proyecto final.toc"'.
+\tf@toc=\write4
+\openout4 = `"proyecto final.toc"'.
 
  [3] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@lof=\write4
-\openout4 = `"proyecto final.lof"'.
+\tf@lof=\write5
+\openout5 = `"proyecto final.lof"'.
 
- [4] [5] [6]
-<SHT31.png, id=27, 459.7175pt x 459.7175pt>
-File: SHT31.png Graphic file (type png)
-<use SHT31.png>
-Package pdftex.def Info: SHT31.png  used on input line 70.
+ [4] (secciones/Introduccion.tex) (secciones/Objetivo.tex) (secciones/Palabras.tex) (secciones/Tunel.tex) (secciones/Motor.tex) (secciones/Variador.tex [5])
+<imagenes//SHT31.png, id=23, 459.7175pt x 459.7175pt>
+File: imagenes//SHT31.png Graphic file (type png)
+<use imagenes//SHT31.png>
+Package pdftex.def Info: imagenes//SHT31.png  used on input line 68.
 (pdftex.def)             Requested size: 160.90353pt x 160.90353pt.
- [7 <./SHT31.png>]
-<bme280.png, id=35, 459.7175pt x 459.7175pt>
-File: bme280.png Graphic file (type png)
-<use bme280.png>
-Package pdftex.def Info: bme280.png  used on input line 91.
+ [6 <./imagenes//SHT31.png>]
+<imagenes//bme280.png, id=31, 459.7175pt x 459.7175pt>
+File: imagenes//bme280.png Graphic file (type png)
+<use imagenes//bme280.png>
+Package pdftex.def Info: imagenes//bme280.png  used on input line 89.
 (pdftex.def)             Requested size: 160.90353pt x 160.90353pt.
- [8 <./bme280.png>] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.bbl)
-Overfull \hbox (4.26704pt too wide) in paragraph at lines 110--111
-[]\T1/cmr/m/n/12 https://mauricioanderson.com/curso-latex-referencias-bibliografia-bibtex/ ver es-
- []
-
-[9] [10] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
+ [7 <./imagenes//bme280.png>] [8] Excluding 'comment' comment. (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4282 strings out of 479334
- 57252 string characters out of 2866961
- 373028 words of memory out of 3000000
- 21682 multiletter control sequences out of 15000+200000
+ 4407 strings out of 479334
+ 59526 string characters out of 2866961
+ 375288 words of memory out of 3000000
+ 21781 multiletter control sequences out of 15000+200000
  416848 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,536b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,6n,74p,538b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (10 pages, 423654 bytes).
+Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (8 pages, 414299 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
+ 333 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
