@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\date{} 
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{mathpazo} % Palatino font
+\usepackage[left=2.50cm, right=2.50cm, top=1.50cm, bottom=1.50cm]{geometry}
+\author{Caamiña, Daniela \and Yapura, Cristian}
+\title{Trabajo final \\Automatización industrial}
+\graphicspath{ {images/} }
+
+	
+\begin{document}
+	\begin{titlepage} %Carátula 			
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+		\center % Centre everything on the page		
+		\textsc{\LARGE Universidad Nacional de la Patagonia San Juan Bosco}\\[1.5cm]
+		\textsc{\Large Automatización Industrial}\\[0.5cm]
+		\textsc{\large Trabajo Final}\\[0.5cm] 
+		\HRule\\[0.4cm]
+		\huge\bfseries{Banco de pruebas para motor trifásico}\\[0.2cm] 
+		\HRule\\[1.5cm]
+			\begin{minipage}{0.4\textwidth}
+				\begin{flushleft}
+					\large
+					\textit{Alumnos}\\
+					\textsc{Caamiña,} Daniela \\
+					\textsc{Yapura,} Cristian  
+				\end{flushleft}
+			\end{minipage}
+			\begin{minipage}{0.4\textwidth}
+				\begin{flushright}
+					\large
+					\textit{Docentes}\\
+					Ing. \textsc{Lorenc,} Marcelo \\
+					Dr. \textsc{Peña,} Ramiro  
+				\end{flushright}
+			\end{minipage}
+		\vfill\vfill\vfill 
+		\large{Junio 2020} 
+		\vfill\vfill
+		\includegraphics[width=0.2\textwidth]{unpsjb.png}\\[1cm] 
+		\vfill 
+	\end{titlepage}
+	
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage	
+		
+\section{Introducción}
+\input{Secciones/Introduccion}
+
+\section{Objetivo}
+\input{Secciones/Objetivo}
+	
+\section{Motor}
+\input{Secciones/Motor}
+
+\section{Variador de velocidad}
+\input{Secciones/Variador}
+	
+\section{PLC}
+\input{Secciones/PLC}
+	
+\section{Banco de pruebas}
+\input{Secciones/Banco}
+
+\section{Comunicación}
+\input{Secciones/Comunicacion}
+
+\section{Conclusiones}
+\input{Secciones/Conclusion}
+
+\section{Anexos}
+\input{Secciones/Anexo}
+
+
+\end{document}
