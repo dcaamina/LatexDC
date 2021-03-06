@@ -4,26 +4,22 @@
 \contentsline {section}{\numberline {3}Palabras claves}{5}{}%
 \contentsline {section}{\numberline {4}Tunel}{5}{}%
 \contentsline {subsection}{\numberline {4.1}¿Qué es?}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Clasificación}{5}{}%
-\contentsline {subsection}{\numberline {4.3}Historia del Túnel UNPSJB}{5}{}%
-\contentsline {section}{\numberline {5}Motor}{5}{}%
-\contentsline {section}{\numberline {6}Variador}{5}{}%
-\contentsline {subsection}{\numberline {6.1}¿Qué es y para que se utiliza?}{5}{}%
-\contentsline {subsection}{\numberline {6.2}Variador ----- modelo que tenemos}{5}{}%
-\contentsline {subsection}{\numberline {6.3}Comunicación I2C}{5}{}%
-\contentsline {section}{\numberline {7}Cálculo de la densidad del aire}{6}{}%
-\contentsline {part}{I\hspace {1em}Desarrollo}{6}{}%
-\contentsline {section}{\numberline {8}Primeras pruebas}{6}{}%
-\contentsline {subsection}{\numberline {8.1}Sensores}{6}{}%
-\contentsline {subsubsection}{\numberline {8.1.1}SHT31-SHT21}{6}{}%
-\contentsline {subsubsection}{\numberline {8.1.2}BME280}{7}{}%
-\contentsline {subsubsection}{\numberline {8.1.3}MPX7002}{8}{}%
-\contentsline {subsection}{\numberline {8.2}Matlab}{8}{}%
-\contentsline {subsection}{\numberline {8.3}Arduino}{8}{}%
-\contentsline {section}{\numberline {9}Lazo de control}{8}{}%
-\contentsline {subsection}{\numberline {9.1}Comunicación del variador de Velocidad}{8}{}%
-\contentsline {subsubsection}{\numberline {9.1.1}0-10V}{8}{}%
-\contentsline {subsubsection}{\numberline {9.1.2}4-20mA}{8}{}%
-\contentsline {subsubsection}{\numberline {9.1.3}MODBUS}{8}{}%
-\contentsline {section}{\numberline {10}Microcontrolador}{8}{}%
-\contentsline {subsection}{\numberline {10.1}Arduino- CIAA}{8}{}%
+\contentsline {subsection}{\numberline {4.2}Historia del Túnel UNPSJB}{6}{}%
+\contentsline {section}{\numberline {5}Motor}{7}{}%
+\contentsline {section}{\numberline {6}Variador}{7}{}%
+\contentsline {subsection}{\numberline {6.1}¿Qué es y para que se utiliza?}{7}{}%
+\contentsline {subsection}{\numberline {6.2}Variador ----- modelo que tenemos}{7}{}%
+\contentsline {subsection}{\numberline {6.3}Comunicación I2C}{7}{}%
+\contentsline {section}{\numberline {7}Primeras pruebas}{8}{}%
+\contentsline {subsection}{\numberline {7.1}Sensores}{8}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}SHT31-SHT21}{8}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}BME280}{8}{}%
+\contentsline {subsubsection}{\numberline {7.1.3}MPX7002}{9}{}%
+\contentsline {subsection}{\numberline {7.2}Matlab}{9}{}%
+\contentsline {subsection}{\numberline {7.3}Arduino}{9}{}%
+\contentsline {section}{\numberline {8}Lazo de control}{9}{}%
+\contentsline {subsection}{\numberline {8.1}Comunicación del variador de Velocidad}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}4-20mA}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}MODBUS}{9}{}%
+\contentsline {section}{\numberline {9}Arduino}{9}{}%
+\contentsline {section}{\numberline {10}Cálculo de la densidad del aire}{9}{}%

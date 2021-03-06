@@ -332,7 +332,6 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.toc
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
@@ -360,6 +359,13 @@ INPUT .\secciones\Objetivo.tex
 INPUT .\secciones\Objetivo.tex
 INPUT .\secciones\Objetivo.tex
 INPUT secciones\Objetivo.tex
+INPUT .\imagenes\\diagr.jpg
+INPUT .\imagenes\\diagr.jpg
+INPUT imagenes\\diagr.jpg
+INPUT .\imagenes\\diagr.jpg
+INPUT .\imagenes\\diagr.jpg
+INPUT .\imagenes\\diagr.jpg
+INPUT .\imagenes\\diagr.jpg
 INPUT .\secciones\Palabras.tex
 INPUT .\secciones\Palabras.tex
 INPUT .\secciones\Palabras.tex
@@ -382,6 +388,27 @@ INPUT .\secciones\Tunel.tex
 INPUT .\secciones\Tunel.tex
 INPUT .\secciones\Tunel.tex
 INPUT secciones\Tunel.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT .\imagenes\\tvert1.jpg
+INPUT .\imagenes\\tvert1.jpg
+INPUT imagenes\\tvert1.jpg
+INPUT .\imagenes\\tvert1.jpg
+INPUT .\imagenes\\tvert1.jpg
+INPUT .\imagenes\\tvert1.jpg
+INPUT .\imagenes\\tvert1.jpg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0700.tfm
+INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT imagenes\\tunel_unpsjb.JPG
+INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\secciones\Motor.tex
 INPUT .\secciones\Motor.tex
 INPUT .\secciones\Motor.tex
@@ -404,7 +431,6 @@ INPUT .\secciones\Variador.tex
 INPUT .\secciones\Variador.tex
 INPUT .\secciones\Variador.tex
 INPUT secciones\Variador.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
 INPUT .\imagenes\\SHT31.png
 INPUT .\imagenes\\SHT31.png
 INPUT imagenes\\SHT31.png
@@ -420,8 +446,12 @@ INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
-INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
-INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
