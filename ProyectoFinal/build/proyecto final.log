@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  6 MAR 2021 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  7 MAR 2021 13:06
 entering extended mode
 **"c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex"
 (c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex
@@ -277,7 +277,7 @@ File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 <use imagenes//tunel_unpsjb.JPG>
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 32.
 (pdftex.def)             Requested size: 122.96121pt x 68.85826pt.
-) (secciones/Motor.tex) (secciones/Variador.tex [6 <./imagenes//tvert1.jpg> <./imagenes//tunel_unpsjb.JPG>] [7])
+) (secciones/Motor.tex) [6 <./imagenes//tvert1.jpg> <./imagenes//tunel_unpsjb.JPG>] (secciones/Variador.tex [7])
 <imagenes//SHT31.png, id=36, 459.7175pt x 459.7175pt>
 File: imagenes//SHT31.png Graphic file (type png)
 <use imagenes//SHT31.png>
@@ -302,9 +302,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  68i,8n,74p,538b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (9 pages, 565633 bytes).
+Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (9 pages, 565953 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
+ 363 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
