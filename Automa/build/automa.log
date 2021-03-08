@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  6 MAR 2021 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.5)  8 MAR 2021 17:35
 entering extended mode
-**c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex
-(c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex
+**d:/Users/Cristian-PC/Documents/Repositorios/LatexDC/Automa/automa.tex
+(d:/Users/Cristian-PC/Documents/Repositorios/LatexDC/Automa/automa.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> xparse <2020-03-03> (C:\Program Files\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2021-02-18> xparse <2020-03-03> (D:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+(D:\Program Files\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
@@ -19,22 +19,22 @@ File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+) (D:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+) (D:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-) (C:\Program Files\MiKTeX\tex/latex/comment\comment.sty
+) (D:\Program Files\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
- Excluding comment 'comment') (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/01/26 3.53 The Babel package
- (C:\Program Files\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/01/26 3.53 Babel common definitions
+ Excluding comment 'comment') (D:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/02/22 3.54 The Babel package
+ (D:\Program Files\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/02/22 3.54 Babel common definitions
 \babel@savecnt=\count187
 \U@D=\dimen139
 \l@babelnohyphens=\language79
- (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+ (D:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 )
 \bbl@dirlevel=\count188
@@ -42,9 +42,9 @@ File: babel.def 2021/01/26 3.53 Babel common definitions
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+(D:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+) (D:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks17
 \es@quotdepth=\count189
@@ -52,21 +52,21 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+)) (D:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(D:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (D:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen140
-)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (D:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen141
-) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (D:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count190
@@ -106,48 +106,48 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (D:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (D:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+) (D:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+ (D:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-) (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+) (D:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+ (D:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (D:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (D:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
-) (C:\Program Files\MiKTeX\tex/latex/float\float.sty
+) (D:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count268
 \float@exts=\toks24
 \float@box=\box49
 \@float@everytoks=\toks25
 \@floatcapt=\box50
-) (C:\Program Files\MiKTeX\tex/latex/psnfss\mathpazo.sty
+) (D:\Program Files\MiKTeX\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup6
-) (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+) (D:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (D:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+ (D:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count269
@@ -162,15 +162,15 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen157
 \Gm@layoutvoffset=\dimen158
 \Gm@dimlist=\toks26
- (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+ (D:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 19.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\t1ppl.fd
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+) (D:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count272
 \l__pdf_internal_box=\box51
-) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.aux
+) (d:/Users\Cristian-PC\Documents\Repositorios\LatexDC\Automa\build\automa.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -192,7 +192,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (D:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count273
 \scratchdimen=\dimen159
@@ -205,7 +205,7 @@ LaTeX Info: Redefining \% on input line 19.
 \MPnumerator=\count277
 \makeMPintoPDFobject=\count278
 \everyMPtoPDFconversion=\toks28
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (D:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
@@ -244,19 +244,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 36.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+(D:\Program Files\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\omlzplm.fd
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\omszplm.fd
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\omxzplm.fd
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -272,7 +272,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 <images//unpsjb.png, id=1, 1048.91875pt x 1048.91875pt>
@@ -282,7 +282,7 @@ Package pdftex.def Info: images//unpsjb.png  used on input line 48.
 (pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
  [1
 
-{C:/Users/glori/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images//unpsjb.png>] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.toc
+{C:/Users/quich/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images//unpsjb.png>] (d:/Users\Cristian-PC\Documents\Repositorios\LatexDC\Automa\build\automa.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -301,19 +301,19 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 \tf@toc=\write4
 \openout4 = `automa.toc'.
 
- [1] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
+ [1] (d:/Users\Cristian-PC\Documents\Repositorios\LatexDC\Automa\build\automa.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
 \openout5 = `automa.lof'.
 
- [2] (Secciones/Introduccion.tex [3]) (Secciones/Objetivo.tex [4]) (Secciones/Motor.tex
+ [2] (secciones/Introduccion.tex [3]) (Secciones/Objetivo.tex [4]) (Secciones/Motor.tex
 Package epstopdf Info: Source file: <images//motor.eps>
-(epstopdf)                    date: 2020-03-04 11:14:36
-(epstopdf)                    size: 141371 bytes
+(epstopdf)                    date: 2021-03-08 17:28:37
+(epstopdf)                    size: 143369 bytes
 (epstopdf)             Output file: <images//motor-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-04 14:04:16
+(epstopdf)                    date: 2021-03-08 17:28:37
 (epstopdf)                    size: 109864 bytes
 (epstopdf)             Command: <epstopdf --outfile=images//motor-eps-converted-to.pdf images//motor.eps>
 (epstopdf)             \includegraphics on input line 16.
@@ -328,10 +328,10 @@ Package pdftex.def Info: images//motor-eps-converted-to.pdf  used on input line 
 (pdftex.def)             Requested size: 233.26736pt x 174.6494pt.
 [5 <./images//motor-eps-converted-to.pdf>]) (Secciones/Variador.tex
 Package epstopdf Info: Source file: <images//variador.eps>
-(epstopdf)                    date: 2020-03-04 12:10:44
-(epstopdf)                    size: 56789 bytes
+(epstopdf)                    date: 2021-03-08 17:28:37
+(epstopdf)                    size: 57630 bytes
 (epstopdf)             Output file: <images//variador-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-04 14:04:20
+(epstopdf)                    date: 2021-03-08 17:28:37
 (epstopdf)                    size: 44596 bytes
 (epstopdf)             Command: <epstopdf --outfile=images//variador-eps-converted-to.pdf images//variador.eps>
 (epstopdf)             \includegraphics on input line 14.
@@ -345,10 +345,10 @@ File: images//variador-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: images//variador-eps-converted-to.pdf  used on input line 14.
 (pdftex.def)             Requested size: 112.418pt x 162.60461pt.
 Package epstopdf Info: Source file: <images//ver2.eps>
-(epstopdf)                    date: 2020-03-04 10:19:22
-(epstopdf)                    size: 46681 bytes
+(epstopdf)                    date: 2021-03-08 17:28:37
+(epstopdf)                    size: 47445 bytes
 (epstopdf)             Output file: <images//ver2-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-04 14:04:22
+(epstopdf)                    date: 2021-03-08 17:28:37
 (epstopdf)                    size: 19034 bytes
 (epstopdf)             Command: <epstopdf --outfile=images//ver2-eps-converted-to.pdf images//ver2.eps>
 (epstopdf)             \includegraphics on input line 25.
@@ -362,10 +362,10 @@ File: images//ver2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: images//ver2-eps-converted-to.pdf  used on input line 25.
 (pdftex.def)             Requested size: 253.94814pt x 86.82416pt.
 Package epstopdf Info: Source file: <images//ver1.eps>
-(epstopdf)                    date: 2020-03-04 09:48:04
-(epstopdf)                    size: 35938 bytes
+(epstopdf)                    date: 2021-03-08 17:28:37
+(epstopdf)                    size: 36603 bytes
 (epstopdf)             Output file: <images//ver1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-04 14:04:24
+(epstopdf)                    date: 2021-03-08 17:28:37
 (epstopdf)                    size: 14851 bytes
 (epstopdf)             Command: <epstopdf --outfile=images//ver1-eps-converted-to.pdf images//ver1.eps>
 (epstopdf)             \includegraphics on input line 32.
@@ -395,20 +395,20 @@ File: images//HMIej.png Graphic file (type png)
 <use images//HMIej.png>
 Package pdftex.def Info: images//HMIej.png  used on input line 19.
 (pdftex.def)             Requested size: 259.97061pt x 195.73076pt.
- [10 <./images//HMIej.png>]) (Secciones/Conclusion.tex [11]) (Secciones/Anexo.tex [12]) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.aux
+ [10 <./images//HMIej.png>]) (Secciones/Conclusion.tex [11]) (Secciones/Anexo.tex [12]) (d:/Users\Cristian-PC\Documents\Repositorios\LatexDC\Automa\build\automa.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4631 strings out of 479334
- 63045 string characters out of 2866961
- 374093 words of memory out of 3000000
- 21967 multiletter control sequences out of 15000+200000
+ 4630 strings out of 479334
+ 63097 string characters out of 2866961
+ 373889 words of memory out of 3000000
+ 21964 multiletter control sequences out of 15000+200000
  444126 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,1595b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.pdf (13 pages, 685251 bytes).
+ 68i,6n,74p,1596b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on d:/Users\Cristian-PC\Documents\Repositorios\LatexDC\Automa\build\automa.pdf (13 pages, 685251 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
