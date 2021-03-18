@@ -6,10 +6,20 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{url}
+%para crear sub sub sub titulos
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+            {1.25ex \@plus .25ex}%
+            {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
+
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage{url} %url
+\usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -97,7 +107,7 @@
 \section{Conclusiones}
 \input{Secciones/8.Conclusion}
 
-\section{9999-BIBLIOGRAFIA}
+\section{Bibliografía}
 
 \section{Anexos}
 \input{Secciones/10.Anexo}
