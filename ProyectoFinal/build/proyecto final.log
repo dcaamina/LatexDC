@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 18:52
 entering extended mode
 **"c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex"
 (c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex
@@ -420,98 +420,14 @@ Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 32.
 <imagenes//SHT31.png, id=200, 459.7175pt x 459.7175pt>
 File: imagenes//SHT31.png Graphic file (type png)
 <use imagenes//SHT31.png>
-Package pdftex.def Info: imagenes//SHT31.png  used on input line 7.
+Package pdftex.def Info: imagenes//SHT31.png  used on input line 11.
 (pdftex.def)             Requested size: 160.90353pt x 160.90353pt.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 12.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 13.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 14.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 15.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 16.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 23.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 27.
-
 <imagenes//bme280.png, id=202, 459.7175pt x 459.7175pt>
 File: imagenes//bme280.png Graphic file (type png)
 <use imagenes//bme280.png>
-Package pdftex.def Info: imagenes//bme280.png  used on input line 28.
+Package pdftex.def Info: imagenes//bme280.png  used on input line 33.
 (pdftex.def)             Requested size: 170.71393pt x 170.71712pt.
-
-Overfull \hbox (72.28447pt too wide) in paragraph at lines 28--29
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]\T1/cmr/m/n/12 Figura 5: []Placa
- []
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 32.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 34.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 35.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 36.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 37.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 38.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 39.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 40.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 41.
-
-[6 <./imagenes//SHT31.png>]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 45.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 47.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 48.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 50.
-
-[7 <./imagenes//bme280.png>]) (secciones/5.Desarrollo.tex) (secciones/6.Planos.tex) (secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [8] Excluding 'comment' comment. (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
+ [6 <./imagenes//SHT31.png>] [7 <./imagenes//bme280.png>]) (secciones/5.Desarrollo.tex) (secciones/6.Planos.tex) (secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [8] Excluding 'comment' comment. (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -521,13 +437,13 @@ Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
 Here is how much of TeX's memory you used:
  11075 strings out of 479334
  158489 string characters out of 2866961
- 480885 words of memory out of 3000000
+ 480873 words of memory out of 3000000
  28257 multiletter control sequences out of 15000+200000
  419014 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,8n,74p,552b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,8n,74p,552b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (8 pages, 585541 bytes).
+Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (8 pages, 585647 bytes).
 PDF statistics:
  544 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
