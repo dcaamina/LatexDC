@@ -5,10 +5,31 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{hyperref}
+
 \usepackage{comment}
 \usepackage{float} 
 \usepackage{graphicx}
+
+\usepackage{url} %url
+\usepackage{hyperref} %indice con hipervínculo
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=white,      
+    urlcolor=blue,
+}
+
+
+%para crear sub sub sub titulos
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+            {1.25ex \@plus .25ex}%
+            {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
+
 \usepackage[left=3.00cm, right=3.00cm, top=2.50cm, bottom=2.50cm]{geometry}
 \author{Caamiña Quineros, Daniela Beatriz\\ \and Yapura, Cristian Alejandro}
 \title{Proyecto final}
@@ -17,8 +38,7 @@
 \newcommand{\grad}{$^{\circ}$}
 \begin{document}
 	\maketitle
-	\newpage
-	\thanks{Agradecimiento}
+
 	\newpage
 	\tableofcontents
 	\newpage
@@ -26,84 +46,30 @@
 	\newpage
 
 	\section{Introducción}
-	\input{secciones/Introduccion}
+	\input{secciones/1.Introduccion}
 
 	\section{Objetivo}
-	\input{secciones/Objetivo}
-
-	\section{Palabras claves}
-	\input{secciones/Palabras}
+	\input{secciones/2.Objetivo}
 
 	\section{Tunel}
-	\input{secciones/Tunel}	
+	\input{secciones/3.Tunel}	
 
-	\section{Motor}
-	\input{secciones/Motor}
+	\section{Primeros Pasos}
+	\input{secciones/4.Primeros}
 
-	\section{Variador}
-	\input{secciones/Variador}
-	
+	\section{Desarrollo}
+	\input{secciones/5.Desarrollo}
 
+	\section{Planos Electricos}
+	\input{secciones/6.Planos}
+	
+	\section{Recomendaciones futuras}
+	\input{secciones/7.Recomendaciones}
 
+	\section{Conclusión}
+	\input{secciones/8.Conclu}
 	
-	
-		
-
-	\section{Primeras pruebas}
-	\subsection{Sensores}
-	\subsubsection{SHT31-SHT21}
-	SHT31 es un sensor digital de temperatura y humedad relativa. Posee protocolo I2C.
-	\paragraph*{Especificaciones}
-	\begin{itemize}
-		\item   Voltaje de operación: 2.4 V a 5.5 V.
-		\item	Rango de temperatura: -40\grad C a 12\grad C.
-		\item   Resolución de temperatura: 0.015\grad C
-		\item	Precisión de temperatura: 0.2\grad C 
-		\item	Rango de humedad: 0 a 100\% RH
-		\item   Resolución HR: 0.01 \% RH
-		\item   Precisión HR: 2\% RH
-		\item Frecuencia de muestreo: 157 Hz.
-	\end{itemize}
-		\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.35]{SHT31.png}
-	\caption{Placa SHT31}
-	\label{fig:SHT31}
-		\end{figure}
-	
-	\subsubsection{BME280}
-	BME280 es un dispositivo que mide presión atmosférica, temperatura y humedad relativa, con gran precisión, bajo consumo y compacto. Utiliza protocolo I2C para su comunicación.
-		\paragraph*{Especificaciones}
-		\begin{itemize}
-		\item   Voltaje de operación: 1.8 V a 3.3 V.
-		\item	Rango de temperatura: -40\grad C a 85\grad C.
-		\item   Resolución de temperatura: 0.01\grad C
-		\item	Precisión de temperatura: 1\grad C 
-		\item	Rango de humedad: 0 a 100\% RH
-		\item   Precisión HR: 3\% RH
-		\item Rango de Presión: 300 a 1100 hPa (0.3-1.1bar)
-		\item Resolución de presión: 0.16 Pa
-	\end{itemize}
-	
-		\begin{figure}[htb]
-		\centering
-		\includegraphics[scale=0.35]{bme280.png}
-		\caption{Placa BME280}
-		\label{fig:BME280}
-		\end{figure}
-	
-	\subsubsection{MPX7002}
-	
-	\subsection{Matlab}
-	\subsection{Arduino}
-	\section{Lazo de control}
-	\subsection{Comunicación del variador de Velocidad}
-	\subsubsection{4-20mA}
-	ESTO SE ELIGIO POR EKASDAS
-	\subsubsection{MODBUS}
-	\section{Arduino}
-
-	\section{Cálculo de la densidad del aire}
+	\section{Bibliografía}
 
 \newpage
 

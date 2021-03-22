@@ -144,64 +144,39 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
@@ -212,6 +187,106 @@ INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
@@ -331,16 +406,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty
@@ -430,70 +495,6 @@ INPUT C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
@@ -537,6 +538,36 @@ INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\pro
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
@@ -586,21 +617,6 @@ OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\pr
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -651,28 +667,14 @@ INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\pro
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.lof
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT .\secciones\Introduccion.tex
-INPUT secciones\Introduccion.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT .\secciones\Objetivo.tex
-INPUT secciones\Objetivo.tex
+INPUT .\secciones\1.Introduccion.tex
+INPUT secciones\1.Introduccion.tex
+INPUT .\secciones\1.Introduccion.tex
+INPUT secciones\1.Introduccion.tex
+INPUT .\secciones\2.Objetivo.tex
+INPUT secciones\2.Objetivo.tex
+INPUT .\secciones\2.Objetivo.tex
+INPUT secciones\2.Objetivo.tex
 INPUT .\imagenes\\diagr.jpg
 INPUT .\imagenes\\diagr.jpg
 INPUT imagenes\\diagr.jpg
@@ -680,29 +682,10 @@ INPUT .\imagenes\\diagr.jpg
 INPUT .\imagenes\\diagr.jpg
 INPUT .\imagenes\\diagr.jpg
 INPUT .\imagenes\\diagr.jpg
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT .\secciones\Palabras.tex
-INPUT secciones\Palabras.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT .\secciones\Tunel.tex
-INPUT secciones\Tunel.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT .\secciones\3.Tunel.tex
+INPUT secciones\3.Tunel.tex
+INPUT .\secciones\3.Tunel.tex
+INPUT secciones\3.Tunel.tex
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT imagenes\\tvert1.jpg
@@ -710,6 +693,7 @@ INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
@@ -723,28 +707,10 @@ INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT .\secciones\Motor.tex
-INPUT secciones\Motor.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT .\secciones\Variador.tex
-INPUT secciones\Variador.tex
+INPUT .\secciones\4.Primeros.tex
+INPUT secciones\4.Primeros.tex
+INPUT .\secciones\4.Primeros.tex
+INPUT secciones\4.Primeros.tex
 INPUT .\imagenes\\SHT31.png
 INPUT .\imagenes\\SHT31.png
 INPUT imagenes\\SHT31.png
@@ -759,6 +725,22 @@ INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
+INPUT .\secciones\5.Desarrollo.tex
+INPUT secciones\5.Desarrollo.tex
+INPUT .\secciones\5.Desarrollo.tex
+INPUT secciones\5.Desarrollo.tex
+INPUT .\secciones\6.Planos.tex
+INPUT secciones\6.Planos.tex
+INPUT .\secciones\6.Planos.tex
+INPUT secciones\6.Planos.tex
+INPUT .\secciones\7.Recomendaciones.tex
+INPUT secciones\7.Recomendaciones.tex
+INPUT .\secciones\7.Recomendaciones.tex
+INPUT secciones\7.Recomendaciones.tex
+INPUT .\secciones\8.Conclu.tex
+INPUT secciones\8.Conclu.tex
+INPUT .\secciones\8.Conclu.tex
+INPUT secciones\8.Conclu.tex
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
