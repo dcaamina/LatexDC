@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  23 MAR 2021 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  23 MAR 2021 14:27
 entering extended mode
 **"c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex"
 (c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex
@@ -595,13 +595,13 @@ LaTeX Info: Redefining \% on input line 1.
 \openout9 = `"proyecto final.lof"'.
 
  [3] (secciones/1.Introduccion.tex) (secciones/2.Objetivo.tex
-<imagenes//diagr.jpg, id=186, 709.90219pt x 462.22687pt>
+<imagenes//diagr.jpg, id=188, 709.90219pt x 462.22687pt>
 File: imagenes//diagr.jpg Graphic file (type jpg)
 <use imagenes//diagr.jpg>
 Package pdftex.def Info: imagenes//diagr.jpg  used on input line 7.
 (pdftex.def)             Requested size: 248.46948pt x 161.78181pt.
 ) (secciones/3.Tunel.tex
-<imagenes//tvert1.jpg, id=187, 210.7875pt x 240.9pt>
+<imagenes//tvert1.jpg, id=189, 210.7875pt x 240.9pt>
 File: imagenes//tvert1.jpg Graphic file (type jpg)
 <use imagenes//tvert1.jpg>
 Package pdftex.def Info: imagenes//tvert1.jpg  used on input line 5.
@@ -617,13 +617,13 @@ Overfull \hbox (20.23529pt too wide) in paragraph at lines 3--15
 [][] [] 
  []
 
-<imagenes//tunel_unpsjb.JPG, id=188, 351.3125pt x 196.735pt>
+<imagenes//tunel_unpsjb.JPG, id=190, 351.3125pt x 196.735pt>
 File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 <use imagenes//tunel_unpsjb.JPG>
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 21.
 (pdftex.def)             Requested size: 158.08916pt x 88.52992pt.
 [4 <./imagenes//diagr.jpg> <./imagenes//tvert1.jpg>]) (secciones/4.Primeros.tex
-<imagenes//SHT31.png, id=194, 459.7175pt x 459.7175pt>
+<imagenes//SHT31.png, id=196, 459.7175pt x 459.7175pt>
 File: imagenes//SHT31.png Graphic file (type png)
 <use imagenes//SHT31.png>
 Package pdftex.def Info: imagenes//SHT31.png  used on input line 23.
@@ -645,7 +645,7 @@ Overfull \hbox (20.23529pt too wide) in paragraph at lines 9--27
  []
 
 [5 <./imagenes//tunel_unpsjb.JPG>]
-<imagenes//bme280.png, id=205, 459.7175pt x 459.7175pt>
+<imagenes//bme280.png, id=207, 459.7175pt x 459.7175pt>
 File: imagenes//bme280.png Graphic file (type png)
 <use imagenes//bme280.png>
 Package pdftex.def Info: imagenes//bme280.png  used on input line 50.
@@ -666,7 +666,19 @@ Overfull \hbox (20.23529pt too wide) in paragraph at lines 36--54
 [][] [] 
  []
 
-[6 <./imagenes//SHT31.png> <./imagenes//bme280.png>] [7]) (secciones/5.Desarrollo.tex) (secciones/6.Planos.tex) (secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [8] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
+[6 <./imagenes//SHT31.png> <./imagenes//bme280.png>] [7]) (secciones/5.Desarrollo.tex
+<imagenes//bloques.png, id=222, 864.22874pt x 369.63094pt>
+File: imagenes//bloques.png Graphic file (type png)
+<use imagenes//bloques.png>
+Package pdftex.def Info: imagenes//bloques.png  used on input line 6.
+(pdftex.def)             Requested size: 302.48459pt x 129.37276pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 7.
+See the caption package documentation for explanation.
+
+) (secciones/6.Planos.tex) (secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [8 <./imagenes//bloques.png>] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -674,17 +686,17 @@ Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
 (rerunfilecheck)             Checksum: 9D68FA80FDECBE004124E93BB763279B;4068.
  ) 
 Here is how much of TeX's memory you used:
- 22082 strings out of 479334
- 390543 string characters out of 2866961
- 692952 words of memory out of 3000000
- 39067 multiletter control sequences out of 15000+200000
+ 22090 strings out of 479334
+ 390699 string characters out of 2866961
+ 692990 words of memory out of 3000000
+ 39073 multiletter control sequences out of 15000+200000
  419014 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  112i,8n,116p,552b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (8 pages, 587386 bytes).
+Output written on "c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.pdf" (8 pages, 606462 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 
