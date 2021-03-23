@@ -229,6 +229,30 @@ INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
@@ -705,12 +729,6 @@ INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0700.tfm
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT imagenes\\tunel_unpsjb.JPG
@@ -718,6 +736,12 @@ INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0700.tfm
 INPUT .\secciones\4.Primeros.tex
 INPUT secciones\4.Primeros.tex
 INPUT .\secciones\4.Primeros.tex

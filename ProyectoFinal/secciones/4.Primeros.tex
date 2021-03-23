@@ -4,14 +4,7 @@
 	SHT31 es un sensor digital de temperatura y humedad relativa. Posee protocolo I2C.
 	\paragraph*{Especificaciones}
 
-	
-
-	\begin{figure}[htb]
-		\centering
-		\includegraphics[scale=0.35]{SHT31.png}
-		\caption{SHT31}
-		\label{fig:SHT31}
-	\end{figure}
+	\begin{minipage}[t]{.7\textwidth}
 		\begin{itemize}
 			\item   Voltaje de operación: 2.4 V a 5.5 V.
 			\item	Rango de temperatura: -40\grad C a 12\grad C.
@@ -22,29 +15,42 @@
 			\item   Precisión HR: 2\% RH
 			\item Frecuencia de muestreo: 157 Hz.
 		\end{itemize}
+	\end{minipage}	
+	\begin{minipage}[t]{.3\textwidth}
+		\centering\raisebox{\dimexpr \topskip-\height}{%
+		\includegraphics[scale=0.35]{SHT31.png}}
+		\captionof{figure}{SHT31}
+		\label{fig:SHT31}
+	\end{minipage}
+
+		
 
 	
 	\subsubsection{BME280}
 	BME280 es un dispositivo que mide presión atmosférica, temperatura y humedad relativa, con gran precisión, bajo consumo y compacto. Utiliza protocolo I2C para su comunicación.
 	\paragraph*{Especificaciones}
-	
-	\begin{figure}[htb]
-		\centering
-		\includegraphics[width=0.4\textwidth]{bme280.png}
-		\caption{BME280}
-		\label{fig:BME280}
-	\end{figure}
-		
+	\begin{minipage}[t]{.7\textwidth}
 		\begin{itemize}
-		\item   Voltaje de operación: 1.8 V a 3.3 V.
-		\item	Rango de temperatura: -40\grad C a 85\grad C.
-		\item   Resolución de temperatura: 0.01\grad C
-		\item	Precisión de temperatura: 1\grad C 
-		\item	Rango de humedad: 0 a 100\% RH
-		\item   Precisión HR: 3\% RH
-		\item Rango de Presión: 300 a 1100 hPa (0.3-1.1bar)
-		\item Resolución de presión: 0.16 Pa
-	\end{itemize}
+			\item   Voltaje de operación: 1.8 V a 3.3 V.
+			\item	Rango de temperatura: -40\grad C a 85\grad C.
+			\item   Resolución de temperatura: 0.01\grad C
+			\item	Precisión de temperatura: 1\grad C 
+			\item	Rango de humedad: 0 a 100\% RH
+			\item   Precisión HR: 3\% RH
+			\item Rango de Presión: 300 a 1100 hPa (0.3-1.1bar)
+			\item Resolución de presión: 0.16 Pa
+		\end{itemize}
+	\end{minipage}	
+	\begin{minipage}[t]{.3\textwidth}
+		\centering\raisebox{\dimexpr \topskip-\height}{%
+		\includegraphics[scale=0.35]{bme280.png}}
+		\captionof{figure}{BME280}
+		\label{fig:BME280}
+	\end{minipage}
+
+	
+		
+		
 	
 	\subsubsection{MPX7002}
     \subsubsection{ADC INA}
