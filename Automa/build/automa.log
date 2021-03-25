@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  25 MAR 2021 13:44
 entering extended mode
 **c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex
 (c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex
@@ -313,19 +313,34 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box63
 \tcb@out=\write5
 \tcb@record@out=\write6
+) (C:\Program Files\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks36
+\SOUL@lasttoken=\toks37
+\SOUL@cmds=\toks38
+\SOUL@buffer=\toks39
+\SOUL@token=\toks40
+\SOUL@spaceskip=\skip52
+\SOUL@ttwidth=\dimen190
+\SOUL@uldp=\dimen191
+\SOUL@ulht=\dimen192
+) (C:\Program Files\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language80
+LaTeX Info: Redefining \_ on input line 43.
 ) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen190
-\captionmargin@=\dimen191
-\captionwidth=\dimen192
-\caption@tempdima=\dimen193
-\caption@indent=\dimen194
-\caption@parindent=\dimen195
-\caption@hangindent=\dimen196
+\captionmargin=\dimen193
+\captionmargin@=\dimen194
+\captionwidth=\dimen195
+\caption@tempdima=\dimen196
+\caption@indent=\dimen197
+\caption@parindent=\dimen198
+\caption@hangindent=\dimen199
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count284
@@ -399,7 +414,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen197
+\@linkdim=\dimen256
 \Hy@linkcounter=\count305
 \Hy@pagecounter=\count306
  (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
@@ -428,15 +443,15 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count308
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen198
+\XeTeXLinkMargin=\dimen257
  (C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count309
-\Field@Width=\dimen199
-\Fld@charsize=\dimen256
+\Field@Width=\dimen258
+\Fld@charsize=\dimen259
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -470,15 +485,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip53
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 38.
+Package hyperref Info: Option `colorlinks' set `true' on input line 37.
  (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count315
-\float@exts=\toks36
+\float@exts=\toks41
 \float@box=\box65
-\@float@everytoks=\toks37
+\@float@everytoks=\toks42
 \@floatcapt=\box66
 ) (C:\Program Files\MiKTeX\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
@@ -491,17 +506,17 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count316
 \Gm@cntv=\count317
 \c@Gm@tempcnt=\count318
-\Gm@bindingoffset=\dimen257
-\Gm@wd@mp=\dimen258
-\Gm@odd@mp=\dimen259
-\Gm@even@mp=\dimen260
-\Gm@layoutwidth=\dimen261
-\Gm@layoutheight=\dimen262
-\Gm@layouthoffset=\dimen263
-\Gm@layoutvoffset=\dimen264
-\Gm@dimlist=\toks38
+\Gm@bindingoffset=\dimen260
+\Gm@wd@mp=\dimen261
+\Gm@odd@mp=\dimen262
+\Gm@even@mp=\dimen263
+\Gm@layoutwidth=\dimen264
+\Gm@layoutheight=\dimen265
+\Gm@layouthoffset=\dimen266
+\Gm@layoutvoffset=\dimen267
+\Gm@dimlist=\toks43
  (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 47.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 45.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.aux
@@ -510,39 +525,39 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `automa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count319
-\scratchdimen=\dimen265
+\scratchdimen=\dimen268
 \scratchbox=\box67
 \nofMPsegments=\count320
 \nofMParguments=\count321
-\everyMPshowfont=\toks39
+\everyMPshowfont=\toks44
 \MPscratchCnt=\count322
-\MPscratchDim=\dimen266
+\MPscratchDim=\dimen269
 \MPnumerator=\count323
 \makeMPintoPDFobject=\count324
-\everyMPtoPDFconversion=\toks40
+\everyMPtoPDFconversion=\toks45
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -551,7 +566,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 47.
+Package hyperref Info: Link coloring ON on input line 45.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
@@ -561,9 +576,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
  (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.out) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.out)
 \@outlinefile=\write7
 \openout7 = `automa.out'.
@@ -603,42 +618,42 @@ LaTeX Info: Redefining \nameref on input line 47.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 64.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 62.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 64.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 62.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 64.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 62.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 64.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 62.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 25.92514pt on input line 64.
+(Font)              scaled to size 25.92514pt on input line 62.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 64.
+(Font)              scaled to size 21.61124pt on input line 62.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 64.
+(Font)              scaled to size 15.0049pt on input line 62.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 25.92514pt on input line 64.
+(Font)              scaled to size 25.92514pt on input line 62.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 64.
+(Font)              scaled to size 21.61124pt on input line 62.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 64.
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 64.
+(Font)              scaled to size 15.0049pt on input line 62.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 62.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 <images//unpsjb.png, id=142, 1048.91875pt x 1048.91875pt>
 File: images//unpsjb.png Graphic file (type png)
 <use images//unpsjb.png>
-Package pdftex.def Info: images//unpsjb.png  used on input line 76.
+Package pdftex.def Info: images//unpsjb.png  used on input line 74.
 (pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
  [1
 
@@ -664,7 +679,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \newpage
+l.79 \newpage
               [1] (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -672,17 +687,27 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write9
 \openout9 = `automa.lof'.
 
- [2] (secciones/1.Introduccion.tex
+ [2] (secciones/0.Acron.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--16
+
+ []
+
+[3]) (secciones/1.Introduccion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-[3]) (Secciones/2.Objetivo.tex [4]) (Secciones/4.1Motor.tex
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4.
+[4]) (Secciones/2.Objetivo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+[5]) (Secciones/4.1Motor.tex
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
@@ -693,31 +718,27 @@ Package epstopdf Info: Source file: <images//motor.eps>
 (epstopdf)                    date: 2020-03-04 14:04:16
 (epstopdf)                    size: 109864 bytes
 (epstopdf)             Command: <epstopdf --outfile=images//motor-eps-converted-to.pdf images//motor.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./images//motor-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images//motor-eps-converted-to.pdf, id=209, 583.17876pt x 436.63126pt>
+<images//motor-eps-converted-to.pdf, id=224, 583.17876pt x 436.63126pt>
 File: images//motor-eps-converted-to.pdf Graphic file (type pdf)
 <use images//motor-eps-converted-to.pdf>
-Package pdftex.def Info: images//motor-eps-converted-to.pdf  used on input line 27.
+Package pdftex.def Info: images//motor-eps-converted-to.pdf  used on input line 23.
 (pdftex.def)             Requested size: 174.95497pt x 130.99039pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 28.
+(caption)                particular \caption on input line 24.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (19.90485pt too wide) in paragraph at lines 14--32
+Overfull \hbox (19.90485pt too wide) in paragraph at lines 10--28
 [][] [] 
  []
 
-[5 <./images//motor-eps-converted-to.pdf>]) (Secciones/4.2Variador.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
+[6 <./images//motor-eps-converted-to.pdf>]) (Secciones/4.2Variador.tex
 Package epstopdf Info: Source file: <images//variador.eps>
 (epstopdf)                    date: 2020-03-04 12:10:44
 (epstopdf)                    size: 56789 bytes
@@ -730,7 +751,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./images//variador-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images//variador-eps-converted-to.pdf, id=219, 281.05pt x 406.51875pt>
+<images//variador-eps-converted-to.pdf, id=235, 281.05pt x 406.51875pt>
 File: images//variador-eps-converted-to.pdf Graphic file (type pdf)
 <use images//variador-eps-converted-to.pdf>
 Package pdftex.def Info: images//variador-eps-converted-to.pdf  used on input line 20.
@@ -746,43 +767,106 @@ Overfull \hbox (19.90485pt too wide) in paragraph at lines 9--24
  []
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 27.
+(Font)              scaled to size 10.42007pt on input line 30.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 27.
+(Font)              scaled to size 7.91925pt on input line 30.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 27.
+(Font)              scaled to size 6.25204pt on input line 30.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 27.
+(Font)              scaled to size 10.42007pt on input line 30.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 27.
+(Font)              scaled to size 7.91925pt on input line 30.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 27.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 27.
+(Font)              scaled to size 6.25204pt on input line 30.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 30.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [6 <./images//variador-eps-converted-to.pdf>]) (Secciones/4.3PLC.tex
-<images//comu.png, id=236, 673.01437pt x 281.55188pt>
+)
+<images//somove1.png, id=242, 1027.58907pt x 546.54187pt>
+File: images//somove1.png Graphic file (type png)
+<use images//somove1.png>
+Package pdftex.def Info: images//somove1.png  used on input line 35.
+(pdftex.def)             Requested size: 256.89664pt x 136.63513pt.
+<images//somove2.png, id=243, 1027.58907pt x 546.54187pt>
+File: images//somove2.png Graphic file (type png)
+<use images//somove2.png>
+Package pdftex.def Info: images//somove2.png  used on input line 41.
+(pdftex.def)             Requested size: 256.89664pt x 136.63513pt.
+<images//somove4.png, id=244, 1027.58907pt x 548.0475pt>
+File: images//somove4.png Graphic file (type png)
+<use images//somove4.png>
+Package pdftex.def Info: images//somove4.png  used on input line 44.
+(pdftex.def)             Requested size: 256.89664pt x 137.01154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 51--52
+[]\T1/ppl/m/n/12 CANopen es un pro-to-co-lo con apli-ca-ción in-dus-trial de ba-jo ni-vel pa-ra
+ []
+
+[7 <./images//variador-eps-converted-to.pdf> <./images//somove1.png>] [8 <./images//somove2.png> <./images//somove4.png>]) (Secciones/4.3PLC.tex
+Underfull \hbox (badness 1259) in paragraph at lines 19--22
+\T1/ppl/m/n/12 de va-ria-bles del va-ria-dor-se rea-li-zan fre-cuen-te-men-te du-ran-te el pro-ce-so. Di-chos
+ []
+
+<images//comu.png, id=263, 673.01437pt x 281.55188pt>
 File: images//comu.png Graphic file (type png)
 <use images//comu.png>
-Package pdftex.def Info: images//comu.png  used on input line 16.
+Package pdftex.def Info: images//comu.png  used on input line 25.
 (pdftex.def)             Requested size: 471.10684pt x 197.08496pt.
 
-Overfull \hbox (15.86273pt too wide) in paragraph at lines 16--19
+Overfull \hbox (15.86273pt too wide) in paragraph at lines 25--28
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--30
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[7 <./images//comu.png>] [8]) (Secciones/5.Pruebas.tex) (Secciones/6.HMI.tex
-<images//HMIej.png, id=247, 259.97125pt x 195.73125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+
+Underfull \hbox (badness 6461) in paragraph at lines 38--40
+[]\T1/ppl/m/n/12 Modbus es un pro-to-co-lo de co-mu-ni-ca-cio-nes uti-li-za-do pa-ra trans-mi-tir
+ []
+
+[9]
+<images//unit1.png, id=270, 554.07pt x 520.19344pt>
+File: images//unit1.png Graphic file (type png)
+<use images//unit1.png>
+Package pdftex.def Info: images//unit1.png  used on input line 57.
+(pdftex.def)             Requested size: 138.51715pt x 130.04803pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 58.
+See the caption package documentation for explanation.
+
+[10 <./images//comu.png>]
+<images//unity1.png, id=279, 800.9925pt x 392.21532pt>
+File: images//unity1.png Graphic file (type png)
+<use images//unity1.png>
+Package pdftex.def Info: images//unity1.png  used on input line 60.
+(pdftex.def)             Requested size: 200.24763pt x 98.05359pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 61.
+See the caption package documentation for explanation.
+
+[11 <./images//unit1.png> <./images//unity1.png>]) (Secciones/5.Pruebas.tex) (Secciones/6.HMI.tex
+<images//HMIej.png, id=286, 259.97125pt x 195.73125pt>
 File: images//HMIej.png Graphic file (type png)
 <use images//HMIej.png>
 Package pdftex.def Info: images//HMIej.png  used on input line 25.
 (pdftex.def)             Requested size: 259.97061pt x 195.73076pt.
-) (Secciones/7.Banco.tex [9 <./images//HMIej.png>] [10]) (Secciones/8.Conclusion.tex [11]) (Secciones/10.Anexo.tex [12]) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.aux
+) (Secciones/7.Banco.tex [12 <./images//HMIej.png>] [13]) (Secciones/8.Conclusion.tex [14]) (Secciones/10.Anexo.tex [15]) (c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -790,17 +874,17 @@ Package rerunfilecheck Info: File `automa.out' has not changed.
 (rerunfilecheck)             Checksum: 831A9B806B0DC8063FCA75C2CDB711C8;4622.
  ) 
 Here is how much of TeX's memory you used:
- 22684 strings out of 479334
- 402374 string characters out of 2866961
- 797493 words of memory out of 3000000
- 39603 multiletter control sequences out of 15000+200000
- 454353 words of font info for 127 fonts, out of 3000000 for 9000
+ 22951 strings out of 479334
+ 406049 string characters out of 2866961
+ 805049 words of memory out of 3000000
+ 39840 multiletter control sequences out of 15000+200000
+ 455906 words of font info for 129 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,8n,116p,1589b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.pdf (13 pages, 683986 bytes).
+ 112i,8n,116p,1589b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on c:/Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.pdf (16 pages, 952523 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 310 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

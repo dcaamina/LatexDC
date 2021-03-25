@@ -7,9 +7,10 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
-%cajas de definiciones
-\usepackage{tcolorbox}
-%\tcbuselibrary{theorems}
+\usepackage{tcolorbox} %cajas de definiciones
+\usepackage{color}%resaltador
+\usepackage{soul}%resaltador
+
 
 %para crear sub sub sub titulos
 \makeatletter
@@ -21,13 +22,11 @@
 \setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
 \setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
 
+\usepackage[none]{hyphenat} %para que no corte las palabras al final del renglon
 \usepackage{amssymb}
-
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{mwe}
-
-
 \usepackage{url} %url
 \usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
@@ -42,53 +41,55 @@
 \author{Caamiña, Daniela \and Yapura, Cristian}
 \title{Trabajo final \\Automatización industrial}
 \graphicspath{ {images/} }
-
 	
 \begin{document}
-	\begin{titlepage} %Carátula 			
-		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
-		\center % Centre everything on the page		
-		\textsc{\LARGE Universidad Nacional de la Patagonia San Juan Bosco}\\[1.5cm]
-		\textsc{\Large Automatización Industrial}\\[0.5cm]
-		\textsc{\large Trabajo Final}\\[0.5cm] 
-		\HRule\\[0.4cm]
-		\huge\bfseries{Banco de pruebas para motor trifásico}\\[0.2cm] 
-		\HRule\\[1.5cm]
-			\begin{minipage}{0.4\textwidth}
-				\begin{flushleft}
-					\large
-					\textit{Alumnos}\\
-					\textsc{Caamiña,} Daniela \\
-					\textsc{Yapura,} Cristian  
-				\end{flushleft}
-			\end{minipage}
-			\begin{minipage}{0.4\textwidth}
-				\begin{flushright}
-					\large
-					\textit{Docentes}\\
-					Ing. \textsc{Lorenc,} Marcelo \\
-					Dr. \textsc{Peña,} Ramiro  
-				\end{flushright}
-			\end{minipage}
-		\vfill\vfill\vfill 
-		\large{MES AÑO} 
-		\vfill\vfill
-		\includegraphics[width=0.2\textwidth]{unpsjb.png}\\[1cm] 
-		\vfill 
-	\end{titlepage}
-	
+\begin{titlepage} %Carátula 			
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	\center % Centre everything on the page		
+	\textsc{\LARGE Universidad Nacional de la Patagonia San Juan Bosco}\\[1.5cm]
+	\textsc{\Large Automatización Industrial}\\[0.5cm]
+	\textsc{\large Trabajo Final}\\[0.5cm]
+	\HRule\\[0.4cm]
+	\huge\bfseries{Banco de pruebas para motor trifásico}\\[0.2cm]
+	\HRule\\[1.5cm]
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Alumnos}\\
+			\textsc{Caamiña,} Daniela \\
+			\textsc{Yapura,} Cristian
+		\end{flushleft}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Docentes}\\
+			Ing. \textsc{Lorenc,} Marcelo \\
+			Dr. \textsc{Peña,} Ramiro
+		\end{flushright}
+	\end{minipage}
+	\vfill\vfill\vfill
+	\large{MES AÑO}
+	\vfill\vfill
+	\includegraphics[width=0.2\textwidth]{unpsjb.png}\\[1cm]
+	\vfill
+\end{titlepage}
+
 \tableofcontents
 \newpage
 
 \listoffigures
-\newpage	
-		
+\newpage
+
+\section*{Lista de Acrónimos}
+\input{secciones/0.Acron}
+\sloppy %para justificar los párrafos
+
 \section{Introducción}
 \input{secciones/1.Introduccion}
 
 \section{Objetivo}
 \input{Secciones/2.Objetivo}
-
 
 \section{Elementos}
 \subsection{Motor}
@@ -96,10 +97,10 @@
 
 \subsection{Variador de velocidad}
 \input{Secciones/4.2Variador}
-	
+
 \subsection{PLC}
 \input{Secciones/4.3PLC}
-	
+
 \section{Pruebas}
 \input{Secciones/5.Pruebas}
 
@@ -109,9 +110,6 @@
 \section{Banco de pruebas}
 \input{Secciones/7.Banco}
 
-
-
-
 \section{Conclusiones}
 \input{Secciones/8.Conclusion}
 
@@ -119,6 +117,5 @@
 
 \section{Anexos}
 \input{Secciones/10.Anexo}
-
 
 \end{document}

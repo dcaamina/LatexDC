@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1616520475 "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex" "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/build/proyecto final.pdf" "proyecto final" 1616520480
+["pdflatex"] 1616520475 "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/proyecto final.tex" "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/build/proyecto final.pdf" "proyecto final" 1616689750
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
@@ -189,11 +189,11 @@
   "secciones/7.Recomendaciones.tex" 1616426953 0 d41d8cd98f00b204e9800998ecf8427e ""
   "secciones/8.Conclu.tex" 1616426970 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "build/proyecto final.pdf"
-  "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/build/proyecto final.log"
   "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/build/proyecto final.pdf"
   "build/proyecto final.toc"
-  "build/proyecto final.aux"
-  "build/proyecto final.lof"
   "build/proyecto final.log"
+  "build/proyecto final.aux"
+  "build/proyecto final.pdf"
   "build/proyecto final.out"
+  "build/proyecto final.lof"
+  "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/ProyectoFinal/build/proyecto final.log"

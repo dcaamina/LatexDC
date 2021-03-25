@@ -400,6 +400,30 @@ INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\soul\soul.sty
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
@@ -1037,6 +1061,13 @@ INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
 OUTPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\Automa\build\automa.lof
+INPUT .\secciones\0.Acron.tex
+INPUT secciones\0.Acron.tex
+INPUT .\secciones\0.Acron.tex
+INPUT secciones\0.Acron.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplri8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT .\secciones\1.Introduccion.tex
 INPUT secciones\1.Introduccion.tex
 INPUT .\secciones\1.Introduccion.tex
@@ -1112,7 +1143,27 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT .\images\\somove1.png
+INPUT .\images\\somove1.png
+INPUT images\\somove1.png
+INPUT .\images\\somove1.png
+INPUT .\images\\somove1.png
+INPUT .\images\\somove1.png
+INPUT .\images\\somove1.png
+INPUT .\images\\somove2.png
+INPUT .\images\\somove2.png
+INPUT images\\somove2.png
+INPUT .\images\\somove2.png
+INPUT .\images\\somove2.png
+INPUT .\images\\somove2.png
+INPUT .\images\\somove2.png
+INPUT .\images\\somove4.png
+INPUT .\images\\somove4.png
+INPUT images\\somove4.png
+INPUT .\images\\somove4.png
+INPUT .\images\\somove4.png
+INPUT .\images\\somove4.png
+INPUT .\images\\somove4.png
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
@@ -1128,6 +1179,20 @@ INPUT .\images\\comu.png
 INPUT .\images\\comu.png
 INPUT .\images\\comu.png
 INPUT .\images\\comu.png
+INPUT .\images\\unit1.png
+INPUT .\images\\unit1.png
+INPUT images\\unit1.png
+INPUT .\images\\unit1.png
+INPUT .\images\\unit1.png
+INPUT .\images\\unit1.png
+INPUT .\images\\unit1.png
+INPUT .\images\\unity1.png
+INPUT .\images\\unity1.png
+INPUT images\\unity1.png
+INPUT .\images\\unity1.png
+INPUT .\images\\unity1.png
+INPUT .\images\\unity1.png
+INPUT .\images\\unity1.png
 INPUT .\Secciones\5.Pruebas.tex
 INPUT Secciones\5.Pruebas.tex
 INPUT .\Secciones\5.Pruebas.tex
@@ -1167,3 +1232,5 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplbi8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplbi8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplri8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\palatino\uplri8a.pfb
