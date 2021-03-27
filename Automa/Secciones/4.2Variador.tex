@@ -1,10 +1,10 @@
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Variador de velocidad]
-	Es utilizado para controlar la velocidad de giro de un motor. 
+	Es utilizado para controlar la velocidad de giro de un motor.
 	Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene una curva propia de funcionamiento. Un variador es capaz de generar elementos control de aceleración, frenado, seguridad, control del torque y operaciones que mejoran la eficiencia energética.
 \end{tcolorbox}
 
 \subsubsection{Especificaciones}
-El variador de velocidad que se utilizó pertenece a la marca \textbf{Schneider Electric} (Figura \ref{fig:variador}) y posee las siguientes características. 
+El variador de velocidad que se utilizó pertenece a la marca \textbf{Schneider Electric} (Figura \ref{fig:variador}) y posee las siguientes características.
 \paragraph*{Altivar 312}
 \begin{minipage}[t]{.5\textwidth}
 	\begin{itemize}
@@ -35,7 +35,7 @@ Una vez realizado esto se procedió a generar un nuevo proyecto eligiendo las ca
 	\includegraphics[scale=0.25]{somove1.png}
 	\captionof{figure}{Elección de Altivar 312}
 	\label{fig:so1}
-\end{figure}	
+\end{figure}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.25]{somove2.png}
@@ -50,6 +50,18 @@ Una vez realizado esto se procedió a generar un nuevo proyecto eligiendo las ca
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=CANopen]
 	CANopen es un protocolo con aplicación industrial de bajo nivel para aplicaciones de automatización. Conecta dispositivos entre sí mediante mensajes entre pares. Basado en el estándar de comunicaciones físicas CAN. Se utiliza en redes de comunicación tipo esclavo, multimaestro. \hl{no me cierra esta definicion, buscar otra}
 \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=SDO]
+	Objetos o mensajes de servicio utilizados para leer y escribir cualquiera de las entradas del diccionario de objetos de un dispositivo.
+	Corresponden a mensajes CAN de baja prioridad.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=PDO]
+	Objetos o mensajes de proceso utilizados para el
+	intercambio de datos de proceso, es decir, datos de tiempo real. Por este motivo,
+	típicamente corresponden a mensajes CAN de alta prioridad.
+\end{tcolorbox}
+
 
 \paragraph{Registros a utilizar}
 \hl{ir a ANEXO y poner la lista completa de direcciones}

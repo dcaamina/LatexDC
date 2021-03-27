@@ -437,6 +437,32 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
@@ -1172,6 +1198,13 @@ INPUT .\Secciones\4.3PLC.tex
 INPUT Secciones\4.3PLC.tex
 INPUT .\Secciones\4.3PLC.tex
 INPUT Secciones\4.3PLC.tex
+INPUT .\images\\educativo.png
+INPUT .\images\\educativo.png
+INPUT images\\educativo.png
+INPUT .\images\\educativo.png
+INPUT .\images\\educativo.png
+INPUT .\images\\educativo.png
+INPUT .\images\\educativo.png
 INPUT .\images\\comu.png
 INPUT .\images\\comu.png
 INPUT images\\comu.png
@@ -1197,10 +1230,26 @@ INPUT .\Secciones\5.Pruebas.tex
 INPUT Secciones\5.Pruebas.tex
 INPUT .\Secciones\5.Pruebas.tex
 INPUT Secciones\5.Pruebas.tex
+INPUT .\images\\canconectores.png
+INPUT .\images\\canconectores.png
+INPUT images\\canconectores.png
+INPUT .\images\\canconectores.png
+INPUT .\images\\canconectores.png
+INPUT .\images\\canconectores.png
+INPUT .\images\\canconectores.png
+INPUT .\images\\candb9.png
+INPUT .\images\\candb9.png
+INPUT images\\candb9.png
+INPUT .\images\\candb9.png
+INPUT .\images\\candb9.png
+INPUT .\images\\candb9.png
+INPUT .\images\\candb9.png
 INPUT .\Secciones\6.HMI.tex
 INPUT Secciones\6.HMI.tex
 INPUT .\Secciones\6.HMI.tex
 INPUT Secciones\6.HMI.tex
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT .\images\\HMIej.png
 INPUT .\images\\HMIej.png
 INPUT images\\HMIej.png
