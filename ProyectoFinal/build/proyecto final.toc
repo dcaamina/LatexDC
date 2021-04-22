@@ -1,31 +1,23 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducción}{4}{section.1}%
-\contentsline {section}{\numberline {2}Objetivo}{4}{section.2}%
-\contentsline {section}{\numberline {3}Tunel}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Historia del Túnel UNPSJB}{5}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Motor}{6}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Vairador}{6}{subsubsection.3.1.2}%
-\contentsline {paragraph}{\numberline {3.1.2.1}¿Qué es y para que se utiliza?}{6}{paragraph.3.1.2.1}%
-\contentsline {paragraph}{\numberline {3.1.2.2}Variador ----- modelo que tenemos}{6}{paragraph.3.1.2.2}%
-\contentsline {section}{\numberline {4}Primeros Pasos}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Sensores}{6}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}SHT31-SHT21}{6}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}BME280}{6}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}MPX7002}{7}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}ADC INA}{7}{subsubsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.2}Programa Arduino}{7}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Ecuación velocidad del aire}{7}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}Pruebas}{7}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Filtros}{7}{subsubsection.4.3.1}%
-\contentsline {section}{\numberline {5}Desarrollo}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Placa adaptadora}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Toma de planta}{8}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Método obtención de la planta}{8}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Cálculo del controlador}{8}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Comunicación con el variador}{8}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}HMI}{8}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}Adquisición de datos}{8}{subsubsection.5.5.1}%
-\contentsline {section}{\numberline {6}Planos Electricos}{8}{section.6}%
-\contentsline {section}{\numberline {7}Recomendaciones futuras}{8}{section.7}%
-\contentsline {section}{\numberline {8}Conclusión}{8}{section.8}%
-\contentsline {section}{\numberline {9}Bibliografía}{8}{section.9}%
+\contentsline {section}{\numberline {2}Objetivo}{5}{section.2}%
+\contentsline {section}{\numberline {3}Tunel}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Historia del Túnel UNPSJB}{6}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{7}{subsubsection.3.1.1}%
+\contentsline {section}{\numberline {4}Primeros Pasos}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Programa Arduino}{8}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Ecuación velocidad del aire}{8}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Pruebas}{8}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Filtros}{8}{subsubsection.4.2.1}%
+\contentsline {section}{\numberline {5}Desarrollo}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Placa adaptadora}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Toma de planta}{9}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Método obtención de la planta}{9}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Cálculo del controlador}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comunicación con el variador}{9}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}HMI}{9}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Adquisición de datos}{9}{subsubsection.5.5.1}%
+\contentsline {section}{\numberline {6}Planos Electricos}{9}{section.6}%
+\contentsline {section}{\numberline {7}Recomendaciones futuras}{9}{section.7}%
+\contentsline {section}{\numberline {8}Conclusión}{9}{section.8}%
+\contentsline {section}{\numberline {9}Bibliografía}{9}{section.9}%

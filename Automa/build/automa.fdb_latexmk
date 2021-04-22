@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1616805069 "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex" "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/build/automa.pdf" "automa" 1616805075
+["pdflatex"] 1616805069 "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/automa.tex" "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/build/automa.pdf" "automa" 1619046483
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136783054 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/palatino/pplb8t.tfm" 1136783054 3456 16dd534f88eb2bd21ebc7203786b436e ""
@@ -215,11 +215,11 @@
   "secciones/0.Acron.tex" 1616803061 609 7e93febe8a5913dff38cbebd5019857b ""
   "secciones/1.Introduccion.tex" 1616682419 662 2d3286a23c10530cec5995621b9c2375 ""
   (generated)
+  "build/automa.pdf"
+  "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/build/automa.pdf"
+  "build/automa.lof"
+  "build/automa.aux"
   "build/automa.out"
   "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/build/automa.log"
   "build/automa.toc"
-  "build/automa.lof"
   "build/automa.log"
-  "build/automa.aux"
-  "c:/Users/glori/Desktop/DANIELA/VISUAL_DANI/LatexDC/Automa/build/automa.pdf"
-  "build/automa.pdf"

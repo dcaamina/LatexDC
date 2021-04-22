@@ -1,69 +1,21 @@
+Para comenzar con las pruebas lo primero que se realizó es la conexión de diversos sensores en una protoboard. Se generó un programa de Arduino dónde a través de I2C se realizaba la comunicación. \\ Conjuntamente con estos sensores de Presión, Humedad y Temperatura se utilizó un sensor para medir presión diferencial, para digitalizar estos datos valores se utilizó un convertidor analógico digital.
 
-\subsection{Sensores}
-	\subsubsection{SHT31-SHT21}
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Definición]
-		SHT31 es un sensor digital de temperatura y humedad relativa. Posee protocolo I2C.\end{tcolorbox}
-	
-	\paragraph*{Especificaciones}
-
-	\begin{minipage}[t]{.7\textwidth}
+\paragraph*{Elementos utilizados}
 		\begin{itemize}
-			\item   Voltaje de operación: 2.4 V a 5.5 V.
-			\item	Rango de temperatura: -40\grad C a 12\grad C.
-			\item   Resolución de temperatura: 0.015\grad C
-			\item	Precisión de temperatura: 0.2\grad C 
-			\item	Rango de humedad: 0 a 100\% RH
-			\item   Resolución HR: 0.01 \% RH
-			\item   Precisión HR: 2\% RH
-			\item Frecuencia de muestreo: 157 Hz.
+			\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
+			\item \textbf{SI7021:} Sensor de temperatura y humedad relativa.
+			\item \textbf{MPX7002:} Sensor de presión diferencial.
+			\item \textbf{ADS1115:} Convertidor analógico digital 16bits.
 		\end{itemize}
-	\end{minipage}	
-	\begin{minipage}[t]{.3\textwidth}
-		\centering\raisebox{\dimexpr \topskip-\height}{%
-		\includegraphics[scale=0.35]{SHT31.png}}
-		\captionof{figure}{SHT31}
-		\label{fig:SHT31}
-	\end{minipage}
 
-		
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.35]{bme280.png}
+	\caption{figure}{BME280}
+	\label{fig:BME280}
+\end{figure}
 
 	
-	\subsubsection{BME280}
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Definición]
-		BME280 es un dispositivo que mide presión atmosférica, temperatura y humedad relativa, con gran precisión, bajo consumo y compacto. Utiliza protocolo I2C para su comunicación.\end{tcolorbox}
-	
-	\paragraph*{Especificaciones}
-	\begin{minipage}[t]{.7\textwidth}
-		\begin{itemize}
-			\item   Voltaje de operación: 1.8 V a 3.3 V.
-			\item	Rango de temperatura: -40\grad C a 85\grad C.
-			\item   Resolución de temperatura: 0.01\grad C
-			\item	Precisión de temperatura: 1\grad C 
-			\item	Rango de humedad: 0 a 100\% RH
-			\item   Precisión HR: 3\% RH
-			\item Rango de Presión: 300 a 1100 hPa (0.3-1.1bar)
-			\item Resolución de presión: 0.16 Pa
-		\end{itemize}
-	\end{minipage}	
-	\begin{minipage}[t]{.3\textwidth}
-		\centering\raisebox{\dimexpr \topskip-\height}{%
-		\includegraphics[scale=0.35]{bme280.png}}
-		\captionof{figure}{BME280}
-		\label{fig:BME280}
-	\end{minipage}
-
-	
-		
-	
-	\subsubsection{MPX7002}
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Definición]
-		asfsafsafasfasf
-	\end{tcolorbox}
-
-    \subsubsection{ADC INA}
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Definición]
-		asfsafsafasfasf.
-	\end{tcolorbox}
 
     \subsection{Programa Arduino}
         \subsubsection{Ecuación velocidad del aire}

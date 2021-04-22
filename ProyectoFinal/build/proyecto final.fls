@@ -971,6 +971,21 @@ INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
 INPUT .\imagenes\\tvert1.jpg
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT imagenes\\tunel_cerrado.png
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT .\imagenes\\tunel_cerrado.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT .\imagenes\\tunel_abierto.png
+INPUT .\imagenes\\tunel_abierto.png
+INPUT imagenes\\tunel_abierto.png
+INPUT .\imagenes\\tunel_abierto.png
+INPUT .\imagenes\\tunel_abierto.png
+INPUT .\imagenes\\tunel_abierto.png
+INPUT .\imagenes\\tunel_abierto.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
@@ -980,22 +995,25 @@ INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT .\imagenes\\tunel_unpsjb.JPG
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0700.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT .\imagenes\\LS650.jpg
+INPUT .\imagenes\\LS650.jpg
+INPUT imagenes\\LS650.jpg
+INPUT .\imagenes\\LS650.jpg
+INPUT .\imagenes\\LS650.jpg
+INPUT .\imagenes\\LS650.jpg
+INPUT .\imagenes\\LS650.jpg
 INPUT .\secciones\4.Primeros.tex
 INPUT secciones\4.Primeros.tex
 INPUT .\secciones\4.Primeros.tex
 INPUT secciones\4.Primeros.tex
-INPUT .\imagenes\\SHT31.png
-INPUT .\imagenes\\SHT31.png
-INPUT imagenes\\SHT31.png
-INPUT .\imagenes\\SHT31.png
-INPUT .\imagenes\\SHT31.png
-INPUT .\imagenes\\SHT31.png
-INPUT .\imagenes\\SHT31.png
 INPUT .\imagenes\\bme280.png
 INPUT .\imagenes\\bme280.png
 INPUT imagenes\\bme280.png
@@ -1029,14 +1047,16 @@ INPUT secciones\8.Conclu.tex
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
-INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
-INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
@@ -1047,5 +1067,3 @@ INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
