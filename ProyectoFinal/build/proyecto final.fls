@@ -499,6 +499,8 @@ INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\chngcntr\chngcntr.sty
@@ -1021,6 +1023,30 @@ INPUT .\imagenes\\sensores.jpg
 INPUT .\imagenes\\sensores.jpg
 INPUT .\imagenes\\sensores.jpg
 INPUT .\imagenes\\sensores.jpg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
+INPUT .\imagenes\\filtros.png
+INPUT .\imagenes\\filtros.png
+INPUT imagenes\\filtros.png
+INPUT .\imagenes\\filtros.png
+INPUT .\imagenes\\filtros.png
+INPUT .\imagenes\\filtros.png
+INPUT .\imagenes\\filtros.png
+INPUT .\imagenes\\filtro mediana.png
+INPUT .\imagenes\\filtro mediana.png
+INPUT imagenes\\filtro mediana.png
+INPUT .\imagenes\\filtro mediana.png
+INPUT .\imagenes\\filtro mediana.png
+INPUT .\imagenes\\filtro mediana.png
+INPUT .\imagenes\\filtro mediana.png
 INPUT .\secciones\5.Desarrollo.tex
 INPUT secciones\5.Desarrollo.tex
 INPUT .\secciones\5.Desarrollo.tex
@@ -1047,6 +1073,8 @@ INPUT secciones\8.Conclu.tex
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.aux
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
 INPUT c:\Users\glori\Desktop\DANIELA\VISUAL_DANI\LatexDC\ProyectoFinal\build\proyecto final.out
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
@@ -1067,3 +1095,23 @@ INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
 INPUT C:\Users\glori\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb

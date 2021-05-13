@@ -1,24 +1,20 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducción}{4}{section.1}%
 \contentsline {section}{\numberline {2}Objetivo}{5}{section.2}%
-\contentsline {section}{\numberline {3}Tunel}{6}{section.3}%
+\contentsline {section}{\numberline {3}Túnel}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Historia del Túnel UNPSJB}{6}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{7}{subsubsection.3.1.1}%
 \contentsline {section}{\numberline {4}Pruebas iniciales}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Programa Arduino}{9}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Ecuación velocidad del aire}{9}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}Pruebas}{9}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Filtros}{9}{subsubsection.4.3.1}%
-\contentsline {section}{\numberline {5}Desarrollo}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Placa adaptadora}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Toma de planta}{10}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Método obtención de la planta}{10}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Cálculo del controlador}{10}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Comunicación con el variador}{10}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}HMI}{10}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}Adquisición de datos}{10}{subsubsection.5.5.1}%
-\contentsline {section}{\numberline {6}Planos Electricos}{10}{section.6}%
-\contentsline {section}{\numberline {7}Recomendaciones futuras}{10}{section.7}%
-\contentsline {section}{\numberline {8}Conclusión}{10}{section.8}%
-\contentsline {section}{\numberline {9}Bibliografía}{10}{section.9}%
+\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Filtros}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Error observado}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Desarrollo}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{12}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{12}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Método de estimación}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}PID inicial}{14}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Planos Eléctricos}{14}{section.6}%
+\contentsline {section}{\numberline {7}Recomendaciones futuras}{14}{section.7}%
+\contentsline {section}{\numberline {8}Conclusión}{14}{section.8}%
+\contentsline {section}{\numberline {9}Bibliografía}{14}{section.9}%
