@@ -16,37 +16,52 @@ PROTEUS PLACA
 
 
 \subsection{Captura de datos por puerto serie}
-DEFINE processing
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
+    Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
+    \end{tcolorbox}
 Para capturar los datos, primeramente se utilizó Matlab, como se necesitó visualizar los valores en tiempo real y luego guardar la tabla con vectores, este programa producía errores en la capturación de datos.
-Para solucionar el inconveniente anteriormente nombrado, se utilizó un código generado en Processing. Con este código, se capturó los valores, se observaba el valor numérico estimado de la velocidad y se lograba ingresar el valor del escalón requerido para tomar la planta.
+Para solucionar el inconveniente anteriormente nombrado, se utilizó un código generado en Processing. Con este código, se capturó los valores, se observaba el valor numérico estimado de la velocidad y se lograba ingresar el valor del escalón requerido para tomar la planta. (Figura \ref{fig:Proce})
 
-IMAGEN DE PROCESSING
+\begin{center}
+    \includegraphics[scale=0.7]{serial_proc.png}
+    \captionof{figure}{Pantalla Processing}
+    \label{fig:Proce}    
+\end{center}
 
 \subsection{Estimación de la planta}
     \subsubsection{Diagrama de trabajo}
 
 Para realizar la estimación de la planta se genera un diagrama de bloques del procedimiento que se siguió de forma resumida.
 
-IMAGEEEN
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.4]{planta_d.png}
+	\captionof{figure}{Diagrama de bloques del procedimiento de modelado de la planta}
+	\label{fig:planta_d}
+\end{figure}
 
-Generación de datos:  se hizo diversas pruebas para obtener la mayor cantidad de información en la respuesta.
+ \textbf{Generación de datos:}  se hizo diversas pruebas para obtener la mayor cantidad de información en la respuesta.
 
-Captura de datos: A través del puerto serie y con Processing se realiza el almacenamiento de los datos de respuesta del sistema ante el estímulo de las señales de excitación. Posteriormente, el análisis de los datos y la generación de las gráficas correspondientes es realizado por medio de rutinas de código implementadas en Matlab.
+ \textbf{Captura de datos:} A través del puerto serie y con Processing se realiza el almacenamiento de los datos de respuesta del sistema ante el estímulo de las señales de excitación. Posteriormente, el análisis de los datos y la generación de las gráficas correspondientes es realizado por medio de rutinas de código implementadas en Matlab.
 
-Identificación del modelo matemático: Se utilizaron varios métodos numéricos para la estimación.
+ \textbf{Identificación del modelo matemático:} Se utilizaron varios métodos numéricos para la estimación.
 
-Validación del modelo matemático: una vez obtenida la mejor estimación, se efectuó una validación adicional a partir de la comparación de datos experimentales con los teóricos generados por escalones.
-
-
+ \textbf{Validación del modelo matemático:} una vez obtenida la mejor estimación, se efectuó una validación adicional a partir de la comparación de datos experimentales con los teóricos generados por escalones.
 
 
-\begin{center}
-\includegraphics[scale=0.35]{bloques.png}
-\captionof{figure}{Diagrama en bloques}
-\end{center}
-\label{fig:bloques}
+
+
+
 
     \subsection{Método de estimación}
+\hl{ver si ponemos este diagrama}
+    \begin{center}
+        \includegraphics[scale=0.35]{bloques.png}
+        \captionof{figure}{Diagrama en bloques}
+        \label{fig:bloques}    
+    \end{center}
+       
+
     Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente en el variador de velocidad. Para realizar la estimación de la planta se obtuvieron y guardaron tablas de datos con Processing, generando diversas señales con distintos escalones de entrada. 
     PONER PRUEBAS VALOR DEL ESCALON, VALOR DE FRECUENCIA.
     
