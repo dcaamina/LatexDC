@@ -9,9 +9,12 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Placa con sensores\relax }}{9}{figure.caption.6}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Datos y diversos filtros\relax }}{11}{figure.caption.8}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Datos y filtro mediana\relax }}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{11}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{11}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Pantalla Processing\relax }}{13}{figure.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{13}{figure.caption.11}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama en bloques\relax }}{14}{figure.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{12}{figure.caption.10}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{12}{figure.caption.10}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{12}{figure.caption.10}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Placa de control\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Terminales de control\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Placa adaptadora de señal\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla Processing\relax }}{14}{figure.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama en bloques\relax }}{15}{figure.6}%

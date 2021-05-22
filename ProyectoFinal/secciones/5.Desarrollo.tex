@@ -1,19 +1,35 @@
 Una vez corroborado que el error ya no ocurrió nuevamente, se procedió a ingresar la señal del lazo de corriente para controlar el variador de velocidad.
 
-Para la comunicación del Arduino con el variador de velocidad se decidió utilizar un lazo de corriente de 0-20mA, este tiene ventajas sobre el lazo de tensión ya que el utilizado es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, pero este modelo de variador, tiene el piso del lazo de corriente en 0mA. Cabe mencionar, que el variador podía ser controlado por cualquiera de los dos métodos de lazos.
+Para la comunicación del \textbf{Arduino} con el variador de velocidad se decidió utilizar un lazo de corriente de 0-20mA, este tiene ventajas sobre el lazo de tensión ya que el utilizado es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, pero este modelo de variador, tiene el piso del lazo de corriente en 0mA, el cual fue modificado para que sea utilizado de 4 a 20mA. Cabe mencionar, que el variador podía ser controlado por cualquiera de los dos métodos de lazos.
 
-A continuación se observará la placa interna del variador con sus respectivas borneras por donde ingresará la señal de corriente del lazo de control y el jummper que se tuvo en cuenta para que sea de corriente y no de tensión.
+A continuación se observará la placa interna del variador con sus respectivas borneras por donde ingresará la señal de corriente del lazo de control y el jummper que se tuvo en cuenta para que sea lazo de corriente y no de tensión.
+
+\begin{figure}[htbp]
+	\centering
+\includegraphics[width=0.7\linewidth]{imagenes/placa_ls}
+\caption{Placa de control}
+\label{fig:placals}
+\end{figure}
 
 
-IMAGEEEN
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{imagenes/terminales.png}
+	\caption{Terminales de control}
+	\label{fig:born}
+\end{figure}
 
 La señal para controlar el variador de velocidad fue generada por una señal PWM estipulada a través de la librería TIMEROne. La instrucción Timer1.inizialize(period)
  de Arduino inicializa el timer con el valor de period, este valor es el tiempo en el que se dispara el temporizador y en el caso de este proyecto es de 40 microsegundos.
+ 
 El otro comando que se utilizó fue Timer1.pwm(pin, duty) que establece el número de pin, en este caso pin 9 y “duty” es un valor entre 0 y 1023 establecido por la programación. 
 Esta señal de salida, fue necesario transformarla al lazo de corriente utilizado para establecer la señal al variador de velocidad. Esto se realizó a través de una placa adaptadora con un filtro generada por nosotros.
-
-PROTEUS PLACA
-
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{imagenes/plano_DC.pdf}
+	\caption{Placa adaptadora de señal}
+	\label{fig:adapt}
+\end{figure}
 
 \subsection{Captura de datos por puerto serie}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
@@ -54,16 +70,23 @@ Para realizar la estimación de la planta se genera un diagrama de bloques del p
 
 
     \subsection{Método de estimación}
-\hl{ver si ponemos este diagrama}
-    \begin{center}
-        \includegraphics[scale=0.35]{bloques.png}
-        \captionof{figure}{Diagrama en bloques}
-        \label{fig:bloques}    
-    \end{center}
-       
 
-    Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente en el variador de velocidad. Para realizar la estimación de la planta se obtuvieron y guardaron tablas de datos con Processing, generando diversas señales con distintos escalones de entrada. 
-    PONER PRUEBAS VALOR DEL ESCALON, VALOR DE FRECUENCIA.
+    Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente en el variador de velocidad. 
+    
+    La Figura \ref{fig:bloques} muestra un diagrama resumido de los pasos a realizar para tomar datos de la planta. Siendo G(s) el conjunto del túnel de viento, variador de velocidad y motor.
+ 
+    \begin{center}
+    	\includegraphics[scale=0.35]{bloques.png}
+    	\captionof{figure}{Diagrama en bloques}
+    	\label{fig:bloques}    
+    \end{center}
+    
+    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, generando por la interfaz distintos escalones de entrada para obtener varias mediciones.
+    
+    La próxima tabla muestra un ejemplo de los valores que se tomaban, de forma manual, al realizar las pruebas. En esta se ve la 
+    \hl{PONER PRUEBAS VALOR DEL ESCALON, VALOR DE FRECUENCIA.}
+    
+    La imagen \hl{VER REFERENCIA} muestra los escalones de entrada que se generó y la respuesta 
     
     El archivo generado fue un “.csv” para el cual luego fue necesario utilizar un código de Matlab para obtener cada vector según los datos que poseía cada uno. Con estos datos, se realizó la estimación de la planta por los métodos de … y de……. . concluyendo que el método JSadas de cuarto orden era suficiente.
     
@@ -78,3 +101,5 @@ Para realizar la estimación de la planta se genera un diagrama de bloques del p
 
     
     \subsection{PID inicial}
+    
+    \newpage
