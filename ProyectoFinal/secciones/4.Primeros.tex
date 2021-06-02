@@ -74,14 +74,11 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 \subsection{Ecuación velocidad del aire}
 El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo Excel para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire en función de la presión, temperatura y humedad atmosférica.
 %	densidad_funcion_P_T_H.pdf  dentro del drive
-\begin{equation}
-	\rho=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}
-\end{equation}
-\\
-\begin{math}
-	x_v=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\\\
-	Z=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
-\end{math}
+\begin{align}
+	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
+	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
+	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
+\end{align}
 \\
 dónde:\\
 - \textbf{p } [Pa] es la presión atmosférica medida,\\
@@ -138,6 +135,5 @@ Luego, para comenzar con las pruebas de otros modos de funcionamiento del variad
 	\subfigure[Tipo lineal]{\includegraphics[width=60mm]{sinS.png}}
 	\caption{Curva aceleración y desaceleración} \label{fig:curva}
 \end{figure}
-
 
 \newpage

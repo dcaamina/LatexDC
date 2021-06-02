@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  21 MAY 2021 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  22 MAY 2021 17:31
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -717,14 +717,14 @@ LaTeX Info: Redefining \nameref on input line 54.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
+* \textwidth=455.24411pt
 * \textheight=702.78308pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -771,20 +771,14 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write9
 \openout9 = `"proyecto final.lof"'.
 
- [3] (secciones/1.Introduccion.tex
-Overfull \hbox (3.97905pt too wide) in paragraph at lines 1--5
-\T1/cmr/m/n/12 flui-do. Por lo tan-to, va-ria-ción de pre-sión, hu-me-dad, pre-
-sión at-mos-fé-ri-ca y tem-pe-ra-tu-ra
- []
-
-[4]) (secciones/2.Objetivo.tex
+ [3] (secciones/1.Introduccion.tex [4])
+(secciones/2.Objetivo.tex
 <imagenes//diagr.jpg, id=154, 709.90219pt x 462.22687pt>
 File: imagenes//diagr.jpg Graphic file (type jpg)
 <use imagenes//diagr.jpg>
 Package pdftex.def Info: imagenes//diagr.jpg  used on input line 7.
 (pdftex.def)             Requested size: 248.46948pt x 161.78181pt.
- [5 <./imagenes//diagr.jpg>])
-(secciones/3.Tunel.tex
+ [5 <./imagenes//diagr.jpg>]) (secciones/3.Tunel.tex
 <imagenes//tvert1.jpg, id=159, 210.7875pt x 240.9pt>
 File: imagenes//tvert1.jpg Graphic file (type jpg)
 <use imagenes//tvert1.jpg>
@@ -797,7 +791,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 6--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
 []\T1/cmr/m/n/12 Figura 3.1: |[]Tunel uso
  []
 
@@ -822,28 +816,9 @@ File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 28.
 (pdftex.def)             Requested size: 158.08916pt x 88.52992pt.
 
-Overfull \hbox (13.1279pt too wide) in paragraph at lines 36--38
-[][][][][][][] \T1/cmr/m/n/12 El tú-nel ae-ro-di-ná-mi-co del La-bo-ra-to-rio
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 36--38
-\T1/cmr/m/n/12 Na-cio-nal de la Pa-ta-go-nia San Juan
- []
-
-
-Underfull \hbox (badness 7504) in paragraph at lines 36--38
-\T1/cmr/m/n/12 Bos-co (\T1/cmr/bx/n/12 UNPSJB\T1/cmr/m/n/12 ) es un cir-cui-to
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 36--38
-\T1/cmr/m/n/12 abier-to (ti-po Eif-fel) con cá-ma-ra de
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 36--38
-\T1/cmr/m/n/12 cá-ma-ra de en-sa-yos con un área de
+Underfull \hbox (badness 1019) in paragraph at lines 36--38
+\T1/cmr/m/n/12 de Me-cá-ni-ca de Flui-dos (\T1/cmr/bx/n/12 LMF\T1/cmr/m/n/12 ) 
+de la
  []
 
 [6 <./imagenes//tvert1.jpg> <./imagenes//tunel_cerrado.png> <./imagenes//tunel_
@@ -856,17 +831,33 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
 [][][][][]$\T1/cmtt/m/n/10 http : / / www . ing . unp . edu . ar / mecanica / A
-rchivos / Fluid / LMF / Informe _ Proyecto _ -[] _
+rchivos / Fluid / LMF / Informe _ Proyecto _ -[] _ Túnel _ de _
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 65--67
+Underfull \hbox (badness 1888) in paragraph at lines 65--67
+[]\T1/cmr/m/n/12 El mo-tor que se uti-li-za en pa-ra ha-cer
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 65--67
+\T1/cmr/m/n/12 Variador mo-de-lo \T1/cmr/bx/n/12 LS650-4045 \T1/cmr/m/n/12 pa-r
+a una
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 65--67
 \T1/cmr/m/n/12 po-ten-cia de 45kW con sa-li-da tri-fá-si-ca
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/cmr/m/n/12 de co-rrien-te, ten-sión, PID in-terno,
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 65--67
+\T1/cmr/m/n/12 po-ten-ció-me-tro o de for-ma ma-nual con
  []
 
 <imagenes//LS650.jpg, id=180, 402.00188pt x 666.99188pt>
@@ -885,9 +876,9 @@ Overfull \hbox (27.59476pt too wide) in paragraph at lines 62--74
  []
 
 [7 <./imagenes//LS650.jpg>]) (secciones/4.Primeros.tex
-Overfull \hbox (5.98068pt too wide) in paragraph at lines 15--16
-[]\T1/cmr/m/n/12 Cabe des-ta-car que pa-ra la co-mu-ni-ca-ción de es-tos sen-so
--res se uti-li-zó \T1/cmr/bx/n/12 co-mu-ni-ca-ción
+Overfull \hbox (23.50427pt too wide) in paragraph at lines 9--10
+\T1/cmr/m/n/12 que Ar-duino UNO era un mi-cro-con-tro-la-dor de ba-jo cos-to, b
+a-ja com-ple-ji-dad en la pro-gra-ma-ción,
  []
 
 <imagenes//placa_sensores.pdf, id=189, 317.185pt x 266.9975pt>
@@ -895,85 +886,73 @@ File: imagenes//placa_sensores.pdf Graphic file (type pdf)
 <use imagenes//placa_sensores.pdf>
 Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 30.
 (pdftex.def)             Requested size: 253.74832pt x 213.59827pt.
-[8] [9 <./imagenes//placa_sensores.pdf>]
-Overfull \hbox (17.7083pt too wide) in paragraph at lines 111--112
-[]\T1/cmr/m/n/12 Una vez que se pro-ce-dió a to-mar di-ver-sos va-lo-res, se no
--tó ne-ce-sa-rio la im-ple-men-ta-ción
+
+Overfull \hbox (32.06177pt too wide) in paragraph at lines 37--38
+[]\T1/cmr/m/n/12 Estas mis-mas prue-bas sir-vie-ron pa-ra pro-bar y co-rro-bo-r
+ar el fun-cio-na-mien-to del \T1/cmr/bx/n/12 MPXV7002\T1/cmr/m/n/12 ,
  []
 
+[8] [9 <./imagenes//placa_sensores.pdf>]
 <imagenes//filtros.png, id=216, 834.86906pt x 438.13687pt>
 File: imagenes//filtros.png Graphic file (type png)
 <use imagenes//filtros.png>
-Package pdftex.def Info: imagenes//filtros.png  used on input line 115.
+Package pdftex.def Info: imagenes//filtros.png  used on input line 112.
 (pdftex.def)             Requested size: 292.20856pt x 153.35019pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10]
-<imagenes//filtro mediana.png, id=231, 843.90282pt x 450.18187pt>
+<imagenes//filtro mediana.png, id=232, 843.90282pt x 450.18187pt>
 File: imagenes//filtro mediana.png Graphic file (type png)
 <use imagenes//filtro mediana.png>
-Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 124.
+Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 121.
 (pdftex.def)             Requested size: 295.3704pt x 157.56601pt.
-
-Overfull \hbox (10.14159pt too wide) in paragraph at lines 133--134
-\T1/cmr/m/n/12 la ace-le-ra-ción. Al ha-cer las ave-ri-gua-cio-nes per-ti-nen-t
-es, es-to se de-bió a una con-fi-gu-ra-ción
- []
-
-
-Overfull \hbox (7.3048pt too wide) in paragraph at lines 133--134
-\T1/cmr/m/n/12 cur-va es li-neal . Pa-ra re-ver-tir es-to, se mo-di-fi-có el ti
-em-po de ace-le-ra-ción y des-ace-le-ra-ción
- []
-
-<imagenes//conS.png, id=232, 831.85782pt x 304.13625pt>
+<imagenes//conS.png, id=233, 831.85782pt x 304.13625pt>
 File: imagenes//conS.png Graphic file (type png)
 <use imagenes//conS.png>
-Package pdftex.def Info: imagenes//conS.png  used on input line 137.
+Package pdftex.def Info: imagenes//conS.png  used on input line 134.
 (pdftex.def)             Requested size: 170.71652pt x 62.4133pt.
-<imagenes//sinS.png, id=233, 830.35219pt x 298.86656pt>
+<imagenes//sinS.png, id=234, 830.35219pt x 298.86656pt>
 File: imagenes//sinS.png Graphic file (type png)
 <use imagenes//sinS.png>
-Package pdftex.def Info: imagenes//sinS.png  used on input line 138.
+Package pdftex.def Info: imagenes//sinS.png  used on input line 135.
 (pdftex.def)             Requested size: 170.71652pt x 61.44588pt.
-[11 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>])
+ [11 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>])
 (secciones/5.Desarrollo.tex
-<imagenes/placa_ls.png, id=240, 459.96844pt x 436.63126pt>
+<imagenes/placa_ls.png, id=241, 459.96844pt x 436.63126pt>
 File: imagenes/placa_ls.png Graphic file (type png)
 <use imagenes/placa_ls.png>
 Package pdftex.def Info: imagenes/placa_ls.png  used on input line 9.
-(pdftex.def)             Requested size: 298.75264pt x 283.60707pt.
-<imagenes/terminales.png, id=241, 484.05844pt x 73.02281pt>
+(pdftex.def)             Requested size: 318.66948pt x 302.5151pt.
+<imagenes/terminales.png, id=242, 484.05844pt x 73.02281pt>
 File: imagenes/terminales.png Graphic file (type png)
 <use imagenes/terminales.png>
 Package pdftex.def Info: imagenes/terminales.png  used on input line 17.
-(pdftex.def)             Requested size: 298.75264pt x 45.06975pt.
+(pdftex.def)             Requested size: 318.66948pt x 48.07484pt.
 
-Overfull \hbox (2.65721pt too wide) in paragraph at lines 22--24
-\T1/cmr/m/n/12 es-ti-pu-la-da a tra-vés de la li-bre-ría TI-ME-RO-ne. La ins-tr
-uc-ción Ti-mer1.inizialize(period)
- []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./imagenes//conS.png> <./imagenes//sinS.png> <./imagenes/placa_ls.png>]
-<imagenes/plano_DC.pdf, id=249, 660.4675pt x 347.2975pt>
+<imagenes/plano_DC.pdf, id=250, 660.4675pt x 347.2975pt>
 File: imagenes/plano_DC.pdf Graphic file (type pdf)
 <use imagenes/plano_DC.pdf>
 Package pdftex.def Info: imagenes/plano_DC.pdf  used on input line 29.
-(pdftex.def)             Requested size: 341.43437pt x 179.54117pt.
+(pdftex.def)             Requested size: 364.19667pt x 191.51234pt.
 
-Overfull \hbox (10.3655pt too wide) in paragraph at lines 38--40
-[]\T1/cmr/m/n/12 Para cap-tu-rar los da-tos, pri-me-ra-men-te se uti-li-zó Matl
-ab, co-mo se ne-ce-si-tó vi-sua-li-zar
+Overfull \hbox (6.38475pt too wide) in paragraph at lines 25--33
+\T1/cmr/m/n/12 Es-ta se-ñal de sa-li-da, fue ne-ce-sa-rio trans-for-mar-la al l
+a-zo de co-rrien-te uti-li-za-do pa-ra es-ta-ble-cer
  []
 
 
-Overfull \hbox (29.10098pt too wide) in paragraph at lines 38--40
-\T1/cmr/m/n/12 pro-du-cía erro-res en la cap-tu-ra-ción de da-tos. Pa-ra so-lu-
-cio-nar el in-con-ve-nien-te an-te-rior-men-te
+Overfull \hbox (10.43753pt too wide) in paragraph at lines 38--40
+\T1/cmr/m/n/12 erro-res en la cap-tu-ra-ción de da-tos. Pa-ra so-lu-cio-nar el 
+in-con-ve-nien-te an-te-rior-men-te nom-bra-do,
  []
 
-<imagenes//serial_proc.png, id=251, 492.33937pt x 277.035pt>
+<imagenes//serial_proc.png, id=252, 492.33937pt x 277.035pt>
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 42.
@@ -990,34 +969,39 @@ duplicate ignored
                    \relax 
 l.43     \captionof{figure}{Pantalla Processing}
                                                 
-<imagenes//planta_d.png, id=273, 345.54094pt x 409.53pt>
+Overfull \hbox (18.9179pt too wide) in paragraph at lines 50--51
+[]\T1/cmr/m/n/12 Para rea-li-zar la es-ti-ma-ción de la plan-ta se ge-ne-ra un 
+dia-gra-ma de blo-ques del pro-ce-di-mien-to
+ []
+
+<imagenes//planta_d.png, id=274, 345.54094pt x 409.53pt>
 File: imagenes//planta_d.png Graphic file (type png)
 <use imagenes//planta_d.png>
 Package pdftex.def Info: imagenes//planta_d.png  used on input line 54.
 (pdftex.def)             Requested size: 138.21391pt x 163.80908pt.
 
-Overfull \hbox (8.75046pt too wide) in paragraph at lines 63--64
-[]\T1/cmr/bx/n/12 Identificación del mo-de-lo ma-te-má-ti-co: \T1/cmr/m/n/12 Se
- uti-li-za-ron va-rios mé-to-dos nu-mé-ri-cos
+Overfull \hbox (19.67027pt too wide) in paragraph at lines 61--62
+[]\T1/cmr/bx/n/12 Captura de da-tos: \T1/cmr/m/n/12 A tra-vés del puer-to se-ri
+e y con Pro-ces-sing se rea-li-za el al-ma-ce-na-mien-to
+ []
+
+
+Overfull \hbox (30.21188pt too wide) in paragraph at lines 61--62
+\T1/cmr/m/n/12 de los da-tos de res-pues-ta del sis-te-ma an-te el es-tí-mu-lo 
+de las se-ña-les de ex-ci-ta-ción. Pos-te-rior-men-te,
  []
 
 [14 <./imagenes//serial_proc.png> <./imagenes//planta_d.png>]
-<imagenes//bloques.png, id=279, 864.22874pt x 369.63094pt>
+<imagenes//bloques.png, id=281, 864.22874pt x 369.63094pt>
 File: imagenes//bloques.png Graphic file (type png)
 <use imagenes//bloques.png>
-Package pdftex.def Info: imagenes//bloques.png  used on input line 75.
+Package pdftex.def Info: imagenes//bloques.png  used on input line 79.
 (pdftex.def)             Requested size: 302.48459pt x 129.37276pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 76.
+(caption)                particular \caption on input line 80.
 See the caption package documentation for explanation.
-
-
-Overfull \hbox (4.8852pt too wide) in paragraph at lines 89--90
-[]\T1/cmr/m/n/12 Para co-rro-bo-rar la elec-ción de la plan-ta se gen-reó un ar
--chi-vo en si-mu-link ge-ne-ran-do
- []
 
 [15 <./imagenes//bloques.png>]) (secciones/6.Planos.tex)
 (secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [16]
@@ -1029,9 +1013,9 @@ Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
 (rerunfilecheck)             Checksum: 56EC4F35F0BB92715140F69AD768EE9F;2713.
  ) 
 Here is how much of TeX's memory you used:
- 22593 strings out of 479334
- 397734 string characters out of 2866961
- 698697 words of memory out of 3000000
+ 22595 strings out of 479334
+ 397758 string characters out of 2866961
+ 699697 words of memory out of 3000000
  39522 multiletter control sequences out of 15000+200000
  422433 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1051,16 +1035,15 @@ AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y8.pfb>
-Output written on "proyecto final.pdf" (16 pages, 1129093 bytes).
+onts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib
+10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb>
+Output written on "proyecto final.pdf" (16 pages, 1120486 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
