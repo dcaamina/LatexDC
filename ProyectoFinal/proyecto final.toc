@@ -1,20 +1,40 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Introducción}{4}{section.1}%
-\contentsline {section}{\numberline {2}Objetivo}{5}{section.2}%
-\contentsline {section}{\numberline {3}Túnel}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Historia del Túnel UNPSJB}{6}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{7}{subsubsection.3.1.1}%
-\contentsline {section}{\numberline {4}Pruebas iniciales}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Filtros}{10}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Error observado}{11}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Desarrollo}{12}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{14}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{14}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Método de estimación}{15}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}PID inicial}{15}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Planos Eléctricos}{16}{section.6}%
-\contentsline {section}{\numberline {7}Recomendaciones futuras}{16}{section.7}%
-\contentsline {section}{\numberline {8}Conclusión}{16}{section.8}%
-\contentsline {section}{\numberline {9}Bibliografía}{16}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introducción}{5}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Objetivo}{6}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Túnel}{7}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Historia del Túnel UNPSJB}{7}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{8}{subsubsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Pruebas iniciales}{9}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{11}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Filtros}{11}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Error observado}{12}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Desarrollo}{13}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{14}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{15}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{15}{subsubsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Método de estimación}{16}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}PID inicial}{16}{subsection.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Planos Eléctricos}{17}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Recomendaciones futuras}{17}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Conclusión}{17}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Bibliografía}{17}{section.9}%

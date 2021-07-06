@@ -1,20 +1,40 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama\relax }}{5}{figure.caption.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Tunel uso recreativo\relax }}{6}{figure.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Clasificación túneles\relax }}{6}{figure.caption.4}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Túnel tipo cerrado}}}{6}{figure.caption.4}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Túnel tipo abierto}}}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Tunel UNPSJB\relax }}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces LS650\relax }}{7}{figure.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placa con sensores\relax }}{9}{figure.caption.6}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Datos y diversos filtros\relax }}{11}{figure.caption.8}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Datos y filtro mediana\relax }}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{12}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{12}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Placa de control\relax }}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Terminales de control\relax }}{13}{figure.caption.12}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Placa adaptadora de señal\relax }}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla Processing\relax }}{14}{figure.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama en bloques\relax }}{15}{figure.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama\relax }}{6}{figure.caption.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Tunel uso recreativo\relax }}{7}{figure.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Clasificación túneles\relax }}{7}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Túnel tipo cerrado}}}{7}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Túnel tipo abierto}}}{7}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tunel UNPSJB\relax }}{7}{figure.caption.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces LS650\relax }}{8}{figure.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placa con sensores\relax }}{10}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Datos y diversos filtros\relax }}{12}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Datos y filtro mediana\relax }}{12}{figure.caption.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{13}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{13}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{13}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Placa de control\relax }}{13}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Terminales de control\relax }}{14}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Placa adaptadora de señal\relax }}{14}{figure.caption.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla Processing\relax }}{15}{figure.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{15}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama en bloques\relax }}{16}{figure.6}%

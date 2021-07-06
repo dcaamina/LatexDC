@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{LS650}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Shenq},
+         familyi={S\bibinitperiod},
+         given={Long},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Manual de instalaci{\'o}n y programaci{\'o}n : Variador de
+  velocidad LS650 para motor de C.A.}
+  \endentry
+
+  \entry{airecalculo}{article}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={INTI},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{C{\'a}lculo de la densidad del aire h{\'u}medo}
+    \field{year}{2015}
+  \endentry
+\enddatalist
+\endinput

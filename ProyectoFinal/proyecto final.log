@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  22 MAY 2021 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  25 JUN 2021 17:06
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -612,15 +612,266 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 35.
 
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count302
+
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count303
+\c@listtotal=\count304
+\c@listcount=\count305
+\c@liststart=\count306
+\c@liststop=\count307
+\c@citecount=\count308
+\c@citetotal=\count309
+\c@multicitecount=\count310
+\c@multicitetotal=\count311
+\c@instcount=\count312
+\c@maxnames=\count313
+\c@minnames=\count314
+\c@maxitems=\count315
+\c@minitems=\count316
+\c@citecounter=\count317
+\c@maxcitecounter=\count318
+\c@savedcitecounter=\count319
+\c@uniquelist=\count320
+\c@uniquename=\count321
+\c@refsection=\count322
+\c@refsegment=\count323
+\c@maxextratitle=\count324
+\c@maxextratitleyear=\count325
+\c@maxextraname=\count326
+\c@maxextradate=\count327
+\c@maxextraalpha=\count328
+\c@abbrvpenalty=\count329
+\c@highnamepenalty=\count330
+\c@lownamepenalty=\count331
+\c@maxparens=\count332
+\c@parenlevel=\count333
+\blx@tempcnta=\count334
+\blx@tempcntb=\count335
+\blx@tempcntc=\count336
+\blx@maxsection=\count337
+\blx@maxsegment@0=\count338
+\blx@notetype=\count339
+\blx@parenlevel@text=\count340
+\blx@parenlevel@foot=\count341
+\blx@sectionciteorder@0=\count342
+\blx@entrysetcounter=\count343
+\blx@biblioinstance=\count344
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read5
+\blx@bcfout=\write7
+\blx@langwohyphens=\language81
+\c@mincomprange=\count345
+\c@maxcomprange=\count346
+\c@mincompwidth=\count347
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count348
+\c@savedafterword=\count349
+\c@annotator=\count350
+\c@savedannotator=\count351
+\c@author=\count352
+\c@savedauthor=\count353
+\c@bookauthor=\count354
+\c@savedbookauthor=\count355
+\c@commentator=\count356
+\c@savedcommentator=\count357
+\c@editor=\count358
+\c@savededitor=\count359
+\c@editora=\count360
+\c@savededitora=\count361
+\c@editorb=\count362
+\c@savededitorb=\count363
+\c@editorc=\count364
+\c@savededitorc=\count365
+\c@foreword=\count366
+\c@savedforeword=\count367
+\c@holder=\count368
+\c@savedholder=\count369
+\c@introduction=\count370
+\c@savedintroduction=\count371
+\c@namea=\count372
+\c@savednamea=\count373
+\c@nameb=\count374
+\c@savednameb=\count375
+\c@namec=\count376
+\c@savednamec=\count377
+\c@translator=\count378
+\c@savedtranslator=\count379
+\c@shortauthor=\count380
+\c@savedshortauthor=\count381
+\c@shorteditor=\count382
+\c@savedshorteditor=\count383
+\c@labelname=\count384
+\c@savedlabelname=\count385
+\c@institution=\count386
+\c@savedinstitution=\count387
+\c@lista=\count388
+\c@savedlista=\count389
+\c@listb=\count390
+\c@savedlistb=\count391
+\c@listc=\count392
+\c@savedlistc=\count393
+\c@listd=\count394
+\c@savedlistd=\count395
+\c@liste=\count396
+\c@savedliste=\count397
+\c@listf=\count398
+\c@savedlistf=\count399
+\c@location=\count400
+\c@savedlocation=\count401
+\c@organization=\count402
+\c@savedorganization=\count403
+\c@origlocation=\count404
+\c@savedoriglocation=\count405
+\c@origpublisher=\count406
+\c@savedorigpublisher=\count407
+\c@publisher=\count408
+\c@savedpublisher=\count409
+\c@language=\count410
+\c@savedlanguage=\count411
+\c@origlanguage=\count412
+\c@savedoriglanguage=\count413
+\c@pageref=\count414
+\c@savedpageref=\count415
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-bibtex.def
+File: blx-bibtex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count416
+\c@textcitetotal=\count417
+\c@textcitemaxnames=\count418
+\c@biburlbigbreakpenalty=\count419
+\c@biburlbreakpenalty=\count420
+\c@biburlnumpenalty=\count421
+\c@biburlucpenalty=\count422
+\c@biburllcpenalty=\count423
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count424
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count425
+\c@bbx:relatedtotal=\count426
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+! Undefined control sequence.
+l.42 \bibliographystile
+                       {plain}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \bibliographystile{p
+                         lain}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count302
-\Gm@cntv=\count303
-\c@Gm@tempcnt=\count304
+\Gm@cnth=\count427
+\Gm@cntv=\count428
+\c@Gm@tempcnt=\count429
 \Gm@bindingoffset=\dimen264
 \Gm@wd@mp=\dimen265
 \Gm@odd@mp=\dimen266
@@ -632,50 +883,56 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks44
 
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count430
+\@quotereset=\count431
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count305
+\l__color_backend_stack_int=\count432
 \l__pdf_internal_box=\box67
 )
 (proyecto final.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 )
 \openout1 = `"proyecto final.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count306
+\scratchcounter=\count433
 \scratchdimen=\dimen272
 \scratchbox=\box68
-\nofMPsegments=\count307
-\nofMParguments=\count308
+\nofMPsegments=\count434
+\nofMParguments=\count435
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count309
+\MPscratchCnt=\count436
 \MPscratchDim=\dimen273
-\MPnumerator=\count310
-\makeMPintoPDFobject=\count311
+\MPnumerator=\count437
+\makeMPintoPDFobject=\count438
 \everyMPtoPDFconversion=\toks46
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -687,7 +944,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 54.
+Package hyperref Info: Link coloring ON on input line 61.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -698,16 +955,53 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count312
+\c@section@level=\count439
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
 (proyecto final.out) (proyecto final.out)
-\@outlinefile=\write7
-\openout7 = `"proyecto final.out"'.
+\@outlinefile=\write8
+\openout8 = `"proyecto final.out"'.
 
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
+File: spanish.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+)
+Package biblatex Info: ... and expl3
+(biblatex)             2021-02-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex))
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout7 = `proyecto_final-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '"proyecto final".bbl' found.
+
+(proyecto final.bbl)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -743,43 +1037,46 @@ LaTeX Info: Redefining \nameref on input line 54.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+[1
+
+{C:/Users/glori/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/glori/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (proyecto final
-.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+) [2] (proyecto final.toc
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
 )
-\tf@toc=\write8
-\openout8 = `"proyecto final.toc"'.
+\tf@toc=\write9
+\openout9 = `"proyecto final.toc"'.
 
- [2]
-(proyecto final.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+
+[3] (proyecto final.lof
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lof=\write9
-\openout9 = `"proyecto final.lof"'.
+\tf@lof=\write10
+\openout10 = `"proyecto final.lof"'.
 
- [3] (secciones/1.Introduccion.tex [4])
+ [4] (secciones/1.Introduccion.tex [5])
 (secciones/2.Objetivo.tex
-<imagenes//diagr.jpg, id=154, 709.90219pt x 462.22687pt>
+<imagenes//diagr.jpg, id=158, 709.90219pt x 462.22687pt>
 File: imagenes//diagr.jpg Graphic file (type jpg)
 <use imagenes//diagr.jpg>
 Package pdftex.def Info: imagenes//diagr.jpg  used on input line 7.
 (pdftex.def)             Requested size: 248.46948pt x 161.78181pt.
- [5 <./imagenes//diagr.jpg>]) (secciones/3.Tunel.tex
-<imagenes//tvert1.jpg, id=159, 210.7875pt x 240.9pt>
+ [6 <./imagenes//diagr.jpg>]) (secciones/3.Tunel.tex
+<imagenes//tvert1.jpg, id=163, 210.7875pt x 240.9pt>
 File: imagenes//tvert1.jpg Graphic file (type jpg)
 <use imagenes//tvert1.jpg>
 Package pdftex.def Info: imagenes//tvert1.jpg  used on input line 5.
@@ -800,17 +1097,17 @@ Overfull \hbox (20.23529pt too wide) in paragraph at lines 3--15
 [][] [] 
  []
 
-<imagenes//tunel_cerrado.png, id=160, 450.9347pt x 231.86626pt>
+<imagenes//tunel_cerrado.png, id=164, 450.9347pt x 231.86626pt>
 File: imagenes//tunel_cerrado.png Graphic file (type png)
 <use imagenes//tunel_cerrado.png>
 Package pdftex.def Info: imagenes//tunel_cerrado.png  used on input line 18.
 (pdftex.def)             Requested size: 170.71652pt x 87.78105pt.
-<imagenes//tunel_abierto.png, id=162, 436.63126pt x 106.89937pt>
+<imagenes//tunel_abierto.png, id=166, 436.63126pt x 106.89937pt>
 File: imagenes//tunel_abierto.png Graphic file (type png)
 <use imagenes//tunel_abierto.png>
 Package pdftex.def Info: imagenes//tunel_abierto.png  used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 55.72826pt.
-<imagenes//tunel_unpsjb.JPG, id=163, 351.3125pt x 196.735pt>
+<imagenes//tunel_unpsjb.JPG, id=167, 351.3125pt x 196.735pt>
 File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 <use imagenes//tunel_unpsjb.JPG>
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 28.
@@ -821,7 +1118,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 36--38
 de la
  []
 
-[6 <./imagenes//tvert1.jpg> <./imagenes//tunel_cerrado.png> <./imagenes//tunel_
+[7 <./imagenes//tvert1.jpg> <./imagenes//tunel_cerrado.png> <./imagenes//tunel_
 abierto.png> <./imagenes//tunel_unpsjb.JPG>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 2.
@@ -832,11 +1129,6 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
 [][][][][]$\T1/cmtt/m/n/10 http : / / www . ing . unp . edu . ar / mecanica / A
 rchivos / Fluid / LMF / Informe _ Proyecto _ -[] _ Túnel _ de _
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 65--67
-[]\T1/cmr/m/n/12 El mo-tor que se uti-li-za en pa-ra ha-cer
  []
 
 
@@ -860,7 +1152,7 @@ Underfull \hbox (badness 3536) in paragraph at lines 65--67
 \T1/cmr/m/n/12 po-ten-ció-me-tro o de for-ma ma-nual con
  []
 
-<imagenes//LS650.jpg, id=180, 402.00188pt x 666.99188pt>
+<imagenes//LS650.jpg, id=185, 402.00188pt x 666.99188pt>
 File: imagenes//LS650.jpg Graphic file (type jpg)
 <use imagenes//LS650.jpg>
 Package pdftex.def Info: imagenes//LS650.jpg  used on input line 70.
@@ -875,13 +1167,13 @@ Overfull \hbox (27.59476pt too wide) in paragraph at lines 62--74
 [][][][][][] [] [] 
  []
 
-[7 <./imagenes//LS650.jpg>]) (secciones/4.Primeros.tex
+[8 <./imagenes//LS650.jpg>]) (secciones/4.Primeros.tex
 Overfull \hbox (23.50427pt too wide) in paragraph at lines 9--10
 \T1/cmr/m/n/12 que Ar-duino UNO era un mi-cro-con-tro-la-dor de ba-jo cos-to, b
 a-ja com-ple-ji-dad en la pro-gra-ma-ción,
  []
 
-<imagenes//placa_sensores.pdf, id=189, 317.185pt x 266.9975pt>
+<imagenes//placa_sensores.pdf, id=193, 317.185pt x 266.9975pt>
 File: imagenes//placa_sensores.pdf Graphic file (type pdf)
 <use imagenes//placa_sensores.pdf>
 Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 30.
@@ -892,8 +1184,8 @@ Overfull \hbox (32.06177pt too wide) in paragraph at lines 37--38
 ar el fun-cio-na-mien-to del \T1/cmr/bx/n/12 MPXV7002\T1/cmr/m/n/12 ,
  []
 
-[8] [9 <./imagenes//placa_sensores.pdf>]
-<imagenes//filtros.png, id=216, 834.86906pt x 438.13687pt>
+[9] [10 <./imagenes//placa_sensores.pdf>]
+<imagenes//filtros.png, id=220, 834.86906pt x 438.13687pt>
 File: imagenes//filtros.png Graphic file (type png)
 <use imagenes//filtros.png>
 Package pdftex.def Info: imagenes//filtros.png  used on input line 112.
@@ -902,30 +1194,30 @@ Package pdftex.def Info: imagenes//filtros.png  used on input line 112.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10]
-<imagenes//filtro mediana.png, id=232, 843.90282pt x 450.18187pt>
+[11]
+<imagenes//filtro mediana.png, id=236, 843.90282pt x 450.18187pt>
 File: imagenes//filtro mediana.png Graphic file (type png)
 <use imagenes//filtro mediana.png>
 Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 121.
 (pdftex.def)             Requested size: 295.3704pt x 157.56601pt.
-<imagenes//conS.png, id=233, 831.85782pt x 304.13625pt>
+<imagenes//conS.png, id=237, 831.85782pt x 304.13625pt>
 File: imagenes//conS.png Graphic file (type png)
 <use imagenes//conS.png>
 Package pdftex.def Info: imagenes//conS.png  used on input line 134.
 (pdftex.def)             Requested size: 170.71652pt x 62.4133pt.
-<imagenes//sinS.png, id=234, 830.35219pt x 298.86656pt>
+<imagenes//sinS.png, id=238, 830.35219pt x 298.86656pt>
 File: imagenes//sinS.png Graphic file (type png)
 <use imagenes//sinS.png>
 Package pdftex.def Info: imagenes//sinS.png  used on input line 135.
 (pdftex.def)             Requested size: 170.71652pt x 61.44588pt.
- [11 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>])
+ [12 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>])
 (secciones/5.Desarrollo.tex
-<imagenes/placa_ls.png, id=241, 459.96844pt x 436.63126pt>
+<imagenes/placa_ls.png, id=245, 459.96844pt x 436.63126pt>
 File: imagenes/placa_ls.png Graphic file (type png)
 <use imagenes/placa_ls.png>
 Package pdftex.def Info: imagenes/placa_ls.png  used on input line 9.
 (pdftex.def)             Requested size: 318.66948pt x 302.5151pt.
-<imagenes/terminales.png, id=242, 484.05844pt x 73.02281pt>
+<imagenes/terminales.png, id=246, 484.05844pt x 73.02281pt>
 File: imagenes/terminales.png Graphic file (type png)
 <use imagenes/terminales.png>
 Package pdftex.def Info: imagenes/terminales.png  used on input line 17.
@@ -934,8 +1226,8 @@ Package pdftex.def Info: imagenes/terminales.png  used on input line 17.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./imagenes//conS.png> <./imagenes//sinS.png> <./imagenes/placa_ls.png>]
-<imagenes/plano_DC.pdf, id=250, 660.4675pt x 347.2975pt>
+[13 <./imagenes//conS.png> <./imagenes//sinS.png> <./imagenes/placa_ls.png>]
+<imagenes/plano_DC.pdf, id=255, 660.4675pt x 347.2975pt>
 File: imagenes/plano_DC.pdf Graphic file (type pdf)
 <use imagenes/plano_DC.pdf>
 Package pdftex.def Info: imagenes/plano_DC.pdf  used on input line 29.
@@ -952,7 +1244,7 @@ Overfull \hbox (10.43753pt too wide) in paragraph at lines 38--40
 in-con-ve-nien-te an-te-rior-men-te nom-bra-do,
  []
 
-<imagenes//serial_proc.png, id=252, 492.33937pt x 277.035pt>
+<imagenes//serial_proc.png, id=257, 492.33937pt x 277.035pt>
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 42.
@@ -962,7 +1254,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 43.
 See the caption package documentation for explanation.
 
-[13 <./imagenes/terminales.png> <./imagenes/plano_DC.pdf>]pdfTeX warning (ext4)
+[14 <./imagenes/terminales.png> <./imagenes/plano_DC.pdf>]pdfTeX warning (ext4)
 : destination with the same identifier (name{figure.4}) has been already used, 
 duplicate ignored
 <to be read again> 
@@ -974,7 +1266,7 @@ Overfull \hbox (18.9179pt too wide) in paragraph at lines 50--51
 dia-gra-ma de blo-ques del pro-ce-di-mien-to
  []
 
-<imagenes//planta_d.png, id=274, 345.54094pt x 409.53pt>
+<imagenes//planta_d.png, id=278, 345.54094pt x 409.53pt>
 File: imagenes//planta_d.png Graphic file (type png)
 <use imagenes//planta_d.png>
 Package pdftex.def Info: imagenes//planta_d.png  used on input line 54.
@@ -991,8 +1283,8 @@ Overfull \hbox (30.21188pt too wide) in paragraph at lines 61--62
 de las se-ña-les de ex-ci-ta-ción. Pos-te-rior-men-te,
  []
 
-[14 <./imagenes//serial_proc.png> <./imagenes//planta_d.png>]
-<imagenes//bloques.png, id=281, 864.22874pt x 369.63094pt>
+[15 <./imagenes//serial_proc.png> <./imagenes//planta_d.png>]
+<imagenes//bloques.png, id=285, 864.22874pt x 369.63094pt>
 File: imagenes//bloques.png Graphic file (type png)
 <use imagenes//bloques.png>
 Package pdftex.def Info: imagenes//bloques.png  used on input line 79.
@@ -1003,47 +1295,55 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 80.
 See the caption package documentation for explanation.
 
-[15 <./imagenes//bloques.png>]) (secciones/6.Planos.tex)
-(secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [16]
+[16 <./imagenes//bloques.png>]) (secciones/6.Planos.tex)
+(secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [17]
 (proyecto final.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \sptext on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 )
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
 (rerunfilecheck)             Checksum: 56EC4F35F0BB92715140F69AD768EE9F;2713.
+Package logreq Info: Writing requests to '"proyecto final".run.xml'.
+\openout1 = `"proyecto final.run.xml"'.
+
  ) 
 Here is how much of TeX's memory you used:
- 22595 strings out of 479334
- 397758 string characters out of 2866961
- 699697 words of memory out of 3000000
- 39522 multiletter control sequences out of 15000+200000
- 422433 words of font info for 80 fonts, out of 3000000 for 9000
+ 29629 strings out of 479334
+ 538309 string characters out of 2866961
+ 1039232 words of memory out of 3000000
+ 46492 multiletter control sequences out of 15000+200000
+ 423117 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,9n,116p,757b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+ 112i,9n,116p,1859b,1901s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\AppDat
+0\tcrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\glori\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (16 pages, 1120486 bytes).
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\
+glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb>
+Output written on "proyecto final.pdf" (17 pages, 1133743 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
