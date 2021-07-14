@@ -69,7 +69,7 @@ Para realizar la estimación de la planta se genera un diagrama de bloques del p
 
 
 
-    \subsection{Método de estimación}
+    \subsubsection{Método de estimación}
 
     Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente en el variador de velocidad. 
     
@@ -81,25 +81,81 @@ Para realizar la estimación de la planta se genera un diagrama de bloques del p
     	\label{fig:bloques}    
     \end{center}
     
-    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, generando por la interfaz distintos escalones de entrada para obtener varias mediciones.
+    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, generando por la interfaz distintos escalones de entrada para obtener varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas anteriormente generadas.
     
-    La próxima tabla muestra un ejemplo de los valores que se tomaban, de forma manual, al realizar las pruebas. En esta se ve la 
-    \hl{PONER PRUEBAS VALOR DEL ESCALON, VALOR DE FRECUENCIA.}
+    \begin{figure}[htb]
+    	\centering
+    	\includegraphics[scale=0.35]{planta_est2.jpg}
+    	\captionof{figure}{Mediciones de velocidad a partir de distintos escalones dados}
+    	\label{fig:est2}    
+    \end{figure}
     
-    La imagen \hl{VER REFERENCIA} muestra los escalones de entrada que se generó y la respuesta 
+    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los valores obtenidos de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través del método \textit{"Strejc"} \cite{pomares2011sistemas}.
     
-    El archivo generado fue un “.csv” para el cual luego fue necesario utilizar un código de Matlab para obtener cada vector según los datos que poseía cada uno. Con estos datos, se realizó la estimación de la planta por los métodos de … y de……. . concluyendo que el método JSadas de cuarto orden era suficiente.
+    \begin{figure}[htbp]
+    	\centering
+    	\subfigure[Parámetros Strejc]{\includegraphics[width=70mm]{parametros.jpg}}
+    	\subfigure[Estimación de parámetros]{\includegraphics[width=80mm]{planta_est1.jpg}} 
+    	\caption{Estimación de planta} \label{fig:pl2}
+    \end{figure}
     
-    1.GRAFICO Y ECUACION DE JASKAC.
-    2.Grafico de los graficos con los valores marcados que se tomaron
+    Con ayuda del código y ajustes manuales se llegó a una función de transferencia de segundo orden:
     
-    Para corroborar la elección de la planta se genreó un archivo en simulink generando como entrada los esclaones que se colocaron en el sistema.
+    \begin{equation}
+    	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}
+    \end{equation}
     
-    IMAGEN SIMULINK
+    Para corroborar la elección de la planta se genreó un archivo en \textit{Simulink} generando como entrada esclaones que se colocaron en el sistema. Luego, el otro código de matlab obtenía estos valores y realizaba la comparación de lo estimado con los valores reales obtenidos en diversas mediciones.
     
-    FUNCION DE TRANSFERENCIA
-
+    \hl{pedir a cristian imagen}IMAGEN SIMULINK. al final se usó el otro método???
     
-    \subsection{PID inicial}
+       
+    \subsection{Control}
+    Para relizar una primera estimación de un PID se utilizó la herramienta de \textit{Matlab}, a partir de ahí se realizaban pequeñas modificaciones y se realizaban las simulaciones quedando todos del formato PI (proporcional - integrador).
+    Con los valores anteriormente nombrados se realizaron pruebas en el Túnel del viento con escalones de velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s, haciendo un total de 5 pruebas, con PI distintos para los mismos escalones. 
+    
+    \begin{figure}[htb]
+    	\centering
+    	\includegraphics[scale=0.5]{PI3.jpg}
+    	\captionof{figure}{Ejemplo de prueba realizada}
+    	\label{fig:PI3}
+    \end{figure}
+    
+    Los valores de cada PI utilizados se muestra en la tabla siguiente
+    \begin{table}[h]
+    	\centering
+    	\begin{tabular}{r|r|r|r|r|r|r|}
+    		\cline{2-7}
+    		\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\textbf{PI anterior}} & \multicolumn{1}{c|}{\textbf{Prueba3}} & \multicolumn{1}{c|}{\textbf{Prueba4}} & \multicolumn{1}{c|}{\textbf{Prueba5}} & \multicolumn{1}{c|}{\textbf{Prueba6}} & \multicolumn{1}{c|}{\textbf{Prueba7}} \\ \hline
+    		\multicolumn{1}{|r|}{\textbf{P=}} & 0.225 & 0.0699 & 0.244 & 0.5451 & 0.6846 & 0.3286 \\ \hline
+    		\multicolumn{1}{|r|}{\textbf{I=}} & 0.326 & 0.2035 & 0.2756 & 0.3599 & 0.4183 & 0.3107 \\ \hline
+    	\end{tabular}
+    \caption{Valores de PID's}
+    \end{table}
+    
+    Uniendo todos los resusltados obtenidos por los distintos PI utilizados se puede realizar las comparaciones para un escalon donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
+    
+    \begin{figure}[h!]
+    	\centering
+    	\includegraphics[scale=0.5]{pi_subida.jpg}
+    	\captionof{figure}{Comparación de PI, escalon de subida}
+    	\label{fig:pisubuda}
+    \end{figure}
+    
+    \begin{figure}[h!]
+    	\centering
+    	\includegraphics[scale=0.5]{pi_bajada.jpg}
+    	\captionof{figure}{Comparación de PI, escalon de bajada}
+    	\label{fig:pibajada}
+    \end{figure}
+    
+    
+    En la figura \ref{fig:mix} se pueden observar el sistema que genera mayor sobrepico, un sistema con una respuesta mas lenta, y un sistema con respuesta intermedia. 
+    \begin{figure}[h!]
+    	\centering
+    	\includegraphics[scale=0.5]{mix.jpg}
+    	\captionof{figure}{Comparación 3 sistemas PI}
+    	\label{fig:mix}
+    \end{figure}
     
     \newpage

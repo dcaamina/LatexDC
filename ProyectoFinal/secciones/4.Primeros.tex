@@ -14,8 +14,7 @@ Para comenzar con las pruebas, lo primero que se realizó es la conexión de div
 
 Cabe destacar que para la comunicación de estos sensores se utilizó \textbf{comunicación I2C}, que permitió, a través de dos líneas de comunicación, conectar, en una primera instancia,  5 elementos al mismo bus.
 
-
-Como paso siguiente se eligieron los sensores. Los elementos que se decidió utilizar generaban menor variación y menor error en comparación con el instrumento \textbf{TESTO 435} y estos fueron los siguientes:
+Las variables que se necesitó medir correspondían a diferencia de presión, temperatura, humedad y presión atmosférica, para esto se consiguió diversos sensores para realizar pruebas eligiendo elementos que generaban la menor variación de THP respecto a los instrumentos que posee el laboratorio y estos fueron los siguientes:
 
 \begin{itemize}
 	\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
@@ -24,17 +23,8 @@ Como paso siguiente se eligieron los sensores. Los elementos que se decidió uti
 	\item \textbf{ADS1115:} Convertidor analógico digital 16bits.
 \end{itemize}
 
-Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard. \\
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.8]{placa_sensores.pdf}
-	\captionof{figure}{Placa con sensores}
-	\label{fig:sensoresa}
-\end{figure}
 
-A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. \hl{ver si se agrega esto}
-
-Estas mismas pruebas sirvieron para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), para este proyecto se utilizó la parte positiva de los valores por lo que la resolución estaba establecida por los 2V de rango y 2kPa. Estos datos se ingresaron al programa \textbf{Arduino} a través de un conversor \textbf{ADS 1115} con comunicación I2C.
+Se realizaron diversas pruebas que sirvieron para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), para este proyecto se utilizó la parte positiva de los valores por lo que la resolución estaba establecida por los 2V de rango y 2kPa. Estos datos se ingresaron al programa \textbf{Arduino} a través de un conversor \textbf{ADS 1115} con comunicación I2C.
 
 No se utilizó el ADC interno del microcontrolador Arduino Uno ya que es de 10 bits y el externo de 15 bits más un bit de signo, este mismo posee un amplificador de ganancia programable (PGA) que establece la escala completa, es decir, indica el valor de referencia. En Arduino este valor viene determinado por el voltaje de referencia que en el caso de Arduino UNO es 5V. En el ADS1115 lo establece el PGA. Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V.
 
@@ -52,6 +42,7 @@ Ejemplo Factor de escala de ADS115:
 En la siguiente tabla se tiene un resumen de los valores posibles de factor de escala para ADS1115.
 \begin{table}[h]
 	\centering
+	
 	\begin{tabular}{|c|c|c|}
 		\hline
 		\textbf{PGA} & \textbf{Referencia (V)} & \textbf{Factor de Escala (mV)} \\ \hline
@@ -61,6 +52,7 @@ En la siguiente tabla se tiene un resumen de los valores posibles de factor de e
 		8            & 0,512                   & 0,0156                         \\ \hline
 		16           & 0,256                   & 0,0078                         \\ \hline
 	\end{tabular}
+\caption{Factor de escala}
 \end{table}
 
 Aunque la mayor referencia sea de 6,1444 V, el ADS1115 sólo puede medir el valor de alimentación (VDD) más 0,3 V por sus pines analógicos. \hl{ver porq} pin ingresa la señal en proteus. Por lo tanto, si alimentamos el ADS1115 con 5V, sólo podremos medir tensiones por los pines analógicos hasta 5V + 0,3V es decir, 5,3V. Lo mismo ocurriría si alimentamos con 3,3V. En este caso el máximo sería 3,6V. \hl{(con que} alimentamos? ver en proteus)\\
@@ -79,7 +71,7 @@ El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto util
 	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
 	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
 \end{align}
-\\
+
 dónde:\\
 - \textbf{p } [Pa] presión atmosférica medida,\\
 - \textbf{t } [$^{\circ}$C] temperatura medida,\\
@@ -98,34 +90,99 @@ Tanto las ecuaciones de densidad (\ref{ec_den})
  y la ecuación del cálculo de velocidad  (\ref{ec_aire})
   se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 
+
+\subsubsection{Comparación de densidades}
+
+Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard. \\
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{placa_sensores.pdf}
+	\captionof{figure}{Placa con sensores}
+	\label{fig:sensoresa}
+\end{figure}
+
+A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Una vez que este sensor se colocó en el lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en el siguiente cuadro. \hl{ver si se agrega esto}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+	\centering
+	\begin{tabular}{ll|l|l|l|l|l|l|l|l|l|}
+		\cline{3-11}
+		\multicolumn{2}{c}{} & \multicolumn{2}{|c|}{\textbf{T [${\circ}$ $C$]}} & \multicolumn{2}{c|}{\textbf{H [$\%$] }} & \multicolumn{2}{c|}{\textbf{P [$Pa$]}} &  \multicolumn{2}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Dens. calculada\\ {[}$kg/m^3${]}\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{$e_r$ [$\%$]}}} \\ \cline{1-10}
+		\multicolumn{1}{|c|}{\textbf{Fecha}} & \multicolumn{1}{c|}{\textbf{Obs.}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{} \\ \hline
+		\multicolumn{1}{|l|}{29-abr} & interior & 19,4 & 19,3 & 43,5 & 38,5 & 100400 & 100450 & 1,1916 & 1,1931 & 0,128 \\ \hline
+		\multicolumn{1}{|l|}{14-may} & interior & 16,1 & 18,4 & 54,6 & 43,5 & 101590 & 101570 & 1,2195 & 1,2099 & 0,781 \\ \hline
+		\multicolumn{1}{|l|}{14-may} & interior & 16,5 & 18,9 & 53,7 & 42,5 & 101559 & 101559 & 1,2173 & 1,2077 & 0,794 \\ \hline
+		\multicolumn{1}{|l|}{17-jun} & exterior & 15,2 & 15,5 & 54,3 & 48,6 & 103100 & 103090 & 1,2418 & 1,2404 & 0,109 \\ \hline
+		\multicolumn{1}{|l|}{17-jun} & exterior & 13,8 & 15,1 & 59,2 & 52,4 & 102970 & 102910 & 1,2463 & 1,2397 & 0,527 \\ \hline
+		\multicolumn{1}{|l|}{07-jul} & interior & 17,6 & 18,8 & 43,3 & 34,8 & 100260 & 100261 & 1,1978 & 1,1933 & 0,375 \\ \hline
+	\end{tabular}
+\caption{Comparación de densidades calculadas}
+\end{table}
+
+	
+
+
+Referencias de la tabla:
+\begin{itemize}
+	\item \textbf{I}: Instrumentos- Datos obtenidos con los instrumentos del Laboratorio de fluidos.
+	\item \textbf{S}: Sensores- Datos obtenidos a partir de la medición con los sensores utilizados en conjunto con Arduino.
+	\item \textbf{interior}- Mientras se realizaron las mediciones el sensor SH21 se encontraba dentro de la caja dónde estaba el Arduino y la placa reguladora.
+	\item \textbf{exterior}- Las mediciones se realizaron con el sensor SH21 en el lado exterior sin que fuera afectado por el calentamiento del Arduino y la placa reguladora.
+\end{itemize}
+
+
+Se puede observar que el error relativo, tomando como la densidad calculada por los instrumentos de ellos como verdadero, es menor al 1\%.  
+
+
 \subsection{Características del flujo}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Número de Reynolds]
 	El número de Reynolds (Re) es un número adimensional utilizado en mecánica de fluidos para caracterizar el movimiento de un fluido. Su valor indica si el flujo sigue un modelo laminar o turbulento.
 \end{tcolorbox}
 
 \subsubsection{Cálculo de número de Reynolds}
-	El número de Reynolds fue calculado a partir de la ECUACIONNNN, que relaciona las fuerzas inerciales y las fuerzas viscosas. La viscosidad dinámica del fluido es un valor obtenido de la tabla \hl{ver pagina google}  mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado.
+	El número de Reynolds fue calculado a partir de la Ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. La viscosidad dinámica del fluido es un valor obtenido del anexo del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica} mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado.
 \begin{equation}	
 	R_e=\frac{\rho\;D\;v}\mu
+	\label{reyn}
 \end{equation}	
 dónde:\\
 - \textbf{$\rho$ } [$kg/m^{3}$] densidad del aire \\
 - \textbf{$v$ } [$m/s$] velocidad del aire\\
 - \textbf{$D$ } [$m$] diametro interno\\
 - \textbf{$\mu$ } [$s. kg/m$] viscosidad dinámica del aire\\
+
+Reemplazando los valores en la ecuación \ref{reyn} se obtienen los diferentes números de Reynolds para diversas velocidades y densidades.
+
+
 \hl{ver pagina google}
 
 Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000 aproximadamente. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel del viento este valor siempre es mayor correspondiendo a un flujo turbulento.
 
 \subsubsection{Flujo turbulento}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
-	Este se caracteriza por fluctuaciones aleatorias y rápidas de regiones giratorias de fluido, llamadas remolinos a lo largo del fujo. En flujo laminar, las partículas fluyen en orden a lo largo de trayectorias, en cambio, en flujo turbulento, los molinos giratorios transportan masa, cantidad de movimiento y energía a otras regiones del flujo. \hl{LIBROOOOOO}
+	Este se caracteriza por fluctuaciones aleatorias y rápidas de regiones giratorias de fluido, llamadas remolinos a lo largo del fujo. En flujo laminar, las partículas fluyen en orden a lo largo de trayectorias, en cambio, en flujo turbulento, los molinos giratorios transportan masa, cantidad de movimiento y energía a otras regiones del flujo. \cite{yunus2006mecanica}
 	
 \end{tcolorbox}
 
-Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). La figura \hl{FIGURAAAAAAAA} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
+Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
 
-\hl{imagen}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{fluct.png}
+	\captionof{figure}{Fluctuaciones}
+	\label{fig:fluct}
+\end{figure}
+
+Para corroborar esta propiedad, se usaron datos medidos y a través de un código generado en Matlab y se corroboró el promedio de las fluctuaciones que tiende a cero.
+\begin{figure}[h!tb]
+	\centering
+	\includegraphics[scale=0.5]{fluctua.jpg}
+	\captionof{figure}{Fluctuaciones en velocidades medidas}
+	\label{fig:fluct2}
+\end{figure}
 
 
 \subsection{Filtros}
