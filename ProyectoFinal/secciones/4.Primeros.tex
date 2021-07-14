@@ -32,7 +32,7 @@ Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar 
 	\label{fig:sensoresa}
 \end{figure}
 
-A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de Temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. \hl{ver si se agrega esto}
+A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. \hl{ver si se agrega esto}
 
 Estas mismas pruebas sirvieron para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), para este proyecto se utilizó la parte positiva de los valores por lo que la resolución estaba establecida por los 2V de rango y 2kPa. Estos datos se ingresaron al programa \textbf{Arduino} a través de un conversor \textbf{ADS 1115} con comunicación I2C.
 
@@ -81,11 +81,11 @@ El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto util
 \end{align}
 \\
 dónde:\\
-- \textbf{p } [Pa] es la presión atmosférica medida,\\
-- \textbf{t } [$^{\circ}$C] es la temperatura medida,\\
-- \textbf{T } [K] es la temperatura absoluta (\textbf{T}=\textbf{t} + 273,15 \textbf{K})\\
-- \textbf{h } [\%] es la humedad relativa medida,\\
-- y las constantes \textbf{A,B,C,D,} $\boldsymbol{\alpha , \beta  , \gamma , a_0, a_1 ,a_2 ,b_0  ,b_1 , c_0 , c_1, D. }$
+- \textbf{p } [Pa] presión atmosférica medida,\\
+- \textbf{t } [$^{\circ}$C] temperatura medida,\\
+- \textbf{T } [K] temperatura absoluta (\textbf{T}=\textbf{t} + 273,15 \textbf{K})\\
+- \textbf{h } [\%] humedad relativa medida,\\
+- y constantes \textbf{A,B,C,D,} $\boldsymbol{\alpha , \beta  , \gamma , a_0, a_1 ,a_2 ,b_0  ,b_1 , c_0 , c_1, D. }$
 
 
 Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo final de la velocidad del aire dentro del mismo archivo.
@@ -97,6 +97,35 @@ Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo fi
 Tanto las ecuaciones de densidad (\ref{ec_den})
  y la ecuación del cálculo de velocidad  (\ref{ec_aire})
   se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
+
+\subsection{Características del flujo}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Número de Reynolds]
+	El número de Reynolds (Re) es un número adimensional utilizado en mecánica de fluidos para caracterizar el movimiento de un fluido. Su valor indica si el flujo sigue un modelo laminar o turbulento.
+\end{tcolorbox}
+
+\subsubsection{Cálculo de número de Reynolds}
+	El número de Reynolds fue calculado a partir de la ECUACIONNNN, que relaciona las fuerzas inerciales y las fuerzas viscosas. La viscosidad dinámica del fluido es un valor obtenido de la tabla \hl{ver pagina google}  mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado.
+\begin{equation}	
+	R_e=\frac{\rho\;D\;v}\mu
+\end{equation}	
+dónde:\\
+- \textbf{$\rho$ } [$kg/m^{3}$] densidad del aire \\
+- \textbf{$v$ } [$m/s$] velocidad del aire\\
+- \textbf{$D$ } [$m$] diametro interno\\
+- \textbf{$\mu$ } [$s. kg/m$] viscosidad dinámica del aire\\
+\hl{ver pagina google}
+
+Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000 aproximadamente. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel del viento este valor siempre es mayor correspondiendo a un flujo turbulento.
+
+\subsubsection{Flujo turbulento}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
+	Este se caracteriza por fluctuaciones aleatorias y rápidas de regiones giratorias de fluido, llamadas remolinos a lo largo del fujo. En flujo laminar, las partículas fluyen en orden a lo largo de trayectorias, en cambio, en flujo turbulento, los molinos giratorios transportan masa, cantidad de movimiento y energía a otras regiones del flujo. \hl{LIBROOOOOO}
+	
+\end{tcolorbox}
+
+Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). La figura \hl{FIGURAAAAAAAA} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
+
+\hl{imagen}
 
 
 \subsection{Filtros}

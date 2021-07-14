@@ -11,30 +11,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{8}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Pruebas iniciales}{9}{section.4}%
+\contentsline {subsubsection}{\numberline {3.1.2}Testo 435 y AXD 560}{8}{subsubsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{11}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Pruebas iniciales}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Filtros}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{12}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Error observado}{12}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.2}Características del flujo}{12}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Desarrollo}{13}{section.5}%
+\contentsline {subsubsection}{\numberline {4.2.1}Cálculo de número de Reynolds}{12}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{14}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Flujo turbulento}{13}{subsubsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {4.3}Filtros}{13}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{15}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {4.4}Error observado}{14}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Método de estimación}{16}{subsection.5.3}%
+\contentsline {section}{\numberline {5}Desarrollo}{15}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}PID inicial}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{16}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Planos Eléctricos}{17}{section.6}%
+\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{17}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Recomendaciones futuras}{17}{section.7}%
+\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{17}{subsubsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Conclusión}{17}{section.8}%
+\contentsline {subsection}{\numberline {5.3}Método de estimación}{18}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Bibliografía}{17}{section.9}%
+\contentsline {subsection}{\numberline {5.4}PID inicial}{18}{subsection.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Planos Eléctricos o HMI ver que poner}{19}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Recomendaciones futuras}{19}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Conclusión}{19}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Bibliografía}{19}{section.9}%

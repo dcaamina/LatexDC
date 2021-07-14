@@ -15,26 +15,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces LS650\relax }}{8}{figure.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placa con sensores\relax }}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Instrumentos calibrados\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Datos y diversos filtros\relax }}{12}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {AXD 650}}}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Datos y filtro mediana\relax }}{12}{figure.caption.9}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {testo 435}}}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placa con sensores\relax }}{11}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Datos y diversos filtros\relax }}{14}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Datos y filtro mediana\relax }}{14}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Placa de control\relax }}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva aceleración y desaceleración\relax }}{15}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Terminales de control\relax }}{14}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tipo s}}}{15}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Placa adaptadora de señal\relax }}{14}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tipo lineal}}}{15}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla Processing\relax }}{15}{figure.4}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Placa de control\relax }}{15}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{15}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Terminales de control\relax }}{16}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama en bloques\relax }}{16}{figure.6}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Placa adaptadora de señal\relax }}{16}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla Processing\relax }}{17}{figure.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{17}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama en bloques\relax }}{18}{figure.6}%
