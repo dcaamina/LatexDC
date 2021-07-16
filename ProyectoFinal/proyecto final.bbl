@@ -17,36 +17,48 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{yunus2006mecanica}{book}{}
-    \name{author}{3}{}{%
-      {{hash=ssYA}{%
-         family={{\ss}Engel},
-         familyi={{\ss}\bibinitperiod},
-         given={Yunus\bibnamedelima A.},
+  \entry{yunus2006mecanica}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CYA}{%
+         family={Cengel},
+         familyi={C\bibinitperiod},
+         given={Yunus\bibnamedelima A},
          giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
-      {{hash=CJM}{%
-         family={Cimbala},
-         familyi={C\bibinitperiod},
-         given={John\bibnamedelima M},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=SSF}{%
-         family={Sknarina},
-         familyi={S\bibinitperiod},
-         given={Sof{\'\i}a\bibnamedelima Faddeeva},
-         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
     }
-    \list{publisher}{1}{%
-      {McGraw-Hill Interamericana}%
-    }
-    \strng{namehash}{ssYACJMSSF1}
-    \strng{fullhash}{ssYACJMSSF1}
+    \strng{namehash}{CYA1}
+    \strng{fullhash}{CYA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Mec{\'a}nica de fluidos: Fundamentos y aplicaciones}
     \field{year}{2006}
+  \endentry
+
+  \entry{licci2020estudio}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LF}{%
+         family={Licci},
+         familyi={L\bibinitperiod},
+         given={Federico},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rivera},
+         familyi={R\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LFRL1}
+    \strng{fullhash}{LFRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Estudio fluidodin{\'a}mico de t{\'u}nel de viento en
+  condiciones reales de uso y validaci{\'o}n experimental}
+    \field{journaltitle}{Proyecto final de Ingenier{\'i}a Mec{\'a}nica,
+  Departamento de Mec{\'a}nica, Universidad Nacional de la Patagonia San Juan
+  Bosco}
+    \field{year}{2020}
   \endentry
 
   \entry{pomares2011sistemas}{article}{}
@@ -72,6 +84,33 @@
   experimental de sistemas (curso 2010-2011)}
     \field{journaltitle}{Sistemas de Control Autom{\'a}tico}
     \field{year}{2011}
+  \endentry
+
+  \entry{barila1993desarrollo}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BD}{%
+         family={Barila},
+         familyi={B\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zucas},
+         familyi={Z\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDZD1}
+    \strng{fullhash}{BDZD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Desarrollo y construcci{\'o}n de un t{\'u}nel de viento de
+  30kW}
+    \field{journaltitle}{Proyecto de investigaci{\'o}n, Consejo de
+  investigaci{\'o}n CIUNPAT, Universidad Nacional de la Patagonia San Juan
+  Bosco}
+    \field{year}{1993}
   \endentry
 
   \entry{LS650}{manual}{}
@@ -103,6 +142,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{C{\'a}lculo de la densidad del aire h{\'u}medo}
+    \field{journaltitle}{Procedimientos del INTI}
     \field{year}{2015}
   \endentry
 \enddatalist

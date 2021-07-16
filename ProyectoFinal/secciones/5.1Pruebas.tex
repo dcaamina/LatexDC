@@ -1,0 +1,136 @@
+\subsection{Estimación de la densidad ante cambios de Temperatura y Humedad}
+Notamos conveniente realizar la comparación de las densidades calculadas ante las variaciones que se tenían de humedad y temperatura respecto a los datos tomados por los elementos calibrados. En la tabla \ref{densTH} se observa en las celdas internas los valores calculados de densidad para humedad de 38$\%$ y 40$\%$ y temperatura 19$^{\circ}$C y 21$^{\circ}$C, estos datos fueron elegidos al observar las máximas variaciones de los datos tomados con el sensor \textit{SH21} y el instrumento \textit{Testo 435}, manteniendo presión atmosférica constante.
+(Los valores con fondo gris corresponden a la diferencia de valores)
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{lllll}
+		&  & \multicolumn{2}{c}{\textbf{Temperatura}} &  \\
+		&  & \multicolumn{1}{c}{\textbf{19°C}} & \multicolumn{1}{c}{\textbf{21°C}} & \multicolumn{1}{c}{\textbf{}} \\
+		\multicolumn{1}{c}{} & \multicolumn{1}{r}{\textbf{38\%}} & 1,1945758 & 1,1859383 & \cellcolor[HTML]{F2F2F2}-0,0086376 \\
+		\multicolumn{1}{c}{\multirow{-2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r}{\textbf{40\%}} & 1,1943783 & 1,1857162 & \cellcolor[HTML]{F2F2F2}-0,0086621 \\
+		& \multicolumn{1}{c}{\textbf{}} & \cellcolor[HTML]{F2F2F2}-0,0001976 & \cellcolor[HTML]{F2F2F2}-0,0002221 & 
+	\end{tabular}
+\caption{Densidad del aire ante cambios de TH}
+\label{densTH}
+\end{table}
+
+Si se calcula la velocidad del aire con la formula \ref{ec_aire} y con los datos de la tabla \ref{densTH} utilizando una diferencia de presión constante de 32$Pa$ se puede observar que la diferencias de velocidades son inferiores a 0,03m/s (tabla \ref{velTH}) ante un cambio de dos grados de temperatura por lo que no se ve necesario realizar una corrección de valores.
+(Los valores con fondo gris corresponden a la diferencia de valores)
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{lllll}
+		&  & \multicolumn{2}{c}{\textbf{Temperatura}} &  \\
+		&  & \multicolumn{1}{c}{\textbf{19°C}} & \multicolumn{1}{c}{\textbf{21°C}} & \multicolumn{1}{c}{\textbf{}} \\
+		\multicolumn{1}{c}{} & \multicolumn{1}{r}{\textbf{38\%}} & 7,3195288 & 7,3461357 & \cellcolor[HTML]{F2F2F2}0,0266068 \\
+		\multicolumn{1}{c}{\multirow{-2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r}{\textbf{40\%}} & 7,3201342 & 7,3468236 & \cellcolor[HTML]{F2F2F2}0,0266894 \\
+		& \multicolumn{1}{c}{\textbf{}} & \cellcolor[HTML]{F2F2F2}0,0006054 & \cellcolor[HTML]{F2F2F2}0,0006879 & 
+	\end{tabular}
+\caption{del aire ante cambios de TH}
+\label{velTH}
+\end{table}
+
+\subsection{comparación de la frecuencia vista en el panel con el valor de PWM}
+\subsection{Contrastación de diferencia de presión}
+
+El sensor \textit{MPX7002} tiene como salida voltaje proporcional a la diferencia de presión medida, por lo que fue necesario utilizar un \textit{ASD1115} para transformar estos valores, a través de una constante, en unidades de presión.
+
+Para realizar la contrastación de la diferencia de presión ocasionada dentro del túnel por el aire, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente habladas a causa del flujo turbulento, se procedió a filmar el instrumento y aparte los datos obtenidos por nuestro sistema. Ambos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, generando luego un gráfico de puntos con las muestras tomadas, observando que el error es mayor para diferencias de presión mayores a 100 Pa \ref{fig:condifpres}.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{condifpres.jpg}
+	\captionof{figure}{Contrastación de diferencia de presión}
+	\label{fig:condifpres}
+\end{figure}
+
+\begin{table}[h!]%diferencia de presion
+		\centering
+		\begin{tabular}{|r|r|r}
+			\cline{1-2}
+			\multicolumn{2}{|c|}{Diferencia de presión {[}Pa{]}} & \multicolumn{1}{c}{} \\ \hline
+			\multicolumn{1}{|c|}{\textbf{AXD650}} & \multicolumn{1}{c|}{\textbf{MPX7002}} & \multicolumn{1}{c|}{\textbf{E$_r$}} \\ \hline
+			14 & 13,51 & \multicolumn{1}{r|}{3,50\%} \\ \hline
+			14 & 13,76 & \multicolumn{1}{r|}{1,71\%} \\ \hline
+			14 & 13,76 & \multicolumn{1}{r|}{1,71\%} \\ \hline
+			21,3 & 20,88 & \multicolumn{1}{r|}{1,97\%} \\ \hline
+			21,5 & 20,88 & \multicolumn{1}{r|}{2,88\%} \\ \hline
+			25,3 & 24,8 & \multicolumn{1}{r|}{1,98\%} \\ \hline
+			25,4 & 24,8 & \multicolumn{1}{r|}{2,36\%} \\ \hline
+			28,9 & 28,51 & \multicolumn{1}{r|}{1,35\%} \\ \hline
+			29,3 & 28,8 & \multicolumn{1}{r|}{1,71\%} \\ \hline
+			33,4 & 32,5 & \multicolumn{1}{r|}{2,69\%} \\ \hline
+			34,1 & 32,88 & \multicolumn{1}{r|}{3,58\%} \\ \hline
+			35,9 & 34,8 & \multicolumn{1}{r|}{3,06\%} \\ \hline
+			38,1 & 37,38 & \multicolumn{1}{r|}{1,89\%} \\ \hline
+			44,2 & 43,88 & \multicolumn{1}{r|}{0,72\%} \\ \hline
+			45,5 & 44,5 & \multicolumn{1}{r|}{2,20\%} \\ \hline
+			45,9 & 44,88 & \multicolumn{1}{r|}{2,22\%} \\ \hline
+			49,4 & 48,51 & \multicolumn{1}{r|}{1,80\%} \\ \hline
+			49,9 & 48,51 & \multicolumn{1}{r|}{2,79\%} \\ \hline
+			54 & 53,26 & \multicolumn{1}{r|}{1,37\%} \\ \hline
+			57,7 & 56,2 & \multicolumn{1}{r|}{2,60\%} \\ \hline
+			62,1 & 58,13 & \multicolumn{1}{r|}{6,39\%} \\ \hline
+			68 & 67,13 & \multicolumn{1}{r|}{1,28\%} \\ \hline
+			73,4 & 76,6 & \multicolumn{1}{r|}{-4,36\%} \\ \hline
+			74,3 & 75,26 & \multicolumn{1}{r|}{-1,29\%} \\ \hline
+			81,1 & 79,01 & \multicolumn{1}{r|}{2,58\%} \\ \hline
+			85,5 & 82,76 & \multicolumn{1}{r|}{3,20\%} \\ \hline
+			86,4 & 86,1 & \multicolumn{1}{r|}{0,35\%} \\ \hline
+			86,8 & 82,63 & \multicolumn{1}{r|}{4,80\%} \\ \hline
+			104 & 99,26 & \multicolumn{1}{r|}{4,56\%} \\ \hline
+			106,5 & 104,13 & \multicolumn{1}{r|}{2,23\%} \\ \hline
+			106,8 & 104,5 & \multicolumn{1}{r|}{2,15\%} \\ \hline
+			107,8 & 104,63 & \multicolumn{1}{r|}{2,94\%} \\ \hline
+			118,8 & 120,13 & \multicolumn{1}{r|}{-1,12\%} \\ \hline
+			120,4 & 120,6 & \multicolumn{1}{r|}{-0,17\%} \\ \hline
+			120,5 & 117,38 & \multicolumn{1}{r|}{2,59\%} \\ \hline
+			124,4 & 119 & \multicolumn{1}{r|}{4,34\%} \\ \hline
+			140,1 & 136,6 & \multicolumn{1}{r|}{2,50\%} \\ \hline
+			147,2 & 143,8 & \multicolumn{1}{r|}{2,31\%} \\ \hline
+			152,7 & 149,38 & \multicolumn{1}{r|}{2,17\%} \\ \hline
+		\end{tabular}
+	\caption{Comparación de Diferencia de presión}
+	\label{difpres}
+
+\end{table}
+
+\subsection{Contrastación de velocidades}
+como contrastación final....
+ver PRUEBA\_10\_PID
+el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentido comparar ambos porq para ellos usamos  un anemómetro (podriamos ver de usar el anemómetro de ventilador? y el de testo para ver los distintos valores y nosotros con el código en función de THP)
+
+\subsection{Perturbaciones}
+Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). \\
+
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{compu1.png}
+	\captionof{figure}{VER QUE POINER}
+	\label{fig:comp1}
+\end{figure}
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{comp2.png}
+	\captionof{figure}{VER QUE POINER okkkk}
+	\label{fig:comp2}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.1]{comp.jpg}
+	\captionof{figure}{Compuertas utilizadas como perturbaciones}
+	\label{fig:comp}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{reos.jpg}
+	\captionof{figure}{A la izquierda zona del ventilador y motor. A la derecha reóstato.}
+	\label{fig:reos}
+\end{figure}

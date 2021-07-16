@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1}Motor y Variador de velocidad}{10}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Testo 435 y AXD 560}{10}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Instrumentación utilizada}{10}{subsubsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Pruebas iniciales}{12}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -25,28 +25,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.2}Flujo turbulento}{16}{subsubsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Filtros}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Filtros}{18}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Error observado}{18}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Desarrollo}{19}{section.5}%
+\contentsline {section}{\numberline {5}Desarrollo}{20}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{20}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Captura de datos por puerto serie}{21}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{21}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Estimación de la planta}{22}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{21}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1}Diagrama de trabajo}{22}{subsubsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Método de estimación}{22}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2}Método de estimación}{23}{subsubsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Control}{23}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Control}{24}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Comparaciones}{25}{section.6}%
+\contentsline {section}{\numberline {6}Pruebas realizadas}{26}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Planos Eléctricos o HMI ver que poner}{25}{section.7}%
+\contentsline {subsection}{\numberline {6.1}Estimación de la densidad ante cambios de Temperatura y Humedad}{26}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Recomendaciones futuras}{25}{section.8}%
+\contentsline {subsection}{\numberline {6.2}comparación de la frecuencia vista en el panel con el valor de PWM}{28}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusión}{25}{section.9}%
+\contentsline {subsection}{\numberline {6.3}Contrastación de diferencia de presión}{28}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Bibliografía}{25}{section.10}%
+\contentsline {subsection}{\numberline {6.4}Contrastación de velocidades}{28}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Perturbaciones}{30}{subsection.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Implementación}{30}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Planos eléctricos}{30}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Implementación física final}{30}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}HMI}{30}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Recomendaciones futuras}{31}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Conclusión}{31}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Bibliografía}{31}{section.10}%

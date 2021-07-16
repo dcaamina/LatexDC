@@ -6,7 +6,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
-\usepackage{multirow}
+\usepackage{multirow} %tablas
+\usepackage[table,xcdraw]{xcolor} %color tablas
 
 
 \usepackage{comment}
@@ -32,17 +33,16 @@
 \usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
     colorlinks=true,
-    linkcolor=black,
+    linkcolor=blue,
     filecolor=white,      
     urlcolor=blue,
+    citecolor=blue,
 }
 
 %bibliografía
 \usepackage[maxbibnames=99, sorting=none, backend=bibtex]{biblatex}
-%\usepackage{biblatex}
 \addbibresource{biblio.bib}
-%\bibliographystile{plain}
-%\refname{Bibliografía}
+
 
 %para crear sub sub sub titulos
 \makeatletter
@@ -93,9 +93,10 @@ y google photos
 	\section{Desarrollo}
 	\input{secciones/5.Desarrollo}
 
-	\section{Comparaciones}
+	\section{Pruebas realizadas}
+	\input{secciones/5.1Pruebas}
 
-	\section{Planos Eléctricos o HMI ver que poner} 
+	\section{Implementación} 
 	\input{secciones/6.Planos}
 	
 	\section{Recomendaciones futuras}

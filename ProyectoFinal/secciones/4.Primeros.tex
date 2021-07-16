@@ -86,12 +86,12 @@ Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo fi
 	\label{ec_aire}
 \end{equation}
 
-Tanto las ecuaciones de densidad (\ref{ec_den})
- y la ecuación del cálculo de velocidad  (\ref{ec_aire})
+Tanto las ecuaciones de densidad ec.(\ref{ec_den})
+ y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
   se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 
 
-\subsubsection{Comparación de densidades}
+\subsubsection{Comparación de densidades} \label{cap:densidades}
 
 Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard. \\
 \begin{figure}[htb]
@@ -110,7 +110,7 @@ A raíz de varias mediciones, durante distintos días, y realizando el contraste
 	\centering
 	\begin{tabular}{ll|l|l|l|l|l|l|l|l|l|}
 		\cline{3-11}
-		\multicolumn{2}{c}{} & \multicolumn{2}{|c|}{\textbf{T [${\circ}$ $C$]}} & \multicolumn{2}{c|}{\textbf{H [$\%$] }} & \multicolumn{2}{c|}{\textbf{P [$Pa$]}} &  \multicolumn{2}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Dens. calculada\\ {[}$kg/m^3${]}\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{$e_r$ [$\%$]}}} \\ \cline{1-10}
+		\multicolumn{2}{c}{} & \multicolumn{2}{|c|}{\textbf{T [$^{\circ}$$C$]}} & \multicolumn{2}{c|}{\textbf{H [$\%$] }} & \multicolumn{2}{c|}{\textbf{P [$Pa$]}} &  \multicolumn{2}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Dens. calculada\\ {[}$kg/m^3${]}\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{$e_r$ [$\%$]}}} \\ \cline{1-10}
 		\multicolumn{1}{|c|}{\textbf{Fecha}} & \multicolumn{1}{c|}{\textbf{Obs.}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{} \\ \hline
 		\multicolumn{1}{|l|}{29-abr} & interior & 19,4 & 19,3 & 43,5 & 38,5 & 100400 & 100450 & 1,1916 & 1,1931 & 0,128 \\ \hline
 		\multicolumn{1}{|l|}{14-may} & interior & 16,1 & 18,4 & 54,6 & 43,5 & 101590 & 101570 & 1,2195 & 1,2099 & 0,781 \\ \hline
@@ -143,23 +143,45 @@ Se puede observar que el error relativo, tomando como la densidad calculada por 
 \end{tcolorbox}
 
 \subsubsection{Cálculo de número de Reynolds}
-	El número de Reynolds fue calculado a partir de la Ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. La viscosidad dinámica del fluido es un valor obtenido del anexo del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica} mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado.
+	El número de Reynolds fue calculado a partir de la Ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. 
 \begin{equation}	
-	R_e=\frac{\rho\;D\;v}\mu
+	R_e=\frac{\rho\;D_h\;v}\mu
 	\label{reyn}
 \end{equation}	
 dónde:\\
 - \textbf{$\rho$ } [$kg/m^{3}$] densidad del aire \\
 - \textbf{$v$ } [$m/s$] velocidad del aire\\
-- \textbf{$D$ } [$m$] diametro interno\\
-- \textbf{$\mu$ } [$s. kg/m$] viscosidad dinámica del aire\\
-
-Reemplazando los valores en la ecuación \ref{reyn} se obtienen los diferentes números de Reynolds para diversas velocidades y densidades.
+- \textbf{$D_h$ } [$m$] diametro hidráulico\\
+- \textbf{$\mu$ } [$kg/m.s$] viscosidad dinámica del aire\\
 
 
-\hl{ver pagina google}
+La viscosidad dinámica del fluido es un valor obtenido del anexo del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica}, mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado como se muestra en la sección \ref{cap:densidades}.
+El díametro hidráuliaco de una tubería ciracular coincide con el díametro interno, en tanto que para una tubería de sección rectangular, este es dependiente del valor de sus lados (Figura \ref{fig:rey2}). \cite{licci2020estudio}\\
+El número de Reynolds se calculó con una velocidad de 6m/s, al ser proporcional a la velocidad si esta aumenta el valor será mayor.
 
-Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000 aproximadamente. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel del viento este valor siempre es mayor correspondiendo a un flujo turbulento.
+\begin{equation}	
+	R_e=\frac{1,193\;kg/m^{3}\;0,86\;m\;6\;m/s}{0,000018\;kg/m.s}=345521
+	\label{reyn2}
+\end{equation}	
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.45]{rey2.jpg}
+	\captionof{figure}{Diámetro hidráulico}
+	\label{fig:rey2}
+\end{figure}
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{camaraensayos.jpg}
+	\captionof{figure}{Dimensiones de la cámara de ensayos en mm}
+	\label{fig:camens}
+\end{figure}
+
+
+
+Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel del viento este valor siempre es mayor correspondiendo a un flujo turbulento.
 
 \subsubsection{Flujo turbulento}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
