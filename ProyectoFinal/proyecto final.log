@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  16 JUL 2021 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  16 JUL 2021 20:55
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -635,7 +635,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 
 (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
@@ -904,26 +904,26 @@ LaTeX Info: Redefining \% on input line 32.
 )
 \openout1 = `"proyecto final.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -948,7 +948,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 66.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -961,9 +961,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count441
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (proyecto final.out) (proyecto final.out)
 \@outlinefile=\write8
@@ -1004,8 +1004,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"proyecto final".bbl' found.
 
 (proyecto final.bbl)
-Package biblatex Info: Reference section=0 on input line 63.
-Package biblatex Info: Reference segment=0 on input line 63.
+Package biblatex Info: Reference section=0 on input line 66.
+Package biblatex Info: Reference segment=0 on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1041,29 +1041,45 @@ Package biblatex Info: Reference segment=0 on input line 63.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+<imagenes//unpsjb.png, id=149, 1048.91875pt x 1048.91875pt>
+File: imagenes//unpsjb.png Graphic file (type png)
+<use imagenes//unpsjb.png>
+Package pdftex.def Info: imagenes//unpsjb.png  used on input line 70.
+(pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
+[1
+
+{C:/Users/glori/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./imagenes//unp
+sjb.png>] (secciones/0.agradecimientos.texpdfTeX warning (ext4): destination wi
+th the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \newpage
+             [1]
+<imagenes//corona.jpg, id=168, 3276.24pt x 2457.18pt>
+File: imagenes//corona.jpg Graphic file (type jpg)
+<use imagenes//corona.jpg>
+Package pdftex.def Info: imagenes//corona.jpg  used on input line 16.
+(pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
+ [2 <./imagenes//corona.jpg>]) (proyecto final.toc
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/glori/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] (proyec
-to final.toc
-LaTeX Info: Redefining \sptext on input line 2.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-)
+))
 \tf@toc=\write9
 \openout9 = `"proyecto final.toc"'.
 
- [4]
-(proyecto final.lof
+ [3] (proyecto final.lof
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
@@ -1071,7 +1087,8 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write10
 \openout10 = `"proyecto final.lof"'.
 
- [5] (proyecto final.lot
+
+[4] (proyecto final.lot
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
@@ -1079,15 +1096,15 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write11
 \openout11 = `"proyecto final.lot"'.
 
- [6] (secciones/1.Introduccion.tex [7]) (secciones/2.Objetivo.tex
-<imagenes//diagr.jpg, id=286, 709.90219pt x 462.22687pt>
+ [5] (secciones/1.Introduccion.tex [6])
+(secciones/2.Objetivo.tex
+<imagenes//diagr.jpg, id=309, 709.90219pt x 462.22687pt>
 File: imagenes//diagr.jpg Graphic file (type jpg)
 <use imagenes//diagr.jpg>
 Package pdftex.def Info: imagenes//diagr.jpg  used on input line 7.
-(pdftex.def)             Requested size: 248.46948pt x 161.78181pt.
- [8 <./imagenes//diagr.jpg>])
-(secciones/3.Tunel.tex
-<imagenes//tvert1.jpg, id=291, 210.7875pt x 240.9pt>
+(pdftex.def)             Requested size: 354.95023pt x 231.11287pt.
+ [7 <./imagenes//diagr.jpg>]) (secciones/3.Tunel.tex
+<imagenes//tvert1.jpg, id=314, 210.7875pt x 240.9pt>
 File: imagenes//tvert1.jpg Graphic file (type jpg)
 <use imagenes//tvert1.jpg>
 Package pdftex.def Info: imagenes//tvert1.jpg  used on input line 5.
@@ -1108,17 +1125,17 @@ Overfull \hbox (20.23529pt too wide) in paragraph at lines 3--15
 [][] [] 
  []
 
-<imagenes//tunel_cerrado.png, id=292, 450.9347pt x 231.86626pt>
+<imagenes//tunel_cerrado.png, id=315, 450.9347pt x 231.86626pt>
 File: imagenes//tunel_cerrado.png Graphic file (type png)
 <use imagenes//tunel_cerrado.png>
 Package pdftex.def Info: imagenes//tunel_cerrado.png  used on input line 18.
 (pdftex.def)             Requested size: 170.71652pt x 87.78105pt.
-<imagenes//tunel_abierto.png, id=294, 436.63126pt x 106.89937pt>
+<imagenes//tunel_abierto.png, id=316, 436.63126pt x 106.89937pt>
 File: imagenes//tunel_abierto.png Graphic file (type png)
 <use imagenes//tunel_abierto.png>
 Package pdftex.def Info: imagenes//tunel_abierto.png  used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 55.72826pt.
-<imagenes//tunel_unpsjb.JPG, id=295, 351.3125pt x 196.735pt>
+<imagenes//tunel_unpsjb.JPG, id=317, 351.3125pt x 196.735pt>
 File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 <use imagenes//tunel_unpsjb.JPG>
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 28.
@@ -1129,7 +1146,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 36--38
 de la
  []
 
-[9 <./imagenes//tvert1.jpg> <./imagenes//tunel_cerrado.png> <./imagenes//tunel_
+[8 <./imagenes//tvert1.jpg> <./imagenes//tunel_cerrado.png> <./imagenes//tunel_
 abierto.png> <./imagenes//tunel_unpsjb.JPG>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 2.
@@ -1163,7 +1180,7 @@ Underfull \hbox (badness 3536) in paragraph at lines 65--67
 \T1/cmr/m/n/12 po-ten-ció-me-tro o de for-ma ma-nual con
  []
 
-<imagenes//LS650.jpg, id=312, 402.00188pt x 666.99188pt>
+<imagenes//LS650.jpg, id=334, 402.00188pt x 666.99188pt>
 File: imagenes//LS650.jpg Graphic file (type jpg)
 <use imagenes//LS650.jpg>
 Package pdftex.def Info: imagenes//LS650.jpg  used on input line 70.
@@ -1184,102 +1201,107 @@ Overfull \hbox (7.03937pt too wide) in paragraph at lines 82--83
 tem-pe-ra-tu-ra, hu-me-dad y pre-sión
  []
 
-[10 <./imagenes//LS650.jpg>]
-<imagenes//axd.jpg, id=320, 94.10156pt x 123.46124pt>
+[9 <./imagenes//LS650.jpg>]
+<imagenes//axd.jpg, id=342, 94.10156pt x 123.46124pt>
 File: imagenes//axd.jpg Graphic file (type jpg)
 <use imagenes//axd.jpg>
 Package pdftex.def Info: imagenes//axd.jpg  used on input line 88.
 (pdftex.def)             Requested size: 113.81102pt x 149.33202pt.
-<imagenes//testo.jpg, id=321, 140.77594pt x 308.65312pt>
+<imagenes//testo.jpg, id=343, 140.77594pt x 308.65312pt>
 File: imagenes//testo.jpg Graphic file (type jpg)
 <use imagenes//testo.jpg>
 Package pdftex.def Info: imagenes//testo.jpg  used on input line 89.
 (pdftex.def)             Requested size: 70.38779pt x 154.32617pt.
- [11 <./imagenes//axd.jpg> <./imagenes//testo.jpg>]) (secciones/4.Primeros.tex
+ [10 <./imagenes//axd.jpg> <./imagenes//testo.jpg>]) (secciones/4.Primeros.tex
 Overfull \hbox (23.50427pt too wide) in paragraph at lines 9--10
 \T1/cmr/m/n/12 que Ar-duino UNO era un mi-cro-con-tro-la-dor de ba-jo cos-to, b
 a-ja com-ple-ji-dad en la pro-gra-ma-ción,
  []
 
-[12] [13]
-<imagenes//placa_sensores.pdf, id=350, 317.185pt x 266.9975pt>
+[11]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 66.
+
+[12]
+<imagenes//placa_sensores.pdf, id=372, 317.185pt x 266.9975pt>
 File: imagenes//placa_sensores.pdf Graphic file (type pdf)
 <use imagenes//placa_sensores.pdf>
-Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 99.
+Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 101.
 (pdftex.def)             Requested size: 253.74832pt x 213.59827pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 109.
+               Default added (so using `tbp') on input line 111.
 
 
-Overfull \hbox (25.40956pt too wide) in paragraph at lines 111--122
+Overfull \hbox (25.40956pt too wide) in paragraph at lines 113--124
  [][] 
  []
 
-[14 <./imagenes//placa_sensores.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--156
+[13 <./imagenes//placa_sensores.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
 
  []
 
-[15]
-<imagenes//rey2.jpg, id=381, 450.18187pt x 201.75375pt>
+[14]
+<imagenes//rey2.jpg, id=401, 450.18187pt x 201.75375pt>
 File: imagenes//rey2.jpg Graphic file (type jpg)
 <use imagenes//rey2.jpg>
-Package pdftex.def Info: imagenes//rey2.jpg  used on input line 169.
+Package pdftex.def Info: imagenes//rey2.jpg  used on input line 171.
 (pdftex.def)             Requested size: 202.57997pt x 90.78835pt.
-<imagenes//camaraensayos.jpg, id=382, 446.41782pt x 184.43906pt>
+<imagenes//camaraensayos.jpg, id=402, 446.41782pt x 184.43906pt>
 File: imagenes//camaraensayos.jpg Graphic file (type jpg)
 <use imagenes//camaraensayos.jpg>
-Package pdftex.def Info: imagenes//camaraensayos.jpg  used on input line 177.
+Package pdftex.def Info: imagenes//camaraensayos.jpg  used on input line 179.
 (pdftex.def)             Requested size: 401.77231pt x 165.9936pt.
- [16 <./imagenes//rey2.jpg> <./imagenes//camaraensayos.jpg>]
-<imagenes//fluct.png, id=390, 484.81125pt x 400.49625pt>
+ [15 <./imagenes//rey2.jpg> <./imagenes//camaraensayos.jpg>]
+<imagenes//fluct.png, id=411, 484.81125pt x 400.49625pt>
 File: imagenes//fluct.png Graphic file (type png)
 <use imagenes//fluct.png>
-Package pdftex.def Info: imagenes//fluct.png  used on input line 196.
+Package pdftex.def Info: imagenes//fluct.png  used on input line 198.
 (pdftex.def)             Requested size: 242.40503pt x 200.24763pt.
-<imagenes//fluctua.jpg, id=391, 851.43094pt x 443.40656pt>
+<imagenes//fluctua.jpg, id=412, 851.43094pt x 443.40656pt>
 File: imagenes//fluctua.jpg Graphic file (type jpg)
 <use imagenes//fluctua.jpg>
-Package pdftex.def Info: imagenes//fluctua.jpg  used on input line 204.
+Package pdftex.def Info: imagenes//fluctua.jpg  used on input line 206.
 (pdftex.def)             Requested size: 425.71443pt x 221.70273pt.
- [17 <./imagenes//fluct.png> <./imagenes//fluctua.jpg>]
-<imagenes//filtros.png, id=398, 834.86906pt x 438.13687pt>
+ [16 <./imagenes//fluct.png> <./imagenes//fluctua.jpg>]
+<imagenes//filtros.png, id=419, 834.86906pt x 438.13687pt>
 File: imagenes//filtros.png Graphic file (type png)
 <use imagenes//filtros.png>
-Package pdftex.def Info: imagenes//filtros.png  used on input line 220.
+Package pdftex.def Info: imagenes//filtros.png  used on input line 222.
 (pdftex.def)             Requested size: 292.20856pt x 153.35019pt.
-<imagenes//filtro mediana.png, id=400, 843.90282pt x 450.18187pt>
+<imagenes//filtro mediana.png, id=421, 843.90282pt x 450.18187pt>
 File: imagenes//filtro mediana.png Graphic file (type png)
 <use imagenes//filtro mediana.png>
-Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 229.
+Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 231.
 (pdftex.def)             Requested size: 295.3704pt x 157.56601pt.
- [18 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>]
-<imagenes//conS.png, id=407, 831.85782pt x 304.13625pt>
+ [17 <./imagenes//filtros.png> <./imagenes//filtro mediana.png>]
+<imagenes//conS.png, id=428, 831.85782pt x 304.13625pt>
 File: imagenes//conS.png Graphic file (type png)
 <use imagenes//conS.png>
-Package pdftex.def Info: imagenes//conS.png  used on input line 242.
+Package pdftex.def Info: imagenes//conS.png  used on input line 244.
 (pdftex.def)             Requested size: 170.71652pt x 62.4133pt.
-<imagenes//sinS.png, id=408, 830.35219pt x 298.86656pt>
+<imagenes//sinS.png, id=429, 830.35219pt x 298.86656pt>
 File: imagenes//sinS.png Graphic file (type png)
 <use imagenes//sinS.png>
-Package pdftex.def Info: imagenes//sinS.png  used on input line 243.
+Package pdftex.def Info: imagenes//sinS.png  used on input line 245.
 (pdftex.def)             Requested size: 170.71652pt x 61.44588pt.
- [19 <./imagenes//conS.png> <./imagenes//sinS.png>])
+ [18 <./imagenes//conS.png> <./imagenes//sinS.png>])
 (secciones/5.Desarrollo.tex
-<imagenes/placa_ls.png, id=416, 459.96844pt x 436.63126pt>
+<imagenes/placa_ls.png, id=437, 459.96844pt x 436.63126pt>
 File: imagenes/placa_ls.png Graphic file (type png)
 <use imagenes/placa_ls.png>
 Package pdftex.def Info: imagenes/placa_ls.png  used on input line 9.
 (pdftex.def)             Requested size: 318.66948pt x 302.5151pt.
-<imagenes/terminales.png, id=417, 484.05844pt x 73.02281pt>
+<imagenes/terminales.png, id=438, 484.05844pt x 73.02281pt>
 File: imagenes/terminales.png Graphic file (type png)
 <use imagenes/terminales.png>
 Package pdftex.def Info: imagenes/terminales.png  used on input line 17.
 (pdftex.def)             Requested size: 318.66948pt x 48.07484pt.
- [20 <./imagenes/placa_ls.png> <./imagenes/terminales.png>]
-<imagenes/plano_DC.pdf, id=424, 660.4675pt x 347.2975pt>
+ [19 <./imagenes/placa_ls.png> <./imagenes/terminales.png>]
+<imagenes/plano_DC.pdf, id=445, 660.4675pt x 347.2975pt>
 File: imagenes/plano_DC.pdf Graphic file (type pdf)
 <use imagenes/plano_DC.pdf>
 Package pdftex.def Info: imagenes/plano_DC.pdf  used on input line 29.
@@ -1296,7 +1318,7 @@ Overfull \hbox (10.43753pt too wide) in paragraph at lines 38--40
 in-con-ve-nien-te an-te-rior-men-te nom-bra-do,
  []
 
-<imagenes//serial_proc.png, id=426, 492.33937pt x 277.035pt>
+<imagenes//serial_proc.png, id=447, 492.33937pt x 277.035pt>
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 42.
@@ -1306,7 +1328,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 43.
 See the caption package documentation for explanation.
 
-[21 <./imagenes/plano_DC.pdf>]pdfTeX warning (ext4): destination with the same 
+[20 <./imagenes/plano_DC.pdf>]pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1317,7 +1339,7 @@ Overfull \hbox (18.9179pt too wide) in paragraph at lines 50--51
 dia-gra-ma de blo-ques del pro-ce-di-mien-to
  []
 
-<imagenes//planta_d.png, id=446, 345.54094pt x 409.53pt>
+<imagenes//planta_d.png, id=467, 345.54094pt x 409.53pt>
 File: imagenes//planta_d.png Graphic file (type png)
 <use imagenes//planta_d.png>
 Package pdftex.def Info: imagenes//planta_d.png  used on input line 54.
@@ -1334,8 +1356,8 @@ Overfull \hbox (30.21188pt too wide) in paragraph at lines 61--62
 de las se-ña-les de ex-ci-ta-ción. Pos-te-rior-men-te,
  []
 
-[22 <./imagenes//serial_proc.png> <./imagenes//planta_d.png>]
-<imagenes//bloques.png, id=453, 864.22874pt x 369.63094pt>
+[21 <./imagenes//serial_proc.png> <./imagenes//planta_d.png>]
+<imagenes//bloques.png, id=474, 864.22874pt x 369.63094pt>
 File: imagenes//bloques.png Graphic file (type png)
 <use imagenes//bloques.png>
 Package pdftex.def Info: imagenes//bloques.png  used on input line 79.
@@ -1352,33 +1374,33 @@ Overfull \hbox (10.50275pt too wide) in paragraph at lines 84--85
 os de dos co-lum-nas de las ta-blas an-te-rior-men-te
  []
 
-<imagenes//estima.png, id=455, 859.71187pt x 448.67625pt>
+<imagenes//estima.png, id=476, 859.71187pt x 448.67625pt>
 File: imagenes//estima.png Graphic file (type png)
 <use imagenes//estima.png>
 Package pdftex.def Info: imagenes//estima.png  used on input line 88.
 (pdftex.def)             Requested size: 429.85487pt x 224.33757pt.
-<imagenes//parametros.jpg, id=458, 414.79968pt x 254.45062pt>
+<imagenes//parametros.jpg, id=479, 414.79968pt x 254.45062pt>
 File: imagenes//parametros.jpg Graphic file (type jpg)
 <use imagenes//parametros.jpg>
 Package pdftex.def Info: imagenes//parametros.jpg  used on input line 97.
 (pdftex.def)             Requested size: 199.16928pt x 122.17374pt.
-<imagenes//planta_est1.jpg, id=459, 776.14969pt x 426.84468pt>
+<imagenes//planta_est1.jpg, id=480, 776.14969pt x 426.84468pt>
 File: imagenes//planta_est1.jpg Graphic file (type jpg)
 <use imagenes//planta_est1.jpg>
 Package pdftex.def Info: imagenes//planta_est1.jpg  used on input line 98.
 (pdftex.def)             Requested size: 227.62204pt x 125.1821pt.
-[23 <./imagenes//bloques.png> <./imagenes//estima.png>]
-<imagenes//estim2.jpeg, id=470, 1284.8pt x 728.7225pt>
+[22 <./imagenes//bloques.png> <./imagenes//estima.png>]
+<imagenes//estim2.jpeg, id=491, 1284.8pt x 728.7225pt>
 File: imagenes//estim2.jpeg Graphic file (type jpg)
 <use imagenes//estim2.jpeg>
 Package pdftex.def Info: imagenes//estim2.jpeg  used on input line 112.
 (pdftex.def)             Requested size: 449.68674pt x 255.05669pt.
-<imagenes//estim3.jpeg, id=471, 1284.8pt x 739.76375pt>
+<imagenes//estim3.jpeg, id=492, 1284.8pt x 739.76375pt>
 File: imagenes//estim3.jpeg Graphic file (type jpg)
 <use imagenes//estim3.jpeg>
 Package pdftex.def Info: imagenes//estim3.jpeg  used on input line 119.
 (pdftex.def)             Requested size: 449.68674pt x 258.92119pt.
-<imagenes//pruebapid.png, id=472, 856.70062pt x 446.41782pt>
+<imagenes//pruebapid.png, id=493, 856.70062pt x 446.41782pt>
 File: imagenes//pruebapid.png Graphic file (type png)
 <use imagenes//pruebapid.png>
 Package pdftex.def Info: imagenes//pruebapid.png  used on input line 131.
@@ -1387,9 +1409,9 @@ Package pdftex.def Info: imagenes//pruebapid.png  used on input line 131.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./imagenes//parametros.jpg> <./imagenes//planta_est1.jpg> <./imagenes//est
+[23 <./imagenes//parametros.jpg> <./imagenes//planta_est1.jpg> <./imagenes//est
 im2.jpeg>]
-<imagenes//pisubida.png, id=481, 861.2175pt x 450.9347pt>
+<imagenes//pisubida.png, id=502, 861.2175pt x 450.9347pt>
 File: imagenes//pisubida.png Graphic file (type png)
 <use imagenes//pisubida.png>
 Package pdftex.def Info: imagenes//pisubida.png  used on input line 152.
@@ -1398,7 +1420,7 @@ Package pdftex.def Info: imagenes//pisubida.png  used on input line 152.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes//pibajada.png, id=482, 863.47594pt x 452.4403pt>
+<imagenes//pibajada.png, id=503, 863.47594pt x 452.4403pt>
 File: imagenes//pibajada.png Graphic file (type png)
 <use imagenes//pibajada.png>
 Package pdftex.def Info: imagenes//pibajada.png  used on input line 159.
@@ -1406,7 +1428,7 @@ Package pdftex.def Info: imagenes//pibajada.png  used on input line 159.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes//mix.png, id=484, 859.71187pt x 450.9347pt>
+<imagenes//mix.png, id=505, 859.71187pt x 450.9347pt>
 File: imagenes//mix.png Graphic file (type png)
 <use imagenes//mix.png>
 Package pdftex.def Info: imagenes//mix.png  used on input line 168.
@@ -1414,13 +1436,13 @@ Package pdftex.def Info: imagenes//mix.png  used on input line 168.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./imagenes//estim3.jpeg>]) (secciones/5.1Pruebas.tex
+[24 <./imagenes//estim3.jpeg>]) (secciones/5.1Pruebas.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./imagenes//pruebapid.png> <./imagenes//pisubida.png>] [27 <./imagenes//pi
+[25 <./imagenes//pruebapid.png> <./imagenes//pisubida.png>] [26 <./imagenes//pi
 bajada.png> <./imagenes//mix.png>]
-<imagenes//condifpres.jpg, id=509, 681.29532pt x 310.15875pt>
+<imagenes//condifpres.jpg, id=530, 681.29532pt x 310.15875pt>
 File: imagenes//condifpres.jpg Graphic file (type jpg)
 <use imagenes//condifpres.jpg>
 Package pdftex.def Info: imagenes//condifpres.jpg  used on input line 42.
@@ -1440,93 +1462,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-[28 <./imagenes//condifpres.jpg>] [29]
-<imagenes//compu1.png, id=522, 860.46469pt x 450.9347pt>
+[27 <./imagenes//condifpres.jpg>] [28]
+<imagenes//compu1.png, id=543, 860.46469pt x 450.9347pt>
 File: imagenes//compu1.png Graphic file (type png)
 <use imagenes//compu1.png>
 Package pdftex.def Info: imagenes//compu1.png  used on input line 111.
 (pdftex.def)             Requested size: 430.2313pt x 225.4668pt.
-<imagenes//comp2.png, id=523, 851.43094pt x 445.665pt>
+<imagenes//comp2.png, id=544, 851.43094pt x 445.665pt>
 File: imagenes//comp2.png Graphic file (type png)
 <use imagenes//comp2.png>
 Package pdftex.def Info: imagenes//comp2.png  used on input line 119.
 (pdftex.def)             Requested size: 425.71443pt x 222.83195pt.
-<imagenes//comp.jpg, id=524, 4015.0pt x 3011.25pt>
+<imagenes//comp.jpg, id=545, 4015.0pt x 3011.25pt>
 File: imagenes//comp.jpg Graphic file (type jpg)
 <use imagenes//comp.jpg>
 Package pdftex.def Info: imagenes//comp.jpg  used on input line 126.
 (pdftex.def)             Requested size: 401.52353pt x 301.14264pt.
-<imagenes//reos.jpg, id=525, 557.83406pt x 313.9228pt>
+<imagenes//reos.jpg, id=546, 557.83406pt x 313.9228pt>
 File: imagenes//reos.jpg Graphic file (type jpg)
 <use imagenes//reos.jpg>
 Package pdftex.def Info: imagenes//reos.jpg  used on input line 133.
 (pdftex.def)             Requested size: 446.26784pt x 251.13857pt.
 ) (secciones/6.Planos.tex)
-(secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [30 <./imagenes//com
+(secciones/7.Recomendaciones.tex) (secciones/8.Conclu.tex) [29 <./imagenes//com
 pu1.png>]
-Overfull \hbox (10.10542pt too wide) in paragraph at lines 112--112
+Overfull \hbox (10.10542pt too wide) in paragraph at lines 135--135
 []\T1/cmr/m/n/12 Federico Lic-ci y Lu-cas Ri-ve-ra. ``Es-tu-dio flui-do-di-ná-m
 i-co de tú-nel de vien-to en con-di-cio-nes
  []
 
 
-Overfull \hbox (15.97441pt too wide) in paragraph at lines 112--112
+Overfull \hbox (15.97441pt too wide) in paragraph at lines 135--135
 []\T1/cmr/m/n/12 Jorge Po-ma-res y Án-gel Mar-tí-nez Bueno. ``Sis-te-mas de Con
 -trol Au-to-má-ti-co. Iden-ti-fi-ca-ción
  []
 
 
-Overfull \hbox (11.28552pt too wide) in paragraph at lines 112--112
+Overfull \hbox (11.28552pt too wide) in paragraph at lines 135--135
 \T1/cmr/m/n/12 30kW''. En: \T1/cmr/m/it/12 Pro-yec-to de in-ves-ti-ga-ción, Con
 -se-jo de in-ves-ti-ga-ción CIUN-PAT, Uni-ver-si-dad
  []
 
-[31 <./imagenes//comp2.png>] [32 <./imagenes//comp.jpg> <./imagenes//reos.jpg>]
+[30 <./imagenes//comp2.png>] [31 <./imagenes//comp.jpg> <./imagenes//reos.jpg>]
 (proyecto final.aux
 LaTeX Info: Redefining \sptext on input line 32.
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
-Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
-(rerunfilecheck)             Checksum: A862875E250405E33C18955BA8074A9D;5691.
+
+Package rerunfilecheck Warning: File `"proyecto final".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"proyecto final".out':
+(rerunfilecheck)             Before: DA24029A2A03379F59FB6CDE741077EE;6083
+(rerunfilecheck)             After:  8FA546F195C773C5297B47699F8FA2EC;6081.
 Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 \openout1 = `"proyecto final.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30048 strings out of 479334
- 545629 string characters out of 2866961
- 1050835 words of memory out of 3000000
- 46807 multiletter control sequences out of 15000+200000
- 423458 words of font info for 82 fonts, out of 3000000 for 9000
+ 30074 strings out of 479334
+ 546175 string characters out of 2866961
+ 1050895 words of memory out of 3000000
+ 46818 multiletter control sequences out of 15000+200000
+ 424632 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,17n,116p,1859b,1902s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 112i,17n,116p,1859b,1929s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
 1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecti1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ectt1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\glori\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\
-glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\
-Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (32 pages, 5832270 bytes).
+0\tcrm1200.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1000.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm0700.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\glori\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\glori\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\glori\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\glori\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\glori\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\
+glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\
+Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1728.pk
+> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2
+488.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\eccc1728.pk> <C:\Users\glori\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecbx2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "proyecto final.pdf" (32 pages, 7861787 bytes).
 PDF statistics:
- 1076 PDF objects out of 1200 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1167 PDF objects out of 1200 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 496 words of extra memory for PDF output out of 10000 (max. 10000000)
 

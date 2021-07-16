@@ -29,6 +29,7 @@
 %reiniciar los contadores de figuras
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
+\counterwithin{table}{section}
 \usepackage{url} %url
 \usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
@@ -42,6 +43,8 @@
 %bibliografía
 \usepackage[maxbibnames=99, sorting=none, backend=bibtex]{biblatex}
 \addbibresource{biblio.bib}
+%\usepackage[nottoc]{biblatex}
+
 
 
 %para crear sub sub sub titulos
@@ -61,15 +64,33 @@
 
 \newcommand{\grad}{$^{\circ}$}
 \begin{document}
-	\maketitle
+%	\maketitle
+\begin{titlepage}
+	\centering
+	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ingenier\'ia \par}
+	\vspace{3cm}
+	{\scshape\Huge Automatización de Túnel de Viento \par}
+	\vspace{3cm}
+	{\itshape\Large Proyecto Fin de Carrera\\ - Ingeniería Electrónica - \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
+	\vfill
+	{\Large Diciembre 2021 \par}
+	\end{titlepage}
+
+
+
 \newpage
-	Agradecimientos
+
+\section*{Agradecimientos}
+\input{secciones/0.agradecimientos}
 \newpage
-Pandemia- dedicatoria a la pandemia y poner fotos
-fotos -en  anexo??
-Google Drive ProyectoFinal Fotos ----proyecto ---\\
-y google photos
-	\newpage
+
 	\tableofcontents
 	\newpage
 	\listoffigures
@@ -105,24 +126,13 @@ y google photos
 	\section{Conclusión}
 	\input{secciones/8.Conclu}
 	
-	sadbasdajskda \cite{LS650}
-	safsafasfas \cite{airecalculo}
-	\section{Bibliografía}
+	Beneficios y  contra - pruebas realizadas
+	
+	\section{Bibliografia}
+
+%%%%\addcontentsline{toc}{chapter}{Bibliografía}
 \printbibliography
 \newpage
-
- \begin{comment}
-\bibliography{biblio}
-https://mauricioanderson.com/curso-latex-referencias-bibliografia-bibtex/ ver esto
-\begin{thebibliography}{0}
-	\bibitem{TunelUNPSJB} http://www.ing.unp.edu.ar/mecanica/Paginas/Tunel.htm.
-	\bibitem{Luckie2010} Matthew Luckie. CScamper: a scalable, extensible packet 
-	prober for active measurement of the internet, 2010.
-\end{thebibliography}
-\newpage
-\part{Anexos}
-
-\end{comment}
 
 
 
