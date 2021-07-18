@@ -20,7 +20,7 @@ Las variables que se necesitó medir correspondían a diferencia de presión, te
 	\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
 	\item \textbf{SI7021:} Sensor de temperatura y humedad relativa.
 	\item \textbf{MPXV7002:} Sensor de presión diferencial.
-	\item \textbf{ADS1115:} Convertidor analógico digital 16bits.
+	\item \textbf{ADS1115:} Convertidor analógico digital 16bits utilizado en conjunto con MPXV7002.
 \end{itemize}
 
 
@@ -95,20 +95,18 @@ Tanto las ecuaciones de densidad ec.(\ref{ec_den})
 
 \subsubsection{Comparación de densidades} \label{cap:densidades}
 
-Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard. \\
+Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.8]{placa_sensores.pdf}
-	\captionof{figure}{Placa con sensores}
+	\captionof{figure}{Esquema de placa con sensores utilizados}
 	\label{fig:sensoresa}
 \end{figure}
 
-A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Una vez que este sensor se colocó en el lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en el siguiente cuadro. \hl{ver si se agrega esto}
+A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en la tabla \ref{densicalc}. 
 
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
+\begin{table}[b]
 	\centering
 	\begin{tabular}{ll|l|l|l|l|l|l|l|l|l|}
 		\cline{3-11}
@@ -122,6 +120,7 @@ A raíz de varias mediciones, durante distintos días, y realizando el contraste
 		\multicolumn{1}{|l|}{07-jul} & interior & 17,6 & 18,8 & 43,3 & 34,8 & 100260 & 100261 & 1,1978 & 1,1933 & 0,375 \\ \hline
 	\end{tabular}
 \caption{Comparación de densidades calculadas}
+\label{densicalc}
 \end{table}
 
 	
@@ -136,16 +135,24 @@ Referencias de la tabla:
 \end{itemize}
 
 
-Se puede observar que el error relativo, tomando como la densidad calculada por los instrumentos de ellos como verdadero, es menor al 1\%.  
+Tomando como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo es menor al 1\%.
 
 
 \subsection{Características del flujo}
+Una inspección cuidadosa del flujo en una tubería revela que el flujo de fluidos es currentilíneo a bajas velocidades, pero se vuelve
+caótico conforme la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
+ordenado; mientras que en el segundo caso es turbulento, y se caracteriza por
+fluctuaciones de velocidad y movimiento también desordenado. La transición
+de flujo laminar a turbulento no ocurre repentinamente; más bien, sucede sobre
+cierta región en la que el flujo fluctúa entre flujos laminar y turbulento antes de
+volverse totalmente turbulento. La mayoría de los flujos que se encuentran en la
+práctica son turbulentos. 
+
+\subsubsection{Cálculo de número de Reynolds}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Número de Reynolds]
 	El número de Reynolds (Re) es un número adimensional utilizado en mecánica de fluidos para caracterizar el movimiento de un fluido. Su valor indica si el flujo sigue un modelo laminar o turbulento.
 \end{tcolorbox}
-
-\subsubsection{Cálculo de número de Reynolds}
-	El número de Reynolds fue calculado a partir de la Ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. 
+	El número de Reynolds fue calculado a partir de la ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. 
 \begin{equation}	
 	R_e=\frac{\rho\;D_h\;v}\mu
 	\label{reyn}
@@ -158,7 +165,8 @@ dónde:\\
 
 
 La viscosidad dinámica del fluido es un valor obtenido del anexo del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica}, mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado como se muestra en la sección \ref{cap:densidades}.
-El díametro hidráuliaco de una tubería ciracular coincide con el díametro interno, en tanto que para una tubería de sección rectangular, este es dependiente del valor de sus lados (Figura \ref{fig:rey2}). \cite{licci2020estudio}\\
+El díametro hidráuliaco de una tubería ciracular coincide con el díametro interno, en tanto que para una tubería de sección rectangular, este es dependiente del valor de sus lados (Figura \ref{fig:rey2}) \cite{licci2020estudio}.
+
 El número de Reynolds se calculó con una velocidad de 6m/s, al ser proporcional a la velocidad si esta aumenta el valor será mayor.
 
 \begin{equation}	
@@ -183,7 +191,7 @@ El número de Reynolds se calculó con una velocidad de 6m/s, al ser proporciona
 
 
 
-Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel del viento este valor siempre es mayor correspondiendo a un flujo turbulento.
+Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel de viento este valor siempre es mayor correspondiendo a un flujo turbulento.
 
 \subsubsection{Flujo turbulento}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
@@ -191,7 +199,19 @@ Por definición, un flujo es turbulento si el valor del número de Reynolds es m
 	
 \end{tcolorbox}
 
-Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
+Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel de viento. Este, posee una rejilla de entrada en forma de panal de abeja que, al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa posible es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos, pero esto genera la no uniformidad del flujo (Figura \ref{fig:remolinos}).
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.6]{remolinos.jpg}
+	\captionof{figure}{Perforaciones dentro de la cámara de ensayos
+	 y "Panal de abeja"}
+	\label{fig:remolinos}
+\end{figure}
+
+
+
+
+La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
 
 \begin{figure}[htb]
 	\centering
@@ -203,10 +223,12 @@ Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flu
 Para corroborar esta propiedad, se usaron datos medidos y a través de un código generado en Matlab y se corroboró el promedio de las fluctuaciones que tiende a cero.
 \begin{figure}[h!tb]
 	\centering
-	\includegraphics[scale=0.5]{fluctua.jpg}
+	\includegraphics[scale=0.5]{fluctua.png}
 	\captionof{figure}{Fluctuaciones en velocidades medidas}
 	\label{fig:fluct2}
 \end{figure}
+
+%C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Proyecto_Final_Tunel\Pruebas22.03.21
 
 
 \subsection{Filtros}
@@ -219,7 +241,7 @@ Una vez que se procedió a tomar diversos valores, se notó necesario la impleme
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{filtros.png}
+	\includegraphics[scale=0.5]{filtros.png}
 	\captionof{figure}{Datos y diversos filtros}
 	\label{fig:filtros}
 \end{figure}
@@ -228,7 +250,7 @@ Luego de varias pruebas, se eligió un filtro de mediana (Figura \ref{fig:filtro
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.35]{filtro mediana.png}
+	\includegraphics[scale=0.5]{filtro mediana.png}
 	\captionof{figure}{Datos y filtro mediana}
 	\label{fig:filtrosm}
 \end{figure}
