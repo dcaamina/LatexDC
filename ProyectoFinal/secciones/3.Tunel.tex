@@ -1,15 +1,18 @@
 
 
+\subsection{Definición}
 Un túnel de viento es una herramienta que puede tener dos fines hoy en día, ya sea para un uso recreativo o para propósito científico.
 Como uso científico se utiliza para observar los efectos del movimiento de aire al rededor de objetos sólidos, como también para la calibración de anemómetros, entre otros usos.
 
+
+\subsection{Clasificación}
 Los túneles de viento se pueden clasificar en túneles abiertos o cerrados y a su vez pueden ser verticales u horizontales (Figuras: \ref{fig:tunelRec} y \ref{fig:abierto})
 
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.8]{tvert1.jpg}
-	\captionof{figure}{Tunel uso recreativo}
+	\captionof{figure}{Tunel vertical de uso recreativo}
 	\label{fig:tunelRec}
 \end{figure}
 
@@ -21,9 +24,9 @@ Los túneles de viento se pueden clasificar en túneles abiertos o cerrados y a 
     \end{figure}
 
 
-\subsection{Historia del Túnel UNPSJB}
+\subsection{Túnel UNPSJB}
 
-
+\subsubsection{Historia}
 \footnote{\url{http://www.ing.unp.edu.ar/mecanica/Paginas/Tunel.htm}} 
 	El túnel aerodinámico del Laboratorio de Mecánica de Fluidos (\textbf{LMF}) de la Facultad de Ingeniería de la Universidad Nacional de la Patagonia San Juan Bosco (\textbf{UNPSJB}) es un circuito abierto (tipo Eiffel) con cámara de ensayos cerrada. Puede clasificarse como un túnel “pequeño de baja velocidad”, con una longitud total de 11 $m$, una velocidad máxima de 18 $m/s$ y una cámara de ensayos con un área de 0,8 $m^2$.
 	
@@ -49,12 +52,12 @@ Los túneles de viento se pueden clasificar en túneles abiertos o cerrados y a 
 
 	\subsubsection{Motor y Variador de velocidad}
 		\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Variador de velocidad]
-			Es utilizado para controlar la velocidad de giro de un motor. Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene  una  curva  propia  de  funcionamiento.  Un  variador  es  capaz  de  generar elementos  control  de  aceleración,  frenado,  seguridad,  control  del  torque  y operaciones que mejoran la eficiencia energética.\end{tcolorbox}	
+			Es utilizado para controlar la velocidad de giro de un motor. Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene  una  curva  propia  de  funcionamiento.  Un  variador  es  capaz  de  generar elementos en el  control  de  aceleración,  frenado, torque,  seguridad  y operaciones que mejoran la eficiencia energética.\end{tcolorbox}	
 
 		
-El motor que se utiliza para hacer funcionar el ventilador corresponde a la marca \textbf{AEG}, de 30 kW de potencia\cite{barila1993desarrollo}. Mientras que el variador de velocidad, es de la marca \textbf{Long Shenq}.
-
-El variador cuyo modelo es \textbf{LS650-4045} para una potencia de 45kW con salida trifásica es capaz de ser controlado por entradas de corriente, tensión, PID interno, potenciómetro o de forma manual con botones en su panel frontal.
+El motor utilizado para el funcionamiento del ventilador interno del túnel corresponde a la marca \textbf{AEG}, de 30 kW de potencia\cite{barila1993desarrollo}. Desde el año 2020, el laboratorio de Fluidos cuenta con un variador de velocidad de la marca \textbf{Long Shenq} modelo \textbf{LS650-4045} de 45kW trifásico.
+ 
+Utilizando este variador la frecuencia puede ser controlada de forma manual por su panel frontal y por entradas tanto de corriente o tensión, las mismas se pueden configurar para el rango máximo de que podría ser de 0 a 300Hz en ambos sentidos, pero por razones constructivas del motor se utiliza en el rango de 13Hz a 53Hz en un sentido. Al ser un motor antiguo de la década de 1920 este, posee un método de \fcolorbox{red}{yellow}{lubricación por cojinetes} el cuál fuerza que el motor gire por encima de las revoluciones mínimas y no sobrepase la frecuencia nominal.
 
 
 \begin{figure}[htb]
@@ -69,20 +72,26 @@ El variador cuyo modelo es \textbf{LS650-4045} para una potencia de 45kW con sal
 
 
 		
-	\subsubsection{Instrumentación utilizada}
-	Los instrumentos normalmente utilizados en conjunto con el túnel del viento, que están calibrados y certificados por el INTI son:
+	\subsubsection{Instrumentación}
+	Los instrumentos utilizados en las mediciones del túnel para la contrastación de anemómetros  están calibrados y certificados por el \textbf{INTI} (Instituto nacional tecnología industrial).
 \begin{itemize}
-	\item AXD 650 \textbf{ALNOR} 
-		\subitem Instrumento micromanómetro utilizado para medir la diferencia de presión.
-	\item Testo 435 \textbf{TESTO}
-	\subitem Instrumento multifunción utilizado para medir la temperatura, humedad y presión atmosférica. Este mismo elemento puede ser utilizado para medir la velocidad del aire.
+	\item \textbf{Micromanovacuómetro }
+		\subitem Instrumento utilizado para medir la diferencia de presión.
+		
+		\textit{Marca: Alnor. Modelo: 560. Número de serie: 56057034.} 
+	\item \textbf{Instrumento multifunción}
+	\subitem  Utilizado para medir la temperatura, humedad y presión atmosférica. Este mismo elemento puede ser utilizado para medir la velocidad del aire.
+	
+	\textit{Tipo de instrumento: Termómetro electrónico. Sonda de hilo caliente para TESTO 435.  Modelo: Testo 435-2. Sonda
+	número: 0635 1025. \\ Tipo de instrumento: Anemómetro electrónico. Modelo: Testo 435-2. Sonda número: 0635 1025.}
+	
 	
 \end{itemize}	   		
 		
 \begin{figure}[htbp]
 	\centering
 	\subfigure[AXD 650]{\includegraphics[width=40mm]{axd.jpg}}
-	\subfigure[testo 435]{\includegraphics[scale=0.5]{testo.jpg}}
+	\subfigure[Testo 435]{\includegraphics[scale=0.5]{testo.jpg}}
 	\caption{Instrumentos calibrados} \label{fig:instr}
 \end{figure}		
 		

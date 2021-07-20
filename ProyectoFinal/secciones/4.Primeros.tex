@@ -1,5 +1,38 @@
+
+El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo Excel para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire en función de la presión, temperatura y humedad atmosférica.
+%	densidad_funcion_P_T_H.pdf  dentro del drive
+\begin{align}
+	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
+	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
+	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
+\end{align}
+
+dónde:\\
+- \textbf{p } [Pa] presión atmosférica medida,\\
+- \textbf{t } [$^{\circ}$C] temperatura medida,\\
+- \textbf{T } [K] temperatura absoluta (\textbf{T}=\textbf{t} + 273,15 \textbf{K})\\
+- \textbf{h } [\%] humedad relativa medida,\\
+- y constantes \textbf{A,B,C,D,} $\boldsymbol{\alpha , \beta  , \gamma , a_0, a_1 ,a_2 ,b_0  ,b_1 , c_0 , c_1, D. }$
+
+
+Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo final de la velocidad del aire.
+\begin{equation}
+	\triangle P=\frac{v^2\rho}2\rightarrow\;\;v=\sqrt{\frac{2\;.\;\triangle P\;}\rho}
+	\label{ec_aire}
+\end{equation}
+
+\begin{comment}
+Tanto las ecuaciones de densidad ec.(\ref{ec_den})
+y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
+se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
+\end{comment}
+
+En vista al objetivo y a las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables temperatura, presión atmosférica, humedad relativa y diferencia de presión del fluido. 
+
+\section{Pruebas iniciales}
+
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=I2C]
-	Es un puerto y protocolo de comunicación serial, define la trama de datos y las conexiones físicas para transferir bits entre 2 dispositivos digitales. El puerto incluye dos cables de comunicación, SDA (Datos seriales) y SCL (reloj serial). Además el protocolo permite conectar hasta 127 dispositivos esclavos con esas dos líneas, con hasta velocidades de 100, 400 y 1000 kbits/s. \end{tcolorbox}
+	Es un puerto y protocolo de comunicación serial, define la trama de datos y las conexiones físicas para transferir bits entre 2 dispositivos digitales. El puerto incluye dos cables de comunicación, SDA (Datos seriales) y SCL (reloj serial). Además el protocolo permite conectar hasta 127 dispositivos esclavos con esas dos líneas, con hasta velocidades de hasta 1000 kbits/s. \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Arduino] El\textbf{ Arduino Uno} es una placa de microcontrolador de código abierto basado en el microchip \textbf{Atmega328P} y desarrollado por \textbf{Arduino}. La placa está equipada con conjuntos de pines de E/S digitales y analógicas que pueden conectarse a varias placas de expansión y otros circuitos.
    \end{tcolorbox}
@@ -65,32 +98,7 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 
 \subsubsection{Direcciones I2C}
 
-\subsection{Ecuación velocidad del aire}
-El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo Excel para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire en función de la presión, temperatura y humedad atmosférica.
-%	densidad_funcion_P_T_H.pdf  dentro del drive
-\begin{align}
-	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
-	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
-	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
-\end{align}
 
-dónde:\\
-- \textbf{p } [Pa] presión atmosférica medida,\\
-- \textbf{t } [$^{\circ}$C] temperatura medida,\\
-- \textbf{T } [K] temperatura absoluta (\textbf{T}=\textbf{t} + 273,15 \textbf{K})\\
-- \textbf{h } [\%] humedad relativa medida,\\
-- y constantes \textbf{A,B,C,D,} $\boldsymbol{\alpha , \beta  , \gamma , a_0, a_1 ,a_2 ,b_0  ,b_1 , c_0 , c_1, D. }$
-
-
-Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo final de la velocidad del aire dentro del mismo archivo.
-\begin{equation}
-	\triangle P=\frac{v^2\rho}2\rightarrow\;\;v=\sqrt{\frac{2\;.\;\triangle P\;}\rho}
-	\label{ec_aire}
-\end{equation}
-
-Tanto las ecuaciones de densidad ec.(\ref{ec_den})
- y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
-  se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 
 
 \subsubsection{Comparación de densidades} \label{cap:densidades}
