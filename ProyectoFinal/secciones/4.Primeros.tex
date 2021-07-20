@@ -29,158 +29,34 @@ se desarrolló dentro del programa de \textbf{Arduino} para observar como dato f
 
 En vista al objetivo y a las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables temperatura, presión atmosférica, humedad relativa y diferencia de presión del fluido. 
 
-\section{Pruebas iniciales}
-
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=I2C]
-	Es un puerto y protocolo de comunicación serial, define la trama de datos y las conexiones físicas para transferir bits entre 2 dispositivos digitales. El puerto incluye dos cables de comunicación, SDA (Datos seriales) y SCL (reloj serial). Además el protocolo permite conectar hasta 127 dispositivos esclavos con esas dos líneas, con hasta velocidades de hasta 1000 kbits/s. \end{tcolorbox}
-
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Arduino] El\textbf{ Arduino Uno} es una placa de microcontrolador de código abierto basado en el microchip \textbf{Atmega328P} y desarrollado por \textbf{Arduino}. La placa está equipada con conjuntos de pines de E/S digitales y analógicas que pueden conectarse a varias placas de expansión y otros circuitos.
-   \end{tcolorbox}
-
-	
-
-Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textbf{Arduino MEGA}, \textbf{Arduino NANO}, \textbf{EDUCIAA}, entre otros. Se llegó a la conclusión que Arduino UNO era un microcontrolador de bajo costo, baja complejidad en la programación, con librerías de diversos sensores y que cumplía con las prestaciones necesarias (señal de PWM, comunicación \textbf{I2C}, entradas analógicas y digitales).
-
-
-Para comenzar con las pruebas, lo primero que se realizó es la conexión de diversos sensores en una protoboard. Se obtuvieron datos para elegir cuál  convenía utilizar, ya que se hicieron pruebas con varios sensores de temperatura, humedad y presión atmosférica.
-
-
-Cabe destacar que para la comunicación de estos sensores se utilizó \textbf{comunicación I2C}, que permitió, a través de dos líneas de comunicación, conectar, en una primera instancia,  5 elementos al mismo bus.
-
-Las variables que se necesitó medir correspondían a diferencia de presión, temperatura, humedad y presión atmosférica, para esto se consiguió diversos sensores para realizar pruebas eligiendo elementos que generaban la menor variación de THP respecto a los instrumentos que posee el laboratorio y estos fueron los siguientes:
-
-\begin{itemize}
-	\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
-	\item \textbf{SI7021:} Sensor de temperatura y humedad relativa.
-	\item \textbf{MPXV7002:} Sensor de presión diferencial.
-	\item \textbf{ADS1115:} Convertidor analógico digital 16bits utilizado en conjunto con MPXV7002.
-\end{itemize}
-
-
-Se realizaron diversas pruebas que sirvieron para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), para este proyecto se utilizó la parte positiva de los valores por lo que la resolución estaba establecida por los 2V de rango y 2kPa. Estos datos se ingresaron al programa \textbf{Arduino} a través de un conversor \textbf{ADS 1115} con comunicación I2C.
-
-No se utilizó el ADC interno del microcontrolador Arduino Uno ya que es de 10 bits y el externo de 15 bits más un bit de signo, este mismo posee un amplificador de ganancia programable (PGA) que establece la escala completa, es decir, indica el valor de referencia. En Arduino este valor viene determinado por el voltaje de referencia que en el caso de Arduino UNO es 5V. En el ADS1115 lo establece el PGA. Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V.
-
-Ejemplo Factor de escala de Arduino UNO:
-\begin{center}
-	\begin{math}Factor\;de\;escala=\frac{5\;V}{1023}=\;0,0048875\;V\;=\;4,88\;mV
-	\end{math}
-\end{center}
-Ejemplo Factor de escala de ADS115:
-\begin{center}
-	\begin{math}Factor\;de\;escala=\;\frac{6.144\;V}{32677}=\;0,0001875\;V\;=\;0,1875\;mV
-	\end{math}
-\end{center}
-
-En la siguiente tabla se tiene un resumen de los valores posibles de factor de escala para ADS1115.
-\begin{table}[h]
-	\centering
-	
-	\begin{tabular}{|c|c|c|}
-		\hline
-		\textbf{PGA} & \textbf{Referencia (V)} & \textbf{Factor de Escala (mV)} \\ \hline
-		2/3          & 6,144                   & 0,1875                         \\ \hline
-		1            & 4,096                   & 0,125                          \\ \hline
-		4            & 1,024                   & 0,0312                         \\ \hline
-		8            & 0,512                   & 0,0156                         \\ \hline
-		16           & 0,256                   & 0,0078                         \\ \hline
-	\end{tabular}
-\caption{Factor de escala}
-\end{table}
-
-Aunque la mayor referencia sea de 6,1444 V, el ADS1115 sólo puede medir el valor de alimentación (VDD) más 0,3 V por sus pines analógicos. \hl{ver porq} pin ingresa la señal en proteus. Por lo tanto, si alimentamos el ADS1115 con 5V, sólo podremos medir tensiones por los pines analógicos hasta 5V + 0,3V es decir, 5,3V. Lo mismo ocurriría si alimentamos con 3,3V. En este caso el máximo sería 3,6V. \hl{(con que} alimentamos? ver en proteus)\\
-En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como voltaje de referencia 4,096V.
-\begin{center}
-	\begin{math}
-		Factor\;de\;escala=\;\frac{4,096\;V}{32677}=\;0,000125\;V\;=\;0,125\;mV
-	\end{math}
-\end{center}
-
-\subsubsection{Direcciones I2C}
-
-
-
-
-\subsubsection{Comparación de densidades} \label{cap:densidades}
-
-Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.8]{placa_sensores.pdf}
-	\captionof{figure}{Esquema de placa con sensores utilizados}
-	\label{fig:sensoresa}
-\end{figure}
-
-A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en la tabla \ref{densicalc}. 
-
-
-\begin{table}[b]
-	\centering
-	\begin{tabular}{ll|l|l|l|l|l|l|l|l|l|}
-		\cline{3-11}
-		\multicolumn{2}{c}{} & \multicolumn{2}{|c|}{\textbf{T [$^{\circ}$$C$]}} & \multicolumn{2}{c|}{\textbf{H [$\%$] }} & \multicolumn{2}{c|}{\textbf{P [$Pa$]}} &  \multicolumn{2}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Dens. calculada\\ {[}$kg/m^3${]}\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{$e_r$ [$\%$]}}} \\ \cline{1-10}
-		\multicolumn{1}{|c|}{\textbf{Fecha}} & \multicolumn{1}{c|}{\textbf{Obs.}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{} \\ \hline
-		\multicolumn{1}{|l|}{29-abr} & interior & 19,4 & 19,3 & 43,5 & 38,5 & 100400 & 100450 & 1,1916 & 1,1931 & 0,128 \\ \hline
-		\multicolumn{1}{|l|}{14-may} & interior & 16,1 & 18,4 & 54,6 & 43,5 & 101590 & 101570 & 1,2195 & 1,2099 & 0,781 \\ \hline
-		\multicolumn{1}{|l|}{14-may} & interior & 16,5 & 18,9 & 53,7 & 42,5 & 101559 & 101559 & 1,2173 & 1,2077 & 0,794 \\ \hline
-		\multicolumn{1}{|l|}{17-jun} & exterior & 15,2 & 15,5 & 54,3 & 48,6 & 103100 & 103090 & 1,2418 & 1,2404 & 0,109 \\ \hline
-		\multicolumn{1}{|l|}{17-jun} & exterior & 13,8 & 15,1 & 59,2 & 52,4 & 102970 & 102910 & 1,2463 & 1,2397 & 0,527 \\ \hline
-		\multicolumn{1}{|l|}{07-jul} & interior & 17,6 & 18,8 & 43,3 & 34,8 & 100260 & 100261 & 1,1978 & 1,1933 & 0,375 \\ \hline
-	\end{tabular}
-\caption{Comparación de densidades calculadas}
-\label{densicalc}
-\end{table}
-
-	
-
-
-Referencias de la tabla:
-\begin{itemize}
-	\item \textbf{I}: Instrumentos- Datos obtenidos con los instrumentos del Laboratorio de fluidos.
-	\item \textbf{S}: Sensores- Datos obtenidos a partir de la medición con los sensores utilizados en conjunto con Arduino.
-	\item \textbf{interior}- Mientras se realizaron las mediciones el sensor SH21 se encontraba dentro de la caja dónde estaba el Arduino y la placa reguladora.
-	\item \textbf{exterior}- Las mediciones se realizaron con el sensor SH21 en el lado exterior sin que fuera afectado por el calentamiento del Arduino y la placa reguladora.
-\end{itemize}
-
-
-Tomando como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo es menor al 1\%.
-
-
 \subsection{Características del flujo}
-Una inspección cuidadosa del flujo en una tubería revela que el flujo de fluidos es currentilíneo a bajas velocidades, pero se vuelve
-caótico conforme la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
+La inspección cuidadosa en una tubería revela una corriente de fluidos currentilínea a bajas velocidades y caótica mientras la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
 ordenado; mientras que en el segundo caso es turbulento, y se caracteriza por
-fluctuaciones de velocidad y movimiento también desordenado. La transición
-de flujo laminar a turbulento no ocurre repentinamente; más bien, sucede sobre
-cierta región en la que el flujo fluctúa entre flujos laminar y turbulento antes de
-volverse totalmente turbulento. La mayoría de los flujos que se encuentran en la
+fluctuaciones de velocidad y movimiento  desordenado. La mayoría de los flujos que se encuentran en la
 práctica son turbulentos. 
 
-\subsubsection{Cálculo de número de Reynolds}
+\subsubsection{Estimación del número de Reynolds}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Número de Reynolds]
 	El número de Reynolds (Re) es un número adimensional utilizado en mecánica de fluidos para caracterizar el movimiento de un fluido. Su valor indica si el flujo sigue un modelo laminar o turbulento.
 \end{tcolorbox}
-	El número de Reynolds fue calculado a partir de la ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. 
+El número de Reynolds fue calculado a partir de la ecuación \ref{reyn}, que relaciona las fuerzas inerciales y las fuerzas viscosas. 
 \begin{equation}	
 	R_e=\frac{\rho\;D_h\;v}\mu
 	\label{reyn}
 \end{equation}	
 dónde:\\
-- \textbf{$\rho$ } [$kg/m^{3}$] densidad del aire \\
-- \textbf{$v$ } [$m/s$] velocidad del aire\\
+- \textbf{$\rho$ } [$kg/m^{3}$] densidad del fluido \\
+- \textbf{$v$ } [$m/s$] velocidad del fluido\\
 - \textbf{$D_h$ } [$m$] diametro hidráulico\\
-- \textbf{$\mu$ } [$kg/m.s$] viscosidad dinámica del aire\\
+- \textbf{$\mu$ } [$kg/m.s$] viscosidad dinámica del fluido\\
 
+La \textit{densidad del fluido} se calculó con la ecuación \ref{ec_den} vista en la sección \ref{sec:ecvel} con mediciones de temperatura, humedad y presión atmosférica obtenidas con el instrumento \textit{Testo 435}.
 
-La viscosidad dinámica del fluido es un valor obtenido del anexo del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica}, mientras que el valor de densidad fue calculado con los valores de temperatura, humedad y presión de un día dado como se muestra en la sección \ref{cap:densidades}.
-El díametro hidráuliaco de una tubería ciracular coincide con el díametro interno, en tanto que para una tubería de sección rectangular, este es dependiente del valor de sus lados (Figura \ref{fig:rey2}) \cite{licci2020estudio}.
+La \textit{viscosidad dinámica} del fluido se obtuvo de la tabla "Propiedades del aire a 1 atm de presión" { }del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica}.
 
-El número de Reynolds se calculó con una velocidad de 6m/s, al ser proporcional a la velocidad si esta aumenta el valor será mayor.
+El \textit{díametro hidráuliaco} de una tubería de sección rectangular es dependiente del valor de sus lados (Figura \ref{fig:rey2} y \ref{fig:camens}) \cite{licci2020estudio}.
 
-\begin{equation}	
-	R_e=\frac{1,193\;kg/m^{3}\;0,86\;m\;6\;m/s}{0,000018\;kg/m.s}=345521
-	\label{reyn2}
-\end{equation}	
+Para la \textit{velocidad del fluido} se utilizó un valor de 4,7$m/s$, siendo la velocidad mínima generada por el túnel. Ya que al ser proporcional al número de Reynolds, este será el mínimo valor estimado.
 
 \begin{figure}[htb]
 	\centering
@@ -197,9 +73,13 @@ El número de Reynolds se calculó con una velocidad de 6m/s, al ser proporciona
 	\label{fig:camens}
 \end{figure}
 
+Si se reemplaza los valores se obtiene:
+\begin{equation} 
+	R_e\approx \frac{1,193\;kg/m^{3}\;0,86\;m\;4,7\;m/s}{0,000018\;kg/m.s}\approx 270658
+	\label{reyn2}
+\end{equation}	
 
-
-Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel de viento este valor siempre es mayor correspondiendo a un flujo turbulento.
+Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel este valor siempre será mayor.
 
 \subsubsection{Flujo turbulento}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
@@ -207,36 +87,124 @@ Por definición, un flujo es turbulento si el valor del número de Reynolds es m
 	
 \end{tcolorbox}
 
-Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel de viento. Este, posee una rejilla de entrada en forma de panal de abeja que, al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa posible es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos, pero esto genera la no uniformidad del flujo (Figura \ref{fig:remolinos}).
-\begin{figure}[htb]
+Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel. Este, posee una rejilla de entrada en forma de panal de abeja, que al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos (Figura \ref{fig:remolinos}).
+
+
+\begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{remolinos.jpg}
+	\includegraphics[scale=0.45]{remolinos.jpg}
 	\captionof{figure}{Perforaciones dentro de la cámara de ensayos
-	 y "Panal de abeja"}
+		y "Panal de abeja"}
 	\label{fig:remolinos}
 \end{figure}
 
 
-
-
-La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad promedio dentro de un tiempo específico. El valor promedio de una propiedad en alguna posición se determina cuando se promedia sobre un intervalo de tiempo que sea suficientemente grande, de modo que el valor promediado en tiempo se estabilice en una constante. En consecuencia, la fluctuación promediada en tiempo es cero.
-
-\begin{figure}[htb]
+La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad media dentro de un tiempo específico. 
+Para determinar la velocidad media se analiza un intervalo de tiempo suficientemente grande, de modo que el valor promediado en el tiempo se estabilice en una constante.
+\begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.5]{fluct.png}
+	\includegraphics[scale=0.4]{fluct.png}
 	\captionof{figure}{Fluctuaciones}
 	\label{fig:fluct}
 \end{figure}
 
-Para corroborar esta propiedad, se usaron datos medidos y a través de un código generado en Matlab y se corroboró el promedio de las fluctuaciones que tiende a cero.
-\begin{figure}[h!tb]
-	\centering
-	\includegraphics[scale=0.5]{fluctua.png}
-	\captionof{figure}{Fluctuaciones en velocidades medidas}
-	\label{fig:fluct2}
-\end{figure}
 
-%C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Proyecto_Final_Tunel\Pruebas22.03.21
+
+\section{Desarrollo}
+
+\subsection{Microcontrolador, sensores y comunicación}
+
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Microcontrolador] Es un circuito integrado programable, capaz de ejecutar las órdenes grabadas en su memoria. Está compuesto por unidad central de procesamiento (CPU), memorias (ROM y RAM), líneas de entrada/salida, módulos de comunicación, DAC, ADC, entre otros.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=I$^2$C]
+	Es un puerto y protocolo de comunicación serial, define la trama de datos y las conexiones físicas para transferir bits entre 2 dispositivos digitales. El puerto incluye dos cables de comunicación, SDA (Datos seriales) y SCL (reloj serial). Además el protocolo permite conectar hasta 127 dispositivos esclavos con esas dos líneas, con hasta velocidades de hasta 5 Mbps, 10 veces mayor que un puerto serial estándar. \end{tcolorbox}
+
+
+
+	
+
+Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con librerías de diversos sensores y que cumplía con las prestaciones necesarias (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
+
+Como se nombró en la sección \ref{sec:ecvel}, es necesario tener mediciones de temperatura, humedad, presión atmosférica y diferencia de presión. Por lo tanto se realizó ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Con las mediciones se eligió aquellos que generaron la menor variación de THP respecto a los instrumentos del laboratorio. 
+
+Sensores utilizados
+\begin{itemize}
+	\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
+\subitem \textit{Resolución de temperatura: 0.01 $^{\circ}C$}
+\subitem \textit{Resolución de humedad: 0,008\% HR}
+\subitem \textit{Resolución de presión atmosférica: $\pm$1hPa}
+	
+	\item \textbf{SHT21:} Sensor de temperatura y humedad relativa.
+\subitem \textit{Resolución de temperatura: 0.01 $^{\circ}C$}
+\subitem \textit{Resolución de humedad: 0,04\% HR}	
+	
+	\item \textbf{MPXV7002:} Sensor de presión diferencial.
+\subitem \textit{Sensibilidad: 1 $V/kPa$}
+\subitem \textit{Rango de presión: -2 $kPa$ a 2 $kPa$}	
+	
+	\item \textbf{ADS1115:} Convertidor analógico digital utilizado en conjunto con MPXV7002.
+\subitem \textit{Resolución: 15 bits}
+\end{itemize}
+
+
+Se realizó ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.
+
+Al tener una salida analógica se utilizó el conversor analógico/ digital ADS 1115. 
+No se utilizó el ADC interno del microcontrolador Arduino ya que la resolución es de 10 bits y del ADS1115 de 15 bits.
+También posee un amplificador de ganancia programable (PGA) que establece la escala completa, es decir, indica el valor de referencia. En Arduino este valor viene determinado por el voltaje de referencia que en el caso de Arduino NANO es 5V. En el ADS1115 lo establece el PGA. Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
+
+Resolución en Arduino NANO:
+\begin{center}
+	\begin{math}Factor\;de\;escala=\frac{5\;V}{1023}=\;0,0048875\;V\;=\;4,88\;mV
+	\end{math}
+\end{center}
+
+Resolución en ADS115:
+\begin{center}
+	\begin{math}Factor\;de\;escala=\;\frac{6.144\;V}{32677}=\;0,0001875\;V\;=\;0,1875\;mV
+	\end{math}
+\end{center}
+
+En la tabla \ref{tab:Reso} se observa los valores posibles de factor de escala para distintos PGA. Este valor se eligió para aprovechar la mayor resolución posible al tener en cuenta el sensor utilizado.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{PGA} & \textbf{Referencia (V)} & \textbf{Factor de Escala (mV)} \\ \hline
+		2/3          & 6,144                   & 0,1875                         \\ \hline
+		1            & 4,096                   & 0,125                          \\ \hline
+		4            & 1,024                   & 0,0312                         \\ \hline
+		8            & 0,512                   & 0,0156                         \\ \hline
+		16           & 0,256                   & 0,0078                         \\ \hline
+	\end{tabular}
+\caption{Factor de escala}
+\label{tab:Reso}
+\end{table}
+
+En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como voltaje de referencia 4,096V.
+\begin{center}
+	\begin{math}
+		Factor\;de\;escala=\;\frac{4,096\;V}{32677}=\;0,000125\;V\;=\;0,125\;mV
+	\end{math}
+\end{center}
+
+
+\subsection{Captura de datos por puerto serie}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
+	Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
+\end{tcolorbox}
+Para capturar los datos, primeramente se utilizó Matlab, como se necesitó visualizar los valores en tiempo real y luego guardar la tabla con vectores, este programa producía errores en la capturación de datos.
+Para solucionar el inconveniente anteriormente nombrado, se utilizó un código generado en Processing. Con este código, se capturó los valores, se observaba el valor numérico estimado de la velocidad y se lograba ingresar el valor del escalón requerido para tomar la planta. (Figura \ref{fig:Proce})
+
+\begin{center}
+	\includegraphics[scale=0.7]{serial_proc.png}
+	\captionof{figure}{Pantalla Processing}
+	\label{fig:Proce}    
+\end{center}
+
+
 
 
 \subsection{Filtros}

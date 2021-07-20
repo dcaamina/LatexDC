@@ -1,3 +1,58 @@
+\subsection{Comparación de densidades} \label{cap:densidades}
+
+Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{placa_sensores.pdf}
+	\captionof{figure}{Esquema de placa con sensores utilizados}
+	\label{fig:sensoresa}
+\end{figure}
+
+A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en la tabla \ref{densicalc}. 
+
+
+\begin{table}[b]
+	\centering
+	\begin{tabular}{ll|l|l|l|l|l|l|l|l|l|}
+		\cline{3-11}
+		\multicolumn{2}{c}{} & \multicolumn{2}{|c|}{\textbf{T [$^{\circ}$$C$]}} & \multicolumn{2}{c|}{\textbf{H [$\%$] }} & \multicolumn{2}{c|}{\textbf{P [$Pa$]}} &  \multicolumn{2}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Dens. calculada\\ {[}$kg/m^3${]}\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{$e_r$ [$\%$]}}} \\ \cline{1-10}
+		\multicolumn{1}{|c|}{\textbf{Fecha}} & \multicolumn{1}{c|}{\textbf{Obs.}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{\textbf{I}} & \multicolumn{1}{c|}{\textbf{S}} & \multicolumn{1}{c|}{} \\ \hline
+		\multicolumn{1}{|l|}{29-abr} & interior & 19,4 & 19,3 & 43,5 & 38,5 & 100400 & 100450 & 1,1916 & 1,1931 & 0,128 \\ \hline
+		\multicolumn{1}{|l|}{14-may} & interior & 16,1 & 18,4 & 54,6 & 43,5 & 101590 & 101570 & 1,2195 & 1,2099 & 0,781 \\ \hline
+		\multicolumn{1}{|l|}{14-may} & interior & 16,5 & 18,9 & 53,7 & 42,5 & 101559 & 101559 & 1,2173 & 1,2077 & 0,794 \\ \hline
+		\multicolumn{1}{|l|}{17-jun} & exterior & 15,2 & 15,5 & 54,3 & 48,6 & 103100 & 103090 & 1,2418 & 1,2404 & 0,109 \\ \hline
+		\multicolumn{1}{|l|}{17-jun} & exterior & 13,8 & 15,1 & 59,2 & 52,4 & 102970 & 102910 & 1,2463 & 1,2397 & 0,527 \\ \hline
+		\multicolumn{1}{|l|}{07-jul} & interior & 17,6 & 18,8 & 43,3 & 34,8 & 100260 & 100261 & 1,1978 & 1,1933 & 0,375 \\ \hline
+	\end{tabular}
+	\caption{Comparación de densidades calculadas}
+	\label{densicalc}
+\end{table}
+
+
+
+
+Referencias de la tabla:
+\begin{itemize}
+	\item \textbf{I}: Instrumentos- Datos obtenidos con los instrumentos del Laboratorio de fluidos.
+	\item \textbf{S}: Sensores- Datos obtenidos a partir de la medición con los sensores utilizados en conjunto con Arduino.
+	\item \textbf{interior}- Mientras se realizaron las mediciones el sensor SH21 se encontraba dentro de la caja dónde estaba el Arduino y la placa reguladora.
+	\item \textbf{exterior}- Las mediciones se realizaron con el sensor SH21 en el lado exterior sin que fuera afectado por el calentamiento del Arduino y la placa reguladora.
+\end{itemize}
+
+
+Tomando como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo es menor al 1\%.
+
+\subsection{Fluctuaciones de velocidad}
+Para corroborar esta propiedad, se usaron datos medidos y a través de un código generado en Matlab y se corroboró el promedio de las fluctuaciones que tiende a cero (Figura \ref{fig:fluct2}).
+\begin{figure}[h!tb]
+	\centering
+	\includegraphics[scale=0.5]{fluctua.png}
+	\captionof{figure}{Fluctuaciones en velocidades medidas}
+	\label{fig:fluct2}
+\end{figure}
+
+%C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Proyecto_Final_Tunel\Pruebas22.03.21
+
 \subsection{Estimación de la densidad ante cambios de Temperatura y Humedad}
 Notamos conveniente realizar la comparación de las densidades calculadas ante las variaciones que se tenían de humedad y temperatura respecto a los datos tomados por los elementos calibrados. En la tabla \ref{densTH} se observa en las celdas internas los valores calculados de densidad para humedad de 38$\%$ y 40$\%$ y temperatura 19$^{\circ}$C y 21$^{\circ}$C, estos datos fueron elegidos al observar las máximas variaciones de los datos tomados con el sensor \textit{SH21} y el instrumento \textit{Testo 435}, manteniendo presión atmosférica constante.
 (Los valores con fondo gris corresponden a la diferencia de valores)
