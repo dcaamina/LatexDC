@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  20 JUL 2021 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  21 JUL 2021 11:18
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -1195,16 +1195,12 @@ es//fluct.png>]
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-Overfull \hbox (10.43753pt too wide) in paragraph at lines 198--200
-\T1/cmr/m/n/12 erro-res en la cap-tu-ra-ción de da-tos. Pa-ra so-lu-cio-nar el 
-in-con-ve-nien-te an-te-rior-men-te nom-bra-do,
- []
-
 <imagenes//serial_proc.png, id=434, 492.33937pt x 277.035pt>
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 202.
 (pdftex.def)             Requested size: 344.6352pt x 193.92317pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 203.
@@ -1439,7 +1435,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
 Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
-(rerunfilecheck)             Checksum: 5B78121E88986793B679D38EFC0A2014;6537.
+(rerunfilecheck)             Checksum: C30864EDD13EF544035F8FB215E4C7AF;6560.
 Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 \openout1 = `"proyecto final.run.xml"'.
 
@@ -1478,9 +1474,9 @@ c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (33 pages, 7989604 bytes).
+Output written on "proyecto final.pdf" (33 pages, 7990474 bytes).
 PDF statistics:
- 1201 PDF objects out of 1440 (max. 8388607)
+ 1203 PDF objects out of 1440 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
  530 words of extra memory for PDF output out of 10000 (max. 10000000)
 

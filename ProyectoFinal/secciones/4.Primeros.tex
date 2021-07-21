@@ -125,7 +125,7 @@ Para determinar la velocidad media se analiza un intervalo de tiempo suficientem
 
 	
 
-Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con librerías de diversos sensores y que cumplía con las prestaciones necesarias (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
+Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con bibliotecas de diversos sensores y que cumplía con las prestaciones necesarias (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
 
 Como se nombró en la sección \ref{sec:ecvel}, es necesario tener mediciones de temperatura, humedad, presión atmosférica y diferencia de presión. Por lo tanto se realizó ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Con las mediciones se eligió aquellos que generaron la menor variación de THP respecto a los instrumentos del laboratorio. 
 
@@ -191,11 +191,11 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 \end{center}
 
 
-\subsection{Captura de datos por puerto serie}
+\subsection{Adquisición de datos por puerto serie}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
 	Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
 \end{tcolorbox}
-Para capturar los datos, primeramente se utilizó Matlab, como se necesitó visualizar los valores en tiempo real y luego guardar la tabla con vectores, este programa producía errores en la capturación de datos.
+Para capturar los datos, primeramente se utilizó Matlab, como se necesitó visualizar los valores en tiempo real y luego guardar la tabla con vectores, este programa producía errores en la adquirió de datos.
 Para solucionar el inconveniente anteriormente nombrado, se utilizó un código generado en Processing. Con este código, se capturó los valores, se observaba el valor numérico estimado de la velocidad y se lograba ingresar el valor del escalón requerido para tomar la planta. (Figura \ref{fig:Proce})
 
 \begin{center}
