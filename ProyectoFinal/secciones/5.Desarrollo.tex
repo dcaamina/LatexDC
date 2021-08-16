@@ -49,9 +49,9 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
 
  \textbf{Captura de datos:} A través del puerto serie y con Processing se realiza el almacenamiento de los datos de respuesta del sistema ante el estímulo de las señales de excitación. Posteriormente, el análisis de los datos y la generación de las gráficas correspondientes es realizado por medio de rutinas de código implementadas en Matlab.
 
- \textbf{Identificación del modelo matemático:} Se utilizaron varios métodos numéricos para la estimación.
+ \textbf{Identificación del modelo matemático:} Se utilizaron varios métodos de identificación experimental, todos ellos analizados con la respuesta al escalón del sistema.
 
- \textbf{Validación del modelo matemático:} una vez obtenida la mejor estimación, se efectuó una validación adicional a partir de la comparación de datos experimentales con los teóricos generados por escalones.
+ \textbf{Validación del modelo matemático:} Una vez obtenida la mejor estimación, se efectuó una validación adicional a partir de la comparación de datos experimentales con los teóricos generados en simulaciones.
 
 
 
@@ -60,7 +60,7 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
 
     \subsubsection{Método de estimación}
 
-    Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente en el variador de velocidad. 
+    Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente al variador de velocidad. 
     
     La Figura \ref{fig:bloques} muestra un diagrama resumido de los pasos a realizar para tomar datos de la planta. Siendo G(s) el conjunto del túnel de viento, variador de velocidad y motor.
  
@@ -70,7 +70,7 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     	\label{fig:bloques}    
     \end{center}
     
-    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, generando por la interfaz distintos escalones de entrada para obtener varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas anteriormente generadas.
+    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas anteriormente generadas.
     
     \begin{figure}[htb]
     	\centering
@@ -83,8 +83,8 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     
     \begin{figure}[htbp]
     	\centering
-    	\subfigure[Parámetros Strejc]{\includegraphics[width=70mm]{parametros.jpg}}
-    	\subfigure[Estimación de parámetros]{\includegraphics[width=80mm]{planta_est1.jpg}} 
+    	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[width=70mm]{parametros_seg.png}}
+    	\subfigure[Estimación de parámetros]{\includegraphics[width=80mm]{planta_seg1.png}} 
     	\caption{Estimación de planta} \label{fig:pl2}
     \end{figure}
     

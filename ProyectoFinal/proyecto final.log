@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  13 AUG 2021 18:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  16 AUG 2021 12:15
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -1274,6 +1274,12 @@ Overfull \hbox (30.21188pt too wide) in paragraph at lines 50--51
 de las se-ña-les de ex-ci-ta-ción. Pos-te-rior-men-te,
  []
 
+
+Overfull \hbox (10.9055pt too wide) in paragraph at lines 52--53
+[]\T1/cmr/bx/n/12 Identificación del mo-de-lo ma-te-má-ti-co: \T1/cmr/m/n/12 Se
+ uti-li-za-ron va-rios mé-to-dos de iden-ti-fi-ca-ción
+ []
+
 [20 <./imagenes/plano_DC.pdf> <./imagenes//planta_d.png>]
 <imagenes//bloques.png, id=489, 864.22874pt x 369.63094pt>
 File: imagenes//bloques.png Graphic file (type png)
@@ -1297,16 +1303,16 @@ File: imagenes//estima.png Graphic file (type png)
 <use imagenes//estima.png>
 Package pdftex.def Info: imagenes//estima.png  used on input line 77.
 (pdftex.def)             Requested size: 429.85487pt x 224.33757pt.
-<imagenes//parametros.jpg, id=494, 414.79968pt x 254.45062pt>
-File: imagenes//parametros.jpg Graphic file (type jpg)
-<use imagenes//parametros.jpg>
-Package pdftex.def Info: imagenes//parametros.jpg  used on input line 86.
-(pdftex.def)             Requested size: 199.16928pt x 122.17374pt.
-<imagenes//planta_est1.jpg, id=495, 776.14969pt x 426.84468pt>
-File: imagenes//planta_est1.jpg Graphic file (type jpg)
-<use imagenes//planta_est1.jpg>
-Package pdftex.def Info: imagenes//planta_est1.jpg  used on input line 87.
-(pdftex.def)             Requested size: 227.62204pt x 125.1821pt.
+<imagenes//parametros_seg.png, id=494, 374.14781pt x 251.43938pt>
+File: imagenes//parametros_seg.png Graphic file (type png)
+<use imagenes//parametros_seg.png>
+Package pdftex.def Info: imagenes//parametros_seg.png  used on input line 86.
+(pdftex.def)             Requested size: 199.16928pt x 133.84923pt.
+<imagenes//planta_seg1.png, id=495, 886.06032pt x 522.45187pt>
+File: imagenes//planta_seg1.png Graphic file (type png)
+<use imagenes//planta_seg1.png>
+Package pdftex.def Info: imagenes//planta_seg1.png  used on input line 87.
+(pdftex.def)             Requested size: 227.62204pt x 134.208pt.
 [21 <./imagenes//bloques.png> <./imagenes//estima.png>]
 <imagenes//estim2.jpeg, id=504, 1284.8pt x 728.7225pt>
 File: imagenes//estim2.jpeg Graphic file (type jpg)
@@ -1318,14 +1324,14 @@ File: imagenes//estim3.jpeg Graphic file (type jpg)
 <use imagenes//estim3.jpeg>
 Package pdftex.def Info: imagenes//estim3.jpeg  used on input line 108.
 (pdftex.def)             Requested size: 449.68674pt x 258.92119pt.
- [22 <./imagenes//parametros.jpg> <./imagenes//planta_est1.jpg> <./imagenes//es
-tim2.jpeg>]
-<imagenes//pruebapid.png, id=514, 856.70062pt x 446.41782pt>
+ [22 <./imagenes//parametros_seg.png> <./imagenes//planta_seg1.png> <./imagenes
+//estim2.jpeg>]
+<imagenes//pruebapid.png, id=517, 856.70062pt x 446.41782pt>
 File: imagenes//pruebapid.png Graphic file (type png)
 <use imagenes//pruebapid.png>
 Package pdftex.def Info: imagenes//pruebapid.png  used on input line 120.
 (pdftex.def)             Requested size: 428.34926pt x 223.20836pt.
-<imagenes//pisubida.png, id=517, 861.2175pt x 450.9347pt>
+<imagenes//pisubida.png, id=520, 861.2175pt x 450.9347pt>
 File: imagenes//pisubida.png Graphic file (type png)
 <use imagenes//pisubida.png>
 Package pdftex.def Info: imagenes//pisubida.png  used on input line 141.
@@ -1334,7 +1340,7 @@ Package pdftex.def Info: imagenes//pisubida.png  used on input line 141.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes//pibajada.png, id=518, 863.47594pt x 452.4403pt>
+<imagenes//pibajada.png, id=521, 863.47594pt x 452.4403pt>
 File: imagenes//pibajada.png Graphic file (type png)
 <use imagenes//pibajada.png>
 Package pdftex.def Info: imagenes//pibajada.png  used on input line 148.
@@ -1342,7 +1348,7 @@ Package pdftex.def Info: imagenes//pibajada.png  used on input line 148.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes//mix.png, id=520, 859.71187pt x 450.9347pt>
+<imagenes//mix.png, id=523, 859.71187pt x 450.9347pt>
 File: imagenes//mix.png Graphic file (type png)
 <use imagenes//mix.png>
 Package pdftex.def Info: imagenes//mix.png  used on input line 157.
@@ -1351,7 +1357,7 @@ Package pdftex.def Info: imagenes//mix.png  used on input line 157.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23 <./imagenes//estim3.jpeg>]) (secciones/5.1Pruebas.tex
-<imagenes//placa_sensores.pdf, id=526, 317.185pt x 266.9975pt>
+<imagenes//placa_sensores.pdf, id=529, 317.185pt x 266.9975pt>
 File: imagenes//placa_sensores.pdf Graphic file (type pdf)
 <use imagenes//placa_sensores.pdf>
 Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 6.
@@ -1362,13 +1368,13 @@ Overfull \hbox (25.40956pt too wide) in paragraph at lines 16--27
  []
 
 [25 <./imagenes//pibajada.png> <./imagenes//mix.png>]
-<imagenes//fluctua.png, id=542, 854.44218pt x 445.665pt>
+<imagenes//fluctua.png, id=545, 854.44218pt x 445.665pt>
 File: imagenes//fluctua.png Graphic file (type png)
 <use imagenes//fluctua.png>
 Package pdftex.def Info: imagenes//fluctua.png  used on input line 49.
 (pdftex.def)             Requested size: 427.22005pt x 222.83195pt.
  [26 <./imagenes//placa_sensores.pdf>] [27 <./imagenes//fluctua.png>]
-<imagenes//condifpres.jpg, id=568, 681.29532pt x 310.15875pt>
+<imagenes//condifpres.jpg, id=571, 681.29532pt x 310.15875pt>
 File: imagenes//condifpres.jpg Graphic file (type jpg)
 <use imagenes//condifpres.jpg>
 Package pdftex.def Info: imagenes//condifpres.jpg  used on input line 97.
@@ -1389,22 +1395,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
  []
 
 [28 <./imagenes//condifpres.jpg>]
-<imagenes//compu1.png, id=577, 860.46469pt x 450.9347pt>
+<imagenes//compu1.png, id=580, 860.46469pt x 450.9347pt>
 File: imagenes//compu1.png Graphic file (type png)
 <use imagenes//compu1.png>
 Package pdftex.def Info: imagenes//compu1.png  used on input line 166.
 (pdftex.def)             Requested size: 430.2313pt x 225.4668pt.
-<imagenes//comp2.png, id=578, 851.43094pt x 445.665pt>
+<imagenes//comp2.png, id=581, 851.43094pt x 445.665pt>
 File: imagenes//comp2.png Graphic file (type png)
 <use imagenes//comp2.png>
 Package pdftex.def Info: imagenes//comp2.png  used on input line 174.
 (pdftex.def)             Requested size: 425.71443pt x 222.83195pt.
-<imagenes//comp.jpg, id=579, 4015.0pt x 3011.25pt>
+<imagenes//comp.jpg, id=582, 4015.0pt x 3011.25pt>
 File: imagenes//comp.jpg Graphic file (type jpg)
 <use imagenes//comp.jpg>
 Package pdftex.def Info: imagenes//comp.jpg  used on input line 181.
 (pdftex.def)             Requested size: 401.52353pt x 301.14264pt.
-<imagenes//reos.jpg, id=580, 391.4625pt x 292.84406pt>
+<imagenes//reos.jpg, id=583, 391.4625pt x 292.84406pt>
 File: imagenes//reos.jpg Graphic file (type jpg)
 <use imagenes//reos.jpg>
 Package pdftex.def Info: imagenes//reos.jpg  used on input line 188.
@@ -1441,42 +1447,43 @@ Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30449 strings out of 478870
- 555067 string characters out of 2858693
+ 30451 strings out of 478870
+ 555121 string characters out of 2858693
  1062715 words of memory out of 3000000
- 47643 multiletter control sequences out of 15000+600000
- 424632 words of font info for 80 fonts, out of 8000000 for 9000
+ 47644 multiletter control sequences out of 15000+600000
+ 424967 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,17n,108p,1859b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
 1200.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1200.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ectt1000.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm0700.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\quich\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\quich\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\quich\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\quich\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\quich\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\
-quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\
-Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1728.pk
-> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2
-488.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\eccc1728.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecbx2074.pk><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
-8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmib10.pfb><D:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (33 pages, 7999060 bytes).
+0\tcrm1000.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcrm1200.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt1000.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\quich\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\quich\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\quich\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\quich\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\quich\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\
+quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\
+Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk
+> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1
+728.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\eccc2488.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\eccc1728.pk> <C:\Users\quich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx2074.pk><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmbx8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "proyecto final.pdf" (33 pages, 7947543 bytes).
 PDF statistics:
- 1213 PDF objects out of 1440 (max. 8388607)
+ 1220 PDF objects out of 1440 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
  530 words of extra memory for PDF output out of 10000 (max. 10000000)
 
