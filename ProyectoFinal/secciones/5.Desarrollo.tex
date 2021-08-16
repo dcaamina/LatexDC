@@ -79,7 +79,7 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     	\label{fig:est2}    
     \end{figure}
     
-    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los valores obtenidos de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través del método \textit{"Strejc"} \cite{pomares2011sistemas}.
+    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los valores obtenidos de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
     
     \begin{figure}[htbp]
     	\centering
@@ -87,14 +87,31 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     	\subfigure[Estimación de parámetros]{\includegraphics[width=80mm]{planta_seg1.png}} 
     	\caption{Estimación de planta} \label{fig:pl2}
     \end{figure}
+
+ \begin{equation}
+ 	G(s)=\frac{k\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}\ast e^{-T.s}
+ \end{equation}
+
+Sobreoscilación: 
+\begin{equation}
+	\delta\;=\;\frac{\triangle y_{max}-\triangle y\left(\infty\right)}{\triangle y\left(\infty\right)}=\;e\;^{-\frac{\xi\pi}{\sqrt{1-\xi^2}}}\;\;\;\rightarrow\;Para\;obtener\;\xi
+\end{equation}
+
+Tiempo de pico: 
+\begin{equation}
+t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Para\;obtener\;\omega_n
+\end{equation}
+
     
     Con ayuda del código y ajustes manuales se llegó a una función de transferencia de segundo orden:
     
     \begin{equation}
     	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}
     \end{equation}
+   
     
-    Para corroborar la elección de la planta se genreó un archivo en \textit{Simulink} generando como entrada esclaones que se colocaron en el sistema. Luego, el otro código de matlab obtenía estos valores y realizaba la comparación de lo estimado con los valores reales obtenidos en diversas mediciones (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
+    
+    Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. Seguidamente en el gráfico se dispuso la respuesta experimental en conjunto con la simulación (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
     
     \begin{figure}[htb]
     	\centering

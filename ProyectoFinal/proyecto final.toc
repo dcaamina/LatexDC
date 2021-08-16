@@ -43,7 +43,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.5.2}Método de estimación}{21}{subsubsection.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Control}{23}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.6}Control}{22}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Pruebas realizadas}{24}{section.6}%
 \defcounter {refsection}{0}\relax 
@@ -51,7 +51,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}Fluctuaciones de velocidad}{26}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{26}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{27}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.4}comparación de la frecuencia vista en el panel con el valor de PWM}{28}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
@@ -61,20 +61,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.7}Perturbaciones}{28}{subsection.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Implementación}{30}{section.7}%
+\contentsline {section}{\numberline {7}Implementación}{29}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Planos eléctricos}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Planos eléctricos}{29}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Implementación física final}{30}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Implementación física final}{31}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Consumo de corriente}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Consumo de corriente}{31}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}HMI}{30}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}HMI}{31}{subsection.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5}Costos}{30}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.5}Costos}{31}{subsection.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Recomendaciones futuras}{30}{section.8}%
+\contentsline {section}{\numberline {8}Recomendaciones futuras}{31}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusión}{30}{section.9}%
+\contentsline {section}{\numberline {9}Conclusión}{31}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Bibliografia}{30}{section.10}%
+\contentsline {section}{\numberline {10}Bibliografia}{31}{section.10}%
