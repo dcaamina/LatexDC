@@ -109,7 +109,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}
     \end{equation}
    
-    
+    Esta función de transferencia esta realizada para una entrada que va desde 0 a 1023. Que es el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM del microcontrolador.
     
     Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. Seguidamente en el gráfico se dispuso la respuesta experimental en conjunto con la simulación (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
     
@@ -126,12 +126,11 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
 	\captionof{figure}{Corroboración de estimación de la planta. Ejemplo 2}
 	\label{fig:estim3}
 \end{figure}
-    
        
     \subsection{Control}
-    Para relizar una primera estimación de un PID se utilizó la herramienta de \textit{Matlab}, a partir de ahí se realizaban pequeñas modificaciones y se realizaban las simulaciones quedando todos del formato PI (proporcional - integrador).
-    Con los valores anteriormente nombrados se realizaron pruebas en el Túnel del viento con escalones de velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s, haciendo un total de 5 pruebas, con PI distintos para los mismos escalones. 
-    
+    Para el cálculo en primera instancia del controlador PID se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones todas en el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
+    Con los distintos valores de PI se realizaron pruebas en el Túnel del viento con escalones de velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s, haciendo un total de 5 pruebas para los mismos estímulos de entrada. 
+   
     \begin{figure}[htb]
     	\centering
     	\includegraphics[scale=0.5]{pruebapid.png}
@@ -139,7 +138,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     	\label{fig:PI3}
     \end{figure}
     
-    Los valores de cada PI utilizados se muestra en la tabla siguiente
+    Los valores de cada configuración PI se muestran en la tabla siguiente
     \begin{table}[h]
     	\centering
     	\begin{tabular}{r|r|r|r|r|r|r|}
@@ -151,7 +150,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     \caption{Valores de PID's}
     \end{table}
     
-    Uniendo todos los resusltados obtenidos por los distintos PI utilizados se puede realizar las comparaciones para un escalon donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
+    Al visualizar las respuestas obtenidas por las diferentes configuraciones se puede realizar la comparacion para un escalon en donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
     
     \begin{figure}[h!]
     	\centering

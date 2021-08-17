@@ -45,36 +45,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6}Control}{23}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Pruebas realizadas}{24}{section.6}%
+\contentsline {section}{\numberline {6}Pruebas realizadas}{25}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Comparación de densidades}{24}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Comparación de densidades}{25}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Fluctuaciones de velocidad}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Fluctuaciones de velocidad}{27}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{26}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{27}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.4}comparación de la frecuencia vista en el panel con el valor de PWM}{28}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.5}Contrastación de diferencia de presión}{28}{subsection.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}Contrastación de velocidades}{28}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.6}Contrastación de velocidades}{29}{subsection.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}Perturbaciones}{28}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.7}Perturbaciones}{29}{subsection.6.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Implementación}{31}{section.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1}Bloque Aplicación}{31}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Bloque Hardware}{34}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Bloque Hardware}{35}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3}Costos}{35}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.4}Consumo de corriente}{35}{subsection.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5}Planos eléctricos}{35}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.5}Planos eléctricos}{36}{subsection.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Recomendaciones futuras}{36}{section.8}%
+\contentsline {section}{\numberline {8}Recomendaciones futuras}{37}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusión}{37}{section.9}%
+\contentsline {section}{\numberline {9}Conclusión}{38}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Bibliografia}{38}{section.10}%
+\contentsline {section}{\numberline {10}Bibliografia}{39}{section.10}%
