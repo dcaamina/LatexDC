@@ -109,8 +109,8 @@ Para determinar la velocidad media se analiza un intervalo de tiempo suficientem
 \end{figure}
 
 
-
-\section{Desarrollo}
+\newpage
+\section{Desarrollo}  \label{sec:desarr}
 
 \subsection{Microcontrolador, sensores y comunicación}
 
@@ -147,6 +147,18 @@ Sensores utilizados
 	\item \textbf{ADS1115:} Convertidor analógico digital utilizado en conjunto con MPXV7002.
 \subitem \textit{Resolución: 15 bits}
 \end{itemize}
+
+
+\begin{figure}[htbp]
+	\centering
+	\subfigure[BME280]{\includegraphics[width=25mm]{bme280.png}}
+	\subfigure[SHT21]{\includegraphics[width=30mm]{sht21.png}}
+	\subfigure[MPXV7002:]{\includegraphics[width=30mm]{mpx7002.png}}
+	\subfigure[ADS1115]{\includegraphics[width=35mm]{ads1115.png}}
+	\caption{Sensores utilizados} \label{fig:senstodos}
+\end{figure}
+
+
 
 
 Se realizó ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.

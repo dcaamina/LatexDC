@@ -156,36 +156,44 @@ ver PRUEBA\_10\_PID
 el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentido comparar ambos porq para ellos usamos  un anemómetro (podriamos ver de usar el anemómetro de ventilador? y el de testo para ver los distintos valores y nosotros con el código en función de THP)
 
 \subsection{Perturbaciones}
-Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). \\
-
-Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
-
+Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{compu1.png}
-	\captionof{figure}{VER QUE POINER}
-	\label{fig:comp1}
-\end{figure}
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{comp2.png}
-	\captionof{figure}{VER QUE POINER okkkk}
-	\label{fig:comp2}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.1]{comp.jpg}
+	\includegraphics[scale=0.08]{comp.jpg}
 	\captionof{figure}{Compuertas utilizadas como perturbaciones}
 	\label{fig:comp}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.8]{reos.jpg}
+	\includegraphics[scale=0.7]{reos.jpg}
 	\captionof{figure}{Fotos del reóstato (izquierda) y del banco de resistencias (derecha)}
 	\label{fig:reos}
 \end{figure}
+
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{compu1.png}
+	\captionof{figure}{VER QUE POINER}
+	\label{fig:comp1}
+	\includegraphics[scale=0.5]{comp2.png}
+	\captionof{figure}{VER QUE POINER okkkk}
+	\label{fig:comp2}
+\end{figure}
+
+\begin{comment}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{comp2.png}
+\captionof{figure}{VER QUE POINER okkkk}
+\label{fig:comp2}
+\end{figure}
+\end{comment}
+
+
+
+

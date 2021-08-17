@@ -4,7 +4,8 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{amssymb}
+\usepackage{enumitem}%separacion de las listas
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 \usepackage{multirow} %tablas
 \usepackage[table,xcdraw]{xcolor} %color tablas
@@ -102,33 +103,35 @@
 	\section{Introducción}
 	\input{secciones/1.Introduccion}
 
+
 	\section{Objetivo}
 	\input{secciones/2.Objetivo}
 
 	\section{Túnel Aerodinámico}
 	\input{secciones/3.Tunel}	
+		\newpage
 
 \section{Fluido- Aire}
 	\subsection{Ecuación velocidad del aire} \label{sec:ecvel}
 	\input{secciones/4.Primeros}
-
+	\newpage
 	%\section{Desarrollo}
 	\input{secciones/5.Desarrollo}
-
+	\newpage
 	\section{Pruebas realizadas}
 	\input{secciones/5.1Pruebas}
-
+	\newpage
 	\section{Implementación} 
 	\input{secciones/6.Planos}
-	
+		\newpage
 	\section{Recomendaciones futuras}
 	\input{secciones/7.Recomendaciones}
-
+	\newpage
 	\section{Conclusión}
 	\input{secciones/8.Conclu}
 	
 	Beneficios y  contra - pruebas realizadas
-	
+		\newpage
 	\section{Bibliografia}
 
 
