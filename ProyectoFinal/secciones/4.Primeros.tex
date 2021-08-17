@@ -195,8 +195,8 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
 	Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
 \end{tcolorbox}
-Para capturar los datos, primeramente se utilizó Matlab, como se necesitó visualizar los valores en tiempo real y luego guardar la tabla con vectores, este programa producía errores en la adquirió de datos.
-Para solucionar el inconveniente anteriormente nombrado, se utilizó un código generado en Processing. Con este código, se capturó los valores, se observaba el valor numérico estimado de la velocidad y se lograba ingresar el valor del escalón requerido para tomar la planta. (Figura \ref{fig:Proce})
+Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro script para obtener conclusiones. Luego de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad medida. Para solucionar el inconveniente, se realizó una primera versión (Figura \ref{fig:Proce}) de un programa gráfico generado con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible ingresando valores numéricos por teclado que eran enviados para generar la respectiva señal que luego sería ingresada al microcontrolador.
+Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv que luego podrán ser observadas con Matlab.
 
 \begin{center}
 	\includegraphics[scale=0.7]{serial_proc.png}
