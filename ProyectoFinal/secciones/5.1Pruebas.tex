@@ -1,7 +1,7 @@
 \subsection{Comparación de densidades} \label{cap:densidades}
 
 Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y no se produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
-\begin{figure}[htb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{placa_sensores.pdf}
 	\captionof{figure}{Esquema de placa con sensores utilizados}
@@ -43,8 +43,8 @@ Referencias de la tabla:
 Tomando como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo es menor al 1\%.
 
 \subsection{Fluctuaciones de velocidad}
-Para corroborar esta propiedad, se usaron datos medidos y a través de un código generado en Matlab y se corroboró el promedio de las fluctuaciones que tiende a cero (Figura \ref{fig:fluct2}).
-\begin{figure}[h!tb]
+A partir de la teoría que se observó en la sección \ref{sec:flujoT} figura \ref{fig:fluct}, se decidió corroborar esta propiedad, se utilizó datos medidos y a través de un código generado en Matlab y se constató que el promedio de las fluctuaciones que tiende a cero (Figura \ref{fig:fluct2}).
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{fluctua.png}
 	\captionof{figure}{Fluctuaciones en velocidades medidas}
@@ -92,7 +92,7 @@ El sensor \textit{MPX7002} tiene como salida voltaje proporcional a la diferenci
 
 Para realizar la contrastación de la diferencia de presión ocasionada dentro del túnel por el aire, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente habladas a causa del flujo turbulento, se procedió a filmar el instrumento y aparte los datos obtenidos por nuestro sistema. Ambos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, generando luego un gráfico de puntos con las muestras tomadas, observando que el error es mayor para diferencias de presión mayores a 100 Pa \ref{fig:condifpres}.
 
-\begin{figure}[htb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{condifpres.jpg}
 	\captionof{figure}{Contrastación de diferencia de presión}
@@ -158,14 +158,14 @@ el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentid
 \subsection{Perturbaciones}
 Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.08]{comp.jpg}
 	\captionof{figure}{Compuertas utilizadas como perturbaciones}
 	\label{fig:comp}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{reos.jpg}
 	\captionof{figure}{Fotos del reóstato (izquierda) y del banco de resistencias (derecha)}
@@ -175,24 +175,15 @@ Para observar la respuesta del control se generó perturbaciones utilizando las 
 Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
 
 
-\begin{figure}[]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{compu1.png}
-	\captionof{figure}{VER QUE POINER}
+	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
 	\label{fig:comp1}
 	\includegraphics[scale=0.5]{comp2.png}
-	\captionof{figure}{VER QUE POINER okkkk}
+	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
 	\label{fig:comp2}
 \end{figure}
-
-\begin{comment}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{comp2.png}
-\captionof{figure}{VER QUE POINER okkkk}
-\label{fig:comp2}
-\end{figure}
-\end{comment}
 
 
 

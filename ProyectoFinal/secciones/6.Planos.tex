@@ -15,31 +15,33 @@ La implementación final constó de dos bloques (Figura \ref{fig:implebloq}), un
 	La interfaz gráfica de usuario utiliza un conjunto de objetos gráficos para representar información y realizar acciones. El principal uso es un entorno de comunicación entre el usuario y algún elemento a controlar.
 \end{tcolorbox}
 
-Para la interfaz gráfica se creó un ejecutable para Windows, donde se utilizó el programa de código abierto “Processing”. La aplicación cuenta con comandos para configurar el funcionamiento del variador, configurar velocidades, realizar adquisición de datos y observar parámetros en tiempo real.
+Para la interfaz gráfica se creó un ejecutable para Windows, donde se utilizó el programa de código abierto \textit{Processing} en conjunto con la biblioteca \textit{ControlP5} \cite{controlp5}. La aplicación cuenta con comandos para configurar el funcionamiento del variador, configurar velocidades, realizar adquisición de datos y observar parámetros en tiempo real.
 En el diagrama de flujo de la Figura \ref{fig:bloqvis} se observa que “aplicación” se divide en dos partes: 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{aplibloques.png}
-	\captionof{figure}{Bloque \textbf{Aplicación}}
+	\captionof{figure}{Bloque \textit{Aplicación}}
 	\label{fig:bloqvis}
 \end{figure}
 
 \begin{enumerate}
 \item Bloque \textbf{“Adquisición de datos”}: 
-\subitem Obtiene datos provenientes del microcontrolador que son utilizados para guardar datos en un archivo “.csv”. 
+\subitem Obtiene datos provenientes del microcontrolador (Tabla \ref{tab:Datosdesde}) que son utilizados para guardar datos en un archivo “.csv”. 
 \subitem Adquiere los datos que luego son utilizados por el bloque VISUAL.
  
 Los datos que se reciben desde el microcontrolador durante el proceso de adquisición de datos consta de una cadena de caracteres en formato “string” dónde los distintos parámetros son separados por comas.
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
 		$D_0$ , & $D_1$ , & $D_2$ , & $D_3$ , & $D_4$ , & $D_5$ , & $D_6$ ,  & $D_7$ , & $D_8$ , & $D_9$ , & $D_{10}$ , & $D_{11}$ , & $D_{12}$ , & $D_{13}$ ,  \\ \hline
 	\end{tabular}
+\caption{Datos adquiridos desde el $u$C}
+\label{tab:Datosdesde}
 \end{table}
 
-
+Referencia de cada dato:
 	\begin{itemize}
 	\item $D_0$: velocidad estimada utilizando THP y diferencia de presión.
 	\item 	$D_1$: velocidad o frecuencia de referencia.
@@ -51,17 +53,17 @@ Los datos que se reciben desde el microcontrolador durante el proceso de adquisi
 	\item 	$D_7$: presión atmosférica.
 	\item 	$D_8$: densidad estimada por el microcontrolador.
 	\item 	$D_9$: señal si se encuentra activado el control.
-	\item 	$D_10$: error entre la velocidad estimada y la de referencia.
-	\item 	$D_11$: estado encendido/apagado del motor.
-	\item 	$D_12$: indicación de algún error del variador de velocidad.
-	\item 	$D_13$: indicación de comienzo y fin del control automático.
+	\item 	$D_{10}$: error entre la velocidad estimada y la de referencia.
+	\item 	$D_{11}$: estado encendido/apagado del motor.
+	\item 	$D_{12}$: indicación de algún error del variador de velocidad.
+	\item 	$D_{13}$: indicación de comienzo y fin del control automático.
 	\end{itemize}	
 
 
 \item Bloque \textbf{Visual}: 
 \begin{itemize}
 \item Sub-bloque \textbf{Parámetros}: con los datos adquiridos, muestra los valores de TPH, v y v/f ref y realiza gráficos en tiempo real donde el usuario decide la visibilidad de distintos parámetros (v, v/f ref, dDP, accion de control) y su correspondiente escala. 
-\item Sub-bloque \textbf{Puesta en marcha del motor}: En el sub-bloque \\ \fcolorbox{red}{yellow}{“PUESTA EN MARCHA DEL MOTOR”} se encuentran botones de RUN y STOP que pondrán en marcha y pararán el motor según la configuración de F7 del variador de velocidad. En este bloque también se encuentran el botón de parada de emergencia y el botón de “Reset” ante alguna falla. 
+\item Sub-bloque \textbf{Puesta en marcha del motor}: En el sub-bloque se encuentran botones de RUN y STOP que pondrán en marcha y pararán el motor según la configuración de F7 del variador de velocidad. En este bloque también se encuentran el botón de parada de emergencia y el botón de “Reset” ante alguna falla. 
 \item Sub-bloque \textbf{Modos de funcionamiento}: posee las siguientes formas de ejecución del microcontrolador:
 \begin{itemize}
 \item \underline{Modo Lectura de datos:} al realizar la conexión del puerto serial, el microcontrolador comienza a adquirir datos, mostrando THP, velocidad y frecuencia de referencia por defecto. El modo solo recibe datos del microcontrolador pero esta configuración espera comandos de autofunción o del Modo Ai1 para enviar al microcontrolador una nueva orden.
@@ -74,21 +76,17 @@ Los datos que se reciben desde el microcontrolador durante el proceso de adquisi
 \end{itemize}
 \end{itemize}
 
-\end{enumerate}
 
+El formato de los datos enviados de la aplicación al microcontrolador es un vector de los datos separados por comas en formato “string” como se observan en la tabla \ref{tab:Datosenviados}, mientras que la referencia de cada elemento son:
 
-
-
-
-El formato de los datos enviados de la aplicación al microcontrolador es un vector de los datos separados por comas en formato “string”como se observan en la tabla SKFAJSF, mientras que la referencia de cada elemento son:
-
-que se envían a través de la aplicación en formato “string” al microcontrolador son mostrados en la Tabla
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
 			$D_0$ , & $D_1$ , & $D_2$ , & $D_3$ , & $D_4$ , & $D_5$ , & $D_6$ ,  & $D_7$ , \\ \hline
 	\end{tabular}
+\caption{Datos enviados al $u$C}
+\label{tab:Datosenviados}
 \end{table}
 
 \begin{itemize}
@@ -102,68 +100,64 @@ que se envían a través de la aplicación en formato “string” al microcontr
 \item $D_7$: vector de velocidades de referencias y tiempos de los escalones obtenidos del .csv.
 \end{itemize}	
 
+\end{enumerate}
+
 
 \subsection{Bloque Hardware} \label{sec:hard}
 
 Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa uniendo los bloques anteriormente utilizados (Sección \ref{sec:desarr}) (Figura \ref{fig:hardBloq}). Esta nueva placa fue realizada por la máquina de prototipado \fcolorbox{red}{yellow}{“MARCA protomart”} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó componentes nuevos y se reutilizaron elementos utilizados durante la implementación del prototipo.  
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{placa_2.png}
-	\captionof{figure}{Diagrama en bloques del hardware}
+	\captionof{figure}{Bloque \textit{Hardware}}
 	\label{fig:hardBloq}
 \end{figure}
 
 En la \fcolorbox{red}{yellow}{figura WWW} se observa la placa terminada. Este nuevo prototipo elimina ruidos eléctricos ocasionados al utilizar cables para interconectar bloques y sensores.
 
 
-
-
-
-
-
 \subsection{Costos}
-El proyecto se comenzó a mediados del año 2019, por lo que los sensores fueron comprados en esa fecha en el exterior. En la tabla \ref{gastos} se observan los gastos totales para realizar la implementación final del HARDWARE con valores actualizados a agosto de 2021. El valor del dólar (agosto de 2021) incluye 30% +35% de impuestos siendo este $180/1USD. Los elementos no comprados en el exterior fueron adquiridos en la localidad, adaptándonos al stock de componentes.
+El proyecto se comenzó a mediados del año 2019, por lo que los sensores de temperatura, humedad, 
+presión atmosférica y diferencia de presión fueron comprados en esa fecha en el exterior y los demás componentes, en la actualidad, en la ciudad adaptándonos al stock encontrado. En la tabla \ref{gastos} se observan los valores totales para realizar la implementación final del \textit{hardware} con precios actualizados al mes de agosto de 2021. 
 
-\fcolorbox{red}{yellow}{tabla guardada cualquier cosa}
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
-	\begin{tabular}{|r|l|l|r|r|}
+	\begin{tabular}{|r|l|r|r|}
 		\hline
-		\multicolumn{1}{|c|}{\textit{\textbf{Cantidad}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Precio (USD)}}} & \multicolumn{1}{c|}{\textit{\textbf{Precio (\$)}}} & \multicolumn{1}{c|}{\textit{\textbf{Sub-Total  (\$)}}} \\ \hline
-		1 & BME280 & \multicolumn{1}{r|}{2.4} & \multicolumn{1}{l|}{} & 432 \\ \hline
-		1 & MPXV7002 & \multicolumn{1}{r|}{7.41} & \multicolumn{1}{l|}{} & 1334 \\ \hline
-		1 & SI7021 & \multicolumn{1}{r|}{3.25} & \multicolumn{1}{l|}{} & 585 \\ \hline
-		1 & envio internacional & \multicolumn{1}{r|}{4.6} & \multicolumn{1}{l|}{} & 828 \\ \hline
-		1 & envio Arg &  & 160 & 160 \\ \hline
-		10 & Resistencia 4.7k &  & 5 & 50 \\ \hline
-		5 & Resistencia 10k &  & 5 & 25 \\ \hline
-		5 & Resistencia 100k &  & 5 & 25 \\ \hline
-		4 & Resistencia 20k &  & 7.5 & 30 \\ \hline
-		2 & Resistencia 22k &  & 5 & 10 \\ \hline
-		2 & Preset 1k &  & 180 & 360 \\ \hline
-		1 & Preset 500 & \multicolumn{1}{r|}{} & 180 & 180 \\ \hline
-		1 & Preset 10k &  & 180 & 180 \\ \hline
-		1 & Diodo Zener 1N4740 (10V) &  & 25 & 25 \\ \hline
-		1 & Diodo Zener 1N4001 &  & 15 & 15 \\ \hline
-		2 & Capacitor 0.33uF &  & 35 & 70 \\ \hline
-		2 & Capacitor 0.1uF &  & 15 & 30 \\ \hline
-		1 & Capacitor 220uF-16V &  & 20 & 20 \\ \hline
-		3 & Capacitor 10nF &  & 15 & 45 \\ \hline
-		5 & Transistor BC548 &  & 30 & 150 \\ \hline
-		1 & CI 74LS126 &  & 200 & 200 \\ \hline
-		1 & CI LM358 &  & 70 & 70 \\ \hline
-		1 & Borneras x2 &  & 180 & 180 \\ \hline
-		1 & Borneras x3 &  & 200 & 200 \\ \hline
-		1 & Fuente conmutada &  & 1500 & 1500 \\ \hline
-		1 & Regulador 7810 &  & 180 & 180 \\ \hline
-		1 & Regulador 7815 &  & 180 & 180 \\ \hline
-		1 & ADC ADS1115 &  & 800 & 800 \\ \hline
-		\multicolumn{1}{|l|}{} & Pines M/H/zócalos &  & 490 & 490 \\ \hline
-		\multicolumn{1}{|l|}{} & Arduino NANO &  & 900 & 900 \\ \hline
-		\multicolumn{1}{|l|}{} & Caja contenedora &  & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
-		\multicolumn{4}{|r|}{\textbf{Total}} & \multicolumn{1}{c|}{\textbf{\$ 9253.8}} \\ \hline
+		\multicolumn{1}{|c|}{\textit{\textbf{Unidad(es)}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Precio (\$)}}} & \multicolumn{1}{c|}{\textit{\textbf{Sub-Total  (\$)}}} \\ \hline
+		1 & BME280 & 3850 & 3850 \\ \hline
+		1 & MPXV7002dp & 8489 & 8490 \\ \hline
+		1 & SI7021 & 3769 & 3770 \\ \hline
+		10 & Resistencia 4.7k & 5 & 50 \\ \hline
+		5 & Resistencia 10k & 5 & 25 \\ \hline
+		5 & Resistencia 100k & 5 & 25 \\ \hline
+		4 & Resistencia 20k & 7.5 & 30 \\ \hline
+		2 & Resistencia 22k & 5 & 10 \\ \hline
+		2 & Preset 1k & 180 & 360 \\ \hline
+		1 & Preset 500 & 180 & 180 \\ \hline
+		1 & Preset 10k & 180 & 180 \\ \hline
+		1 & Diodo Zener 1N4740 (10V) & 25 & 25 \\ \hline
+		1 & Diodo Zener 1N4001 & 15 & 15 \\ \hline
+		2 & Capacitor 0.33uF & 35 & 70 \\ \hline
+		2 & Capacitor 0.1uF & 15 & 30 \\ \hline
+		1 & Capacitor 220uF-16V & 20 & 20 \\ \hline
+		3 & Capacitor 10nF & 15 & 45 \\ \hline
+		5 & Transistor BC548 & 30 & 150 \\ \hline
+		1 & CI 74LS126 & 200 & 200 \\ \hline
+		1 & CI LM358 & 70 & 70 \\ \hline
+		1 & Borneras x2 & 180 & 180 \\ \hline
+		1 & Borneras x3 & 200 & 200 \\ \hline
+		1 & Fuente conmutada & 1500 & 1500 \\ \hline
+		1 & Regulador 7810 & 180 & 180 \\ \hline
+		1 & Regulador 7815 & 180 & 180 \\ \hline
+		1 & ADC ADS1115 & 800 & 800 \\ \hline
+		1 & Pines machos & 245 & 245 \\ \hline
+		1 & Pines hembra & 245 & 245 \\ \hline
+		1 & Arduino NANO & 900 & 900 \\ \hline
+		\multicolumn{1}{|l|}{} & Caja contenedora & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+		\multicolumn{3}{|r|}{\textbf{Total=}} & \multicolumn{1}{c|}{\textbf{\$ 22025}} \\ \hline
 	\end{tabular}
 \caption{Gastos de implementación}
 \label{gastos}

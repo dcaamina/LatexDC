@@ -81,7 +81,7 @@ Si se reemplaza los valores se obtiene:
 
 Por definición, un flujo es turbulento si el valor del número de Reynolds es mayor a 4000. Por lo que se observa claramente, que para los valores de velocidad utilizados en el túnel este valor siempre será mayor.
 
-\subsubsection{Flujo turbulento}
+\subsubsection{Flujo turbulento} \label{sec:flujoT}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Flujo turbulento]
 	Este se caracteriza por fluctuaciones aleatorias y rápidas de regiones giratorias de fluido, llamadas remolinos a lo largo del fujo. En flujo laminar, las partículas fluyen en orden a lo largo de trayectorias, en cambio, en flujo turbulento, los molinos giratorios transportan masa, cantidad de movimiento y energía a otras regiones del flujo. \cite{yunus2006mecanica}
 	
@@ -205,10 +205,15 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 
 \subsection{Adquisición de datos por puerto serie}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
-	Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
+	\cite{processing}Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
 \end{tcolorbox}
-Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro script para obtener conclusiones. Luego de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad medida. Para solucionar el inconveniente, se realizó una primera versión (Figura \ref{fig:Proce}) de un programa gráfico generado con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible ingresando valores numéricos por teclado que eran enviados para generar la respectiva señal que luego sería ingresada al microcontrolador.
-Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv que luego podrán ser observadas con Matlab.
+Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro script para obtener conclusiones. Luego de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada en tiempo real.
+
+Como solución para el inconveniente, se realizó una primera versión (Figura \ref{fig:Proce}) de un programa gráfico generado con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. 
+
+Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible ingresando valores numéricos por teclado que eran enviados al microcontrolador para generar la respectiva señal que luego sería ingresada al variador de velocidad por el modo de corriente (Sección \ref{sec:lazoI}).
+
+Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv que luego fueron observadas con Matlab.
 
 \begin{center}
 	\includegraphics[scale=0.7]{serial_proc.png}
@@ -220,23 +225,33 @@ Al presionar una tecla específica configurada por los comandos, el programa gua
 
 
 \subsection{Filtros}
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Mediana]
-	Es una técnica de filtrado digital no lineal que suele utilizarse para eliminar el ruido de una imagen o señal. La mediana es el número que está justo en el medio de un conjunto de datos ordenados de menor a mayor o de mayor a menor.
-	La idea principal del filtro de mediana es recorrer la señal entrada, sustituyendo cada dato por la mediana de una ventana de “N” datos.
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Filtro digital]
+	Un filtro digital, es un filtro que opera sobre señales digitales. Es una operación	matemática que toma una secuencia de números (la señal de entrada) y la
+	modifica produciendo otra secuencia de números (la señal de salida) con el objetivo de resaltar o atenuar ciertas características.
 \end{tcolorbox}
 
-Una vez que se procedió a tomar diversos valores, se notó necesario la implementación de un filtro. Para esto se utilizaron varias librerías de \textbf{Arduino} para generar distintas pruebas (Figura \ref{fig:filtros}).
+Una vez que se procedió a tomar diversos valores de velocidad estimada, se notó necesario la implementación
+de un filtro. Para esto se utilizó varias bibliotecas preestablecidas de \textbf{Arduino} con las cuales se realizó la implementación de diversos filtros en el microcontrolador, con diferentes parámetros para posterior comparación (Figura \ref{fig:filtros}).
 
-\begin{figure}[!h]
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{filtros.png}
 	\captionof{figure}{Datos y diversos filtros}
 	\label{fig:filtros}
 \end{figure}
 
-Luego de varias pruebas, se eligió un filtro de mediana (Figura \ref{fig:filtrosm}) con una ventana 40, que producía menor ruido en la velocidad del aire. Se implementó en el programa de \textbf{Arduino} utilizando la una función preestablecida.
 
-\begin{figure}[htb]
+\subsubsection{Filtro de mediana}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Mediana]
+	Es una técnica de filtrado digital no lineal que suele utilizarse para eliminar el ruido de una imagen o señal. La mediana es el número que está justo en el medio de un conjunto de datos ordenados de menor a mayor o de mayor a menor.
+	La idea principal del filtro de mediana es recorrer la señal entrada, sustituyendo cada dato por la mediana de una ventana de “N” datos.
+\end{tcolorbox}
+
+Al observar y realizar la comparación de los filtros, se decidió utilizar el filtro de mediana (Figura \ref{fig:filtrosm}), con una ventana igual a 
+40 muestras, que producía menor ruido en la estimación del aire. Como consecuencia del uso de este filtro, la señal se vió desfasada <10ms.
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{filtro mediana.png}
 	\captionof{figure}{Datos y filtro mediana}
@@ -244,16 +259,25 @@ Luego de varias pruebas, se eligió un filtro de mediana (Figura \ref{fig:filtro
 \end{figure}
 
 
+
 \subsection{Error observado}
-Las pruebas anteriores eran realizadas con el uso normal que se le daba al variador de velocidad utilizando el panel digital frontal.
+Al utilizar el potenciómetro frontal del variador de velocidad u otro modo distinto al panel digital frontal, se originó un error en la aceleración o desaceleración.  Al hacer las averiguaciones pertinentes, esto se debió a una configuración interna del
+variador y a las características propias del motor. \fcolorbox{red}{yellow}{ 3.2.2lubricación por cojinetes (y eliminarlo de ahí)}
 
-Luego, para comenzar con las pruebas de otros modos de funcionamiento del variador, se utilizó el potenciómetro frontal. Al utilizar este modo se originó error en la aceleración.   Al hacer las averiguaciones pertinentes, esto se debió a una configuración interna del variador: si se utiliza con el panel digital frontal, la curva de aceleración y desaceleración sigue una “s”, no realizando un cambio brusco en la velocidad del motor, en cambio, para el uso del potenciómetro u otro modo de funcionamiento la curva es lineal . Para revertir esto, se modificó el tiempo de aceleración y desaceleración a 20 segundos.
+Si el variador se utiliza con el panel digital frontal, la curva de aceleración y desaceleración
+sigue una “s”, Figura \ref{fig:curvaS} no realizando un cambio brusco en la velocidad del motor, en cambio, para
+el uso del potenciómetro u otro modo de funcionamiento la curva es lineal \ref{fig:curvarec}. Para revertir
+esto, se modificó los parámetros del tiempo de aceleración y desaceleración del variador a 20 segundos.  
 
-\begin{figure}[htbp]
+
+\begin{figure}[H]
 	\centering
-	\subfigure[Tipo s]{\includegraphics[width=60mm]{conS.png}}
-	\subfigure[Tipo lineal]{\includegraphics[width=60mm]{sinS.png}}
+	\subfigure[Curva tipo s]{\includegraphics[width=60mm]{conS.png} \label{fig:curvaS}} 
+	\subfigure[Curva tipo lineal]{\includegraphics[width=60mm]{sinS.png} \label{fig:curvarec} }
 	\caption{Curva aceleración y desaceleración} \label{fig:curva}
 \end{figure}
+
+
+
 
 \newpage

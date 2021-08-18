@@ -1,15 +1,10 @@
-Una vez corroborado que el error ya no ocurrió nuevamente, se procedió a ingresar la señal del lazo de corriente para controlar el variador de velocidad.
+\subsection{Lazo de corriente} \label{sec:lazoI}
 
-Para la comunicación del \textbf{Arduino} con el variador de velocidad se decidió utilizar un lazo de corriente de 0-20mA, este tiene ventajas sobre el lazo de tensión ya que el utilizado es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, pero este modelo de variador, tiene el piso del lazo de corriente en 0mA, el cual fue modificado para que sea utilizado de 4 a 20mA. Cabe mencionar, que el variador podía ser controlado por cualquiera de los dos métodos de lazos.
+Se realizó la modificación de los parámetros nombrados en la sección  REF 5.4 y se corroboró que el error no aparecía al cambiar el modo de funcionamiento del variador.
+Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (Ai1- señal + hilo común) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico podía ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
 
-A continuación se observará la placa interna del variador con sus respectivas borneras por donde ingresará la señal de corriente del lazo de control y el jummper que se tuvo en cuenta para que sea lazo de corriente y no de tensión.
+Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el micorontrolador para seguir el estándar.
 
-\begin{figure}[htbp]
-	\centering
-\includegraphics[width=0.7\linewidth]{imagenes/placa_ls}
-\caption{Placa de control}
-\label{fig:placals}
-\end{figure}
 
 
 \begin{figure}[h]
@@ -19,14 +14,21 @@ A continuación se observará la placa interna del variador con sus respectivas 
 	\label{fig:born}
 \end{figure}
 
-La señal para controlar el variador de velocidad fue generada por una señal PWM estipulada a través de la librería TIMEROne. La instrucción Timer1.inizialize(period)
- de Arduino inicializa el timer con el valor de period, este valor es el tiempo en el que se dispara el temporizador y en el caso de este proyecto es de 40 microsegundos.
- 
-El otro comando que se utilizó fue Timer1.pwm(pin, duty) que establece el número de pin, en este caso pin 9 y “duty” es un valor entre 0 y 1023 establecido por la programación. 
-Esta señal de salida, fue necesario transformarla al lazo de corriente utilizado para establecer la señal al variador de velocidad. Esto se realizó a través de una placa adaptadora con un filtro generada por nosotros.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.8\linewidth]{imagenes/plano_DC.pdf}
+\includegraphics[width=0.7\linewidth]{imagenes/placa_ls}
+\caption{Placa de control}
+\label{fig:placals}
+\end{figure}
+
+La señal analógica para realizar el control del variador de velocidad fue generada por una señal PWM estipulada a través de la biblioteca \textit{TIMEROne} del microcontrolador. La instrucción \textit{Timer1.inizialize(period)} de la biblioteca Arduino inicializa el \textit{timer} con el valor de \textit{period}, este valor es el tiempo en el que se dispara el temporizador y en el caso de este proyecto es de 40 $u$s.
+
+El otro comando que se utilizó fue \textit{Timer1.pwm(pin, duty)} que establece el número de
+pin dónde sale la señal generada, en este caso pin 9 y \textit{duty} es un valor entre 0 y 1023 establecido por la programación, dónde 0 corresponde a 0mA (o 4mA). La salida del pin 9 corresponde a valores de tensión según el rango nombrado anteriormente, por lo que fue necesario realizar la transformación de esta señal a una señal de corriente utilizando un a “placa adaptadora de señal” (Figura \ref{fig:adapt}).
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.5]{adap_pl.png}
 	\caption{Placa adaptadora de señal}
 	\label{fig:adapt}
 \end{figure}
@@ -113,14 +115,14 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     
     Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. Seguidamente en el gráfico se dispuso la respuesta experimental en conjunto con la simulación (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
     
-    \begin{figure}[htb]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.35]{estim2.jpeg}
     	\captionof{figure}{Corroboración de estimación de la planta. Ejemplo 1}
     	\label{fig:estim2}
     \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{estim3.jpeg}
 	\captionof{figure}{Corroboración de estimación de la planta. Ejemplo 2}
@@ -131,7 +133,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     Para el cálculo en primera instancia del controlador PID se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones todas en el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
     Con los distintos valores de PI se realizaron pruebas en el Túnel del viento con escalones de velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s, haciendo un total de 5 pruebas para los mismos estímulos de entrada. 
    
-    \begin{figure}[htb]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.5]{pruebapid.png}
     	\captionof{figure}{Ejemplo de prueba realizada}
@@ -139,7 +141,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     \end{figure}
     
     Los valores de cada configuración PI se muestran en la tabla siguiente
-    \begin{table}[h]
+    \begin{table}[H]
     	\centering
     	\begin{tabular}{r|r|r|r|r|r|r|}
     		\cline{2-7}
@@ -152,14 +154,14 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     
     Al visualizar las respuestas obtenidas por las diferentes configuraciones se puede realizar la comparacion para un escalon en donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.5]{pisubida.png}
     	\captionof{figure}{Comparación de PI, escalon de subida}
     	\label{fig:pisubuda}
     \end{figure}
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.5]{pibajada.png}
     	\captionof{figure}{Comparación de PI, escalon de bajada}
