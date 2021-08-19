@@ -66,13 +66,22 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     
     La Figura \ref{fig:bloques} muestra un diagrama resumido de los pasos a realizar para tomar datos de la planta. Siendo G(s) el conjunto del túnel de viento, variador de velocidad y motor.
  
-    \begin{center}
-    	\includegraphics[scale=0.35]{bloques.png}
-    	\captionof{figure}{Diagrama en bloques}
-    	\label{fig:bloques}    
-    \end{center}
+%    \begin{center}
+%    	\includegraphics[scale=0.35]{bloques.png}
+%    	\captionof{figure}{Diagrama en bloques}
+%    	\label{fig:bloques}    
+%    \end{center}
+
+\begin{figure}[htbp]
+	\centering
+	\subfigure[Diagrama en bloques]{\includegraphics[scale=0.35]{bloques.png}}
+	\centering
+	\subfigure[Diagrama de conexión ]{\includegraphics[scale=0.7]{Estimacion_1.png}} 
+	\caption{Estimación de planta} \label{fig:bloques}
+\end{figure}
+ 
     
-    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas anteriormente generadas.
+    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención de varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas generadas.
     
     \begin{figure}[htb]
     	\centering
@@ -83,10 +92,10 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     
     Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los valores obtenidos de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
     
-    \begin{figure}[htbp]
+    \begin{figure}[H]
     	\centering
-    	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[width=70mm]{parametros_seg.png}}
-    	\subfigure[Estimación de parámetros]{\includegraphics[width=80mm]{planta_seg1.png}} 
+    	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[width=90mm]{parametros_seg.png}}
+    	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.5]{planta_seg1.png}} 
     	\caption{Estimación de planta} \label{fig:pl2}
     \end{figure}
 
@@ -105,13 +114,13 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
 \end{equation}
 
     
-    Con ayuda del código y ajustes manuales se llegó a una función de transferencia de segundo orden:
+    Con ayuda del código y ajustes manuales se llegó a la siguiente función de transferencia de segundo orden:
     
     \begin{equation}
-    	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}
+    	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}*e^{-1.2.s}
     \end{equation}
    
-    Esta función de transferencia esta realizada para una entrada que va desde 0 a 1023. Que es el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM del microcontrolador.
+    Esta función de transferencia se realizó para una entrada entre 0 y 1023, los cuales son el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM del $\mu$C como se ve en la sección \ref{sec:lazoI}.
     
     Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. Seguidamente en el gráfico se dispuso la respuesta experimental en conjunto con la simulación (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
     
@@ -130,9 +139,15 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
 \end{figure}
        
     \subsection{Control}
-    Para el cálculo en primera instancia del controlador PID se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones todas en el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
-    Con los distintos valores de PI se realizaron pruebas en el Túnel del viento con escalones de velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s, haciendo un total de 5 pruebas para los mismos estímulos de entrada. 
+    Para el cálculo en primera instancia del controlador PID se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
+    Con los distintos valores de PI se realizaron pruebas en el Túnel del viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
    
+    \begin{figure}[H]
+   	\centering
+   	\includegraphics[scale=0.7]{Lazo_Control1.png}
+   	\captionof{figure}{Lazo de control}
+   	\label{fig:Lazo_Control}
+   \end{figure}
     \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.5]{pruebapid.png}
@@ -152,7 +167,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     \caption{Valores de PID's}
     \end{table}
     
-    Al visualizar las respuestas obtenidas por las diferentes configuraciones se puede realizar la comparacion para un escalon en donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
+    Al visualizar las respuestas obtenidas por las diferentes configuraciones se puede realizar la comparación para un escalón en donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
     
     \begin{figure}[H]
     	\centering
@@ -176,5 +191,26 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     	\captionof{figure}{Comparación 3 sistemas PI}
     	\label{fig:mix}
     \end{figure}
+
+	Al analizar los ensayos y obtener respuestas del sistema parecidas a las generadas en simulación, se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.5]{Compa_Prueba6.png}
+		\captionof{figure}{Prueba 6 - Simulacion y Experimental}
+		\label{fig:Prueba_6}
+	\end{figure}   
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{Compa_Prueba7.png}
+	\captionof{figure}{Prueba 7 - Simulacion y Experimental}
+	\label{fig:Prueba_7}
+\end{figure}   
+    \subsubsection{Implementación en $\mu$C}
     
+    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z ec.\ref{PIDZ} y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la Transformada Inversa Z no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(Z) al dominio del tiempo discreto.
+    
+     \begin{equation}
+    PID(Z)\;=\;P\;+\;I.T_S.\frac1{z-1}+D.\frac1{T_S}.\frac{z-1}z \label{PIDZ}
+    \end{equation}
     \newpage

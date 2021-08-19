@@ -63,44 +63,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{22}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama en bloques\relax }}{23}{figure.10}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Estimación de planta\relax }}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Mediciones de velocidad a partir de distintos escalones dados\relax }}{24}{figure.caption.25}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diagrama en bloques}}}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Estimación de planta\relax }}{24}{figure.caption.26}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diagrama de conexión }}}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Parámetros respuesta 2° orden}}}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Mediciones de velocidad a partir de distintos escalones dados\relax }}{24}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Estimación de parámetros}}}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Estimación de planta\relax }}{24}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Corroboración de estimación de la planta. Ejemplo 1\relax }}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Corroboración de estimación de la planta. Ejemplo 1\relax }}{25}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Corroboración de estimación de la planta. Ejemplo 2\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Corroboración de estimación de la planta. Ejemplo 2\relax }}{26}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Ejemplo de prueba realizada\relax }}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Lazo de control\relax }}{26}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Comparación de PI, escalon de subida\relax }}{27}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Ejemplo de prueba realizada\relax }}{27}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparación de PI, escalon de bajada\relax }}{27}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparación de PI, escalon de subida\relax }}{27}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Comparación 3 sistemas PI\relax }}{28}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Comparación de PI, escalon de bajada\relax }}{28}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de placa con sensores utilizados\relax }}{28}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Comparación 3 sistemas PI\relax }}{28}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Fluctuaciones en velocidades medidas\relax }}{30}{figure.caption.36}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Parámetros respuesta 2° orden}}}{28}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Contrastación de diferencia de presión\relax }}{31}{figure.caption.39}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Estimación de parámetros}}}{28}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Compuertas utilizadas como perturbaciones\relax }}{33}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Prueba 6 - Simulacion y Experimental\relax }}{29}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Fotos del reóstato (izquierda) y del banco de resistencias (derecha)\relax }}{33}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Prueba 7 - Simulacion y Experimental\relax }}{29}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Comportamiento del sistema ante perturbaciones\relax }}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de placa con sensores utilizados\relax }}{30}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Comportamiento del sistema ante perturbaciones\relax }}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Fluctuaciones en velocidades medidas\relax }}{31}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Bloques implementados\relax }}{35}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Contrastación de diferencia de presión\relax }}{32}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Bloque \textit {Aplicación}\relax }}{35}{figure.caption.45}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Compuertas utilizadas como perturbaciones\relax }}{34}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Bloque \textit {Hardware}\relax }}{38}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Fotos del reóstato (izquierda) y del banco de resistencias (derecha)\relax }}{34}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Comportamiento del sistema ante perturbaciones\relax }}{35}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Comportamiento del sistema ante perturbaciones\relax }}{35}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Bloques implementados\relax }}{36}{figure.caption.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Bloque \textit {Aplicación}\relax }}{36}{figure.caption.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Bloque \textit {Hardware}\relax }}{39}{figure.caption.52}%
