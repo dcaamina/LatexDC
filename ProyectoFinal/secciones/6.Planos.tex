@@ -1,4 +1,6 @@
-La implementación final constó de dos bloques (Figura \ref{fig:implebloq}), uno de APLICACIÓN (Sección \ref{sec:aplic}) y otro de HARDWARE (Sección \ref{sec:hard}).
+Luego de realizar las pruebas y observar los cambios necesarios para un buen uso en el laboratorio, se procedió a realizar la implementación final (Figura \ref{fig:implebloq}), . Dicha implementación se dividió en dos bloques, uno perteneciente a la Aplicación (Sección \ref{sec:aplic}), programación de la parte gráfica y adquisición de datos, y otro bloque de Hardware (Sección \ref{sec:hard}), parte física del proyecto. 
+
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.5]{bloqimplem.png}
@@ -15,7 +17,7 @@ La implementación final constó de dos bloques (Figura \ref{fig:implebloq}), un
 	La interfaz gráfica de usuario utiliza un conjunto de objetos gráficos para representar información y realizar acciones. El principal uso es un entorno de comunicación entre el usuario y algún elemento a controlar.
 \end{tcolorbox}
 
-Para la interfaz gráfica se creó un ejecutable para Windows, donde se utilizó el programa de código abierto \textit{Processing} en conjunto con la biblioteca \textit{ControlP5} \cite{controlp5}. La aplicación cuenta con comandos para configurar el funcionamiento del variador, configurar velocidades, realizar adquisición de datos y observar parámetros en tiempo real.
+Para la interfaz gráfica se creó un ejecutable para Windows (Figura \ref{fig:capt6}), donde se utilizó el programa de código abierto \textit{Processing} en conjunto con la biblioteca \textit{ControlP5} \cite{controlp5}. La aplicación cuenta con comandos para configurar el funcionamiento del variador, configurar velocidades, realizar adquisición de datos y observar parámetros en tiempo real.
 En el diagrama de flujo de la Figura \ref{fig:bloqvis} se observa que “aplicación” se divide en dos partes: 
 
 \begin{figure}[H]
@@ -37,14 +39,14 @@ Los datos que se reciben desde el microcontrolador durante el proceso de adquisi
 		\hline
 		$D_0$ , & $D_1$ , & $D_2$ , & $D_3$ , & $D_4$ , & $D_5$ , & $D_6$ ,  & $D_7$ , & $D_8$ , & $D_9$ , & $D_{10}$ , & $D_{11}$ , & $D_{12}$ , & $D_{13}$ ,  \\ \hline
 	\end{tabular}
-\caption{Datos adquiridos desde el $u$C}
+\caption{Datos adquiridos desde el $\mu$C}
 \label{tab:Datosdesde}
 \end{table}
 
 Referencia de cada dato:
 	\begin{itemize}
-	\item $D_0$: velocidad estimada utilizando THP y diferencia de presión.
-	\item 	$D_1$: velocidad o frecuencia de referencia.
+	\item $D_0$: Velocidad del aire estimada.
+	\item 	$D_1$: Valor de frecuencia o velocidad preestablecida.
 	\item 	$D_2$: diferencia de presión medida a través del MPX7002 en conjunto con ADS1115.
 	\item 	$D_3$: señal de acción de control.
 	\item 	$D_4$: tiempo otorgado por el microcontrolador.
@@ -52,7 +54,7 @@ Referencia de cada dato:
 	\item 	$D_6$: humedad relativa del ambiente.
 	\item 	$D_7$: presión atmosférica.
 	\item 	$D_8$: densidad estimada por el microcontrolador.
-	\item 	$D_9$: señal si se encuentra activado el control.
+	\item 	$D_9$: señal de que el lazo de control está cerrado.
 	\item 	$D_{10}$: error entre la velocidad estimada y la de referencia.
 	\item 	$D_{11}$: estado encendido/apagado del motor.
 	\item 	$D_{12}$: indicación de algún error del variador de velocidad.
@@ -64,11 +66,13 @@ Referencia de cada dato:
 \begin{itemize}
 \item Sub-bloque \textbf{Parámetros}: con los datos adquiridos, muestra los valores de TPH, v y v/f ref y realiza gráficos en tiempo real donde el usuario decide la visibilidad de distintos parámetros (v, v/f ref, dDP, accion de control) y su correspondiente escala. 
 \item Sub-bloque \textbf{Puesta en marcha del motor}: En el sub-bloque se encuentran botones de RUN y STOP que pondrán en marcha y pararán el motor según la configuración de F7 del variador de velocidad. En este bloque también se encuentran el botón de parada de emergencia y el botón de “Reset” ante alguna falla. 
-\item Sub-bloque \textbf{Modos de funcionamiento}: posee las siguientes formas de ejecución del microcontrolador:
+\item Sub-bloque \textbf{Modos de funcionamiento}: posee las siguientes formas de ejecución del $\mu$C:
 \begin{itemize}
-\item \underline{Modo Lectura de datos:} al realizar la conexión del puerto serial, el microcontrolador comienza a adquirir datos, mostrando THP, velocidad y frecuencia de referencia por defecto. El modo solo recibe datos del microcontrolador pero esta configuración espera comandos de autofunción o del Modo Ai1 para enviar al microcontrolador una nueva orden.
-\item \underline{Modo Autofunción:} El modo cierra el lazo de control, lee un archivo csv dónde se encuentran los escalones de velocidad y el tiempo de duración de estos. Envía al microcontrolador el archivo elegido, y este manda el comando para que se implementen los escalones establecidos.
-\item \underline{Modo Ai1:} Este modo envía y recibe información del microcontrolador al variador, tiene dos funcionamientos
+\item \underline{Modo Lectura de datos:} al realizar la conexión del puerto serial, el $\mu$C comienza a adquirir datos, mostrando THP, velocidad y frecuencia de referencia por defecto. El modo solo recibe datos del microcontrolador pero esta configuración espera comandos de autofunción o del Modo Ai1 para enviar al $\mu$C una nueva orden.
+\item \underline{Modo Autofunción:} El modo cierra el lazo de control, lee un archivo csv dónde se encuentran los escalones de velocidad y el tiempo de duración de estos. Envía al $\mu$C los datos del archivo elegido, y este manda el
+comando para que se implementen los escalones preestablecidos.
+
+\item \underline{Modo Ai1:} Este modo envía y recibe información del $\mu$C al variador, tiene dos funcionamientos
 \begin{itemize}
 \item Control desactivado: la planta se encuentra a lazo abierto y puede ser ingresada una frecuencia estimada.
 \item Control activado: este método se utiliza como lazo de control cerrado, durante su funcionamiento se retroalimenta velocidad por lo que ante perturbaciones el sistema se establece en la velocidad de referencia configurada.
@@ -77,7 +81,7 @@ Referencia de cada dato:
 \end{itemize}
 
 
-El formato de los datos enviados de la aplicación al microcontrolador es un vector de los datos separados por comas en formato “string” como se observan en la tabla \ref{tab:Datosenviados}, mientras que la referencia de cada elemento son:
+El formato de los datos enviados de la aplicación al $\mu$C es un vector de los datos separados por comas en formato “string” como se observan en la tabla \ref{tab:Datosenviados}, mientras que la referencia de cada elemento son:
 
 \begin{table}[H]
 	\centering
@@ -85,7 +89,7 @@ El formato de los datos enviados de la aplicación al microcontrolador es un vec
 		\hline
 			$D_0$ , & $D_1$ , & $D_2$ , & $D_3$ , & $D_4$ , & $D_5$ , & $D_6$ ,  & $D_7$ , \\ \hline
 	\end{tabular}
-\caption{Datos enviados al $u$C}
+\caption{Datos enviados al $\mu$C}
 \label{tab:Datosenviados}
 \end{table}
 
@@ -97,15 +101,20 @@ El formato de los datos enviados de la aplicación al microcontrolador es un vec
 \item $D_4$: señal para que el microcontrolador se reinicie luego de alguna falla.
 \item $D_5$: señal de falla externa que detiene el motor.
 \item $D_6$: largo del vector ingresado por el archivo .csv.
-\item $D_7$: vector de velocidades de referencias y tiempos de los escalones obtenidos del .csv.
+\item $D_7$: vector de velocidades de referencias y tiempos de los escalones obtenidos del .csv con longitud enviado por el valor $D_6$.
 \end{itemize}	
 
 \end{enumerate}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{capt6.png}
+	\captionof{figure}{Aplicación creada}
+	\label{fig:capt6}
+\end{figure}
 
 \subsection{Bloque Hardware} \label{sec:hard}
 
-Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa uniendo los bloques anteriormente utilizados (Sección \ref{sec:desarr}) (Figura \ref{fig:hardBloq}). Esta nueva placa fue realizada por la máquina de prototipado \fcolorbox{red}{yellow}{“MARCA protomart”} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó componentes nuevos y se reutilizaron elementos utilizados durante la implementación del prototipo.  
+Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa (Figura \ref{fig:hardBloq}) uniendo los bloques anteriormente utilizados en la sección \ref{sec:desarr}. Esta nueva placa fue realizada por la máquina de prototipado \textbf{\textit{LPKF Protomat S62}} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó componentes nuevos y se reutilizaron elementos utilizados durante la implementación del prototipo.  
 
 \begin{figure}[H]
 	\centering
@@ -119,7 +128,7 @@ En la \fcolorbox{red}{yellow}{figura WWW} se observa la placa terminada. Este nu
 
 \subsection{Costos}
 El proyecto se comenzó a mediados del año 2019, por lo que los sensores de temperatura, humedad, 
-presión atmosférica y diferencia de presión fueron comprados en esa fecha en el exterior y los demás componentes, en la actualidad, en la ciudad adaptándonos al stock encontrado. En la tabla \ref{gastos} se observan los valores totales para realizar la implementación final del \textit{hardware} con precios actualizados al mes de agosto de 2021. 
+presión atmosférica y diferencia de presión fueron comprados en esa fecha en el exterior y los demás componentes, en la actualidad, en la ciudad adaptándonos al stock encontrado. En la tabla \ref{gastos} se observan los valores totales para realizar la implementación final del \textit{hardware} con precios actualizados al mes de agosto de 2021. *Precios obtenidos de Mercado Libre.
 
 
 \begin{table}[H]
@@ -127,9 +136,9 @@ presión atmosférica y diferencia de presión fueron comprados en esa fecha en 
 	\begin{tabular}{|r|l|r|r|}
 		\hline
 		\multicolumn{1}{|c|}{\textit{\textbf{Unidad(es)}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Precio (\$)}}} & \multicolumn{1}{c|}{\textit{\textbf{Sub-Total  (\$)}}} \\ \hline
-		1 & BME280 & 3850 & 3850 \\ \hline
-		1 & MPXV7002dp & 8489 & 8490 \\ \hline
-		1 & SI7021 & 3769 & 3770 \\ \hline
+		1 & BME280* & 3850 & 3850 \\ \hline
+		1 & MPXV7002dp* & 8489 & 8490 \\ \hline
+		1 & SI7021* & 3769 & 3770 \\ \hline
 		10 & Resistencia 4.7k & 5 & 50 \\ \hline
 		5 & Resistencia 10k & 5 & 25 \\ \hline
 		5 & Resistencia 100k & 5 & 25 \\ \hline

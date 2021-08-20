@@ -44,7 +44,40 @@
     \field{year}{1993}
   \endentry
 
-  \entry{yunus2006mecanica}{article}{}
+  \entry{LS650}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Shenq},
+         familyi={S\bibinitperiod},
+         given={Long},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Manual de instalaci{\'o}n y programaci{\'o}n : Variador de
+  velocidad LS650 para motor de C.A.}
+  \endentry
+
+  \entry{airecalculo}{article}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={INTI},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{C{\'a}lculo de la densidad del aire h{\'u}medo}
+    \field{journaltitle}{Procedimientos del INTI}
+    \field{year}{2015}
+  \endentry
+
+  \entry{yunus2006mecanica}{book}{}
     \name{author}{1}{}{%
       {{hash=CYA}{%
          family={Cengel},
@@ -58,7 +91,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Mec{\'a}nica de fluidos: Fundamentos y aplicaciones}
-    \field{year}{2006}
+    \field{year}{(2006)}
   \endentry
 
   \entry{licci2020estudio}{article}{}
@@ -88,6 +121,15 @@
     \field{year}{2020}
   \endentry
 
+  \entry{processing}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Processing}
+    \verb{url}
+    \verb https://processing.org
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{pomares2011sistemas}{article}{}
     \name{author}{2}{}{%
       {{hash=PJ}{%
@@ -108,18 +150,9 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Sistemas de Control Autom{\'a}tico. Identificaci{\'o}n
-  experimental de sistemas (curso 2010-2011)}
+  experimental de sistemas}
     \field{journaltitle}{Sistemas de Control Autom{\'a}tico}
     \field{year}{2011}
-  \endentry
-
-  \entry{processing}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{Processing}
-    \verb{url}
-    \verb https://processing.org
-    \endverb
-    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{controlp5}{online}{}

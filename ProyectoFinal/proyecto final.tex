@@ -5,11 +5,16 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{enumitem}%separacion de las listas
-\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[itemize]{noitemsep, topsep=1pt}%separacion de las listas
+\setlist[enumerate]{noitemsep, topsep=1pt}%separacion de las listas
+
+\usepackage{appendix}
+\renewcommand{\appendixpagename}{Anexos}
 
 \usepackage{multirow} %tablas
 \usepackage[table,xcdraw]{xcolor} %color tablas
 
+\usepackage{fancyhdr}%encabezado y pie de pagina
 
 \usepackage{comment}
 \usepackage{float} 
@@ -31,6 +36,7 @@
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
+
 \usepackage{url} %url
 \usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
@@ -45,7 +51,6 @@
 \usepackage[maxbibnames=99, sorting=none, backend=bibtex]{biblatex}
 \addbibresource{biblio.bib}
 %\usepackage[nottoc]{biblatex}
-
 
 
 %para crear sub sub sub titulos
@@ -64,8 +69,22 @@
 \graphicspath{ {imagenes/} }
 
 \newcommand{\grad}{$^{\circ}$}
+
+%encabezado y pie de pagina
+\pagestyle{fancy}
+\fancyhead[L,R]{}
+\fancyhead[C]{\textbf{Automatización de Túnel de Viento}}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{2pt}
+
+
+
 \begin{document}
 %	\maketitle
+
 \begin{titlepage}
 	\centering
 	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
@@ -87,6 +106,7 @@
 
 
 \newpage
+
 
 \section*{Agradecimientos}
 \input{secciones/0.agradecimientos}
@@ -140,10 +160,13 @@
 \newpage
 
 \appendix
-\section*{Anexos}
-\section{Manual de usuario de la aplicación}
+\clearpage
+%\addappheadtotoc
+\appendixpage
+%\section*{Anexos}
+
 \input{secciones/Anexo1}
-\section{Second appendix}
+
 
 
 

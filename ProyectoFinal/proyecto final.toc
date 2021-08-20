@@ -1,102 +1,128 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introducción}{7}{section.1}%
+\contentsline {section}{\numberline {1}Introducción}{8}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Objetivo}{8}{section.2}%
+\contentsline {section}{\numberline {2}Objetivo}{9}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Túnel Aerodinámico}{9}{section.3}%
+\contentsline {section}{\numberline {3}Túnel Aerodinámico}{10}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Clasificación}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Clasificación}{10}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Túnel UNPSJB}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Túnel UNPSJB}{10}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Historia}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Historia}{10}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Motor y Variador de velocidad}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Motor y Variador de velocidad}{11}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Instrumentación}{11}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3}Instrumentación}{12}{subsubsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Fluido- Aire}{12}{section.4}%
+\contentsline {section}{\numberline {4}Fluido- Aire}{13}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{13}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Características del flujo}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Características del flujo}{13}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Estimación del número de Reynolds}{13}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}Estimación del número de Reynolds}{14}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Flujo turbulento}{14}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2}Flujo turbulento}{15}{subsubsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Desarrollo}{16}{section.5}%
+\contentsline {section}{\numberline {5}Desarrollo}{17}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Microcontrolador, sensores y comunicación}{16}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Microcontrolador, sensores y comunicación}{17}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Adquisición de datos por puerto serie}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Adquisición de datos por puerto serie}{18}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Filtros}{18}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Filtros}{19}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Filtro de mediana}{19}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1}Filtro de mediana}{20}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Error observado}{20}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Error observado}{21}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Lazo de corriente}{21}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.5}Lazo de corriente}{22}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Estimación de la planta}{22}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.6}Estimación de la planta}{23}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.1}Diagrama de trabajo}{22}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.1}Diagrama de trabajo}{23}{subsubsection.5.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.2}Método de estimación}{23}{subsubsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2}Método de estimación}{24}{subsubsection.5.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7}Control}{26}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.7}Control}{27}{subsection.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.7.1}Implementación en $\mu $C}{28}{subsubsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1}Implementación en $\mu $C}{29}{subsubsection.5.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Pruebas realizadas}{30}{section.6}%
+\contentsline {subsubsection}{\numberline {5.7.2}Pruebas de control}{30}{subsubsection.5.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Comparación de densidades}{30}{subsection.6.1}%
+\contentsline {section}{\numberline {6}Pruebas realizadas}{33}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Fluctuaciones de velocidad}{31}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.1}Comparación de densidades}{33}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{31}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.2}Fluctuaciones de velocidad}{34}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}comparación de la frecuencia vista en el panel con el valor de PWM}{32}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.3}Estimación de la densidad ante cambios de Temperatura y Humedad}{34}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}Contrastación de diferencia de presión}{32}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.4}comparación de la frecuencia vista en el panel con el valor de PWM}{35}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}Contrastación de velocidades}{34}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.5}Contrastación de diferencia de presión}{35}{subsection.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}Perturbaciones}{34}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.6}Contrastación de velocidades}{37}{subsection.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Implementación}{36}{section.7}%
+\contentsline {section}{\numberline {7}Implementación}{38}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Bloque Aplicación}{36}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Bloque Aplicación}{38}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Bloque Hardware}{38}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Bloque Hardware}{41}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Costos}{39}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Costos}{41}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Consumo de corriente}{40}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}Consumo de corriente}{42}{subsection.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5}Planos eléctricos}{40}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.5}Planos eléctricos}{42}{subsection.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Recomendaciones futuras}{41}{section.8}%
+\contentsline {section}{\numberline {8}Recomendaciones futuras}{43}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusión}{42}{section.9}%
+\contentsline {section}{\numberline {9}Conclusión}{44}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Bibliografia}{43}{section.10}%
+\contentsline {section}{\numberline {10}Bibliografia}{45}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Manual de usuario de la aplicación}{44}{appendix.Alph1}%
+\contentsline {section}{\numberline {A}Descargas}{46}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Requerimientos del sistema}{44}{subsection.Alph1.1}%
+\contentsline {section}{\numberline {B}Manual de usuario de la aplicación}{47}{appendix.Alph2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Preparación}{44}{subsection.Alph1.2}%
+\contentsline {subsection}{\numberline {B.1}Requerimientos del sistema}{47}{subsection.Alph2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Visibilidad, escala y limites del eje}{44}{subsection.Alph1.3}%
+\contentsline {subsection}{\numberline {B.2}Puesta en marcha}{47}{subsection.Alph2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.4}Autofunción}{44}{subsection.Alph1.4}%
+\contentsline {subsection}{\numberline {B.3}Gráfico en tiempo real}{47}{subsection.Alph2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.5}Guardado de datos}{44}{subsection.Alph1.5}%
+\contentsline {subsubsection}{\numberline {B.3.1} Visibilidad de las señales en tiempo real}{47}{subsubsection.Alph2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.6}Lectura de datos obtenidos}{44}{subsection.Alph1.6}%
+\contentsline {subsubsection}{\numberline {B.3.2}Escala}{48}{subsubsection.Alph2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Second appendix}{44}{appendix.Alph2}%
+\contentsline {subsubsection}{\numberline {B.3.3}Límite del eje vertical}{48}{subsubsection.Alph2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.4}Autofunción}{48}{subsection.Alph2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.5}Ai1}{49}{subsection.Alph2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.5.1}Control desactivado}{49}{subsubsection.Alph2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.5.2}Control activado}{49}{subsubsection.Alph2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.6}Encendido/ apagado del motor}{50}{subsection.Alph2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.6.1}Panel frontal}{50}{subsubsection.Alph2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.6.2}Aplicación}{50}{subsubsection.Alph2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.7}Guardado de datos}{50}{subsection.Alph2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.8}Lectura de datos obtenidos}{50}{subsection.Alph2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.9}Falla externa}{51}{subsection.Alph2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Código Arduino}{52}{appendix.Alph3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Código Processing}{53}{appendix.Alph4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E}Código Matlab}{54}{appendix.Alph5}%

@@ -197,20 +197,53 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[scale=0.5]{Compa_Prueba6.png}
-		\captionof{figure}{Prueba 6 - Simulacion y Experimental}
+		\captionof{figure}{Prueba 6 -Experimental y Simulacion}
 		\label{fig:Prueba_6}
 	\end{figure}   
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.5]{Compa_Prueba7.png}
-	\captionof{figure}{Prueba 7 - Simulacion y Experimental}
+	\captionof{figure}{Prueba 7 -Experimental y Simulacion}
 	\label{fig:Prueba_7}
 \end{figure}   
     \subsubsection{Implementación en $\mu$C}
     
-    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z ec.\ref{PIDZ} y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la Transformada Inversa Z no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(Z) al dominio del tiempo discreto.
+    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z ecuación \ref{PIDZ} y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(Z) al dominio del tiempo discreto.
     
      \begin{equation}
     PID(Z)\;=\;P\;+\;I.T_S.\frac1{z-1}+D.\frac1{T_S}.\frac{z-1}z \label{PIDZ}
     \end{equation}
+
+\subsubsection{Pruebas de control}
+Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.08]{comp.jpg}
+	\captionof{figure}{Compuertas utilizadas como perturbaciones}
+	\label{fig:comp}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{reos.jpg}
+	\captionof{figure}{Fotos del reóstato (izquierda) y del banco de resistencias (derecha)}
+	\label{fig:reos}
+\end{figure}
+
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{compu1.png}
+	\captionof{figure}{Comportamiento del sistema ante perturbaciones. Ejemplo 1.}
+	\label{fig:comp1}
+	\includegraphics[scale=0.5]{comp2.png}
+	\captionof{figure}{Comportamiento del sistema ante perturbaciones. Ejemplo 2.}
+	\label{fig:comp2}
+\end{figure}
+
+
+
     \newpage
