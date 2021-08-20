@@ -1,6 +1,6 @@
 
-El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo Excel para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire en función de la presión, temperatura y humedad atmosférica \cite{airecalculo}.
-%	densidad_funcion_P_T_H.pdf  dentro del drive
+El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo \textit{"Excel"} para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire (Ecuación \ref{ec_den}) en función de la presión, temperatura y humedad atmosférica \cite{airecalculo}.
+
 \begin{align}
 	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
 	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
@@ -15,7 +15,7 @@ dónde:\\
 - y constantes \textbf{A,B,C,D,} $\boldsymbol{\alpha , \beta  , \gamma , a_0, a_1 ,a_2 ,b_0  ,b_1 , c_0 , c_1, D. }$
 
 
-Finalmente, la ecuación anteriormente nombrada es utilizada para el cálculo final de la velocidad del aire.
+Finalmente, la ecuación  \ref{ec_den} se utiliza para el cálculo final de la velocidad del aire.
 \begin{equation}
 	\triangle P=\frac{v^2\rho}2\rightarrow\;\;v=\sqrt{\frac{2\;.\;\triangle P\;}\rho}
 	\label{ec_aire}
@@ -27,7 +27,7 @@ y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
 se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 \end{comment}
 
-En vista al objetivo y a las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables temperatura, presión atmosférica, humedad relativa y diferencia de presión del fluido. 
+En vista al objetivo y por las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables temperatura, presión atmosférica, humedad relativa y diferencia de presión del fluido. 
 
 \subsection{Características del flujo}
 La inspección cuidadosa en una tubería revela una corriente de fluidos currentilínea a bajas velocidades y caótica mientras la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
@@ -56,7 +56,7 @@ La \textit{viscosidad dinámica} del fluido se obtuvo de la tabla "Propiedades d
 
 El \textit{díametro hidráuliaco} de una tubería de sección rectangular es dependiente del valor de sus lados (Figura \ref{fig:rey2} y \ref{fig:camens}) \cite{licci2020estudio}.
 
-Para la \textit{velocidad del fluido} se utilizó un valor de 4,7$m/s$, siendo la velocidad mínima generada por el túnel. Ya que al ser proporcional al número de Reynolds, este será el mínimo valor estimado.
+Para la \textit{velocidad del fluido} se utilizó un valor de 4,7$m/s$, que corresponde a la velocidad mínima generada dentro de la cámara de ensayos del túnel. Ya que al ser proporcional al número de Reynolds, este será el mínimo valor estimado.
 
 \begin{figure}[htb]
 	\centering
@@ -87,7 +87,7 @@ Por definición, un flujo es turbulento si el valor del número de Reynolds es m
 	
 \end{tcolorbox}
 
-Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel. Este, posee una rejilla de entrada en forma de panal de abeja, que al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos (Figura \ref{fig:remolinos}).
+Aun mientras el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel. Este, posee una rejilla de entrada en forma de panal de abeja, que al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos (Figura \ref{fig:remolinos}).
 
 
 \begin{figure}[h!]
@@ -101,10 +101,11 @@ Aun cuando el flujo promedio sea estacionario, el movimiento de remolinos en flu
 
 La figura \ref{fig:fluct} muestra, en este caso, las fluctuaciones alrededor de una velocidad media dentro de un tiempo específico. 
 Para determinar la velocidad media se analiza un intervalo de tiempo suficientemente grande, de modo que el valor promediado en el tiempo se estabilice en una constante.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.4]{fluct.png}
-	\captionof{figure}{Fluctuaciones}
+	\captionof{figure}{Fluctuaciones alrededor de una velocidad media}
 	\label{fig:fluct}
 \end{figure}
 
@@ -125,11 +126,11 @@ Para determinar la velocidad media se analiza un intervalo de tiempo suficientem
 
 	
 
-Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con bibliotecas de diversos sensores y que cumplía con las prestaciones necesarias (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
+Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con bibliotecas de diversos sensores y que cumplía con las prestaciones necesarias para lograr el objetivo (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
 
-Como se nombró en la sección \ref{sec:ecvel}, es necesario tener mediciones de temperatura, humedad, presión atmosférica y diferencia de presión. Por lo tanto se realizó ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Con las mediciones se eligió aquellos que generaron la menor variación de THP respecto a los instrumentos del laboratorio. 
+Como se nombró en la sección \ref{sec:ecvel}, es necesario tener mediciones de temperatura, humedad, presión atmosférica y diferencia de presión. Por lo tanto se realizó ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Con las mediciones se eligió aquellos que generaron la menor variación de THP respecto a los instrumentos del laboratorio (Figura \ref{fig:instr}). 
 
-Sensores utilizados
+Sensores elegidos
 \begin{itemize}
 	\item  \textbf{BME280:} Sensor de presión atmosférica, temperatura y humedad relativa.
 \subitem \textit{Resolución de temperatura: 0.01 $^{\circ}C$}
@@ -163,7 +164,7 @@ Sensores utilizados
 
 Se realizó ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.
 
-Al tener una salida analógica se utilizó el conversor analógico/ digital ADS 1115. 
+El sensor MPXV7002 posee una salida de voltaje analógico, por lo que se utilizó el conversor analógico/ digital ADS 1115. 
 No se utilizó el ADC interno del microcontrolador Arduino ya que la resolución es de 10 bits y del ADS1115 de 15 bits.
 También posee un amplificador de ganancia programable (PGA) que establece la escala completa, es decir, indica el valor de referencia. En Arduino este valor viene determinado por el voltaje de referencia que en el caso de Arduino NANO es 5V. En el ADS1115 lo establece el PGA. Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
 
@@ -195,7 +196,7 @@ En la tabla \ref{tab:Reso} se observa los valores posibles de factor de escala p
 \label{tab:Reso}
 \end{table}
 
-En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como voltaje de referencia 4,096V.
+En el caso de este proyecto, se utilizó un valor de PGA igual a 1, cuya tensión de referencia es 4,096V.
 \begin{center}
 	\begin{math}
 		Factor\;de\;escala=\;\frac{4,096\;V}{32677}=\;0,000125\;V\;=\;0,125\;mV
@@ -207,31 +208,30 @@ En el caso de este proyecto, se utilizó un valor de PGA de 1, tomando como volt
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
 	\cite{processing}Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
 \end{tcolorbox}
-Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro script para obtener conclusiones. Luego de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada en tiempo real.
+Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro \textit{script} para obtener conclusiones. En consecuencia, después de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada, en tiempo real.
 
-Como solución para el inconveniente, se realizó una primera versión (Figura \ref{fig:Proce}) de un programa gráfico generado con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. 
+Como solución para el inconveniente anteriormente nombrado, se realizó una primera versión (Figura \ref{fig:Proce}) de una interfaz gráfica generada con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. 
 
-Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible ingresando valores numéricos por teclado que eran enviados al microcontrolador para generar la respectiva señal que luego sería ingresada al variador de velocidad por el modo de corriente (Sección \ref{sec:lazoI}).
+Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible al ingresar valores numéricos por teclado que eran enviados al $\mu$C para generar la respectiva señal que luego sería ingresada al variador de velocidad por el modo de corriente (Sección \ref{sec:lazoI}).
 
 Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv que luego fueron observadas con Matlab.
 
-\begin{center}
-	\includegraphics[scale=0.7]{serial_proc.png}
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.9]{serial_proc.png}
 	\captionof{figure}{Pantalla Processing}
 	\label{fig:Proce}    
-\end{center}
-
-
+\end{figure}
 
 
 \subsection{Filtros}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Filtro digital]
-	Un filtro digital, es un filtro que opera sobre señales digitales. Es una operación	matemática que toma una secuencia de números (la señal de entrada) y la
-	modifica produciendo otra secuencia de números (la señal de salida) con el objetivo de resaltar o atenuar ciertas características.
+Es una operación	matemática que toma una secuencia de números (la señal de entrada) y la
+	modifica para producir otra (la señal de salida) con el objetivo de resaltar o atenuar ciertas características.
 \end{tcolorbox}
 
 Una vez que se procedió a tomar diversos valores de velocidad estimada, se notó necesario la implementación
-de un filtro. Para esto se utilizó varias bibliotecas preestablecidas de \textbf{Arduino} con las cuales se realizó la implementación de diversos filtros en el microcontrolador, con diferentes parámetros para posterior comparación (Figura \ref{fig:filtros}).
+de un filtro a causa de las fluctuaciones alrededor de una velocidad media (Figura \ref{fig:fluct2}). Para esto se utilizó varias bibliotecas preestablecidas de \textbf{Arduino} con las cuales se realizó la implementación de diversos filtros en el $\mu$C, con diferentes parámetros para posterior comparación (Figura \ref{fig:filtros}).
 
 
 \begin{figure}[H]
@@ -245,11 +245,11 @@ de un filtro. Para esto se utilizó varias bibliotecas preestablecidas de \textb
 \subsubsection{Filtro de mediana}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Mediana]
 	Es una técnica de filtrado digital no lineal que suele utilizarse para eliminar el ruido de una imagen o señal. La mediana es el número que está justo en el medio de un conjunto de datos ordenados de menor a mayor o de mayor a menor.
-	La idea principal del filtro de mediana es recorrer la señal entrada, sustituyendo cada dato por la mediana de una ventana de “N” datos.
+	La idea principal del filtro de mediana es recorrer la señal entrada, y sustituir cada dato por la mediana de una ventana de “N” datos.
 \end{tcolorbox}
 
 Al observar y realizar la comparación de los filtros, se decidió utilizar el filtro de mediana (Figura \ref{fig:filtrosm}), con una ventana igual a 
-40 muestras, que producía menor ruido en la estimación del aire. Como consecuencia del uso de este filtro, la señal se vió desfasada <10ms.
+40 muestras, que producía menor ruido en la estimación del aire. Como consecuencia del uso de este filtro, la señal se vio desfasada aproximadamente 1 segundo..
 
 \begin{figure}[H]
 	\centering
@@ -260,14 +260,14 @@ Al observar y realizar la comparación de los filtros, se decidió utilizar el f
 
 
 
-\subsection{Error observado}
-Al utilizar el potenciómetro frontal del variador de velocidad u otro modo distinto al panel digital frontal, se originó un error en la aceleración o desaceleración.  Al hacer las averiguaciones pertinentes, esto se debió a una configuración interna del
+\subsection{Error observado}\label{sec:error}
+Al utilizar el potenciómetro frontal del variador de velocidad u otro modo de funcionamiento distinto al panel digital frontal, se originaba un error en la aceleración o desaceleración.  Al hacer las averiguaciones pertinentes, esto se debió a una configuración interna del
 variador y a las características propias del motor. Al ser un motor que no posee rodamientos, sino cojinetes, estos necesita funcionar en un rango de velocidades y con cierta aceleración necesaria para la luz entre elementos sea tal para que no se produzca contacto entre el eje y rotor.
 
 
 Si el variador se utiliza con el panel digital frontal, la curva de aceleración y desaceleración
-sigue una “s”, Figura \ref{fig:curvaS} no realizando un cambio brusco en la velocidad del motor, en cambio, para
-el uso del potenciómetro u otro modo de funcionamiento la curva es lineal \ref{fig:curvarec}. Para revertir
+sigue una “s” (Figura \ref{fig:curvaS}) y no produce un cambio brusco en la velocidad del motor, en cambio, para
+el uso del potenciómetro u otro modo de funcionamiento la curva es lineal (Figura \ref{fig:curvarec}). Para revertir
 esto, se modificó los parámetros del tiempo de aceleración y desaceleración del variador a 20 segundos.  
 
 
@@ -279,6 +279,3 @@ esto, se modificó los parámetros del tiempo de aceleración y desaceleración 
 \end{figure}
 
 
-
-
-\newpage

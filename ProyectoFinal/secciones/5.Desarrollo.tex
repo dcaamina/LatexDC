@@ -1,9 +1,10 @@
 \subsection{Lazo de corriente} \label{sec:lazoI}
 
-Se realizó la modificación de los parámetros nombrados en la sección  REF 5.4 y se corroboró que el error no aparecía al cambiar el modo de funcionamiento del variador.
-Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (Ai1- señal + hilo común) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico podía ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
+Se realizó la modificación de los parámetros nombrados en la sección \ref{sec:error} y se corroboró que el error no aparecía nuevamente al cambiar el modo de funcionamiento del variador.
 
-Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el micorontrolador para seguir el estándar.
+Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (\textbf{Ai1}: hilo de señal + hilo común) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico podía ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
+
+Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
 
 
 
@@ -17,14 +18,14 @@ Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el
 \begin{figure}[htbp]
 	\centering
 \includegraphics[width=0.7\linewidth]{imagenes/placa_ls}
-\caption{Placa de control}
+\caption{Placa electrónica del variador de velocidad}
 \label{fig:placals}
 \end{figure}
 
 La señal analógica para realizar el control del variador de velocidad fue generada por una señal PWM estipulada a través de la biblioteca \textit{TIMEROne} del microcontrolador. La instrucción \textit{Timer1.inizialize(period)} de la biblioteca Arduino inicializa el \textit{timer} con el valor de \textit{period}, este valor es el tiempo en el que se dispara el temporizador y en el caso de este proyecto es de 40 $u$s.
 
 El otro comando que se utilizó fue \textit{Timer1.pwm(pin, duty)} que establece el número de
-pin dónde sale la señal generada, en este caso pin 9 y \textit{duty} es un valor entre 0 y 1023 establecido por la programación, dónde 0 corresponde a 0mA (o 4mA). La salida del pin 9 corresponde a valores de tensión según el rango nombrado anteriormente, por lo que fue necesario realizar la transformación de esta señal a una señal de corriente utilizando un a “placa adaptadora de señal” (Figura \ref{fig:adapt}).
+pin dónde sale la señal generada, en este caso pin 9 y \textit{duty} es un valor entre 0 y 1023 establecido por la programación. La salida del pin 9 corresponde a valores de tensión (de 0 a 5V), por lo que fue necesario realizar la transformación de esta señal a una señal de corriente a través una “placa adaptadora de señal” (Figura \ref{fig:adapt}). Esta placa, tiene como entrada el valor de tensión anteriormente nombrado y genera una señal de salida de 0 a 20mA; por medio de un parámetro del variador, esto modificó la señal para adaptarla al estándar de 4 a 20mA.
 
 \begin{figure}[htbp]
 	\centering
@@ -62,59 +63,59 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
 
     \subsubsection{Método de estimación}
 
-    Una vez que se determinó valores de ventana de filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc. Se utilizó el modo de ingreso de señal por lazo de corriente al variador de velocidad. 
+    Una vez que se determinó el valor de la ventana del filtro, velocidad de conmutación de PWM, tiempos de aceleración y desaceleración, etc, se utilizó el modo de ingreso de señal por lazo de corriente al variador de velocidad. 
     
-    La Figura \ref{fig:bloques} muestra un diagrama resumido de los pasos a realizar para tomar datos de la planta. Siendo G(s) el conjunto del túnel de viento, variador de velocidad y motor.
- 
-%    \begin{center}
-%    	\includegraphics[scale=0.35]{bloques.png}
-%    	\captionof{figure}{Diagrama en bloques}
-%    	\label{fig:bloques}    
-%    \end{center}
+    La Figura \ref{fig:bloques} muestra un diagrama resumido de los pasos a realizar para tomar datos de la planta. G(s) es el conjunto del túnel de viento, variador de velocidad y motor.
+
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[Diagrama en bloques]{\includegraphics[scale=0.35]{bloques.png}}
+	\subfigure[Diagrama en bloques]{\includegraphics[scale=0.5]{bloques.png}}
 	\centering
 	\subfigure[Diagrama de conexión ]{\includegraphics[scale=0.7]{Estimacion_1.png}} 
 	\caption{Estimación de planta} \label{fig:bloques}
 \end{figure}
  
     
-    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención de varias mediciones. En la figura \ref{fig:est2} se observan los datos de dos columnas de las tablas generadas.
+    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención de varias mediciones. En la figura \ref{fig:est2} se observa los valores de velocidad y los escalones que se realizaron durante una prueba generada para obtener los parámetros necesarios para la estimación de la planta.
     
     \begin{figure}[htb]
     	\centering
-    	\includegraphics[scale=0.5]{estima.png} %pruba_1 del 0607
+    	\includegraphics[scale=0.45]{estima.png} %pruba_1 del 0607
     	\captionof{figure}{Mediciones de velocidad a partir de distintos escalones dados}
     	\label{fig:est2}    
     \end{figure}
     
-    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los valores obtenidos de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
+    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargó los datos obtenidos de la prueba (Figura \ref{fig:est2}) y con ellos se observaron las características necesarias de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
     
     \begin{figure}[H]
     	\centering
-    	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[width=90mm]{parametros_seg.png}}
-    	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.5]{planta_seg1.png}} 
+    	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[scale=0.7]{parametros_seg.png}}
+    	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.45]{planta_seg1.png}} 
     	\caption{Estimación de planta} \label{fig:pl2}
     \end{figure}
 
+El sistema de \textit{"2° orden con retardo"} posee la función de transferencia observada en la ecuación \ref{ec:G}.
+
  \begin{equation}
  	G(s)=\frac{k\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}\ast e^{-T.s}
+ 	\label{ec:G}
  \end{equation}
 
-Sobreoscilación: 
+La ecuación de sobre oscilación (Ecuación \ref{ec:amort}), es utilizada para calcular el factor de amortiguamiento ($\xi$)
 \begin{equation}
-	\delta\;=\;\frac{\triangle y_{max}-\triangle y\left(\infty\right)}{\triangle y\left(\infty\right)}=\;e\;^{-\frac{\xi\pi}{\sqrt{1-\xi^2}}}\;\;\;\rightarrow\;Para\;obtener\;\xi
+	\delta\;=\;\frac{\triangle y_{max}-\triangle y\left(\infty\right)}{\triangle y\left(\infty\right)}=\;e\;^{-\frac{\xi\pi}{\sqrt{1-\xi^2}}}
+	\label{ec:amort}
 \end{equation}
 
-Tiempo de pico: 
+La ecuación \ref{ec:tp} es utilizada para obtener el valor de la frecuencia natural ($\omega_n$) a partir del tiempo de pico.
 \begin{equation}
-t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Para\;obtener\;\omega_n
+t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
+\label{ec:tp}
 \end{equation}
 
     
-    Con ayuda del código y ajustes manuales se llegó a la siguiente función de transferencia de segundo orden:
+    Con ayuda de un código generado en Matlab y ajustes manuales se llegó a la siguiente función de transferencia de segundo orden:
     
     \begin{equation}
     	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}*e^{-1.2.s}
@@ -122,25 +123,25 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
    
     Esta función de transferencia se realizó para una entrada entre 0 y 1023, los cuales son el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM del $\mu$C como se ve en la sección \ref{sec:lazoI}.
     
-    Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. Seguidamente en el gráfico se dispuso la respuesta experimental en conjunto con la simulación (Figura \ref{fig:estim2} y Figura \ref{fig:estim3}).
+    Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. En la figura \ref{fig:estim2} y \ref{fig:estim3}, se dispuso la respuesta experimental y la simulada para realizar la comparación.
     
     \begin{figure}[H]
     	\centering
-    	\includegraphics[scale=0.35]{estim2.jpeg}
+    	\includegraphics[scale=0.3]{estim2.jpeg}
     	\captionof{figure}{Corroboración de estimación de la planta. Ejemplo 1}
     	\label{fig:estim2}
     \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.35]{estim3.jpeg}
+	\includegraphics[scale=0.3]{estim3.jpeg}
 	\captionof{figure}{Corroboración de estimación de la planta. Ejemplo 2}
 	\label{fig:estim3}
 \end{figure}
        
     \subsection{Control}
-    Para el cálculo en primera instancia del controlador PID se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
-    Con los distintos valores de PI se realizaron pruebas en el Túnel del viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
+    Para el cálculo en primera instancia del controlador PID, se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
+    Con los distintos valores de PI (Tabla \ref{tab:pid}) se realizaron pruebas en el Túnel del viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
    
     \begin{figure}[H]
    	\centering
@@ -165,6 +166,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     		\multicolumn{1}{|r|}{\textbf{I=}} & 0.326 & 0.2035 & 0.2756 & 0.3599 & 0.4183 & 0.3107 \\ \hline
     	\end{tabular}
     \caption{Valores de PID's}
+    \label{tab:pid}
     \end{table}
     
     Al visualizar las respuestas obtenidas por las diferentes configuraciones se puede realizar la comparación para un escalón en donde la velocidad sube (figura \ref{fig:pisubuda}) y otro donde la velocidad baja (figura \ref{fig:pibajada}).
@@ -185,7 +187,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
     
     
     En la figura \ref{fig:mix} se pueden observar el sistema que genera mayor sobrepico, un sistema con una respuesta mas lenta, y un sistema con respuesta intermedia. 
-    \begin{figure}[h!]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[scale=0.5]{mix.png}
     	\captionof{figure}{Comparación 3 sistemas PI}
@@ -194,28 +196,28 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}\;\;\rightarrow\;Par
 
 	Al analizar los ensayos y obtener respuestas del sistema parecidas a las generadas en simulación, se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
 	
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{Compa_Prueba6.png}
-		\captionof{figure}{Prueba 6 -Experimental y Simulacion}
+		\captionof{figure}{Datos Experimentales y Simulados para la \textit{Prueba6}}
 		\label{fig:Prueba_6}
 	\end{figure}   
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Compa_Prueba7.png}
-	\captionof{figure}{Prueba 7 -Experimental y Simulacion}
+	\captionof{figure}{Datos Experimentales y Simulados para la \textit{Prueba7}}
 	\label{fig:Prueba_7}
 \end{figure}   
     \subsubsection{Implementación en $\mu$C}
     
-    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z ecuación \ref{PIDZ} y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(Z) al dominio del tiempo discreto.
+    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ecuación \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio del tiempo discreto.
     
      \begin{equation}
     PID(Z)\;=\;P\;+\;I.T_S.\frac1{z-1}+D.\frac1{T_S}.\frac{z-1}z \label{PIDZ}
     \end{equation}
 
 \subsubsection{Pruebas de control}
-Para observar la respuesta del control se generó perturbaciones utilizando las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía variador y era utilizado el motor con un reóstato (Figura \ref{fig:reos}). 
+Para observar la respuesta del control se generó perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de velocidad y se utilizaba el motor con un reóstato (Figura \ref{fig:reos}). 
 
 \begin{figure}[H]
 	\centering
@@ -231,7 +233,7 @@ Para observar la respuesta del control se generó perturbaciones utilizando las 
 	\label{fig:reos}
 \end{figure}
 
-Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Dependiendo la prueba, se abrió y se cerraron las compuertas para observar estos cambios y el correcto control de velocidad.
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Se realizó pruebas donde se abrió y cerró las compuertas para observar estos cambios y el correcto control de velocidad (Figura \ref{fig:comp1} y \ref{fig:comp2}).
 
 
 \begin{figure}[H]

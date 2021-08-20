@@ -18,7 +18,7 @@ poner la tarjeta como imagen
 	\item Alimente variador de velocidad y el motor.
 	\item Enchufe a 220V el cable de alimentación que sale de la implementación física.
 	\item Conecte el cable serial USB que sale de la implementación física.
-	\item Ejecute el programa “NOMBRE.EXE”
+	\item Ejecute el programa \fcolorbox{red}{yellow}{“NOMBRE.EXE”}
 	\item Seleccione el puerto dónde se encuentra conectado el microcontrolador.
 	\item Active el puerto.
 	\item Al inicializar el puerto, el microcontrolador comienza a entregar valores a la aplicación por lo que se observa THP, velocidad estimada y frecuencia de referencia. 
@@ -28,7 +28,7 @@ poner la tarjeta como imagen
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{capt2.png}
-	\captionof{figure}{Puerto activado. Aplicación leyendo valores del $\mu$C.}
+	\captionof{figure}{Puerto activado. Visualización de los valores del $\mu$C.}
 	\label{fig:capt2}
 \end{figure}
 
@@ -71,13 +71,13 @@ El eje vertical del gráfico en tiempo real puede ser modificado según necesida
 	\label{fig:capt3}
 \end{figure}
 
-\subsection{Autofunción}
-El modo de autofunción carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun”. El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno.
+\subsection{AutoFuncion}
+El modo de auto-función carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun”. El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno.
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.7]{carpcsv.png}
-	\captionof{figure}{Archivos dentro de la carpeta "autofun"}
+	\captionof{figure}{Archivos dentro de la carpeta "{}autofun"}
 	\label{fig:autof2}
 \end{figure}
 
@@ -97,12 +97,12 @@ El archivo tiene que tener el formato observado en la Tabla \ref{tab:formcsv}, d
 	\label{tab:formcsv}
 \end{table}
 
-Mientras que se esté realizando este programa aparecerá una señal visual debajo del botón abrir. (Figura \ref{fig:autof1})
+Mientras que se ejecute esta función aparecerá una señal visual debajo del botón abrir. (Figura \ref{fig:autof1})
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.5]{capt1.png}
-	\captionof{figure}{Aplicación funcionando en modo Autofunción}
+	\captionof{figure}{Aplicación en modo Autofunción}
 	\label{fig:autof1}
 \end{figure}
 
@@ -113,7 +113,7 @@ Mientras que se esté realizando este programa aparecerá una señal visual deba
 Al utilizar este modo de funcionamiento, se puede ingresar un valor aproximado de frecuencia. El lazo de control estará abierto.
 
 \subsubsection{Control activado}
-El lazo de control estará activado, ante perturbaciones el sistema tiende a establecerse a la velocidad estipulada. Para estipular la velocidad se debe presionar sobre la caja de “velocidad” ingresar un valor y presionar sobre el botón “enviar”
+El lazo de control estará activado, ante perturbaciones el sistema tiende a establecerse a la velocidad estipulada. Para estipular la velocidad se debe presionar sobre la caja de “velocidad” ingresar un valor y presionar sobre el botón “enviar”.
 
 \subsection{Encendido/ apagado del motor}
 El encendido/ apagado del motor se puede realizar de dos formas:
@@ -124,9 +124,9 @@ Si el parámetro F7 del variador de velocidad se encuentra en “1”, la marcha
 
 
 \subsection{Guardado de datos}
-Al colocar un nombre y presionar la tecla guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms. 
+Al colocar un nombre y presionar el botón guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms. Estos archivos se guardarán en la carpeta "data1" en la carpeta general de la aplicación. 
 
-\textbf{\textit{Alerta:}} Una vez que se presiona la tecla guardar o el puerto se cierra los datos son borrados y se comenzará una nueva tabla.
+\textbf{\textit{Alerta:}} Una vez que se presiona el botón guardar o el puerto se cierra los datos son borrados y se comenzará una nueva tabla.
 
 \begin{figure}[H]
 	\centering

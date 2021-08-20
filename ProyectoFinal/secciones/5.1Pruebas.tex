@@ -8,7 +8,7 @@ Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar 
 	\label{fig:sensoresa}
 \end{figure}
 
-A raíz de varias mediciones, durante distintos días, y realizando el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en la tabla \ref{densicalc}. 
+A raíz de varias mediciones, durante distintos días, y al realizar el contraste con el instrumento \textbf{TESTO 435} se decidió sacar de la caja donde estaban a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté desfasado, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula. Estos datos están expresados en la tabla \ref{densicalc}. 
 
 
 \begin{table}[b]
@@ -40,7 +40,7 @@ Referencias de la tabla:
 \end{itemize}
 
 
-Tomando como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo es menor al 1\%.
+Al tomar como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo del cálculo de densidad es menor al 1\%.
 
 \subsection{Fluctuaciones de velocidad}
 A partir de la teoría que se observó en la sección \ref{sec:flujoT} figura \ref{fig:fluct}, se decidió corroborar esta propiedad, se utilizó datos medidos y a través de un código generado en Matlab y se constató que el promedio de las fluctuaciones que tiende a cero (Figura \ref{fig:fluct2}).
@@ -54,7 +54,7 @@ A partir de la teoría que se observó en la sección \ref{sec:flujoT} figura \r
 %C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Proyecto_Final_Tunel\Pruebas22.03.21
 
 \subsection{Estimación de la densidad ante cambios de Temperatura y Humedad}
-Notamos conveniente realizar la comparación de las densidades calculadas ante las variaciones que se tenían de humedad y temperatura respecto a los datos tomados por los elementos calibrados. En la tabla \ref{densTH} se observa en las celdas internas los valores calculados de densidad para humedad de 38$\%$ y 40$\%$ y temperatura 19$^{\circ}$C y 21$^{\circ}$C, estos datos fueron elegidos al observar las máximas variaciones de los datos tomados con el sensor \textit{SH21} y el instrumento \textit{Testo 435}, manteniendo presión atmosférica constante.
+Notamos conveniente realizar la comparación de las densidades calculadas ante las variaciones que se tenían de humedad y temperatura respecto a los datos tomados por los elementos calibrados. En la tabla \ref{densTH} se observa en las celdas internas los valores calculados de densidad para humedad de 38$\%$ y 40$\%$ y temperatura 19$^{\circ}$C y 21$^{\circ}$C, estos datos fueron elegidos al observar las máximas variaciones de los datos tomados con el sensor \textit{SH21} y el instrumento \textit{Testo 435}, al mantener la presión atmosférica constante.
 (Los valores con fondo gris corresponden a la diferencia de valores)
 
 \begin{table}[h!]
@@ -70,7 +70,7 @@ Notamos conveniente realizar la comparación de las densidades calculadas ante l
 \label{densTH}
 \end{table}
 
-Si se calcula la velocidad del aire con la formula \ref{ec_aire} y con los datos de la tabla \ref{densTH} utilizando una diferencia de presión constante de 32$Pa$ se puede observar que la diferencias de velocidades son inferiores a 0,03m/s (tabla \ref{velTH}) ante un cambio de dos grados de temperatura por lo que no se ve necesario realizar una corrección de valores.
+Si se calcula la velocidad del aire con la formula \ref{ec_aire} en conjunto con los datos de la tabla \ref{densTH} y se utiliza una diferencia de presión constante de 32$Pa$ se puede observar que la diferencias de velocidades son inferiores a 0,03m/s (tabla \ref{velTH}) ante un cambio de dos grados de temperatura por lo que no se ve necesario realizar una corrección de valores.
 (Los valores con fondo gris corresponden a la diferencia de valores)
 \begin{table}[h!]
 	\centering
@@ -85,12 +85,14 @@ Si se calcula la velocidad del aire con la formula \ref{ec_aire} y con los datos
 \label{velTH}
 \end{table}
 
-\subsection{comparación de la frecuencia vista en el panel con el valor de PWM}
+\subsection{Comparación de la frecuencia vista en el panel con el valor de PWM}
+\fcolorbox{red}{yellow}{FALTA}
+
 \subsection{Contrastación de diferencia de presión}
 
 El sensor \textit{MPX7002} tiene como salida voltaje proporcional a la diferencia de presión medida, por lo que fue necesario utilizar un \textit{ASD1115} para transformar estos valores, a través de una constante, en unidades de presión.
 
-Para realizar la contrastación de la diferencia de presión ocasionada dentro del túnel por el aire, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente habladas a causa del flujo turbulento, se procedió a filmar el instrumento y aparte los datos obtenidos por nuestro sistema. Ambos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, generando luego un gráfico de puntos con las muestras tomadas, observando que el error es mayor para diferencias de presión mayores a 100 Pa \ref{fig:condifpres}.
+Para realizar la contrastación de la diferencia de presión ocasionada dentro del túnel por el aire, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente habladas a causa del flujo turbulento, se procedió a filmar el instrumento y aparte los datos obtenidos por nuestro sistema. Ambos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, y luego se generó un gráfico de puntos con las muestras tomadas y se observó que el error es mayor para diferencias de presión mayores a 100 Pa (Figura \ref{fig:condifpres}).
 
 \begin{figure}[H]
 	\centering
@@ -152,8 +154,9 @@ Para realizar la contrastación de la diferencia de presión ocasionada dentro d
 
 \subsection{Contrastación de velocidades}
 como contrastación final....
+\fcolorbox{red}{yellow}{FALTA}
 ver PRUEBA\_10\_PID
-el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentido comparar ambos porq para ellos usamos  un anemómetro (podriamos ver de usar el anemómetro de ventilador? y el de testo para ver los distintos valores y nosotros con el código en función de THP)
+el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentido comparar ambos porq para ellos usamos  un anemómetro (podriamos ver de usar el anemómetro y el de testo para ver los distintos valores y nosotros con el código en función de THP)
 
 
 
