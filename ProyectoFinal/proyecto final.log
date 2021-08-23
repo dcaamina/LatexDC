@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  22 AUG 2021 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  22 AUG 2021 22:30
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -1405,12 +1405,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17 <./imagenes//bme280.png> <./imagenes//sht21.png> <./imagenes//mpx7002.png> 
 <./imagenes//ads1115.png>]
-Overfull \hbox (0.49913pt too wide) in paragraph at lines 215--216
-\T1/cmr/m/n/12 al in-gre-sar va-lo-res nu-mé-ri-cos por te-cla-do que eran en-v
-ia-dos al $\OML/cmm/m/it/12 $\T1/cmr/m/n/12 C pa-ra ge-ne-rar la res-pec-ti-va
-
- []
-
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 219.
@@ -2186,7 +2180,7 @@ ublic/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program 
 Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (56 pages, 9422215 bytes).
+Output written on "proyecto final.pdf" (56 pages, 9422188 bytes).
 PDF statistics:
  1714 PDF objects out of 1728 (max. 8388607)
  238 named destinations out of 1000 (max. 500000)

@@ -208,13 +208,13 @@ En el caso de este proyecto, se utilizó un valor de PGA igual a 1, cuya tensió
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
 	\cite{processing}Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
 \end{tcolorbox}
-Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro \textit{script} para obtener conclusiones. En consecuencia, después de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada, en tiempo real.
+Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro \textit{script} para obtener conclusiones. En consecuencia, después de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada en tiempo real.
 
-Como solución para el inconveniente anteriormente nombrado, se realizó una primera versión (Figura \ref{fig:Proce}) de una interfaz gráfica generada con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráficamente como numéricamente. 
+Como solución para el inconveniente anteriormente nombrado, se realizó una primera versión (Figura \ref{fig:Proce}) de una interfaz gráfica generada con Processing. Este código fue capaz de adquirir datos desde el microcontrolador en tiempo real y mostrarlos tanto gráfica como numéricamente. 
 
-Para realizar la estimación de la planta (Sección \ref{sec:estima}), era necesario poder implementar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible al ingresar valores numéricos por teclado que eran enviados al $\mu$C para generar la respectiva señal que luego sería ingresada al variador de velocidad por el modo de corriente (Sección \ref{sec:lazoI}).
+Para realizar la estimación de la planta (Sección \ref{sec:estima}), fue necesario enviar escalones de señal al variador de velocidad a través del microcontrolador. Esto fue posible al ingresar valores numéricos por teclado que eran enviados al $\mu$C para generar la respectiva señal. Luego ésta es ingresada al variador por un lazo de corriente. Ver (Sección \ref{sec:lazoI}).
 
-Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv que luego fueron observadas con Matlab.
+Al presionar una tecla específica configurada por los comandos, el programa guardaba los datos adquiridos durante la prueba en un archivo .csv para luego ser observadas con Matlab.
 
 \begin{figure}[]
 	\centering
@@ -226,8 +226,8 @@ Al presionar una tecla específica configurada por los comandos, el programa gua
 
 \subsection{Filtros}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Filtro digital]
-Es una operación	matemática que toma una secuencia de números (la señal de entrada) y la
-	modifica para producir otra (la señal de salida) con el objetivo de resaltar o atenuar ciertas características.
+Es una operación	matemática que toma una secuencia de números (señal de entrada) y la
+	modifica para producir otra (señal de salida) con el objetivo de resaltar o atenuar ciertas características.
 \end{tcolorbox}
 
 Una vez que se procedió a tomar diversos valores de velocidad estimada, se notó necesario la implementación
