@@ -210,11 +210,21 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
 \end{figure}   
     \subsubsection{Implementación en $\mu$C}
     
-    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ecuación \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio del tiempo discreto.
+    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ec. \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio del tiempo discreto.
     
-     \begin{equation}
-    PID(Z)\;=\;P\;+\;I.T_S.\frac1{z-1}+D.\frac1{T_S}.\frac{z-1}z \label{PIDZ}
-    \end{equation}
+     \begin{align}
+    PID(z)\;=\frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac1{z-1}+D.\frac1{T_s}.\frac{z-1}z\\\label{PIDZ}
+    \frac{U(z)}{E(z)}&=\;P\;.\frac{z^{-1}}{z^{-1}}+\;I.T_s.\frac1{z-1}.\frac{z^{-1}}{z^{-1}}+D.\frac1{T_s}.\frac{z-1}z.\frac{z^{-1}}{z^{-1}}\;\\
+    \frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac{z^{-1}}{1-z^{-1}}+D.\frac1{T_s}.(1-z^{-1})\\
+    \frac{U(z)}{E(z)}&=\frac1{1-z^{-1}}\left[P.\left(1-z^{-1}\right)\;+\;I.T_s.z^{-1}+\frac D{T_s}.(1-z^{-1})^2\right]\;\\
+    U(z).\left(1-z^{-1}\right)&=E(z)\left[P+\;\frac D{T_s}+\left(\;I.T_s-P-2.\frac D{T_s}\right).z^{-1}+\frac D{T_s}.z^{-2}\right]\;\label{hola}
+    \end{align}
+Y si aplicamos la transformada inversa Z a la Ec. \ref{hola}:
+\begin{align}
+	u(k)\;=\;u(k-1)\;+\;\left(P+\frac D{T_s}\right).e(k)\;+\left(I.T_s-P-2.\frac D{T_s}\right).e(k-1)+\frac D{T_s}.e(k-2)\label{ecdiscreta}
+\end{align}
+
+De esta forma obtenemos la ecuación del PID en función de la muestra actual y anteriores, que nos sirve para implementar de manera directa en el $\mu$C. 
 
 \subsubsection{Pruebas de control}
 Para observar la respuesta del control se generó perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de velocidad y se utilizaba el motor con un reóstato (Figura \ref{fig:reos}). 
