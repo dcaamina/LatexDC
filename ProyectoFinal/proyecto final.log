@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  25 AUG 2021 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  25 AUG 2021 13:23
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -2100,7 +2100,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53])
+[53]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2109,20 +2109,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54] (proyecto final.aux
+[54]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56] (proyecto final.aux
 LaTeX Info: Redefining \sptext on input line 32.
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
-Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
-(rerunfilecheck)             Checksum: 63E1A08512EC73402706572C08C217FE;9541.
+
+Package rerunfilecheck Warning: File `"proyecto final".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"proyecto final".out':
+(rerunfilecheck)             Before: 63E1A08512EC73402706572C08C217FE;9541
+(rerunfilecheck)             After:  2AF6E70E93264FAEB009D47F45C8BE05;9801.
 Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 \openout1 = `"proyecto final.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30968 strings out of 479334
- 560905 string characters out of 2866960
+ 30972 strings out of 479334
+ 560947 string characters out of 2866960
  1067950 words of memory out of 3000000
  47576 multiletter control sequences out of 15000+200000
  424671 words of font info for 76 fonts, out of 3000000 for 9000
@@ -2159,9 +2183,9 @@ ts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "proyecto final.pdf" (55 pages, 9405460 bytes).
+Output written on "proyecto final.pdf" (57 pages, 9407843 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
- 235 named destinations out of 1000 (max. 500000)
+ 1688 PDF objects out of 1728 (max. 8388607)
+ 239 named destinations out of 1000 (max. 500000)
  780 words of extra memory for PDF output out of 10000 (max. 10000000)
 

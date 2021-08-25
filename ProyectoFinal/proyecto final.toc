@@ -113,8 +113,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {B.9}Falla externa}{51}{subsection.Alph2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Código Arduino}{52}{appendix.Alph3}%
+\contentsline {section}{\numberline {C}Modelo de placa}{52}{appendix.Alph3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Código Processing}{53}{appendix.Alph4}%
+\contentsline {section}{\numberline {D}Código Arduino}{53}{appendix.Alph4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Código Matlab}{54}{appendix.Alph5}%
+\contentsline {section}{\numberline {E}Código Processing}{54}{appendix.Alph5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {F}Código Matlab}{55}{appendix.Alph6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {G}Modelo de placa}{56}{appendix.Alph7}%
