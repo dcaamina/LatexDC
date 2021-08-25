@@ -16,8 +16,8 @@ poner la tarjeta como imagen
 \subsection{Puesta en marcha}
 \begin{enumerate}
 	\item Alimente variador de velocidad y el motor.
-	\item Enchufe a 220V el cable de alimentación que sale de la implementación física.
-	\item Conecte el cable serial USB que sale de la implementación física.
+	\item Enchufe a 220V el cable de alimentación que sale de la caja de control.
+	\item Conecte el cable USB.
 	\item Ejecute el programa \fcolorbox{red}{yellow}{“NOMBRE.EXE”}
 	\item Seleccione el puerto dónde se encuentra conectado el microcontrolador.
 	\item Active el puerto.
@@ -36,13 +36,13 @@ poner la tarjeta como imagen
 
 \subsection{Gráfico en tiempo real}
 \subsubsection{	Visibilidad de las señales en tiempo real}
-En la parte izquierda inferior del programa, se puede activar o desactivar la visibilidad de las variables a observar en tiempo real, solo basta realizar un click en los rectángulos, y estos al estar activados se colocarán del color correspondiente a la señal a observar.
+En la parte izquierda inferior del programa, se puede activar o desactivar la visibilidad de las variables a observar, solo basta realizar un click en los rectángulos, y estos al estar activados se colocarán del color correspondiente a la señal.
 
 \subsubsection{Escala}
 En la parte inferior se encontrará “Escala” donde se establece la escala correspondiente de cada señal.
 \begin{enumerate}
 	\item Realice click en el interior del rectángulo
-	\item Borre el número que posee y colocar el valor nuevo a ingresar.
+	\item Borre el número que posee y coloque el valor nuevo a ingresar.
 	\item Presione “enter”.
 	\item La escala de la señal elegida será modificada.
 	
@@ -50,14 +50,14 @@ En la parte inferior se encontrará “Escala” donde se establece la escala co
 
 \textbf{Ejemplo de escala:}
 
-Si se coloca en una señal “10”, la variable observada en tiempo real estará aumentada 10 veces.
+Si se coloca en una señal “escala: 10”, la variable observada en tiempo real estará aumentada 10 veces.
 
 \subsubsection{Límite del eje vertical}
 El eje vertical del gráfico en tiempo real puede ser modificado según necesidad.
 
 \begin{enumerate}
 	\item Realice click en el interior del rectángulo.
-	\item Borre el número que posee y colocar el valor nuevo a ingresar.
+	\item Borre el número que posee y coloque el valor nuevo a ingresar.
 	\item Presione “enter”.
 	\item El eje “vertical” se verá modificado.
 	
@@ -113,18 +113,18 @@ Mientras que se ejecute esta función aparecerá una señal visual debajo del bo
 Al utilizar este modo de funcionamiento, se puede ingresar un valor aproximado de frecuencia. El lazo de control estará abierto.
 
 \subsubsection{Control activado}
-El lazo de control estará activado, ante perturbaciones el sistema tiende a establecerse a la velocidad estipulada. Para estipular la velocidad se debe presionar sobre la caja de “velocidad” ingresar un valor y presionar sobre el botón “enviar”.
+El lazo de control estará activado, ante perturbaciones el sistema tiende a establecerse a la velocidad estipulada. Para determinar la velocidad de referencia se debe presionar sobre la caja de “velocidad”, ingresar un valor y presionar sobre el botón “enviar”.
 
 \subsection{Encendido/ apagado del motor}
 El encendido/ apagado del motor se puede realizar de dos formas:
 \subsubsection{Panel frontal}
-Si el parámetro F7 del variado de velocidad se encuentra en “0”, la marcha y parada del motor será realizada por los botones físicos el panel frontal.
+Si el parámetro F7 del variado de velocidad se encuentra en “0”, la marcha y parada del motor será realizada por los botones físicos en el panel frontal del variador.
 \subsubsection{Aplicación}
-Si el parámetro F7 del variador de velocidad se encuentra en “1”, la marcha y parada del motor será realizada por los botones propios de la aplicación.
+Si el parámetro F7 del variador se encuentra en “1”, la marcha y parada del motor será realizada por los botones propios de la aplicación.
 
 
 \subsection{Guardado de datos}
-Al colocar un nombre y presionar el botón guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms. Estos archivos se guardarán en la carpeta "data1" en la carpeta general de la aplicación. 
+Al colocar un nombre y presionar el botón guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms. Estos archivos se guardarán en la carpeta "data1{}"  dentro de la carpeta general de la aplicación. 
 
 \textbf{\textit{Alerta:}} Una vez que se presiona el botón guardar o el puerto se cierra los datos son borrados y se comenzará una nueva tabla.
 

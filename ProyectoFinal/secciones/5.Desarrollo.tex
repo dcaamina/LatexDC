@@ -2,9 +2,9 @@
 
 Se realizó la modificación de los parámetros nombrados en la sección \ref{sec:error} y se corroboró que el error no aparecía nuevamente al cambiar el modo de funcionamiento del variador.
 
-Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (\textbf{Ai1}: hilo de señal + hilo común) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico podía ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
+Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (\textbf{Ai1}) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico puede ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
 
-Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas respecto al lazo de tensión. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
+Se optó por la utilización un lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
 
 
 
@@ -22,10 +22,10 @@ Se optó por la utilización del lazo de corriente, este tiene ventajas sobre el
 \label{fig:placals}
 \end{figure}
 
-La señal analógica para realizar el control del variador de velocidad fue generada por una señal PWM estipulada a través de la biblioteca \textit{TIMEROne} del microcontrolador. La instrucción \textit{Timer1.inizialize(period)} de la biblioteca Arduino inicializa el \textit{timer} con el valor de \textit{period}, este valor es el tiempo en el que se dispara el temporizador y en el caso de este proyecto es de 40 $u$s.
+La señal analógica para realizar el control del variador de velocidad fue generada por una señal PWM estipulada a través de la biblioteca \textit{TimerOne} del $\mu$C. Con esta biblioteca se configuró la frecuencia de la señal PWM, la cual fue de 25 kHz. 
 
-El otro comando que se utilizó fue \textit{Timer1.pwm(pin, duty)} que establece el número de
-pin dónde sale la señal generada, en este caso pin 9 y \textit{duty} es un valor entre 0 y 1023 establecido por la programación. La salida del pin 9 corresponde a valores de tensión (de 0 a 5V), por lo que fue necesario realizar la transformación de esta señal a una señal de corriente a través una “placa adaptadora de señal” (Figura \ref{fig:adapt}). Esta placa, tiene como entrada el valor de tensión anteriormente nombrado y genera una señal de salida de 0 a 20mA; por medio de un parámetro del variador, esto modificó la señal para adaptarla al estándar de 4 a 20mA.
+Para la señal PWM generada, se utilizó el Pin 9 del $\mu$C, y se ajustó el ciclo de trabajo entre 0 y 1023 ya que era la resolución máxima que disponía la biblioteca. El Pin 9 de salida tiene un rango de tensión de 0 a 5V, por lo que fue necesario realizar la transformación de esta señal a una señal de corriente a través una “placa adaptadora de señal” (Figura \ref{fig:adapt}). Esta placa, tiene como entrada el valor de tensión anteriormente nombrado y genera una señal de salida de 0 a 20mA. Por medio de un parámetro del variador, se modificó la señal para adaptarla al estándar de 4 a 20mA.
+
 
 \begin{figure}[htbp]
 	\centering
@@ -81,7 +81,7 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     
     \begin{figure}[htb]
     	\centering
-    	\includegraphics[scale=0.45]{estima.png} %pruba_1 del 0607
+    	\includegraphics[scale=0.40]{estima.png} %pruba_1 del 0607
     	\captionof{figure}{Mediciones de velocidad a partir de distintos escalones dados}
     	\label{fig:est2}    
     \end{figure}
@@ -91,7 +91,7 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     \begin{figure}[H]
     	\centering
     	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[scale=0.7]{parametros_seg.png}}
-    	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.45]{planta_seg1.png}} 
+    	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.35]{planta_seg1.png}} 
     	\caption{Estimación de planta} \label{fig:pl2}
     \end{figure}
 
@@ -121,7 +121,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
     	\frac{Y(s)}{U(s)}=\frac{0,02483}{s^2+1,846s+1,535}*e^{-1.2.s}
     \end{equation}
    
-    Esta función de transferencia se realizó para una entrada entre 0 y 1023, los cuales son el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM del $\mu$C como se ve en la sección \ref{sec:lazoI}.
+    Esta función de transferencia se realizó para una entrada entre 0 y 1023, los cuales son el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM como se ve en la sección \ref{sec:lazoI}.
     
     Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. En la figura \ref{fig:estim2} y \ref{fig:estim3}, se dispuso la respuesta experimental y la simulada para realizar la comparación.
     
@@ -194,7 +194,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
     	\label{fig:mix}
     \end{figure}
 
-	Al analizar los ensayos y obtener respuestas del sistema parecidas a las generadas en simulación, se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
+	Al analizar los ensayos y obtener respuestas del sistema parecidas (Figura \ref{fig:Prueba_6} y \ref{fig:Prueba_7}) a las generadas en simulación, se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
 	
 	\begin{figure}[H]
 		\centering
@@ -210,16 +210,16 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
 \end{figure}   
     \subsubsection{Implementación en $\mu$C}
     
-    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ec. \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} no presente inconvenientes. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio del tiempo discreto.
+    Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ecuación \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} sea más simple. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio de tiempo discreto.
     
      \begin{align}
-    PID(z)\;=\frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac1{z-1}+D.\frac1{T_s}.\frac{z-1}z\\\label{PIDZ}
+    PID(z)\;=\frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac1{z-1}+D.\frac1{T_s}.\frac{z-1}z \label{PIDZ}\\
     \frac{U(z)}{E(z)}&=\;P\;.\frac{z^{-1}}{z^{-1}}+\;I.T_s.\frac1{z-1}.\frac{z^{-1}}{z^{-1}}+D.\frac1{T_s}.\frac{z-1}z.\frac{z^{-1}}{z^{-1}}\;\\
     \frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac{z^{-1}}{1-z^{-1}}+D.\frac1{T_s}.(1-z^{-1})\\
     \frac{U(z)}{E(z)}&=\frac1{1-z^{-1}}\left[P.\left(1-z^{-1}\right)\;+\;I.T_s.z^{-1}+\frac D{T_s}.(1-z^{-1})^2\right]\;\\
     U(z).\left(1-z^{-1}\right)&=E(z)\left[P+\;\frac D{T_s}+\left(\;I.T_s-P-2.\frac D{T_s}\right).z^{-1}+\frac D{T_s}.z^{-2}\right]\;\label{hola}
     \end{align}
-Y si aplicamos la transformada inversa Z a la Ec. \ref{hola}:
+Y si aplicamos la transformada inversa Z a la ecuación \ref{hola}:
 \begin{align}
 	u(k)\;=\;u(k-1)\;+\;\left(P+\frac D{T_s}\right).e(k)\;+\left(I.T_s-P-2.\frac D{T_s}\right).e(k-1)+\frac D{T_s}.e(k-2)\label{ecdiscreta}
 \end{align}
@@ -227,7 +227,7 @@ Y si aplicamos la transformada inversa Z a la Ec. \ref{hola}:
 De esta forma obtenemos la ecuación del PID en función de la muestra actual y anteriores, que nos sirve para implementar de manera directa en el $\mu$C. 
 
 \subsubsection{Pruebas de control}
-Para observar la respuesta del control se generó perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad\cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de velocidad y se utilizaba el motor con un reóstato (Figura \ref{fig:reos}). 
+Para observar la respuesta del control se generó perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad \cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de ella porque se utilizaba un reóstato (8 posiciones) para modificar la resistencia rotórica del motor (Figura \ref{fig:reos}). 
 
 \begin{figure}[H]
 	\centering

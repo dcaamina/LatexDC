@@ -1,4 +1,4 @@
-Luego de realizar las pruebas y observar los cambios necesarios para un buen uso en el laboratorio, se procedió a realizar la implementación final (Figura \ref{fig:implebloq}), . Dicha implementación se dividió en dos bloques, uno perteneciente a la Aplicación (Sección \ref{sec:aplic}), programación de la parte gráfica y adquisición de datos, y otro bloque de Hardware (Sección \ref{sec:hard}), parte física del proyecto. 
+Luego de realizar las pruebas y observar los cambios necesarios para un buen uso en el laboratorio, se procedió a realizar la implementación final (Figura \ref{fig:implebloq}). Dicha implementación se dividió en dos bloques, uno perteneciente a la Aplicación (Sección \ref{sec:aplic}), programación de la parte gráfica y adquisición de datos, y otro bloque de Hardware (Sección \ref{sec:hard}), parte física del proyecto. 
 
 
 \begin{figure}[h!]
@@ -29,8 +29,7 @@ En el diagrama de flujo de la Figura \ref{fig:bloqvis} se observa que “aplicac
 
 \begin{enumerate}
 \item Bloque \textbf{“Adquisición de datos”}: 
-\subitem Obtiene datos provenientes del microcontrolador (Tabla \ref{tab:Datosdesde}) que son utilizados para guardar datos en un archivo “.csv”. 
-\subitem Adquiere los datos que luego son utilizados por el bloque \textit{visual}.
+\subitem Obtiene datos provenientes del microcontrolador (Tabla \ref{tab:Datosdesde}) que se guardan en un archivo “.csv”. 
  
 Los datos que se reciben desde el microcontrolador durante el proceso de adquisición de datos consta de una cadena de caracteres en formato “string” dónde los distintos parámetros son separados por comas.
 \begin{table}[H]
@@ -45,8 +44,8 @@ Los datos que se reciben desde el microcontrolador durante el proceso de adquisi
 
 Referencia de cada dato:
 	\begin{itemize}
-	\item $D_0$: Velocidad del aire estimada.
-	\item 	$D_1$: Valor de frecuencia o velocidad preestablecida.
+	\item $D_0$: velocidad del aire estimada.
+	\item 	$D_1$: valor de frecuencia o velocidad preestablecida.
 	\item 	$D_2$: diferencia de presión medida a través del MPX7002 en conjunto con ADS1115.
 	\item 	$D_3$: señal de acción de control.
 	\item 	$D_4$: tiempo otorgado por el microcontrolador.
@@ -64,24 +63,24 @@ Referencia de cada dato:
 
 \item Bloque \textbf{Visual}: 
 \begin{itemize}
-\item Sub-bloque \textbf{Parámetros}: con los datos adquiridos, muestra los valores de TPH, v y v/f ref y realiza gráficos en tiempo real donde el usuario decide la visibilidad de distintos parámetros (v, v/f ref, dDP, accion de control) y su correspondiente escala. 
+\item Sub-bloque \textbf{Parámetros}: con los datos adquiridos, muestra los valores de THP, velocidad, v/f de referencia y realiza gráficos en tiempo real donde el usuario decide la visibilidad de distintos parámetros y su correspondiente escala. 
 \item Sub-bloque \textbf{Puesta en marcha del motor}: En el sub-bloque se encuentran botones de RUN y STOP que pondrán en marcha y pararán el motor según la configuración de F7 del variador de velocidad. En este bloque también se encuentran el botón de parada de emergencia y el botón de “Reset” ante alguna falla. 
 \item Sub-bloque \textbf{Modos de funcionamiento}: posee las siguientes formas de ejecución del $\mu$C:
 \begin{itemize}
-\item \underline{Modo Lectura de datos:} al realizar la conexión del puerto serial, el $\mu$C comienza a adquirir datos y muestra valores de THP, velocidad y frecuencia de referencia por defecto. El modo solo recibe datos del microcontrolador pero esta configuración espera comandos de autofunción o del Modo Ai1 para enviar al $\mu$C una nueva orden.
-\item \underline{Modo Autofunción:} El modo cierra el lazo de control, lee un archivo csv dónde se encuentran los escalones de velocidad y el tiempo de duración de estos. Envía al $\mu$C los datos del archivo elegido, y este manda el
+\item \underline{Modo Lectura de datos:} al realizar la conexión del puerto serial, el $\mu$C comienza a adquirir datos y muestra valores de THP, velocidad y frecuencia de referencia por defecto. El modo solo recibe datos del microcontrolador pero esta configuración espera comandos de \textit{autofunción} o \textit{Modo Ai1} para enviar al $\mu$C una nueva orden.
+\item \underline{Modo Autofunción:} El modo cierra el lazo de control, lee un archivo .csv dónde se encuentran los escalones de velocidad y el tiempo de duración de estos. Envía al $\mu$C los datos del archivo elegido, y este manda el
 comando para que se implementen los escalones preestablecidos.
 
 \item \underline{Modo Ai1:} Este modo envía y recibe información del $\mu$C al variador, tiene dos funcionamientos
 \begin{itemize}
 \item Control desactivado: la planta se encuentra a lazo abierto y puede ser ingresada una frecuencia estimada.
-\item Control activado: este método se utiliza como lazo de control cerrado, durante su funcionamiento se retroalimenta velocidad por lo que ante perturbaciones el sistema se establece en la velocidad de referencia configurada.
+\item Control activado: este método cierra el lazo de control y durante su funcionamiento se retroalimenta velocidad por lo que ante perturbaciones el sistema se establece en la velocidad de referencia configurada.
 \end{itemize}
 \end{itemize}
 \end{itemize}
 
 
-El formato de los datos enviados de la aplicación al $\mu$C es un vector de los datos separados por comas en formato “string” como se observan en la tabla \ref{tab:Datosenviados}, mientras que la referencia de cada elemento son:
+El formato de los datos enviados de la aplicación al $\mu$C es un vector, separados por comas, en formato “string” como se observan en la tabla \ref{tab:Datosenviados}, y la referencia de cada elemento son las siguientes:
 
 \begin{table}[H]
 	\centering
@@ -114,7 +113,7 @@ El formato de los datos enviados de la aplicación al $\mu$C es un vector de los
 
 \subsection{Bloque Hardware} \label{sec:hard}
 
-Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa (Figura \ref{fig:hardBloq}) con los bloques utilizados en la sección \ref{sec:desarr}. Esta nueva placa fue realizada por la máquina de prototipado \textbf{\textit{LPKF Protomat S62}} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó componentes nuevos y se reutilizaron elementos utilizados durante la implementación del prototipo.  
+Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa (Figura \ref{fig:hardBloq}) con los bloques utilizados en la sección \ref{sec:desarr}. Esta nueva placa fue realizada por la máquina de prototipado \textbf{\textit{LPKF Protomat S63}} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó los componentes.  
 
 \begin{figure}[H]
 	\centering
@@ -123,7 +122,7 @@ Para llevar a cabo la implementación final del “hardware”, se procedió a r
 	\label{fig:hardBloq}
 \end{figure}
 
-En la \fcolorbox{red}{yellow}{figura WWW} se observa la placa terminada. Este nuevo prototipo elimina ruidos eléctricos ocasionados al utilizar cables para interconectar bloques y sensores.
+En la \fcolorbox{red}{yellow}{figura Falta} se observa la placa terminada. Este nuevo prototipo elimina ruidos eléctricos ocasionados al utilizar cables para interconectar bloques y sensores.
 
 
 \subsection{Costos}
