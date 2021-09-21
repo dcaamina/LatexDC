@@ -3,12 +3,12 @@
 Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{placa_sensores.pdf}
+	\includegraphics[scale=0.9]{placa_sensores.pdf}
 	\captionof{figure}{Esquema de placa con sensores utilizados}
 	\label{fig:sensoresa}
 \end{figure}
 
-A raíz de varias mediciones, durante distintos días, y al realizar el contraste con el instrumento \textbf{TESTO 435} se decidió retirar de la caja a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté afectado por posibles cambios de estos, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula \ref{ec_den}. Estos datos están expresados en la tabla \ref{densicalc}. 
+A raíz de los resultados de varias mediciones, realizadas durante distintos días, y al realizar el contraste con el instrumento \textbf{TESTO 435} se decidió retirar de la caja a los sensores de temperatura y humedad para que luego el cálculo de la velocidad del aire no esté afectado por posibles cambios de estos, ya que esta caja utilizada generaba un ambiente distinto al real dentro del laboratorio. Al colocar el sensor del lado externo, se realizaron tomas de valores en distintos momentos. Con ambos conjuntos de datos se procedió a obtener los valores de la densidad calculados con la fórmula \ref{ec_den}. Estos datos están expresados en la tabla \ref{densicalc}. 
 
 
 \begin{table}[b]
@@ -42,14 +42,6 @@ Referencias de la tabla:
 
 Al tomar como valor verdadero los valores de THP medidos con los instrumentos calibrados, se puede observar que el error relativo del cálculo de densidad es menor al 1\%.
 
-\subsection{Fluctuaciones de velocidad}
-A partir de la teoría que se observó en la sección \ref{sec:flujoT} figura \ref{fig:fluct}, se decidió corroborar esta propiedad. Con los datos medidos y a través de un código generado en Matlab y se constató que el promedio de las fluctuaciones tiende a cero (Figura \ref{fig:fluct2}).
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{fluctua.png}
-	\captionof{figure}{Fluctuaciones en velocidades medidas}
-	\label{fig:fluct2}
-\end{figure}
 
 %C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Proyecto_Final_Tunel\Pruebas22.03.21
 
@@ -57,48 +49,61 @@ A partir de la teoría que se observó en la sección \ref{sec:flujoT} figura \r
 Notamos conveniente realizar la comparación de las densidades calculadas ante las variaciones que se tenían de humedad y temperatura respecto a los datos tomados por los elementos calibrados. En la tabla \ref{densTH} se observa en las celdas internas los valores calculados de densidad para humedad de 38$\%$ y 40$\%$ y temperatura 19$^{\circ}$C y 21$^{\circ}$C, estos datos fueron elegidos al observar las máximas variaciones de los datos tomados con el sensor \textit{SH21} y el instrumento \textit{Testo 435}, al mantener la presión atmosférica constante.
 (Los valores con fondo gris corresponden a la diferencia de densidades).
 
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
-	\begin{tabular}{lllll}
-		&  & \multicolumn{2}{c}{\textbf{Temperatura}} &  \\
-		&  & \multicolumn{1}{c}{\textbf{19°C}} & \multicolumn{1}{c}{\textbf{21°C}} & \multicolumn{1}{c}{\textbf{}} \\
-		\multicolumn{1}{c}{} & \multicolumn{1}{r}{\textbf{38\%}} & 1,1945758 & 1,1859383 & \cellcolor[HTML]{F2F2F2}-0,0086376 \\
-		\multicolumn{1}{c}{\multirow{-2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r}{\textbf{40\%}} & 1,1943783 & 1,1857162 & \cellcolor[HTML]{F2F2F2}-0,0086621 \\
-		& \multicolumn{1}{c}{\textbf{}} & \cellcolor[HTML]{F2F2F2}-0,0001976 & \cellcolor[HTML]{F2F2F2}-0,0002221 & 
+	\begin{tabular}{ll|l|l|l|} 
+		\cline{3-4}
+		&                                    & \multicolumn{2}{c|}{\textbf{Temperatura}}                                                       & \multicolumn{1}{l}{}                            \\ 
+		\cline{3-4}
+		&                                    & \multicolumn{1}{c|}{\textbf{19°C}}             & \multicolumn{1}{c|}{\textbf{21°C}}             & \multicolumn{1}{c}{\textbf{}}                   \\ 
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r|}{\textbf{38\%}} & 1,1945758                                      & 1,1859383                                      & {\cellcolor[rgb]{0.816,0.816,0.816}}-0,0086376  \\ 
+		\hhline{|~----|}
+		\multicolumn{1}{|c|}{}                                  & \multicolumn{1}{r|}{\textbf{40\%}} & 1,1943783                                      & 1,1857162                                      & {\cellcolor[rgb]{0.816,0.816,0.816}}-0,0086621  \\ 
+		\hline
+		& \multicolumn{1}{c|}{\textbf{}}     & {\cellcolor[rgb]{0.816,0.816,0.816}}-0,0001976 & {\cellcolor[rgb]{0.816,0.816,0.816}}-0,0002221 & \multicolumn{1}{l}{}                            \\
+		\hhline{~~--~}
 	\end{tabular}
-\caption{Densidad del aire ante cambios de TH}
-\label{densTH}
+	\caption{Cálculo de la densidad ante cambios de temperatura y humedad}
+	\label{densTH}
 \end{table}
 
 Si se calcula la velocidad del aire con la formula \ref{ec_aire} en conjunto con los datos de la tabla \ref{densTH} y se utiliza una diferencia de presión constante de 32$Pa$ se puede observar que la diferencias de velocidades son inferiores a 0,03m/s (tabla \ref{velTH}) ante un cambio de dos grados de temperatura por lo que no se ve necesario realizar una corrección de valores.
 
-\begin{table}[h!]
+
+\begin{table}[H]
 	\centering
-	\begin{tabular}{lllll}
-		&  & \multicolumn{2}{c}{\textbf{Temperatura}} &  \\
-		&  & \multicolumn{1}{c}{\textbf{19°C}} & \multicolumn{1}{c}{\textbf{21°C}} & \multicolumn{1}{c}{\textbf{}} \\
-		\multicolumn{1}{c}{} & \multicolumn{1}{r}{\textbf{38\%}} & 7,3195288 & 7,3461357 & \cellcolor[HTML]{F2F2F2}0,0266068 \\
-		\multicolumn{1}{c}{\multirow{-2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r}{\textbf{40\%}} & 7,3201342 & 7,3468236 & \cellcolor[HTML]{F2F2F2}0,0266894 \\
-		& \multicolumn{1}{c}{\textbf{}} & \cellcolor[HTML]{F2F2F2}0,0006054 & \cellcolor[HTML]{F2F2F2}0,0006879 & 
+	\begin{tabular}{ll|l|l|l|} 
+		\cline{3-4}
+		&                                    & \multicolumn{2}{c|}{\textbf{Temperatura}}                                                     & \multicolumn{1}{l}{}                           \\ 
+		\cline{3-4}
+		&                                    & \multicolumn{1}{c|}{\textbf{19°C}}            & \multicolumn{1}{c|}{\textbf{21°C}}            & \multicolumn{1}{c}{\textbf{}}                  \\ 
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Humedad}}} & \multicolumn{1}{r|}{\textbf{38\%}} & 7,3195288                                     & 7,3461357                                     & {\cellcolor[rgb]{0.816,0.816,0.816}}0,0266068  \\ 
+		\hhline{|~----|}
+		\multicolumn{1}{|c|}{}                                  & \multicolumn{1}{r|}{\textbf{40\%}} & 7,3201342                                     & 7,3468236                                     & {\cellcolor[rgb]{0.816,0.816,0.816}}0,0266894  \\ 
+		\hline
+		& \multicolumn{1}{c|}{\textbf{}}     & {\cellcolor[rgb]{0.816,0.816,0.816}}0,0006054 & {\cellcolor[rgb]{0.816,0.816,0.816}}0,0006879 & \multicolumn{1}{l}{}                           \\
+		\hhline{~~--~}
 	\end{tabular}
-\caption{del aire ante cambios de TH}
-\label{velTH}
+	\caption{Cálculo de velocidad del aire ante cambios de temperatura y humedad}
+	\label{velTH}
 \end{table}
 
 \subsection{Contrastación de diferencia de presión}
 
-El sensor \textit{MPX7002} tiene como salida una tensión proporcional a la diferencia de presión medida, por lo que fue necesario utilizar un \textit{ADS1115} para transformar estos valores, a través de una constante, en unidades de presión (Sección \ref{sec:ads1115}).
+El sensor \textit{MPX7002} tiene como salida una tensión proporcional a la diferencia de presión medida, por lo que fue necesario utilizar un \textit{ADS1115} para transformar estos valores, a través de una constante, en datos de presión digitalizados. (Sección \ref{sec:ads1115}).
 
-Para realizar la contrastación de la diferencia de presión ocasionada dentro del túnel por el aire, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente habladas a causa del flujo turbulento, se procedió a filmar el instrumento y los datos obtenidos por nuestro sistema. Ambos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, luego se generó un gráfico de puntos con las muestras tomadas y se observó que el error es mayor para diferencias de presión mayores a 100 Pa (Figura \ref{fig:condifpres}).
+Para realizar un contraste del valor de presión diferencial producido por la velocidad del aire dentro del túnel, en el tubo Pitot, se procedió a realizar mediciones con el instrumento calibrado \textit{AXD 650}. Al poseer fluctuaciones anteriormente mencionadas, debidas al flujo turbulento, y dado que el AXD650 no posee salida de datos (solo por display), se filmaron el instrumento y los datos obtenidos por nuestro sistema, para poder, con posterioridad, ver la correlación entre ambos. Los dos videos se unieron y se realizaron diversas pausas para tomar al mismo tiempo ambos valores leídos. Como resultado se obtuvo la tabla \ref{difpres}, luego se generó un gráfico de puntos con las muestras tomadas y se observó que el error es mayor para diferencias de presión mayores a 100 Pa (Figura \ref{fig:condifpres}).
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{condifpres.jpg}
-	\captionof{figure}{Contrastación de diferencia de presión}
+	\captionof{figure}{Contraste de valores de presión diferencial del MPX7002}
 	\label{fig:condifpres}
 \end{figure}
 
-\begin{table}[h!]%diferencia de presion
+\begin{table}[H]%diferencia de presion
 		\centering
 		\begin{tabular}{|r|r|r}
 			\cline{1-2}
@@ -144,18 +149,73 @@ Para realizar la contrastación de la diferencia de presión ocasionada dentro d
 			147,2 & 143,8 & \multicolumn{1}{r|}{2,31\%} \\ \hline
 			152,7 & 149,38 & \multicolumn{1}{r|}{2,17\%} \\ \hline
 		\end{tabular}
-	\caption{Comparación de Diferencia de presión}
+	\caption{Contraste de los valores de presión diferencial.}
 	\label{difpres}
 
 \end{table}
 
-%\subsection{Contrastación de velocidades}
-%como contrastación final....
-%\fcolorbox{red}{yellow}{FALTA}
-%ver PRUEBA\_10\_PID
-%el error es mucho mayor que el de velocidad en funcion de la TH. no tiene sentido comparar ambos porq para ellos usamos  un anemómetro (podriamos ver de usar el anemómetro y el de testo para ver los distintos valores y nosotros con el código en función de THP)
-%
-%
+\subsection{Contrastación de velocidades}
+Como prueba final se decidió realizar la contrastación de la velocidad estimada contra la velocidad de otro dispositivo. Para esto, se procedió a colocar en el interior del túnel un anemómetro digital \textbf{Avm-01 -\textit{ Prova}} perteneciente al laboratorio. A medida que se realizaban pruebas, se realizó tanto la filmación del anemómetro como la de la pantalla para luego unir ambos videos y poder tomar valores al mismo tiempo (Figura \ref{fig:capt}).
 
+Estos valores fueron volcados a la tabla \ref{difvel} y luego graficados para observar posibles errores(Figura \ref{fig:vel_muestras}).
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|r|r|r}
+		\cline{1-2}
+		\multicolumn{2}{|c|}{velocidad {[}m/s{]}} & \multicolumn{1}{l}{} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{estimada}} & \multicolumn{1}{c|}{\textbf{anemómetro}} & \multicolumn{1}{c|}{\textbf{E$_r$}} \\ \hline
+		4,6 & 4,7 & \multicolumn{1}{r|}{2,13\%} \\ \hline
+		4,7 & 4,7 & \multicolumn{1}{r|}{0,00\%} \\ \hline
+		4,8 & 4,7 & \multicolumn{1}{r|}{-2,13\%} \\ \hline
+		5 & 5 & \multicolumn{1}{r|}{0,00\%} \\ \hline
+		5,9 & 6 & \multicolumn{1}{r|}{1,67\%} \\ \hline
+		6 & 6,1 & \multicolumn{1}{r|}{1,64\%} \\ \hline
+		6,1 & 6,2 & \multicolumn{1}{r|}{1,61\%} \\ \hline
+		7,8 & 7,8 & \multicolumn{1}{r|}{0,00\%} \\ \hline
+		7,9 & 8 & \multicolumn{1}{r|}{1,25\%} \\ \hline
+		8,9 & 9,2 & \multicolumn{1}{r|}{3,26\%} \\ \hline
+		9,1 & 9,3 & \multicolumn{1}{r|}{2,15\%} \\ \hline
+		11,9 & 12,4 & \multicolumn{1}{r|}{4,03\%} \\ \hline
+		12 & 12,3 & \multicolumn{1}{r|}{2,44\%} \\ \hline
+		12 & 12,4 & \multicolumn{1}{r|}{3,23\%} \\ \hline
+		12,2 & 12,4 & \multicolumn{1}{r|}{1,61\%} \\ \hline
+		12,3 & 12,5 & \multicolumn{1}{r|}{1,60\%} \\ \hline
+		13,7 & 14,5 & \multicolumn{1}{r|}{5,52\%} \\ \hline
+		13,8 & 14,4 & \multicolumn{1}{r|}{4,17\%} \\ \hline
+		13,8 & 14,4 & \multicolumn{1}{r|}{4,17\%} \\ \hline
+		13,9 & 14,3 & \multicolumn{1}{r|}{2,80\%} \\ \hline
+		14 & 14,4 & \multicolumn{1}{r|}{2,78\%} \\ \hline
+		14,2 & 14,5 & \multicolumn{1}{r|}{2,07\%} \\ \hline
+		14,3 & 14,9 & \multicolumn{1}{r|}{4,03\%} \\ \hline
+		14,7 & 15,6 & \multicolumn{1}{r|}{5,77\%} \\ \hline
+		14,8 & 15,7 & \multicolumn{1}{r|}{5,73\%} \\ \hline
+		14,9 & 15,5 & \multicolumn{1}{r|}{3,87\%} \\ \hline
+		14,9 & 15,8 & \multicolumn{1}{r|}{5,70\%} \\ \hline
+		15 & 15,7 & \multicolumn{1}{r|}{4,46\%} \\ \hline
+		15,1 & 16,2 & \multicolumn{1}{r|}{6,79\%} \\ \hline
+		15,3 & 16,3 & \multicolumn{1}{r|}{6,13\%} \\ \hline
+	\end{tabular}
+	\caption{Contraste de los valores de velocidad.}
+\label{difvel}
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{vel_muestras.png}
+	\captionof{figure}{Contraste de valores de velocidad estimada}
+	\label{fig:vel_muestras}
+\end{figure}
+
+
+Al examinar la tabla y el gráfico se observa errores mayores a medida que las velocidades se incrementan.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{captura.jpg}
+	\captionof{figure}{Captura de pantalla del video utilizado para la realización del contraste de velocidad}
+	\label{fig:capt}
+\end{figure}
 
 

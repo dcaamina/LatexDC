@@ -1,13 +1,34 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
-\contentsline {figure}{\numberline {3.1.1}{\ignorespaces Motor Altium\relax }}{6}{figure.1}%
-\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Variador Altivar 312\relax }}{7}{figure.1}%
-\contentsline {figure}{\numberline {3.2.2}{\ignorespaces Elección de Altivar 312\relax }}{7}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.2.3}{\ignorespaces Parámetros del variador\relax }}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2.4}{\ignorespaces Configuración de los parámetros del motor\relax }}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2.5}{\ignorespaces Diegrama comunicación PC- Variador\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Módulo Didáctico PLC M340\relax }}{10}{figure.1}%
-\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Elección del bastidor\relax }}{12}{figure.2}%
-\contentsline {figure}{\numberline {3.3.3}{\ignorespaces Módulos PLC\relax }}{12}{figure.3}%
-\contentsline {figure}{\numberline {4.1.1}{\ignorespaces Conexión fichas RJ45- DB9\relax }}{13}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ficha entrada variador}}}{13}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ficha entrada PLC}}}{13}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Motor Altium\relax }}{6}{figure.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Variador Altivar 312\relax }}{7}{figure.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Módulo Didáctico PLC M340\relax }}{7}{figure.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Banco de Pruebas\relax }}{8}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Elección de Altivar 312\relax }}{9}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \relax }}{10}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Parámetros del variador\relax }}{10}{figure.caption.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Lista de parámetros modificados}}{10}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diegrama comunicación PC- Variador\relax }}{10}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Elección del bastidor\relax }}{11}{figure.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Módulos PLC\relax }}{11}{figure.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Conexión fichas RJ45- DB9\relax }}{13}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ficha entrada variador}}}{13}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ficha entrada PLC}}}{13}{figure.caption.14}%

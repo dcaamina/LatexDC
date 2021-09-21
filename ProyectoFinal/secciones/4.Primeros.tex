@@ -1,10 +1,13 @@
 
-El Laboratorio de Mecánica de Fluidos, antes de comenzar con este proyecto utilizaba un archivo \textit{"{}Excel"} para hacer la corrección de la velocidad del aire. En este se calcula matemáticamente la densidad del aire (Ecuación \ref{ec_den}) en función de la presión, temperatura y humedad atmosférica \cite{airecalculo}.
+El cálculo de la velocidad del aire necesita conocer la presión diferencial del tubo pitot, la cual se mide con un sensor de presión diferencial, y la densidad del aire. Ésta última debe ser calculada (Ecuaciones  \ref{ec_den}, \ref{ec_den2} y \ref{ec_den3}) en función de la presión, la temperatura y la humedad atmosférica \cite{airecalculo}.
+Hasta el momento de la realización de éste proyecto, los cálculos descriptos se hacían en una planilla \textit{"{}Excel"}, con posterioridad a los ensayos en el túnel.
+
+
 
 \begin{align}
 	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
-	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\\
-	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}
+	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\label{ec_den2}\\
+	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}\label{ec_den3}
 \end{align}
 
 dónde:\\
@@ -27,7 +30,7 @@ y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
 se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 \end{comment}
 
-En vista al objetivo y por las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables temperatura, presión atmosférica, humedad relativa y diferencia de presión del fluido. 
+En vista al objetivo y por las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables presión diferencial del tubo pitot, causada por el aire, y temperatura, presión y humedad relativa atmosféricas.
 
 \subsection{Características del flujo}
 La inspección cuidadosa en una tubería revela una corriente de fluidos currentilínea a bajas velocidades y caótica mientras la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
@@ -126,9 +129,9 @@ Para determinar la velocidad media se analiza un intervalo de tiempo suficientem
 
 	
 
-Para la elección del microcontrolador se analizó varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con bibliotecas de diversos sensores y que cumplía con las prestaciones necesarias para lograr el objetivo (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
+Para la elección del microcontrolador se analizaron varios dispositivos, como por ejemplo \textit{Arduino UNO}, \textit{Arduino MEGA}, \textit{Arduino NANO}, \textit{EDUCIAA}, entre otros. Se llegó a la conclusión que \textbf{Arduino NANO} era un microcontrolador de bajo costo, tamaño reducido, baja complejidad en la programación, con bibliotecas de diversos sensores y que cumplía con las prestaciones necesarias para lograr el objetivo (señal de PWM, comunicación I$^2$C, entradas analógicas y digitales).
 
-Como se nombró en la sección \ref{sec:ecvel}, es necesario tener mediciones de temperatura, humedad, presión atmosférica y diferencia de presión. Por lo tanto se realizó ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Con las mediciones se eligió aquellos que generaron la menor variación de THP respecto a los instrumentos del laboratorio (Figura \ref{fig:instr}). 
+Como se determinó en la sección \ref{sec:ecvel}, es necesario medir la temperatura, la humedad relativa, la presión atmosférica y la presión diferencial del tubo pitot. Por lo tanto se realizaron ensayos con diversos sensores en una protoboard comunicados con el microcontrolador por medio del protocolo de comunicación I$^2$C. Analizando dichas mediciones, se eligieron aquellos que generaron la menor variación de temperatura, humedad y presión atmosférica (THP) respecto a los instrumentos del laboratorio (Figura \ref{fig:instr}). 
 
 Sensores elegidos
 \begin{itemize}
@@ -162,11 +165,9 @@ Sensores elegidos
 
 
 
-Se realizó ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.
+Se realizaron ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.
 
-El sensor MPXV7002 posee una salida de voltaje analógico, por lo que se utilizó el conversor analógico/ digital ADS 1115. 
-No se utilizó el ADC interno del microcontrolador Arduino ya que la resolución es de 10 bits y del ADS1115 de 15 bits.
-También posee un amplificador de ganancia programable (PGA) que establece la escala completa, es decir, indica el valor de referencia. En Arduino este valor viene determinado por el voltaje de referencia que en el caso de Arduino NANO es 5V. En el ADS1115 lo establece el PGA. Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
+El sensor MPXV7002 posee una salida de voltaje analógico, por lo que se utilizó el conversor analógico/ digital ADS 1115. El uso del ADC interno del microcontrolador se descartó debido a su resolución de 10 bits, mucho menor que la del ADS1115, que es de 15 bits. Además, el rango de valores a convertir en el ADC del Arduino, está definido por un voltaje de referencia, de 5V, y en el ADS1115 ese valor puede ser seleccionado por un amplificador de ganacia programable (PGA). Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
 
 Resolución en Arduino NANO:
 \begin{center}
@@ -180,7 +181,7 @@ Resolución en ADS115:
 	\end{math}
 \end{center}
 
-En la tabla \ref{tab:Reso} se observa los valores posibles de factor de escala para distintos PGA. Este valor se eligió para aprovechar la mayor resolución posible al tener en cuenta el sensor utilizado.
+En la tabla \ref{tab:Reso} se observa los valores posibles de factor de escala para distintos valores del PGA. Este valor se eligió para aprovechar la mayor resolución posible al tener en cuenta el sensor utilizado.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|c|c|c|}
@@ -206,7 +207,7 @@ En el caso de este proyecto, se utilizó un valor de PGA igual a 1, cuya tensió
 
 \subsection{Adquisición de datos por puerto serie}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Processing]
-	\cite{processing}Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.
+Es un lenguaje de programación basado en Java, aunque hace uso de una sintaxis simplificada y de un modelo de programación de gráficos.	\cite{processing}
 \end{tcolorbox}
 Para realizar la adquisición de datos por puerto serie, se utilizó en un primer momento Matlab, dónde, al realizar la comunicación con el microcontrolador, se guardaban los valores, pero estos no podían ser observados en tiempo real, sino que luego de las pruebas, se utilizaba otro \textit{script} para obtener conclusiones. En consecuencia, después de cierta cantidad de pruebas realizadas, se tornó indispensable observar los valores adquiridos, como la velocidad estimada en tiempo real.
 
@@ -218,7 +219,7 @@ Al presionar una tecla específica configurada por los comandos, el programa gua
 
 \begin{figure}[]
 	\centering
-	\includegraphics[scale=0.9]{serial_proc.png}
+	\includegraphics[scale=1]{serial_proc.png}
 	\captionof{figure}{Pantalla Processing}
 	\label{fig:Proce}    
 \end{figure}
@@ -230,8 +231,8 @@ Es una operación	matemática que toma una secuencia de números (señal de entr
 	modifica para producir otra (señal de salida) con el objetivo de resaltar o atenuar ciertas características.
 \end{tcolorbox}
 
-Una vez que se procedió a tomar diversos valores de velocidad estimada, se notó necesario la implementación
-de un filtro a causa de las fluctuaciones alrededor de una velocidad media (Figura \ref{fig:fluct2}). Para esto se utilizó varias bibliotecas preestablecidas de \textbf{Arduino} con las cuales se realizó la implementación de diversos filtros en el $\mu$C, con diferentes parámetros para posterior comparación (Figura \ref{fig:filtros}).
+Una vez que se procedió a tomar diversos valores de velocidad estimada, se notó que era necesaria la implementación
+de un filtro a causa de las fluctuaciones alrededor de una velocidad media. Para esto se utilizaron varias bibliotecas preestablecidas de \textbf{Arduino} con las cuales se realizó la implementación de diversos filtros en el $\mu$C, con diferentes parámetros para una posterior comparación (Figura \ref{fig:filtros}).
 
 
 \begin{figure}[H]
@@ -249,7 +250,7 @@ de un filtro a causa de las fluctuaciones alrededor de una velocidad media (Figu
 \end{tcolorbox}
 
 Al observar y realizar la comparación de los filtros, se decidió utilizar el filtro de mediana (Figura \ref{fig:filtrosm}), con una ventana igual a 
-40 muestras, que producía menor ruido en la estimación del aire. Como consecuencia del uso de este filtro, la señal se vio desfasada aproximadamente 1 segundo..
+40 muestras, que producía menor ruido en la estimación del aire. Como consecuencia del uso de este filtro, la señal se vio desfasada aproximadamente 1 segundo.
 
 \begin{figure}[H]
 	\centering
@@ -261,14 +262,13 @@ Al observar y realizar la comparación de los filtros, se decidió utilizar el f
 
 
 \subsection{Error observado}\label{sec:error}
-Al utilizar el potenciómetro frontal del variador de velocidad u otro modo de funcionamiento distinto al panel digital frontal, se originaba un error en la aceleración o desaceleración.  Al hacer las averiguaciones pertinentes, esto se debió a una configuración interna del
-variador y a las características propias del motor.
+Al utilizar el potenciómetro frontal del variador de velocidad u otro modo de funcionamiento distinto al panel digital frontal, se originaba un error en la aceleración o desaceleración.  Al estudiar el manual del variador se determinó que dicho error se debía a una configuración interna de éste, y a las características propias del motor.
 
 
 Si el variador se utiliza con el panel digital frontal, la curva de aceleración y desaceleración
 sigue una “s” (Figura \ref{fig:curvaS}) y no produce un cambio brusco en la velocidad del motor, en cambio, para
 el uso del potenciómetro u otro modo de funcionamiento la curva es lineal (Figura \ref{fig:curvarec}). Para revertir
-esto, se modificó los parámetros del tiempo de aceleración y desaceleración del variador a 20 segundos.  
+esto, se modificaron los parámetros del tiempo de aceleración y desaceleración del variador a 20 segundos.  
 
 
 \begin{figure}[H]

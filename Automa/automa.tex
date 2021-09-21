@@ -11,6 +11,15 @@
 \usepackage{color}%resaltador
 \usepackage{soul}%resaltador
 
+\usepackage{enumitem}%separacion de las listas
+\setlist[itemize]{noitemsep, topsep=1pt}%separacion de las listas
+\setlist[enumerate]{noitemsep, topsep=1pt}%separacion de las listas
+
+
+%bibliografía
+\usepackage[maxbibnames=99, sorting=none, backend=bibtex]{biblatex}
+\addbibresource{bibliogr.bib}
+%\usepackage[nottoc]{biblatex}
 
 %para crear sub sub sub titulos
 \makeatletter
@@ -29,9 +38,9 @@
 
 %reiniciar los contadores de figuras
 \usepackage{chngcntr}
-\counterwithin{figure}{subsection}
-%\renewcommand{\thefigure}{\arabic{section}.\arabic{subsection}.\arabic{figure}}
-%comentadooooooooooo
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
 \begin{comment}
 \usepackage{remreset}
 \makeatletter
@@ -112,15 +121,26 @@
 \section{Objetivo}
 \input{Secciones/2.Objetivo}
 
+
+
+
+
 \section{Elementos}
-\subsection{Motor}
-\input{Secciones/4.1Motor}
+\input{Secciones/4.Elementos}
 
-\subsection{Variador de velocidad}
-\input{Secciones/4.2Variador}
+\section{Banco de pruebas}
+\input{Secciones/7.Banco}
 
-\subsection{PLC}
-\input{Secciones/4.3PLC}
+\section{Programas}
+\subsection{Somove}
+\input{Secciones/A.Somove}
+\subsection{Unity Pro}
+\input{Secciones/B.Unity}
+\subsection{ifix}
+\input{Secciones/C.ifix}
+
+\subsection{VARIOS}
+\input{Secciones/varios}
 
 \section{Pruebas}
 \input{Secciones/5.Pruebas}
@@ -128,13 +148,16 @@
 \section{HMI SCADA}
 \input{Secciones/6.HMI}
 
-\section{Banco de pruebas}
-\input{Secciones/7.Banco}
+
 
 \section{Conclusiones}
 \input{Secciones/8.Conclusion}
 
-\section{Bibliografía}
+		\newpage
+\section{Bibliografia}
+
+
+\printbibliography
 
 \section{Anexos}
 \input{Secciones/10.Anexo}

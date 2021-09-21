@@ -1,4 +1,4 @@
-Luego de realizar las pruebas y observar los cambios necesarios para un buen uso en el laboratorio, se procedió a realizar la implementación final (Figura \ref{fig:implebloq}). Dicha implementación se dividió en dos bloques, uno perteneciente a la Aplicación (Sección \ref{sec:aplic}), programación de la parte gráfica y adquisición de datos, y otro bloque de Hardware (Sección \ref{sec:hard}), parte física del proyecto. 
+Luego de realizar las pruebas y observar los cambios necesarios para un buen uso en el laboratorio, se procedió a la implementación final (Figura \ref{fig:implebloq}). La misma se dividió en dos bloques, uno perteneciente a la Aplicación (Sección \ref{sec:aplic}), programación de la parte gráfica y adquisición de datos, y otro bloque de Hardware (Sección \ref{sec:hard}), parte física del proyecto. 
 
 
 \begin{figure}[h!]
@@ -22,7 +22,7 @@ En el diagrama de flujo de la Figura \ref{fig:bloqvis} se observa que “aplicac
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{aplibloques.png}
+	\includegraphics[scale=0.55]{aplibloques.png}
 	\captionof{figure}{Bloque \textit{Aplicación}}
 	\label{fig:bloqvis}
 \end{figure}
@@ -36,7 +36,7 @@ Los datos que se reciben desde el microcontrolador durante el proceso de adquisi
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
-		$D_0$ , & $D_1$ , & $D_2$ , & $D_3$ , & $D_4$ , & $D_5$ , & $D_6$ ,  & $D_7$ , & $D_8$ , & $D_9$ , & $D_{10}$ , & $D_{11}$ , & $D_{12}$ , & $D_{13}$ ,  \\ \hline
+		$D_0$,&$D_1$,&$D_2$,&$D_3$,&$D_4$,&$D_5$,&$D_6$,&$D_7$,&$D_8$,&$D_9$,&$D_{10}$,&$D_{11}$,&$D_{12}$,&$D_{13}$,  \\ \hline
 	\end{tabular}
 \caption{Datos adquiridos desde el $\mu$C}
 \label{tab:Datosdesde}
@@ -46,7 +46,7 @@ Referencia de cada dato:
 	\begin{itemize}
 	\item $D_0$: velocidad del aire estimada.
 	\item 	$D_1$: valor de frecuencia o velocidad preestablecida.
-	\item 	$D_2$: diferencia de presión medida a través del MPX7002 en conjunto con ADS1115.
+	\item 	$D_2$: diferencia de presión medida a través del MPX7002 y digitalizada por el ADS1115.
 	\item 	$D_3$: señal de acción de control.
 	\item 	$D_4$: tiempo otorgado por el microcontrolador.
 	\item 	$D_5$: temperatura ambiente.
@@ -74,7 +74,7 @@ comando para que se implementen los escalones preestablecidos.
 \item \underline{Modo Ai1:} Este modo envía y recibe información del $\mu$C al variador, tiene dos funcionamientos
 \begin{itemize}
 \item Control desactivado: la planta se encuentra a lazo abierto y puede ser ingresada una frecuencia estimada.
-\item Control activado: este método cierra el lazo de control y durante su funcionamiento se retroalimenta velocidad por lo que ante perturbaciones el sistema se establece en la velocidad de referencia configurada.
+\item Control activado: este método cierra el lazo de control y durante su funcionamiento se retroalimenta velocidad por lo que ante perturbaciones el sistema hace las correcciones necesarias para obtener la velocidad de referencia configurada.
 \end{itemize}
 \end{itemize}
 \end{itemize}
@@ -107,13 +107,13 @@ El formato de los datos enviados de la aplicación al $\mu$C es un vector, separ
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.6]{capt6.png}
-	\captionof{figure}{Aplicación creada}
+	\captionof{figure}{Pantalla de la aplicación desarrollada.}
 	\label{fig:capt6}
 \end{figure}
 
 \subsection{Bloque Hardware} \label{sec:hard}
 
-Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa (Figura \ref{fig:hardBloq}) con los bloques utilizados en la sección \ref{sec:desarr}. Esta nueva placa fue realizada por la máquina de prototipado \textbf{\textit{LPKF Protomat S63}} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldó los componentes.  
+Para llevar a cabo la implementación final del “hardware”, se procedió a realizar mediante el programa “Proteus” el diseño de una única placa (Figura \ref{fig:hardBloq}) con los bloques utilizados en la sección \ref{sec:desarr}. Esta nueva placa fue realizada por la máquina de prototipado \textbf{\textit{LPKF Protomat S63}} perteneciente al Departamento de Electrónica de la Universidad. Una vez que se obtuvo la plaqueta se soldaron los componentes.  
 
 \begin{figure}[H]
 	\centering
@@ -122,7 +122,17 @@ Para llevar a cabo la implementación final del “hardware”, se procedió a r
 	\label{fig:hardBloq}
 \end{figure}
 
-En la \fcolorbox{red}{yellow}{figura Falta} se observa la placa terminada. Este nuevo prototipo elimina ruidos eléctricos ocasionados al utilizar cables para interconectar bloques y sensores.
+En la figura \ref{fig:placafinal} se observa la placa terminada. Este nuevo prototipo elimina ruidos eléctricos ocasionados al utilizar cables para interconectar bloques y sensores.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{placafinal.jpg}
+	\captionof{figure}{Placa construida}
+	\label{fig:placafinal}
+\end{figure}
+
+
+
 
 
 \subsection{Costos}
@@ -164,10 +174,13 @@ presión atmosférica y diferencia de presión fueron comprados en esa fecha en 
 		1 & Pines machos & 245 & 245 \\ \hline
 		1 & Pines hembra & 245 & 245 \\ \hline
 		1 & Arduino NANO & 900 & 900 \\ \hline
+		1 & Cable UTP x5m & 300 & 300 \\ \hline
+		1 & Ficha RJ45 & 50 & 50 \\ \hline
+		
 		\multicolumn{1}{|l|}{} & Caja contenedora & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
-		\multicolumn{3}{|r|}{\textbf{Total=}} & \multicolumn{1}{c|}{\textbf{\$ 22025}} \\ \hline
+		\multicolumn{3}{|r|}{\textbf{Total=}} & \multicolumn{1}{c|}{\textbf{\$ 22375}} \\ \hline
 	\end{tabular}
-\caption{Gastos de implementación}
+\caption{Gastos para realizar la implementación}
 \label{gastos}
 
 \end{table}

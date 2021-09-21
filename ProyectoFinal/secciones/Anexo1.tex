@@ -9,7 +9,7 @@ poner la tarjeta como imagen
 \subsection{Requerimientos del sistema}
 \begin{itemize}
 	\item Windows
-	\item Driver de comunicación serial para CH340 \url{https://electrocrea.com/blogs/tutoriales/como-instalar-driver-ch340-para-arduinos-genericos}
+	\item Driver de comunicación serial para CH340 
 \end{itemize}
 
 
@@ -18,7 +18,7 @@ poner la tarjeta como imagen
 	\item Alimente variador de velocidad y el motor.
 	\item Enchufe a 220V el cable de alimentación que sale de la caja de control.
 	\item Conecte el cable USB.
-	\item Ejecute el programa \fcolorbox{red}{yellow}{“NOMBRE.EXE”}
+	\item Ejecute el programa \textit{Gui\_Tunel.exe} que se encuentra dentro de la carpeta \textit{application.windows64} dentro de \textit{Aplicación}
 	\item Seleccione el puerto dónde se encuentra conectado el microcontrolador.
 	\item Active el puerto.
 	\item Al inicializar el puerto, el microcontrolador comienza a entregar valores a la aplicación por lo que se observa THP, velocidad estimada y frecuencia de referencia. 
@@ -35,7 +35,7 @@ poner la tarjeta como imagen
 
 
 \subsection{Gráfico en tiempo real}
-\subsubsection{	Visibilidad de las señales en tiempo real}
+\subsubsection{Visibilidad de las señales en tiempo real}
 En la parte izquierda inferior del programa, se puede activar o desactivar la visibilidad de las variables a observar, solo basta realizar un click en los rectángulos, y estos al estar activados se colocarán del color correspondiente a la señal.
 
 \subsubsection{Escala}
@@ -72,17 +72,23 @@ El eje vertical del gráfico en tiempo real puede ser modificado según necesida
 \end{figure}
 
 \subsection{AutoFuncion}
-El modo de auto-función carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun”. El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno.
+El modo de auto-función carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun” (Figura \ref{fig:autof2}). El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno (Figura \ref{fig:autof22}).
 
-\begin{figure}[htb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{carpcsv.png}
 	\captionof{figure}{Archivos dentro de la carpeta "{}autofun"}
 	\label{fig:autof2}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{autofej.png}
+	\captionof{figure}{Diagrama para el formato de autofunción}
+	\label{fig:autof22}
+\end{figure}
 
-El archivo tiene que tener el formato observado en la Tabla \ref{tab:formcsv}, donde se ve que posee un encabezado. Si se desea que la velocidad sea un número decimal, este debe ir con punto. 
+El archivo debe ser generado por el usuario en un bloc de notas, guardado como formato ".csv{}" y tener el formato observado en la Tabla \ref{tab:formcsv}, donde se ve que posee un encabezado el cual debe incluirse y las columnas son separadas por \textit{comas}. La primer columna, valores de velocidad en $m/s$, deben ser números comprendidos entre 4.7 y 18, los números decimales deben ser separados de la parte entera por medio de un punto. La segunda columna establece la cantidad de segundos de cada escalón preestablecido.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|l|}
@@ -91,13 +97,15 @@ El archivo tiene que tener el formato observado en la Tabla \ref{tab:formcsv}, d
 		y1,Dt1 \\ \hline
 		y2,Dt2 \\ \hline
 		y3,Dt3 \\ \hline
+		...yn,Dtn \\ \hline
 	\end{tabular}
 	
-	\caption{Formato .csv}
+	\caption{Formato para la confección del archivo .csv}
 	\label{tab:formcsv}
 \end{table}
 
-Mientras que se ejecute esta función aparecerá una señal visual debajo del botón abrir. (Figura \ref{fig:autof1})
+
+Una vez que se eligió el archivo deseado del menú desplegable, se debe presionar el botón "Abrir" y aparecerá una señal visual debajo del mismo dando a conocer la implementación en el variador de dicha función (Figura \ref{fig:autof1}), el motor se pondrá en marcha y se apagará al finalizar la \textit{autofunción}.
 
 \begin{figure}[htb]
 	\centering
@@ -108,9 +116,11 @@ Mientras que se ejecute esta función aparecerá una señal visual debajo del bo
 
 
 
+
+
 \subsection{Ai1}
 \subsubsection{Control desactivado}
-Al utilizar este modo de funcionamiento, se puede ingresar un valor aproximado de frecuencia. El lazo de control estará abierto.
+Al utilizar este modo de funcionamiento, se puede ingresar el valor deseado de frecuencia de salida del variador. El lazo de control estará abierto.
 
 \subsubsection{Control activado}
 El lazo de control estará activado, ante perturbaciones el sistema tiende a establecerse a la velocidad estipulada. Para determinar la velocidad de referencia se debe presionar sobre la caja de “velocidad”, ingresar un valor y presionar sobre el botón “enviar”.
@@ -124,7 +134,7 @@ Si el parámetro F7 del variador se encuentra en “1”, la marcha y parada del
 
 
 \subsection{Guardado de datos}
-Al colocar un nombre y presionar el botón guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms. Estos archivos se guardarán en la carpeta "data1{}"  dentro de la carpeta general de la aplicación. 
+Una vez que se establece la comunicación, el programa realiza la captura de datos, al colocar un nombre y presionar el botón guardar, se generará un archivo “.csv” con los datos que el microcontrolador capturó cada aproximadamente 55ms hasta ese momento. Estos archivos se guardarán en la carpeta "data1{}" dentro de la carpeta general de la aplicación. 
 
 \textbf{\textit{Alerta:}} Una vez que se presiona el botón guardar o el puerto se cierra los datos son borrados y se comenzará una nueva tabla.
 
@@ -159,7 +169,7 @@ El encabezado de la tabla (Figura \ref{fig:capt5}) muestra las siguientes leyend
 		
 \end{itemize}
 
-Para hacer lectura o interpretación de los datos se recomienda utilizar el script de matlab \fcolorbox{red}{yellow}{“NOMBRE DEL ARCHIVO DE MATLAB”}
+Para hacer lectura o interpretación de los datos se recomienda utilizar el script de Matlab \textit{captura\_datos.m} ubicado dentro de la carpeta donde fue guardado el archivo.
 
 \begin{figure}[H]
 	\centering
@@ -169,41 +179,43 @@ Para hacer lectura o interpretación de los datos se recomienda utilizar el scri
 \end{figure}
 
 \subsection{Falla externa}
-	Al presionar el botón de “Falla externa” el $\mu$C enviará una señal al variador y el sistema se detendrá.
+	Al presionar el botón de “Falla externa” el $\mu$C enviará una señal al variador y el sistema se detendrá. Luego, se podrá restablecer al presionar el botón de \textit{reset}.
 
 \newpage
-\section{Processing}
+\section{Esquemático de la placa implementada}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{A_Placa_2.png}
+	\includegraphics[scale=1]{A_Placa_2.png}
 	\captionof{figure}{Esquema del microcontrolador}
 \end{figure}
 \begin{figure}[H]
-	\centering	\includegraphics[scale=0.8]{A_Placa_1.png}
-	\captionof{figure}{Esquema de la placa adaptadora}
+	\centering	\includegraphics[scale=0.8,angle =90]{A_Placa_1.png}
+	\captionof{figure}{Esquema de la placa adaptadora de la señal del sensor de presión diferencial.}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\subfigure[]{\includegraphics[scale=0.8]{A_Placa_3.png}}
-	\subfigure[]{\includegraphics[scale=0.8]{A_Placa_31.png}}
-	\caption{Esquema de entradas/ salidas} 
+	\includegraphics[scale=0.5]{A_Placa_3.png}
+	
+	\caption{Esquema de entradas y salidas del microcontrolador hacia el variador.} 
 \end{figure}
 \begin{figure}[H]
 	\centering	\includegraphics[scale=0.8]{A_Placa_4.png}
 \end{figure}	
-	\captionof{figure}{Esquema de la placa reguladora}
+	\captionof{figure}{Esquema de la placa reguladora de tensión.}
 \begin{figure}[H]
-	\centering	\includegraphics[scale=0.8]{A_Placa_5.png}
+	\centering	\includegraphics[scale=1]{A_Placa_5.png}
 	\captionof{figure}{Esquema de sensores}
 \end{figure}
 
 
 \newpage
 \section{Código Arduino}
+\lstinputlisting[language=Arduino] {Arduino_0308/Arduino_0308.ino}
+
+
 \newpage
 \section{Código Processing}
-\newpage
-\section{Código Matlab}
-\newpage
-\section{Modelo de placa}
+\lstinputlisting[language=Processing] {Gui_Tunel/Gui_Tunel.pde}
+
+
 

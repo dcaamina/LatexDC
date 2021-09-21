@@ -1,10 +1,10 @@
 \subsection{Lazo de corriente} \label{sec:lazoI}
 
-Se realizó la modificación de los parámetros nombrados en la sección \ref{sec:error} y se corroboró que el error no aparecía nuevamente al cambiar el modo de funcionamiento del variador.
+Se realizó la modificación de los parámetros nombrados en la sección \ref{sec:error} y se corroboró que el error no aparecía al cambiar el modo de funcionamiento del variador.
 
-Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos (\textbf{Ai1}) ingresados por la bornera de la figura \ref{fig:born}. Este modo analógico puede ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
+Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos, ingresando por el puerto (\textbf{Ai1}) de la bornera del variador (Figura \ref{fig:born}). Este modo analógico puede ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
 
-Se optó por la utilización un lazo de corriente, este tiene ventajas sobre el lazo de tensión ya  que es más estable en largas distancias y más inmune a los ruidos eléctricos e interferencias electromagnéticas. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
+Se optó por la utilización de un lazo de corriente, por ser más estable e inmune a los ruidos eléctricos e interferencias electromagnéticas. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
 
 
 
@@ -29,7 +29,7 @@ Para la señal PWM generada, se utilizó el Pin 9 del $\mu$C, y se ajustó el ci
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{adap_pl.png}
+	\includegraphics[scale=0.6]{A_Placa_1.png}
 	\caption{Placa adaptadora de señal}
 	\label{fig:adapt}
 \end{figure}
@@ -77,7 +77,8 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
 \end{figure}
  
     
-    Para realizar la estimación de la planta se obtuvo y guardó tablas de datos con Processing, en las que se generó distintos escalones de entrada para la obtención de varias mediciones. En la figura \ref{fig:est2} se observa los valores de velocidad y los escalones que se realizaron durante una prueba generada para obtener los parámetros necesarios para la estimación de la planta.
+    Para realizar la estimación del modelo matemático de la planta, se obtuvieron y guardaron en tablas los datos de las variables, para distintos escalones de entrada, mediante el programa realizado en Processing. En la figura \ref{fig:est2}
+    se observa los valores de velocidad y los escalones que se realizaron durante una prueba generada para obtener los parámetros necesarios para la estimación de la planta.
     
     \begin{figure}[htb]
     	\centering
@@ -86,13 +87,13 @@ Para realizar la estimación de la planta se muestra un diagrama de bloques del 
     	\label{fig:est2}    
     \end{figure}
     
-    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargó los datos obtenidos de la prueba (Figura \ref{fig:est2}) y con ellos se observaron las características necesarias de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
+    Seguidamente, se procedió a generar un nuevo código de Matlab donde se cargaron los datos obtenidos de la prueba (Figura \ref{fig:est2}) y con ellos se observaron las características necesarias de la figura (a) \ref{fig:pl2} para realizar la estimación de la planta a través de la comparación con la función de transferencia de un sistema de \textit{"2° orden con retardo"} \cite{pomares2011sistemas}.
     
     \begin{figure}[H]
     	\centering
     	\subfigure[Parámetros respuesta 2° orden]{\includegraphics[scale=0.7]{parametros_seg.png}}
     	\subfigure[Estimación de parámetros]{\includegraphics[scale=0.35]{planta_seg1.png}} 
-    	\caption{Estimación de planta} \label{fig:pl2}
+    	\caption{Estimación de la planta} \label{fig:pl2}
     \end{figure}
 
 El sistema de \textit{"2° orden con retardo"} posee la función de transferencia observada en la ecuación \ref{ec:G}.
@@ -123,7 +124,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
    
     Esta función de transferencia se realizó para una entrada entre 0 y 1023, los cuales son el límite mínimo y máximo para determinar el ancho de pulso de la señal PWM como se ve en la sección \ref{sec:lazoI}.
     
-    Para corroborar la elección de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. En la figura \ref{fig:estim2} y \ref{fig:estim3}, se dispuso la respuesta experimental y la simulada para realizar la comparación.
+    Para corroborar la elección del modelo matemático de la planta se realizó en \textit{Simulink} la respuesta del sistema a los mismos escalones experimentales. En la figura \ref{fig:estim2} y \ref{fig:estim3}, se dispuso la respuesta experimental y la simulada para realizar la comparación.
     
     \begin{figure}[H]
     	\centering
@@ -140,7 +141,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
 \end{figure}
        
     \subsection{Control}
-    Para el cálculo en primera instancia del controlador PID, se utilizó la herramienta de \textit{Matlab}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
+    Para el cálculo en primera instancia del controlador PID, se utilizó la herramienta de \textit{Matlab "PID Tuner"}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
     Con los distintos valores de PI (Tabla \ref{tab:pid}) se realizaron pruebas en el Túnel del viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
    
     \begin{figure}[H]
@@ -213,10 +214,10 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
     Para poder implementar en nuestro $\mu$C  el PID, se partió de la estructura interna o fórmula del controlador general discreto en el dominio Z (Ecuación \ref{PIDZ}) y se trabajó algebraicamente hasta llegar a una forma en donde aplicar la \textit{Transformada Inversa Z} sea más simple. Se utiliza esta herramienta matemática para llevar la ecuación del PID(z) al dominio de tiempo discreto.
     
      \begin{align}
-    PID(z)\;=\frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac1{z-1}+D.\frac1{T_s}.\frac{z-1}z \label{PIDZ}\\
-    \frac{U(z)}{E(z)}&=\;P\;.\frac{z^{-1}}{z^{-1}}+\;I.T_s.\frac1{z-1}.\frac{z^{-1}}{z^{-1}}+D.\frac1{T_s}.\frac{z-1}z.\frac{z^{-1}}{z^{-1}}\;\\
-    \frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac{z^{-1}}{1-z^{-1}}+D.\frac1{T_s}.(1-z^{-1})\\
-    \frac{U(z)}{E(z)}&=\frac1{1-z^{-1}}\left[P.\left(1-z^{-1}\right)\;+\;I.T_s.z^{-1}+\frac D{T_s}.(1-z^{-1})^2\right]\;\\
+    PID(z)\;=\frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac1{z-1}+D.\frac1{T_s}.\frac{z-1}z \label{PIDZ}  \\[0.4cm]
+    \frac{U(z)}{E(z)}&=\;P\;.\frac{z^{-1}}{z^{-1}}+\;I.T_s.\frac1{z-1}.\frac{z^{-1}}{z^{-1}}+D.\frac1{T_s}.\frac{z-1}z.\frac{z^{-1}}{z^{-1}}\;\\[0.4cm]
+    \frac{U(z)}{E(z)}&=\;P\;+\;I.T_s.\frac{z^{-1}}{1-z^{-1}}+D.\frac1{T_s}.(1-z^{-1})\\[0.4cm]
+    \frac{U(z)}{E(z)}&=\frac1{1-z^{-1}}\left[P.\left(1-z^{-1}\right)\;+\;I.T_s.z^{-1}+\frac D{T_s}.(1-z^{-1})^2\right]\;\\[0.4cm]
     U(z).\left(1-z^{-1}\right)&=E(z)\left[P+\;\frac D{T_s}+\left(\;I.T_s-P-2.\frac D{T_s}\right).z^{-1}+\frac D{T_s}.z^{-2}\right]\;\label{hola}
     \end{align}
 Y si aplicamos la transformada inversa Z a la ecuación \ref{hola}:
@@ -227,7 +228,7 @@ Y si aplicamos la transformada inversa Z a la ecuación \ref{hola}:
 De esta forma obtenemos la ecuación del PID en función de la muestra actual y anteriores, que nos sirve para implementar de manera directa en el $\mu$C. 
 
 \subsubsection{Pruebas de control}
-Para observar la respuesta del control se generó perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad \cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de ella porque se utilizaba un reóstato (8 posiciones) para modificar la resistencia rotórica del motor (Figura \ref{fig:reos}). 
+Para observar la respuesta del control se generaron perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad \cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de la velocidad del motor, y el mismo se realizaba de a saltos mediante el uso de un reóstato de 8 posiciones que variaba la resistencia rotórica (Figura \ref{fig:reos}). 
 
 \begin{figure}[H]
 	\centering
@@ -243,7 +244,7 @@ Para observar la respuesta del control se generó perturbaciones con las compuer
 	\label{fig:reos}
 \end{figure}
 
-Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Se realizó pruebas donde se abrió y cerró las compuertas para observar estos cambios y el correcto control de velocidad (Figura \ref{fig:comp1} y \ref{fig:comp2}).
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Se realizó pruebas donde se abrieron y cerraron las compuertas para observar estos cambios y el correcto control de velocidad (Figura \ref{fig:comp1} y \ref{fig:comp2}).
 
 
 \begin{figure}[H]

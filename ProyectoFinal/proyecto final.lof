@@ -45,9 +45,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Pantalla Processing\relax }}{19}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Datos y diversos filtros\relax }}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Datos y diversos filtros\relax }}{20}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Datos y filtro mediana\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Datos y filtro mediana\relax }}{21}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Curva aceleración y desaceleración\relax }}{21}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Placa adaptadora de señal\relax }}{23}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de bloques del procedimiento de modelado de la planta\relax }}{24}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Estimación de planta\relax }}{24}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
@@ -71,7 +71,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Mediciones de velocidad a partir de distintos escalones dados\relax }}{25}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Estimación de planta\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Estimación de la planta\relax }}{25}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Corroboración de estimación de la planta. Ejemplo 1\relax }}{26}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
@@ -101,36 +101,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de placa con sensores utilizados\relax }}{34}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Fluctuaciones en velocidades medidas\relax }}{35}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Contraste de valores de presión diferencial del MPX7002\relax }}{36}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Contrastación de diferencia de presión\relax }}{36}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Contraste de valores de velocidad estimada\relax }}{39}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Bloques implementados\relax }}{38}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Captura de pantalla del video utilizado para la realización del contraste de velocidad\relax }}{39}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Bloque \textit {Aplicación}\relax }}{38}{figure.caption.50}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Bloques implementados\relax }}{40}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Aplicación creada\relax }}{40}{figure.caption.53}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Bloque \textit {Aplicación}\relax }}{40}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Bloque \textit {Hardware}\relax }}{41}{figure.caption.54}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Pantalla de la aplicación desarrollada.\relax }}{42}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Puerto activado. Visualización de los valores del $\mu $C.\relax }}{47}{figure.caption.57}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Bloque \textit {Hardware}\relax }}{43}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Gráfico en tiempo real\relax }}{48}{figure.caption.58}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Placa construida\relax }}{43}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Archivos dentro de la carpeta "{}autofun"\relax }}{49}{figure.caption.59}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Puerto activado. Visualización de los valores del $\mu $C.\relax }}{49}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Aplicación en modo Autofunción\relax }}{49}{figure.caption.61}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Gráfico en tiempo real\relax }}{50}{figure.caption.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Guardado de datos\relax }}{50}{figure.caption.62}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Archivos dentro de la carpeta "{}autofun"\relax }}{51}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Archivo .csv generado\relax }}{51}{figure.caption.63}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Diagrama para el formato de autofunción\relax }}{51}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Esquema del microcontrolador\relax }}{52}{figure.caption.64}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Aplicación en modo Autofunción\relax }}{52}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Esquema de la placa adaptadora\relax }}{52}{figure.caption.65}%
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Guardado de datos\relax }}{53}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Esquema de entradas/ salidas\relax }}{53}{figure.caption.66}%
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Archivo .csv generado\relax }}{54}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Esquema de la placa reguladora\relax }}{53}{figure.4}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Esquema del microcontrolador\relax }}{55}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Esquema de sensores\relax }}{54}{figure.caption.68}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Esquema de la placa adaptadora de la señal del sensor de presión diferencial.\relax }}{56}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Esquema de entradas y salidas del microcontrolador hacia el variador.\relax }}{57}{figure.caption.70}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Esquema de la placa reguladora de tensión.\relax }}{57}{figure.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Esquema de sensores\relax }}{58}{figure.caption.72}%
