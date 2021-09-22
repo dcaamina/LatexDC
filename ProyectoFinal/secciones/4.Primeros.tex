@@ -167,7 +167,7 @@ Sensores elegidos
 
 Se realizaron ensayos para probar y corroborar el funcionamiento del \textbf{MPXV7002}, un sensor de diferencia de presión de alto costo en el país. Este sensor es capaz de medir de -2kPa a 2kPa en un rango de 4V (0.5 a 4.5V), al tener un único sentido de flujo, solo se necesitó medir valores positivos de presión.
 
-El sensor MPXV7002 posee una salida de voltaje analógico, por lo que se utilizó el conversor analógico/ digital ADS 1115. El uso del ADC interno del microcontrolador se descartó debido a su resolución de 10 bits, mucho menor que la del ADS1115, que es de 15 bits. Además, el rango de valores a convertir en el ADC del Arduino, está definido por un voltaje de referencia, de 5V, y en el ADS1115 ese valor puede ser seleccionado por un amplificador de ganacia programable (PGA). Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
+El sensor MPXV7002 posee una salida de voltaje analógico, por lo que se utilizó el conversor analógico/ digital ADS 1115. El uso del ADC interno del microcontrolador se descartó debido a su resolución de 10 bits, mucho menor que la del ADS1115, que es de 15 bits. Además, el rango de valores a convertir en el ADC del Arduino, está definido por un voltaje de referencia, de 5V, y en el ADS1115 ese valor puede ser seleccionado por un amplificador de ganancia programable (PGA). Por defecto este valor de referencia es ±6,144 V, quiere decir que el valor de 32.677 (valor máximo con 15-bit) corresponde a 6,144 V. 
 
 Resolución en Arduino NANO:
 \begin{center}

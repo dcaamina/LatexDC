@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  21 SEP 2021 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  22 SEP 2021 12:19
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -9020,10 +9020,10 @@ Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35954 strings out of 479334
- 630088 string characters out of 2866960
+ 35953 strings out of 479334
+ 630073 string characters out of 2866960
  1815368 words of memory out of 3000000
- 51140 multiletter control sequences out of 15000+200000
+ 51139 multiletter control sequences out of 15000+200000
  430071 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  112i,17n,116p,2560b,2682s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -9061,7 +9061,7 @@ iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrb8a.p
 fb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on "proyecto final.pdf" (79 pages, 10462474 bytes).
+Output written on "proyecto final.pdf" (79 pages, 10462423 bytes).
 PDF statistics:
  3398 PDF objects out of 3580 (max. 8388607)
  1593 named destinations out of 1728 (max. 500000)

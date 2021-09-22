@@ -2,7 +2,7 @@
 
 Se realizó la modificación de los parámetros nombrados en la sección \ref{sec:error} y se corroboró que el error no aparecía al cambiar el modo de funcionamiento del variador.
 
-Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos, ingresando por el puerto (\textbf{Ai1}) de la bornera del variador (Figura \ref{fig:born}). Este modo analógico puede ser configurado de 0-10V o 0-20mA a través del “jummper J3” (Figura \ref{fig:placals}).
+Para realizar la comunicación del microcontrolador con el variador de velocidad se decidió utilizar el modo de funcionamiento de entrada analógica de dos hilos, ingresando por el puerto (\textbf{Ai1}) de la bornera del variador (Figura \ref{fig:born}). Este modo analógico puede ser configurado de 0-10V o 0-20mA a través del “jumper J3” (Figura \ref{fig:placals}).
 
 Se optó por la utilización de un lazo de corriente, por ser más estable e inmune a los ruidos eléctricos e interferencias electromagnéticas. Normalmente, se utilizan lazos de corriente de 4-20mA para poder observar si hubiera fallas en el circuito, por lo que fue necesario adaptar la señal generada por el $\mu$C para seguir el estándar.
 
@@ -142,7 +142,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
        
     \subsection{Control}
     Para el cálculo en primera instancia del controlador PID, se utilizó la herramienta de \textit{Matlab "PID Tuner"}, y a partir de los primeros valores se realizaron pequeñas modificaciones, todas con el formato PI (proporcional - integrador) hasta obtener varios tipos de respuesta.
-    Con los distintos valores de PI (Tabla \ref{tab:pid}) se realizaron pruebas en el Túnel del viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
+    Con los distintos valores de PI (Tabla \ref{tab:pid}) se realizaron pruebas en el túnel de viento con escalones en la velocidad de referencia de 6 - 7,5 - 8,5 - 7,5 - 7 - 6 m/s,  un total de 5 ensayos para los mismos estímulos de entrada. En la figura \ref{fig:Lazo_Control} se observa el lazo de control que se utilizó. 
    
     \begin{figure}[H]
    	\centering
@@ -195,7 +195,7 @@ t_p\;=\;\frac{T_{osc}}2\;=\;\frac\pi{\omega_n\sqrt{1-\xi^2}}
     	\label{fig:mix}
     \end{figure}
 
-	Al analizar los ensayos y obtener respuestas del sistema parecidas (Figura \ref{fig:Prueba_6} y \ref{fig:Prueba_7}) a las generadas en simulación, se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
+	Al analizar los ensayos y encontrar respuestas parecidas a las generadas en simulación (Figura \ref{fig:Prueba_6} y \ref{fig:Prueba_7}), se determinó que la estimación de la planta se realizó de manera correcta, esto añadió mayor validez al sistema de simulación empleado en todas las pruebas. 
 	
 	\begin{figure}[H]
 		\centering
@@ -228,7 +228,7 @@ Y si aplicamos la transformada inversa Z a la ecuación \ref{hola}:
 De esta forma obtenemos la ecuación del PID en función de la muestra actual y anteriores, que nos sirve para implementar de manera directa en el $\mu$C. 
 
 \subsubsection{Pruebas de control}
-Para observar la respuesta del control se generaron perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes utilizadas para realizar variaciones de velocidad \cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de la velocidad del motor, y el mismo se realizaba de a saltos mediante el uso de un reóstato de 8 posiciones que variaba la resistencia rotórica (Figura \ref{fig:reos}). 
+Para observar la respuesta del sistema de control se generaron perturbaciones con las compuertas laterales del túnel (Figura \ref{fig:comp}), antes se utilizaban para realizar variaciones de velocidad \cite{barila1993desarrollo} cuando el laboratorio no poseía un control continuo de la velocidad del motor, y el mismo se realizaba de a saltos mediante el uso de un reóstato de 8 posiciones que variaba la resistencia rotórica (Figura \ref{fig:reos}). 
 
 \begin{figure}[H]
 	\centering
@@ -244,7 +244,7 @@ Para observar la respuesta del control se generaron perturbaciones con las compu
 	\label{fig:reos}
 \end{figure}
 
-Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Se realizó pruebas donde se abrieron y cerraron las compuertas para observar estos cambios y el correcto control de velocidad (Figura \ref{fig:comp1} y \ref{fig:comp2}).
+Para realizar estas pruebas de funcionamiento primero se encendió el túnel, se comenzó a guardar valores y se controló la velocidad del aire en 6 $m/s$, luego de unos segundos de funcionamiento se procedió a abrir las compuertas con el panel que se ve del lado derecho de la figura \ref{fig:comp}. Esta entrada de aire producía variaciones en la velocidad que el control implementado corregía según el PID utilizado. Se realizaron pruebas donde se abrieron y cerraron las compuertas para observar estos cambios y el correcto control de velocidad (Figura \ref{fig:comp1} y \ref{fig:comp2}).
 
 
 \begin{figure}[H]
