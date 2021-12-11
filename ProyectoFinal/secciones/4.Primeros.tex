@@ -5,8 +5,8 @@ Hasta el momento de la realización de éste proyecto, los cálculos descriptos 
 
 
 \begin{align}
-	\rho&=\frac{3,48353\;10^{-3}\;kg\;K\;J^{-1}\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
-	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot(1Pa\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\label{ec_den2}\\
+	\rho&=\frac{3,48353\;10^{-3}\;[kg\;K\;J^{-1}]\;\cdot p\cdot\;(1-0,378\;\cdot\;x_v)}{Z\;\cdot\;T} \label{ec_den}\\
+	x_v&=\frac{(\alpha+\beta\cdot p+\gamma\cdot t^2)\cdot([1Pa]\cdot\;e^{AT^2+BT+C+D/T)})\cdot h/100}p\label{ec_den2}\\
 	Z&=\;1-\frac pT\cdot\lbrack a_0+a_1t+a_0t^2+(b_0+b_1t)x_v+(c_0+c_1t)x_v^2\rbrack+(d+x_v^2)\frac{p^2}{T^2}\label{ec_den3}
 \end{align}
 
@@ -30,7 +30,7 @@ y la ecuación del cálculo de velocidad  ec.(\ref{ec_aire})
 se desarrolló dentro del programa de \textbf{Arduino} para observar como dato final la velocidad del aire.
 \end{comment}
 
-En vista al objetivo y por las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables presión diferencial del tubo pitot, causada por el aire, y temperatura, presión y humedad relativa atmosféricas.
+En vista al objetivo y por las ecuaciones \ref{ec_den} y \ref{ec_aire} se estableció necesario la obtención de las variables presión diferencial del tubo Pitot, causada por el flujo de aire, y temperatura, presión y humedad relativa atmosféricas.
 
 \subsection{Características del flujo}
 La inspección cuidadosa en una tubería revela una corriente de fluidos currentilínea a bajas velocidades y caótica mientras la velocidad aumenta por arriba de un valor crítico. Se dice que el régimen de flujo en el primer caso es laminar, y se caracteriza por líneas de corriente suaves y movimiento sumamente
@@ -53,7 +53,7 @@ dónde:\\
 - \textbf{$D_h$ } [$m$] diametro hidráulico\\
 - \textbf{$\mu$ } [$kg/m.s$] viscosidad dinámica del fluido\\
 
-La \textit{densidad del fluido} se calculó con la ecuación \ref{ec_den} vista en la sección \ref{sec:ecvel} con mediciones de temperatura, humedad y presión atmosférica obtenidas con el instrumento \textit{Testo 435}.
+La \textit{densidad del fluido} se calculó con la ecuación \ref{ec_den} vista en la sección \ref{sec:ecvel} a partir de mediciones de temperatura, humedad y presión atmosférica obtenidas con el instrumento \textit{Testo 435}.
 
 La \textit{viscosidad dinámica} del fluido se obtuvo de la tabla "Propiedades del aire a 1 atm de presión" { }del libro \textit{Mécanica de Fluidos} \cite{yunus2006mecanica}.
 
@@ -90,7 +90,7 @@ Por definición, un flujo es turbulento si el valor del número de Reynolds es m
 	
 \end{tcolorbox}
 
-Aun mientras el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel. Este, posee una rejilla de entrada en forma de panal de abeja, que al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos (Figura \ref{fig:remolinos}).
+Aunque el flujo promedio sea estacionario, el movimiento de remolinos en flujo turbulento provoca fluctuaciones importantes en los valores de velocidad, temperatura, presión e incluso densidad (en flujo compresible). Las posibles causas de la formación de estos remolinos se pueden deber a la construcción del túnel. Este, posee una rejilla de entrada en forma de panal de abeja, que al estar cerca de la cámara de ensayos, no logra realizar una correcta formación de flujo uniforme y homogéneo, otra causa es la existencia de orificios en la parte inferior de la cámara que son utilizados para la colocación de instrumentos (Figura \ref{fig:remolinos}).
 
 
 \begin{figure}[h!]
@@ -219,7 +219,7 @@ Al presionar una tecla específica configurada por los comandos, el programa gua
 
 \begin{figure}[]
 	\centering
-	\includegraphics[scale=1]{serial_proc.png}
+	\includegraphics[scale=1.1]{serial_proc.png}
 	\captionof{figure}{Pantalla Processing}
 	\label{fig:Proce}    
 \end{figure}

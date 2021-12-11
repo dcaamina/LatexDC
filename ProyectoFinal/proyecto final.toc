@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Fluido: Aire}{13}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Ecuación velocidad del aire}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Ecuación para el cálculo de la velocidad del aire}{13}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Características del flujo}{14}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
@@ -55,13 +55,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Pruebas realizadas}{34}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Comparación de densidades}{34}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Comparación de los valores de densidad calculados}{34}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}Estimación de la densidad ante cambios de Temperatura y Humedad}{35}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Contrastación de diferencia de presión}{35}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Contraste del valor de presión diferencial medido}{35}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Contrastación de velocidades}{38}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.4}Contraste de la velocidad estimada}{38}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Implementación}{40}{section.7}%
 \defcounter {refsection}{0}\relax 

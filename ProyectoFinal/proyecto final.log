@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  29 SEP 2021 22:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  31 OCT 2021 11:13
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -1257,7 +1257,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Overfull \hbox (8.24664pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 rea-li-za-ban uti-li-zan-do un con-trol de ve-lo-ci-dad de la-zo
+ abier-to, que con-sis-tía en la mo-di-fi-ca-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
@@ -1393,12 +1399,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14 <./imagenes//rey2.jpg>]
+Overfull \hbox (8.96472pt too wide) in paragraph at lines 93--94
+[]\T1/cmr/m/n/12 Aunque el flu-jo pro-me-dio sea es-ta-cio-na-rio, el mo-vi-mie
+n-to de re-mo-li-nos en flu-jo tur-bu-len-to
+ []
+
 <imagenes//remolinos.jpg, id=582, 809.27344pt x 411.78844pt>
 File: imagenes//remolinos.jpg Graphic file (type jpg)
 <use imagenes//remolinos.jpg>
 Package pdftex.def Info: imagenes//remolinos.jpg  used on input line 98.
 (pdftex.def)             Requested size: 364.16968pt x 185.30307pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1471,7 +1481,7 @@ LaTeX Warning: No positions in optional float specifier.
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 222.
-(pdftex.def)             Requested size: 255.95561pt x 228.85443pt.
+(pdftex.def)             Requested size: 281.55273pt x 251.74126pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1944,6 +1954,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40 <./imagenes//bloqimplem.png> <./imagenes//aplibloques.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
 Overfull \hbox (11.76411pt too wide) in paragraph at lines 68--70
 []\T1/cmr/m/n/12 Sub-bloque \T1/cmr/bx/n/12 Mo-dos de fun-cio-na-mien-to\T1/cmr
 /m/n/12 : po-see las si-guien-tes for-mas de eje-cu-ción
@@ -2011,9 +2026,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44] (secciones/7.Recomendaciones.tex
-Overfull \hbox (13.29845pt too wide) in paragraph at lines 2--3
-[]\T1/cmr/m/n/12 Utilización de un ca-ble UTP ma-lla-do pa-ra me-jo-rar in-ter-
-fe-ren-cias que pue-dan pro-du-cir-se
+Overfull \hbox (16.7323pt too wide) in paragraph at lines 7--8
+[]\T1/cmr/m/n/12 Posteriormente al cam-bio de mo-tor pro-gra-ma-do a fu-tu-ro p
+or el per-so-nal del La-bo-ra-to-rio,
  []
 
 )
@@ -9014,7 +9029,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
 Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
-(rerunfilecheck)             Checksum: 994874453785F5771ABDD7548826651F;9670.
+(rerunfilecheck)             Checksum: F83EA1AB84A063AC484DD150D5527410;10021.
 Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 \openout1 = `"proyecto final.run.xml"'.
 
@@ -9022,7 +9037,7 @@ Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 Here is how much of TeX's memory you used:
  35953 strings out of 479334
  630073 string characters out of 2866960
- 1815368 words of memory out of 3000000
+ 1815508 words of memory out of 3000000
  51139 multiletter control sequences out of 15000+200000
  430071 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -9061,7 +9076,7 @@ iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrb8a.p
 fb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on "proyecto final.pdf" (79 pages, 10462131 bytes).
+Output written on "proyecto final.pdf" (79 pages, 10462924 bytes).
 PDF statistics:
  3397 PDF objects out of 3580 (max. 8388607)
  1593 named destinations out of 1728 (max. 500000)

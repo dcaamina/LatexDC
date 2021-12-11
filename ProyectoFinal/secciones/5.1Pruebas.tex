@@ -1,4 +1,4 @@
-\subsection{Comparación de densidades} \label{cap:densidades}
+\subsection{Comparación de los valores de densidad calculados} \label{cap:densidades}
 
 Una vez que se tuvo seguridad con los sensores elegidos se procedió a realizar una placa con estos elementos para que no se desconecten y produzcan errores como solía suceder mientras estaban en la protoboard (Figura \ref{fig:sensoresa}). \\
 \begin{figure}[H]
@@ -90,7 +90,7 @@ Si se calcula la velocidad del aire con la formula \ref{ec_aire} en conjunto con
 	\label{velTH}
 \end{table}
 
-\subsection{Contrastación de diferencia de presión}
+\subsection{Contraste del valor de presión diferencial medido}
 
 El sensor \textit{MPX7002} tiene como salida una tensión proporcional a la diferencia de presión medida, por lo que fue necesario utilizar un \textit{ADS1115} para transformar estos valores, a través de una constante, en datos de presión digitalizados. (Sección \ref{sec:ads1115}).
 
@@ -154,8 +154,8 @@ Para realizar un contraste del valor de presión diferencial producido por la ve
 
 \end{table}
 
-\subsection{Contrastación de velocidades}
-Como prueba final se decidió realizar la contrastación de la velocidad estimada contra la velocidad de otro dispositivo. Para esto, se procedió a colocar en el interior del túnel un anemómetro digital \textbf{Avm-01 -\textit{ Prova}} perteneciente al laboratorio. A medida que se efectuaban las  pruebas, se realizó de manera simultanea la filmación del anemómetro y la pantalla con la aplicación realizada para luego unir ambos videos y poder tomar valores al mismo tiempo (Figura \ref{fig:capt}).
+\subsection{Contraste de la velocidad estimada}
+Como prueba final se decidió realizar el contraste de la velocidad estimada contra la velocidad medida con un instrumento considerado como patrón. Para esto, se procedió a colocar en el interior del túnel un anemómetro digital \textbf{Avm-01 -\textit{ Prova}} perteneciente al laboratorio. Mientras se efectuaban las pruebas, se filmaron simultáneamente las pantallas del sistema desarrollado y del anemómetro, para luego unir ambos videos y poder evaluar ambos valores al mismo tiempo (Figura \ref{fig:capt}). Este procedimiento se realizó así debido a que el instrumento utilizado como patrón no cuenta con una señal de salida de datos, solo presenta los valores en un display.
 
 Estos valores fueron volcados a la tabla \ref{difvel} y luego graficados para observar posibles errores(Figura \ref{fig:vel_muestras}).
 
