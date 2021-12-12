@@ -79,42 +79,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Descargas}{48}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Manual de usuario de la aplicación}{49}{appendix.Alph2}%
+\contentsline {section}{\numberline {B}Manual de usuario de la aplicación}{50}{appendix.Alph2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Requerimientos del sistema}{49}{subsection.Alph2.1}%
+\contentsline {subsection}{\numberline {B.1}Requerimientos del sistema}{50}{subsection.Alph2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Puesta en marcha}{49}{subsection.Alph2.2}%
+\contentsline {subsection}{\numberline {B.2}Puesta en marcha}{50}{subsection.Alph2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Gráfico en tiempo real}{49}{subsection.Alph2.3}%
+\contentsline {subsection}{\numberline {B.3}Gráfico en tiempo real}{51}{subsection.Alph2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.3.1}Visibilidad de las señales en tiempo real}{49}{subsubsection.Alph2.3.1}%
+\contentsline {subsubsection}{\numberline {B.3.1}Visibilidad de las señales en tiempo real}{51}{subsubsection.Alph2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.3.2}Escala}{50}{subsubsection.Alph2.3.2}%
+\contentsline {subsubsection}{\numberline {B.3.2}Escala}{51}{subsubsection.Alph2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.3.3}Límite del eje vertical}{50}{subsubsection.Alph2.3.3}%
+\contentsline {subsubsection}{\numberline {B.3.3}Límite del eje vertical}{51}{subsubsection.Alph2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.4}AutoFuncion}{50}{subsection.Alph2.4}%
+\contentsline {subsection}{\numberline {B.4}AutoFuncion}{52}{subsection.Alph2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.5}Ai1}{51}{subsection.Alph2.5}%
+\contentsline {subsection}{\numberline {B.5}Ai1}{53}{subsection.Alph2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.5.1}Control desactivado}{51}{subsubsection.Alph2.5.1}%
+\contentsline {subsubsection}{\numberline {B.5.1}Control desactivado}{53}{subsubsection.Alph2.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.5.2}Control activado}{51}{subsubsection.Alph2.5.2}%
+\contentsline {subsubsection}{\numberline {B.5.2}Control activado}{53}{subsubsection.Alph2.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.6}Encendido/ apagado del motor}{52}{subsection.Alph2.6}%
+\contentsline {subsection}{\numberline {B.6}Encendido/ apagado del motor}{53}{subsection.Alph2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.6.1}Panel frontal}{52}{subsubsection.Alph2.6.1}%
+\contentsline {subsubsection}{\numberline {B.6.1}Panel frontal}{53}{subsubsection.Alph2.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {B.6.2}Aplicación}{52}{subsubsection.Alph2.6.2}%
+\contentsline {subsubsection}{\numberline {B.6.2}Aplicación}{53}{subsubsection.Alph2.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.7}Guardado de datos}{52}{subsection.Alph2.7}%
+\contentsline {subsection}{\numberline {B.7}Guardado de datos}{54}{subsection.Alph2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.8}Lectura de datos obtenidos}{53}{subsection.Alph2.8}%
+\contentsline {subsection}{\numberline {B.8}Lectura de datos obtenidos}{54}{subsection.Alph2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.9}Falla externa}{54}{subsection.Alph2.9}%
+\contentsline {subsection}{\numberline {B.9}Falla externa}{55}{subsection.Alph2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Esquemático de la placa implementada}{55}{appendix.Alph3}%
+\contentsline {section}{\numberline {C}Esquemático de la placa implementada}{57}{appendix.Alph3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Código Arduino}{59}{appendix.Alph4}%
+\contentsline {section}{\numberline {D}Código Arduino}{62}{appendix.Alph4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Código Processing}{66}{appendix.Alph5}%
+\contentsline {section}{\numberline {E}Código Processing}{69}{appendix.Alph5}%

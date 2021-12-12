@@ -9,21 +9,61 @@ El siguiente proyecto con sus respectivos archivos se encuentra para ser descarg
 
 \url{https://github.com/UNPSJB-YC/Automatizacion_Tunel_UNPSJB}
 \newpage
+
+
+
+
+
+
+\begin{center}
+		{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ingenier\'ia \par}
+	\vspace{3cm}
+	{\scshape\Huge Automatización de Túnel de Viento \par}
+		{\itshape\Large -MANUAL DE USUARIO DE LA APLICACIÓN- \par}
+	
+	
+	\vspace{3cm}
+	{\itshape\Large Proyecto Final de Carrera\\ - Ingeniería Electrónica - \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
+	\vfill
+	{\Large Diciembre 2021 \par}
+\end{center}
+
+
+
+
+
+\newpage
+
+
+
+
+
+
 \section{Manual de usuario de la aplicación}
 \subsection{Requerimientos del sistema}
 \begin{itemize}
-	\item Windows
-	\item Driver de comunicación serial para CH340 
+	\item Windows preferentemente 64bits.
+	\item Tener instalado driver de comunicación serial para CH340 (Se encuentra dentro del repositorio para su descarga) 
 \end{itemize}
 
 
 \subsection{Puesta en marcha}
 \begin{enumerate}
 	\item Alimente variador de velocidad y el motor.
+	\item Coloque los parámetros \textit{F35} y \textit{F36} del variador de velocidad en \textit{"20"} (tiempo de aceleración y desaceleración).
+	\item Coloque el parámetro \textit{F7} del variador en \textit{"1"} (Fuente de control de la operación, para que las entradas digitales sean quienes controlen el motor).
 	\item Enchufe a 220V el cable de alimentación que sale de la caja de control.
 	\item Conecte el cable USB.
-	\item Ejecute el programa \textit{Gui\_Tunel.exe} que se encuentra dentro de la carpeta \textit{application.windows64} dentro de \textit{Aplicación}
+	\item Ejecute el programa \textit{Gui\_Tunel.exe} que se encuentra dentro de la carpeta \textit{application.windows64} dentro de \textit{Aplicación}.
 	\item Seleccione el puerto dónde se encuentra conectado el microcontrolador.
+	\subitem El puerto puede ser observado en \textit{Administrador de dispositivos} $\rightarrow$ \textit{Puertos (COM y LPT)} en Windows.
 	\item Active el puerto.
 	\item Al inicializar el puerto, el microcontrolador comienza a entregar valores a la aplicación por lo que se observa THP, velocidad estimada y frecuencia de referencia. 
 	
@@ -109,7 +149,8 @@ El archivo debe ser generado por el usuario en un bloc de notas, guardado como f
 \end{table}
 
 
-Una vez que se eligió el archivo deseado del menú desplegable, se debe presionar el botón "Abrir" y aparecerá una señal visual debajo del mismo dando a conocer la implementación en el variador de dicha función (Figura \ref{fig:autof1}), el motor se pondrá en marcha y se apagará al finalizar la \textit{autofunción}.
+Una vez que se eligió el archivo deseado del menú desplegable, se debe presionar el botón ``Abrir'' y aparecerá una señal visual debajo del mismo dando a conocer la implementación en el variador de dicha función (Figura \ref{fig:autof1}), el motor se pondrá en marcha y se apagará al finalizar la \textit{autofunción}.\\
+Este sistema de datos puede tener hasta 6 valores de velocidad preestablecidos.
 
 \begin{figure}[htb]
 	\centering
@@ -186,6 +227,40 @@ Para hacer lectura o interpretación de los datos se recomienda utilizar el scri
 	Al presionar el botón de “Falla externa” el $\mu$C enviará una señal al variador y el sistema se detendrá. Luego, se podrá restablecer al presionar el botón de \textit{reset}.
 
 \newpage
+
+
+
+
+
+
+\begin{center}
+	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ingenier\'ia \par}
+	\vspace{3cm}
+	{\scshape\Huge Automatización de Túnel de Viento \par}
+	{\itshape\Large -ESQUEMÁTICOS DE LAS PLACAS- \par}
+	
+	
+	\vspace{3cm}
+	{\itshape\Large Proyecto Final de Carrera\\ - Ingeniería Electrónica - \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
+	\vfill
+	{\Large Diciembre 2021 \par}
+\end{center}
+
+
+
+
+
+\newpage
+
+
+
 \section{Esquemático de la placa implementada}
 \begin{figure}[H]
 	\centering
@@ -212,7 +287,42 @@ Para hacer lectura o interpretación de los datos se recomienda utilizar el scri
 \end{figure}
 
 
+
 \newpage
+
+
+
+
+
+
+\begin{center}
+	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ingenier\'ia \par}
+	\vspace{3cm}
+	{\scshape\Huge Automatización de Túnel de Viento \par}
+	{\itshape\Large -CÓDIGOS- \par}
+	
+	
+	\vspace{3cm}
+	{\itshape\Large Proyecto Final de Carrera\\ - Ingeniería Electrónica - \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
+	\vfill
+	{\Large Diciembre 2021 \par}
+\end{center}
+
+
+
+
+
+\newpage
+
+
+
 \section{Código Arduino}
 \lstinputlisting[language=Arduino] {Arduino_0308/Arduino_0308.ino}
 
