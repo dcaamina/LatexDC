@@ -114,7 +114,3 @@
 \contentsline {subsection}{\numberline {B.9}Falla externa}{55}{subsection.Alph2.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {C}Esquemático de la placa implementada}{57}{appendix.Alph3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Código Arduino}{62}{appendix.Alph4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Código Processing}{69}{appendix.Alph5}%
