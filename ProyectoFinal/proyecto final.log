@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  12 DEC 2021 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  13 DEC 2021 15:18
 entering extended mode
 **"./proyecto final.tex"
 (proyecto final.tex
@@ -977,6 +977,10 @@ File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 (proyecto final.aux
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+
+
+LaTeX Warning: Label `fig:git' multiply defined.
+
 )
 \openout1 = `"proyecto final.aux"'.
 
@@ -1000,8 +1004,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
-
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count448
 \scratchdimen=\dimen280
@@ -1134,7 +1137,7 @@ Package biblatex Info: Reference segment=0 on input line 89.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagenes//unpsjb.png, id=234, 1048.91875pt x 1048.91875pt>
+<imagenes//unpsjb.png, id=238, 1048.91875pt x 1048.91875pt>
 File: imagenes//unpsjb.png Graphic file (type png)
 <use imagenes//unpsjb.png>
 Package pdftex.def Info: imagenes//unpsjb.png  used on input line 94.
@@ -1157,7 +1160,7 @@ been already used, duplicate ignored
                    \relax 
 l.15 \newpage
               [1]
-<imagenes//corona.jpg, id=255, 3276.24pt x 2457.18pt>
+<imagenes//corona.jpg, id=259, 3276.24pt x 2457.18pt>
 File: imagenes//corona.jpg Graphic file (type jpg)
 <use imagenes//corona.jpg>
 Package pdftex.def Info: imagenes//corona.jpg  used on input line 23.
@@ -1276,7 +1279,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]) (secciones/2.Objetivo.tex
-<imagenes//diagr.jpg, id=484, 709.90219pt x 462.22687pt>
+<imagenes//diagr.jpg, id=493, 709.90219pt x 462.22687pt>
 File: imagenes//diagr.jpg Graphic file (type jpg)
 <use imagenes//diagr.jpg>
 Package pdftex.def Info: imagenes//diagr.jpg  used on input line 9.
@@ -1291,22 +1294,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9 <./imagenes//diagr.jpg>]) (secciones/3.Tunel.tex
-<imagenes//tunel_cerrado.png, id=491, 450.9347pt x 231.86626pt>
+<imagenes//tunel_cerrado.png, id=500, 450.9347pt x 231.86626pt>
 File: imagenes//tunel_cerrado.png Graphic file (type png)
 <use imagenes//tunel_cerrado.png>
 Package pdftex.def Info: imagenes//tunel_cerrado.png  used on input line 16.
 (pdftex.def)             Requested size: 170.71652pt x 87.78105pt.
-<imagenes//tunel_abierto.png, id=492, 436.63126pt x 106.89937pt>
+<imagenes//tunel_abierto.png, id=501, 436.63126pt x 106.89937pt>
 File: imagenes//tunel_abierto.png Graphic file (type png)
 <use imagenes//tunel_abierto.png>
 Package pdftex.def Info: imagenes//tunel_abierto.png  used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 55.72826pt.
-<imagenes//tvert1.jpg, id=493, 210.7875pt x 240.9pt>
+<imagenes//tvert1.jpg, id=502, 210.7875pt x 240.9pt>
 File: imagenes//tvert1.jpg Graphic file (type jpg)
 <use imagenes//tvert1.jpg>
 Package pdftex.def Info: imagenes//tvert1.jpg  used on input line 23.
 (pdftex.def)             Requested size: 168.63022pt x 192.72025pt.
-<imagenes//tunel_unpsjb.JPG, id=495, 351.3125pt x 196.735pt>
+<imagenes//tunel_unpsjb.JPG, id=504, 351.3125pt x 196.735pt>
 File: imagenes//tunel_unpsjb.JPG Graphic file (type jpg)
 <use imagenes//tunel_unpsjb.JPG>
 Package pdftex.def Info: imagenes//tunel_unpsjb.JPG  used on input line 35.
@@ -1336,22 +1339,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11 <./imagenes//tunel_unpsjb.JPG>]
-<imagenes//motor.jpg, id=516, 490.08093pt x 354.57469pt>
+<imagenes//motor.jpg, id=525, 490.08093pt x 354.57469pt>
 File: imagenes//motor.jpg Graphic file (type jpg)
 <use imagenes//motor.jpg>
 Package pdftex.def Info: imagenes//motor.jpg  used on input line 65.
 (pdftex.def)             Requested size: 275.28847pt x 199.16928pt.
-<imagenes//LS650.jpg, id=517, 402.00188pt x 666.99188pt>
+<imagenes//LS650.jpg, id=526, 402.00188pt x 666.99188pt>
 File: imagenes//LS650.jpg Graphic file (type jpg)
 <use imagenes//LS650.jpg>
 Package pdftex.def Info: imagenes//LS650.jpg  used on input line 67.
 (pdftex.def)             Requested size: 120.03716pt x 199.16928pt.
-<imagenes//axd.jpg, id=518, 94.10156pt x 123.46124pt>
+<imagenes//axd.jpg, id=527, 94.10156pt x 123.46124pt>
 File: imagenes//axd.jpg Graphic file (type jpg)
 <use imagenes//axd.jpg>
 Package pdftex.def Info: imagenes//axd.jpg  used on input line 93.
 (pdftex.def)             Requested size: 113.81102pt x 149.33202pt.
-<imagenes//testo.jpg, id=519, 140.77594pt x 308.65312pt>
+<imagenes//testo.jpg, id=528, 140.77594pt x 308.65312pt>
 File: imagenes//testo.jpg Graphic file (type jpg)
 <use imagenes//testo.jpg>
 Package pdftex.def Info: imagenes//testo.jpg  used on input line 94.
@@ -1380,12 +1383,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--55
 
  []
 
-<imagenes//rey2.jpg, id=560, 450.18187pt x 201.75375pt>
+<imagenes//rey2.jpg, id=569, 450.18187pt x 201.75375pt>
 File: imagenes//rey2.jpg Graphic file (type jpg)
 <use imagenes//rey2.jpg>
 Package pdftex.def Info: imagenes//rey2.jpg  used on input line 66.
 (pdftex.def)             Requested size: 202.57997pt x 90.78835pt.
-<imagenes//camaraensayos.jpg, id=561, 446.41782pt x 184.43906pt>
+<imagenes//camaraensayos.jpg, id=570, 446.41782pt x 184.43906pt>
 File: imagenes//camaraensayos.jpg Graphic file (type jpg)
 <use imagenes//camaraensayos.jpg>
 Package pdftex.def Info: imagenes//camaraensayos.jpg  used on input line 74.
@@ -1404,7 +1407,7 @@ Overfull \hbox (8.96472pt too wide) in paragraph at lines 93--94
 n-to de re-mo-li-nos en flu-jo tur-bu-len-to
  []
 
-<imagenes//remolinos.jpg, id=572, 809.27344pt x 411.78844pt>
+<imagenes//remolinos.jpg, id=581, 809.27344pt x 411.78844pt>
 File: imagenes//remolinos.jpg Graphic file (type jpg)
 <use imagenes//remolinos.jpg>
 Package pdftex.def Info: imagenes//remolinos.jpg  used on input line 98.
@@ -1412,7 +1415,7 @@ Package pdftex.def Info: imagenes//remolinos.jpg  used on input line 98.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes//fluct.png, id=574, 484.81125pt x 400.49625pt>
+<imagenes//fluct.png, id=583, 484.81125pt x 400.49625pt>
 File: imagenes//fluct.png Graphic file (type png)
 <use imagenes//fluct.png>
 Package pdftex.def Info: imagenes//fluct.png  used on input line 110.
@@ -1443,22 +1446,22 @@ Overfull \hbox (27.88918pt too wide) in paragraph at lines 134--135
 board co-mu-ni-ca-dos con el mi-cro-con-tro-la-dor
  []
 
-<imagenes//bme280.png, id=586, 352.31625pt x 334.24875pt>
+<imagenes//bme280.png, id=595, 352.31625pt x 334.24875pt>
 File: imagenes//bme280.png Graphic file (type png)
 <use imagenes//bme280.png>
 Package pdftex.def Info: imagenes//bme280.png  used on input line 158.
 (pdftex.def)             Requested size: 71.13188pt x 67.48099pt.
-<imagenes//sht21.png, id=587, 985.6825pt x 820.06375pt>
+<imagenes//sht21.png, id=596, 985.6825pt x 820.06375pt>
 File: imagenes//sht21.png Graphic file (type png)
 <use imagenes//sht21.png>
 Package pdftex.def Info: imagenes//sht21.png  used on input line 159.
 (pdftex.def)             Requested size: 85.35826pt x 71.01212pt.
-<imagenes//mpx7002.png, id=588, 453.695pt x 370.38374pt>
+<imagenes//mpx7002.png, id=597, 453.695pt x 370.38374pt>
 File: imagenes//mpx7002.png Graphic file (type png)
 <use imagenes//mpx7002.png>
 Package pdftex.def Info: imagenes//mpx7002.png  used on input line 160.
 (pdftex.def)             Requested size: 85.35826pt x 69.68414pt.
-<imagenes//ads1115.png, id=589, 1003.75pt x 752.8125pt>
+<imagenes//ads1115.png, id=598, 1003.75pt x 752.8125pt>
 File: imagenes//ads1115.png Graphic file (type png)
 <use imagenes//ads1115.png>
 Package pdftex.def Info: imagenes//ads1115.png  used on input line 161.
@@ -1477,7 +1480,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 220.
 
-<imagenes//serial_proc.png, id=608, 255.95625pt x 228.855pt>
+<imagenes//serial_proc.png, id=617, 255.95625pt x 228.855pt>
 File: imagenes//serial_proc.png Graphic file (type png)
 <use imagenes//serial_proc.png>
 Package pdftex.def Info: imagenes//serial_proc.png  used on input line 222.
@@ -1491,7 +1494,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<imagenes//filtros.png, id=616, 856.70062pt x 460.72125pt>
+<imagenes//filtros.png, id=625, 856.70062pt x 460.72125pt>
 File: imagenes//filtros.png Graphic file (type png)
 <use imagenes//filtros.png>
 Package pdftex.def Info: imagenes//filtros.png  used on input line 240.
@@ -1506,7 +1509,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19 <./imagenes//serial_proc.png>]
-<imagenes//filtro mediana.png, id=623, 853.68938pt x 459.96844pt>
+<imagenes//filtro mediana.png, id=632, 853.68938pt x 459.96844pt>
 File: imagenes//filtro mediana.png Graphic file (type png)
 <use imagenes//filtro mediana.png>
 Package pdftex.def Info: imagenes//filtro mediana.png  used on input line 257.
@@ -1532,12 +1535,12 @@ Overfull \hbox (10.53497pt too wide) in paragraph at lines 268--272
 , la cur-va de ace-le-ra-ción y des-ace-le-ra-ción
  []
 
-<imagenes//conS.png, id=631, 831.85782pt x 304.13625pt>
+<imagenes//conS.png, id=640, 831.85782pt x 304.13625pt>
 File: imagenes//conS.png Graphic file (type png)
 <use imagenes//conS.png>
 Package pdftex.def Info: imagenes//conS.png  used on input line 276.
 (pdftex.def)             Requested size: 170.71652pt x 62.4133pt.
-<imagenes//sinS.png, id=632, 830.35219pt x 298.86656pt>
+<imagenes//sinS.png, id=641, 830.35219pt x 298.86656pt>
 File: imagenes//sinS.png Graphic file (type png)
 <use imagenes//sinS.png>
 Package pdftex.def Info: imagenes//sinS.png  used on input line 277.
@@ -1553,12 +1556,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [21 <./imagenes//filtro mediana.png> <./imagenes//conS.png> <./imagenes//sinS.p
 ng>] (secciones/5.Desarrollo.tex
-<imagenes/terminales.png, id=643, 484.05844pt x 73.02281pt>
+<imagenes/terminales.png, id=652, 484.05844pt x 73.02281pt>
 File: imagenes/terminales.png Graphic file (type png)
 <use imagenes/terminales.png>
 Package pdftex.def Info: imagenes/terminales.png  used on input line 13.
 (pdftex.def)             Requested size: 318.66948pt x 48.07484pt.
-<imagenes/placa_ls.png, id=644, 459.96844pt x 436.63126pt>
+<imagenes/placa_ls.png, id=653, 459.96844pt x 436.63126pt>
 File: imagenes/placa_ls.png Graphic file (type png)
 <use imagenes/placa_ls.png>
 Package pdftex.def Info: imagenes/placa_ls.png  used on input line 20.
@@ -1573,7 +1576,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <./imagenes/terminales.png> <./imagenes/placa_ls.png>]
-<imagenes//A_Placa_1.png, id=652, 761.84625pt x 495.35063pt>
+<imagenes//A_Placa_1.png, id=661, 761.84625pt x 495.35063pt>
 File: imagenes//A_Placa_1.png Graphic file (type png)
 <use imagenes//A_Placa_1.png>
 Package pdftex.def Info: imagenes//A_Placa_1.png  used on input line 32.
@@ -1583,7 +1586,7 @@ Overfull \hbox (1.86717pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
-<imagenes//planta_d.png, id=653, 345.54094pt x 409.53pt>
+<imagenes//planta_d.png, id=662, 345.54094pt x 409.53pt>
 File: imagenes//planta_d.png Graphic file (type png)
 <use imagenes//planta_d.png>
 Package pdftex.def Info: imagenes//planta_d.png  used on input line 46.
@@ -1621,12 +1624,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23 <./imagenes//A_Placa_1.png>]
-<imagenes//bloques.png, id=659, 624.08156pt x 196.48407pt>
+<imagenes//bloques.png, id=668, 624.08156pt x 196.48407pt>
 File: imagenes//bloques.png Graphic file (type png)
 <use imagenes//bloques.png>
 Package pdftex.def Info: imagenes//bloques.png  used on input line 73.
 (pdftex.def)             Requested size: 312.04001pt x 98.24179pt.
-<imagenes//Estimacion_1.png, id=660, 542.77782pt x 152.06813pt>
+<imagenes//Estimacion_1.png, id=669, 542.77782pt x 152.06813pt>
 File: imagenes//Estimacion_1.png Graphic file (type png)
 <use imagenes//Estimacion_1.png>
 Package pdftex.def Info: imagenes//Estimacion_1.png  used on input line 75.
@@ -1637,7 +1640,7 @@ Overfull \hbox (1.52612pt too wide) in paragraph at lines 80--82
 tin-tos es-ca-lo-nes de en-tra-da, me-dian-te
  []
 
-<imagenes//estima.png, id=662, 859.71187pt x 448.67625pt>
+<imagenes//estima.png, id=671, 859.71187pt x 448.67625pt>
 File: imagenes//estima.png Graphic file (type png)
 <use imagenes//estima.png>
 Package pdftex.def Info: imagenes//estima.png  used on input line 85.
@@ -1652,12 +1655,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24 <./imagenes//planta_d.png> <./imagenes//bloques.png> <./imagenes//Estimacio
 n_1.png>]
-<imagenes//parametros_seg.png, id=676, 280.79906pt x 191.9672pt>
+<imagenes//parametros_seg.png, id=685, 280.79906pt x 191.9672pt>
 File: imagenes//parametros_seg.png Graphic file (type png)
 <use imagenes//parametros_seg.png>
 Package pdftex.def Info: imagenes//parametros_seg.png  used on input line 94.
 (pdftex.def)             Requested size: 196.558pt x 134.37611pt.
-<imagenes//planta_seg1.png, id=677, 867.24pt x 475.7775pt>
+<imagenes//planta_seg1.png, id=686, 867.24pt x 475.7775pt>
 File: imagenes//planta_seg1.png Graphic file (type png)
 <use imagenes//planta_seg1.png>
 Package pdftex.def Info: imagenes//planta_seg1.png  used on input line 95.
@@ -1673,12 +1676,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [25 <./imagenes//estima.png> <./imagenes//parametros_seg.png> <./imagenes//plan
 ta_seg1.png>]
-<imagenes//estim2.jpeg, id=697, 1284.8pt x 728.7225pt>
+<imagenes//estim2.jpeg, id=706, 1284.8pt x 728.7225pt>
 File: imagenes//estim2.jpeg Graphic file (type jpg)
 <use imagenes//estim2.jpeg>
 Package pdftex.def Info: imagenes//estim2.jpeg  used on input line 131.
 (pdftex.def)             Requested size: 385.44298pt x 218.61844pt.
-<imagenes//estim3.jpeg, id=698, 1284.8pt x 739.76375pt>
+<imagenes//estim3.jpeg, id=707, 1284.8pt x 739.76375pt>
 File: imagenes//estim3.jpeg Graphic file (type jpg)
 <use imagenes//estim3.jpeg>
 Package pdftex.def Info: imagenes//estim3.jpeg  used on input line 138.
@@ -1698,12 +1701,12 @@ Overfull \hbox (12.56804pt too wide) in paragraph at lines 144--146
 os va-lo-res se rea-li-za-ron pe-que-ñas mo-di-fi-ca-cio-nes,
  []
 
-<imagenes//Lazo_Control1.png, id=710, 631.60968pt x 234.1247pt>
+<imagenes//Lazo_Control1.png, id=719, 631.60968pt x 234.1247pt>
 File: imagenes//Lazo_Control1.png Graphic file (type png)
 <use imagenes//Lazo_Control1.png>
 Package pdftex.def Info: imagenes//Lazo_Control1.png  used on input line 149.
 (pdftex.def)             Requested size: 442.12376pt x 163.88615pt.
-<imagenes//pruebapid.png, id=711, 856.70062pt x 446.41782pt>
+<imagenes//pruebapid.png, id=720, 856.70062pt x 446.41782pt>
 File: imagenes//pruebapid.png Graphic file (type png)
 <use imagenes//pruebapid.png>
 Package pdftex.def Info: imagenes//pruebapid.png  used on input line 155.
@@ -1722,12 +1725,12 @@ Overfull \hbox (2.56758pt too wide) in paragraph at lines 173--174
 en-tes con-fi-gu-ra-cio-nes se pue-de rea-li-zar
  []
 
-<imagenes//pisubida.png, id=719, 861.2175pt x 450.9347pt>
+<imagenes//pisubida.png, id=728, 861.2175pt x 450.9347pt>
 File: imagenes//pisubida.png Graphic file (type png)
 <use imagenes//pisubida.png>
 Package pdftex.def Info: imagenes//pisubida.png  used on input line 177.
 (pdftex.def)             Requested size: 430.6077pt x 225.4668pt.
-<imagenes//pibajada.png, id=720, 863.47594pt x 452.4403pt>
+<imagenes//pibajada.png, id=729, 863.47594pt x 452.4403pt>
 File: imagenes//pibajada.png Graphic file (type png)
 <use imagenes//pibajada.png>
 Package pdftex.def Info: imagenes//pibajada.png  used on input line 184.
@@ -1741,17 +1744,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28 <./imagenes//pruebapid.png> <./imagenes//pisubida.png>]
-<imagenes//mix.png, id=728, 859.71187pt x 450.9347pt>
+<imagenes//mix.png, id=737, 859.71187pt x 450.9347pt>
 File: imagenes//mix.png Graphic file (type png)
 <use imagenes//mix.png>
 Package pdftex.def Info: imagenes//mix.png  used on input line 193.
 (pdftex.def)             Requested size: 429.85487pt x 225.4668pt.
-<imagenes//Compa_Prueba6.png, id=731, 848.4197pt x 471.26062pt>
+<imagenes//Compa_Prueba6.png, id=740, 848.4197pt x 471.26062pt>
 File: imagenes//Compa_Prueba6.png Graphic file (type png)
 <use imagenes//Compa_Prueba6.png>
 Package pdftex.def Info: imagenes//Compa_Prueba6.png  used on input line 202.
 (pdftex.def)             Requested size: 424.20882pt x 235.62973pt.
-<imagenes//Compa_Prueba7.png, id=732, 854.44218pt x 462.97969pt>
+<imagenes//Compa_Prueba7.png, id=741, 854.44218pt x 462.97969pt>
 File: imagenes//Compa_Prueba7.png Graphic file (type png)
 <use imagenes//Compa_Prueba7.png>
 Package pdftex.def Info: imagenes//Compa_Prueba7.png  used on input line 208.
@@ -1787,12 +1790,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30 <./imagenes//Compa_Prueba6.png> <./imagenes//Compa_Prueba7.png>]
-<imagenes//comp.jpg, id=752, 4015.0pt x 2384.91pt>
+<imagenes//comp.jpg, id=761, 4015.0pt x 2384.91pt>
 File: imagenes//comp.jpg Graphic file (type jpg)
 <use imagenes//comp.jpg>
 Package pdftex.def Info: imagenes//comp.jpg  used on input line 235.
 (pdftex.def)             Requested size: 321.20656pt x 190.79669pt.
-<imagenes//reos.jpg, id=753, 391.4625pt x 292.84406pt>
+<imagenes//reos.jpg, id=762, 391.4625pt x 292.84406pt>
 File: imagenes//reos.jpg Graphic file (type jpg)
 <use imagenes//reos.jpg>
 Package pdftex.def Info: imagenes//reos.jpg  used on input line 242.
@@ -1807,12 +1810,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31 <./imagenes//comp.jpg>]
-<imagenes//compu1.png, id=766, 860.46469pt x 450.9347pt>
+<imagenes//compu1.png, id=775, 860.46469pt x 450.9347pt>
 File: imagenes//compu1.png Graphic file (type png)
 <use imagenes//compu1.png>
 Package pdftex.def Info: imagenes//compu1.png  used on input line 252.
 (pdftex.def)             Requested size: 430.2313pt x 225.4668pt.
-<imagenes//comp2.png, id=767, 851.43094pt x 445.665pt>
+<imagenes//comp2.png, id=776, 851.43094pt x 445.665pt>
 File: imagenes//comp2.png Graphic file (type png)
 <use imagenes//comp2.png>
 Package pdftex.def Info: imagenes//comp2.png  used on input line 255.
@@ -1837,7 +1840,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [33 <./imagenes//compu1.png> <./imagenes//comp2.png>])
 (secciones/5.1Pruebas.tex
-<imagenes//placa_sensores.pdf, id=779, 317.185pt x 266.9975pt>
+<imagenes//placa_sensores.pdf, id=788, 317.185pt x 266.9975pt>
 File: imagenes//placa_sensores.pdf Graphic file (type pdf)
 <use imagenes//placa_sensores.pdf>
 Package pdftex.def Info: imagenes//placa_sensores.pdf  used on input line 6.
@@ -1870,7 +1873,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35]
-<imagenes//condifpres.jpg, id=807, 852.93657pt x 442.65375pt>
+<imagenes//condifpres.jpg, id=816, 852.93657pt x 442.65375pt>
 File: imagenes//condifpres.jpg Graphic file (type jpg)
 <use imagenes//condifpres.jpg>
 Package pdftex.def Info: imagenes//condifpres.jpg  used on input line 101.
@@ -1894,7 +1897,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37]
-<imagenes//vel_muestras.png, id=820, 846.16125pt x 443.40656pt>
+<imagenes//vel_muestras.png, id=829, 846.16125pt x 443.40656pt>
 File: imagenes//vel_muestras.png Graphic file (type png)
 <use imagenes//vel_muestras.png>
 Package pdftex.def Info: imagenes//vel_muestras.png  used on input line 206.
@@ -1914,7 +1917,7 @@ Overfull \hbox (1.654pt too wide) in paragraph at lines 212--213
 a-yo-res a me-di-da que las ve-lo-ci-da-des
  []
 
-<imagenes//captura.jpg, id=826, 853.68938pt x 436.63126pt>
+<imagenes//captura.jpg, id=835, 853.68938pt x 436.63126pt>
 File: imagenes//captura.jpg Graphic file (type jpg)
 <use imagenes//captura.jpg>
 Package pdftex.def Info: imagenes//captura.jpg  used on input line 216.
@@ -1930,7 +1933,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39 <./imagenes//vel_muestras.png> <./imagenes//captura.jpg>]
 (secciones/6.Planos.tex
-<imagenes//bloqimplem.png, id=835, 920.68968pt x 152.82094pt>
+<imagenes//bloqimplem.png, id=844, 920.68968pt x 152.82094pt>
 File: imagenes//bloqimplem.png Graphic file (type png)
 <use imagenes//bloqimplem.png>
 Package pdftex.def Info: imagenes//bloqimplem.png  used on input line 6.
@@ -1940,7 +1943,7 @@ Overfull \hbox (5.09961pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-<imagenes//aplibloques.png, id=839, 767.86874pt x 386.94562pt>
+<imagenes//aplibloques.png, id=848, 767.86874pt x 386.94562pt>
 File: imagenes//aplibloques.png Graphic file (type png)
 <use imagenes//aplibloques.png>
 Package pdftex.def Info: imagenes//aplibloques.png  used on input line 25.
@@ -1978,7 +1981,7 @@ Overfull \hbox (9.4819pt too wide) in paragraph at lines 77--78
 an-te per-tur-ba-cio-nes
  []
 
-<imagenes//capt6.png, id=855, 754.31813pt x 510.40688pt>
+<imagenes//capt6.png, id=864, 754.31813pt x 510.40688pt>
 File: imagenes//capt6.png Graphic file (type png)
 <use imagenes//capt6.png>
 Package pdftex.def Info: imagenes//capt6.png  used on input line 109.
@@ -1992,12 +1995,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42 <./imagenes//capt6.png>]
-<imagenes//placa_2.png, id=864, 713.66624pt x 431.36156pt>
+<imagenes//placa_2.png, id=873, 713.66624pt x 431.36156pt>
 File: imagenes//placa_2.png Graphic file (type png)
 <use imagenes//placa_2.png>
 Package pdftex.def Info: imagenes//placa_2.png  used on input line 120.
 (pdftex.def)             Requested size: 356.83224pt x 215.68025pt.
-<imagenes//placafinal.jpg, id=866, 1527.7075pt x 1051.93pt>
+<imagenes//placafinal.jpg, id=875, 1527.7075pt x 1051.93pt>
 File: imagenes//placafinal.jpg Graphic file (type jpg)
 <use imagenes//placafinal.jpg>
 Package pdftex.def Info: imagenes//placafinal.jpg  used on input line 129.
@@ -2094,7 +2097,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [47] (secciones/Anexo1.tex
-<imagenes//gitTunel.png, id=897, 903.375pt x 451.6875pt>
+<imagenes//gitTunel.png, id=906, 903.375pt x 451.6875pt>
 File: imagenes//gitTunel.png Graphic file (type png)
 <use imagenes//gitTunel.png>
 Package pdftex.def Info: imagenes//gitTunel.png  used on input line 5.
@@ -2113,7 +2116,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
  <./imagenes//gitTunel.png>]
 File: imagenes//unpsjb.png Graphic file (type png)
 <use imagenes//unpsjb.png>
-Package pdftex.def Info: imagenes//unpsjb.png  used on input line 19.
+Package pdftex.def Info: imagenes//unpsjb.png  used on input line 21.
 (pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
 
 
@@ -2125,143 +2128,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49]
-Overfull \hbox (59.49278pt too wide) in paragraph at lines 64--65
-[]\T1/cmr/m/n/12 Ejecute el pro-gra-ma \T1/cmr/m/it/12 Gui_-Tu-nel.exe \T1/cmr/
-m/n/12 que se en-cuen-tra den-tro de la car-pe-ta \T1/cmr/m/it/12 ap-pli-ca-tio
-n.windows64
- []
-
-
-Overfull \hbox (3.94206pt too wide) in paragraph at lines 68--69
-[]\T1/cmr/m/n/12 Al ini-cia-li-zar el puer-to, el mi-cro-con-tro-la-dor co-mien
--za a en-tre-gar va-lo-res a la apli-ca-ción
- []
-
-<imagenes//capt2.png, id=910, 752.0597pt x 507.39563pt>
-File: imagenes//capt2.png Graphic file (type png)
-<use imagenes//capt2.png>
-Package pdftex.def Info: imagenes//capt2.png  used on input line 74.
-(pdftex.def)             Requested size: 376.02893pt x 253.69719pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[50 <./imagenes//capt2.png>]
-<imagenes//capt3.png, id=925, 754.31813pt x 506.6428pt>
-File: imagenes//capt3.png Graphic file (type png)
-<use imagenes//capt3.png>
-Package pdftex.def Info: imagenes//capt3.png  used on input line 113.
-(pdftex.def)             Requested size: 377.15814pt x 253.32079pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[51 <./imagenes//capt3.png>]
-<imagenes//carpcsv.png, id=941, 295.85532pt x 109.1578pt>
-File: imagenes//carpcsv.png Graphic file (type png)
-<use imagenes//carpcsv.png>
-Package pdftex.def Info: imagenes//carpcsv.png  used on input line 123.
-(pdftex.def)             Requested size: 207.0973pt x 76.40993pt.
-<imagenes//autofej.png, id=942, 663.22781pt x 350.05782pt>
-File: imagenes//autofej.png Graphic file (type png)
-<use imagenes//autofej.png>
-Package pdftex.def Info: imagenes//autofej.png  used on input line 130.
-(pdftex.def)             Requested size: 198.96988pt x 105.01814pt.
-<imagenes//capt1.png, id=945, 752.8125pt x 508.90125pt>
-File: imagenes//capt1.png Graphic file (type png)
-<use imagenes//capt1.png>
-Package pdftex.def Info: imagenes//capt1.png  used on input line 157.
-(pdftex.def)             Requested size: 376.40532pt x 254.45pt.
-
-Overfull \hbox (3.1564pt too wide) in paragraph at lines 168--169
-[]\T1/cmr/m/n/12 Al uti-li-zar es-te mo-do de fun-cio-na-mien-to, se pue-de in-
-gre-sar el va-lor de-sea-do de fre-cuen-cia
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[52 <./imagenes//carpcsv.png> <./imagenes//autofej.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[53 <./imagenes//capt1.png>]
-<imagenes//capt4.png, id=957, 754.31813pt x 510.40688pt>
-File: imagenes//capt4.png Graphic file (type png)
-<use imagenes//capt4.png>
-Package pdftex.def Info: imagenes//capt4.png  used on input line 188.
-(pdftex.def)             Requested size: 377.15814pt x 255.2028pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[54 <./imagenes//capt4.png>]
-<imagenes//capt5.png, id=965, 594.72188pt x 188.95593pt>
-File: imagenes//capt5.png Graphic file (type png)
-<use imagenes//capt5.png>
-Package pdftex.def Info: imagenes//capt5.png  used on input line 221.
-(pdftex.def)             Requested size: 297.36021pt x 94.47772pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[55 <./imagenes//capt5.png>]
-File: imagenes//unpsjb.png Graphic file (type png)
-<use imagenes//unpsjb.png>
-Package pdftex.def Info: imagenes//unpsjb.png  used on input line 237.
-(pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[56]
-<imagenes//A_Placa_2.png, id=975, 387.69844pt x 305.64188pt>
+<imagenes//A_Placa_2.png, id=919, 387.69844pt x 305.64188pt>
 File: imagenes//A_Placa_2.png Graphic file (type png)
 <use imagenes//A_Placa_2.png>
-Package pdftex.def Info: imagenes//A_Placa_2.png  used on input line 267.
+Package pdftex.def Info: imagenes//A_Placa_2.png  used on input line 51.
 (pdftex.def)             Requested size: 387.69748pt x 305.64111pt.
 File: imagenes//A_Placa_1.png Graphic file (type png)
 <use imagenes//A_Placa_1.png>
-Package pdftex.def Info: imagenes//A_Placa_1.png  used on input line 271.
+Package pdftex.def Info: imagenes//A_Placa_1.png  used on input line 55.
 (pdftex.def)             Requested size: 609.47783pt x 396.28105pt.
-<imagenes//A_Placa_3.png, id=976, 843.15pt x 834.11626pt>
+<imagenes//A_Placa_3.png, id=920, 843.15pt x 834.11626pt>
 File: imagenes//A_Placa_3.png Graphic file (type png)
 <use imagenes//A_Placa_3.png>
-Package pdftex.def Info: imagenes//A_Placa_3.png  used on input line 276.
+Package pdftex.def Info: imagenes//A_Placa_3.png  used on input line 60.
 (pdftex.def)             Requested size: 421.57396pt x 417.05711pt.
 
 
@@ -2272,14 +2151,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[57 <./imagenes//A_Placa_2.png>]
-<imagenes//A_Placa_4.png, id=982, 582.67688pt x 234.1247pt>
+[50 <./imagenes//A_Placa_2.png>]
+<imagenes//A_Placa_4.png, id=926, 582.67688pt x 234.1247pt>
 File: imagenes//A_Placa_4.png Graphic file (type png)
 <use imagenes//A_Placa_4.png>
-Package pdftex.def Info: imagenes//A_Placa_4.png  used on input line 281.
+Package pdftex.def Info: imagenes//A_Placa_4.png  used on input line 65.
 (pdftex.def)             Requested size: 466.14214pt x 187.3pt.
 
-Overfull \hbox (10.89803pt too wide) in paragraph at lines 281--282
+Overfull \hbox (10.89803pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
@@ -2291,21 +2170,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[58]
+[51]
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 283.
+(caption)                outside box or environment on input line 67.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 283.
+(caption)                particular \caption on input line 67.
 See the caption package documentation for explanation.
 
-<imagenes//A_Placa_5.png, id=987, 414.04688pt x 310.91156pt>
+<imagenes//A_Placa_5.png, id=931, 414.04688pt x 310.91156pt>
 File: imagenes//A_Placa_5.png Graphic file (type png)
 <use imagenes//A_Placa_5.png>
-Package pdftex.def Info: imagenes//A_Placa_5.png  used on input line 285.
+Package pdftex.def Info: imagenes//A_Placa_5.png  used on input line 69.
 (pdftex.def)             Requested size: 414.04585pt x 310.91078pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2315,7 +2194,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[59 <./imagenes//A_Placa_3.png> <./imagenes//A_Placa_4.png>])
+[52 <./imagenes//A_Placa_3.png> <./imagenes//A_Placa_4.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2324,22 +2203,158 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[60 <./imagenes//A_Placa_5.png>] (proyecto final.aux
+[53 <./imagenes//A_Placa_5.png>]
+File: imagenes//unpsjb.png Graphic file (type png)
+<use imagenes//unpsjb.png>
+Package pdftex.def Info: imagenes//unpsjb.png  used on input line 80.
+(pdftex.def)             Requested size: 91.04742pt x 91.03752pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[54]
+File: imagenes//gitTunel.png Graphic file (type png)
+<use imagenes//gitTunel.png>
+Package pdftex.def Info: imagenes//gitTunel.png  used on input line 115.
+(pdftex.def)             Requested size: 451.6864pt x 225.84319pt.
+
+Underfull \hbox (badness 1112) in paragraph at lines 136--137
+[]\T1/cmr/m/n/12 Ejecute el pro-gra-ma \T1/cmr/m/it/12 Gui_-Tu-nel.exe \T1/cmr/
+m/n/12 que se en-cuen-tra den-tro de la car-pe-ta
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55]
+<imagenes//capt2.png, id=961, 752.0597pt x 507.39563pt>
+File: imagenes//capt2.png Graphic file (type png)
+<use imagenes//capt2.png>
+Package pdftex.def Info: imagenes//capt2.png  used on input line 146.
+(pdftex.def)             Requested size: 376.02893pt x 253.69719pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56 <./imagenes//capt2.png>]
+<imagenes//capt3.png, id=975, 754.31813pt x 506.6428pt>
+File: imagenes//capt3.png Graphic file (type png)
+<use imagenes//capt3.png>
+Package pdftex.def Info: imagenes//capt3.png  used on input line 185.
+(pdftex.def)             Requested size: 377.15814pt x 253.32079pt.
+<imagenes//carpcsv.png, id=978, 295.85532pt x 109.1578pt>
+File: imagenes//carpcsv.png Graphic file (type png)
+<use imagenes//carpcsv.png>
+Package pdftex.def Info: imagenes//carpcsv.png  used on input line 195.
+(pdftex.def)             Requested size: 207.0973pt x 76.40993pt.
+<imagenes//autofej.png, id=979, 663.22781pt x 350.05782pt>
+File: imagenes//autofej.png Graphic file (type png)
+<use imagenes//autofej.png>
+Package pdftex.def Info: imagenes//autofej.png  used on input line 202.
+(pdftex.def)             Requested size: 198.96988pt x 105.01814pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[57 <./imagenes//capt3.png> <./imagenes//carpcsv.png> <./imagenes//autofej.png>
+]
+<imagenes//capt1.png, id=990, 752.8125pt x 508.90125pt>
+File: imagenes//capt1.png Graphic file (type png)
+<use imagenes//capt1.png>
+Package pdftex.def Info: imagenes//capt1.png  used on input line 229.
+(pdftex.def)             Requested size: 376.40532pt x 254.45pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[58 <./imagenes//capt1.png>]
+<imagenes//capt4.png, id=996, 754.31813pt x 510.40688pt>
+File: imagenes//capt4.png Graphic file (type png)
+<use imagenes//capt4.png>
+Package pdftex.def Info: imagenes//capt4.png  used on input line 260.
+(pdftex.def)             Requested size: 377.15814pt x 255.2028pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[59 <./imagenes//capt4.png>]
+<imagenes//capt5.png, id=1003, 594.72188pt x 188.95593pt>
+File: imagenes//capt5.png Graphic file (type png)
+<use imagenes//capt5.png>
+Package pdftex.def Info: imagenes//capt5.png  used on input line 290.
+(pdftex.def)             Requested size: 356.83588pt x 113.37442pt.
+<imagenes//matlab1.png, id=1005, 639.89063pt x 332.74312pt>
+File: imagenes//matlab1.png Graphic file (type png)
+<use imagenes//matlab1.png>
+Package pdftex.def Info: imagenes//matlab1.png  used on input line 298.
+(pdftex.def)             Requested size: 447.92038pt x 232.91858pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[60 <./imagenes//capt5.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[61 <./imagenes//matlab1.png>]) (proyecto final.aux
 LaTeX Info: Redefining \sptext on input line 32.
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"proyecto final".out' has not changed.
-(rerunfilecheck)             Checksum: 17C8739BA0EF345AB78C7469BF1D96C3;9756.
+(rerunfilecheck)             Checksum: 37D6DC3F7BF324DC2962AEFF5C1A5186;9869.
 Package logreq Info: Writing requests to '"proyecto final".run.xml'.
 \openout1 = `"proyecto final.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32502 strings out of 479334
- 583619 string characters out of 2866960
- 1110661 words of memory out of 3000000
- 49057 multiletter control sequences out of 15000+200000
+ 32516 strings out of 479334
+ 583884 string characters out of 2866960
+ 1110757 words of memory out of 3000000
+ 49066 multiletter control sequences out of 15000+200000
  424979 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  112i,17n,116p,2560b,2187s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2374,9 +2389,9 @@ mib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on "proyecto final.pdf" (61 pages, 10208449 bytes).
+Output written on "proyecto final.pdf" (62 pages, 10246596 bytes).
 PDF statistics:
- 1712 PDF objects out of 1728 (max. 8388607)
- 252 named destinations out of 1000 (max. 500000)
- 804 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1733 PDF objects out of 2073 (max. 8388607)
+ 256 named destinations out of 1000 (max. 500000)
+ 817 words of extra memory for PDF output out of 10000 (max. 10000000)
 

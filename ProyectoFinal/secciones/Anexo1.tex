@@ -15,6 +15,67 @@ El siguiente proyecto con sus respectivos archivos se encuentra para ser descarg
 
 
 
+
+
+\begin{center}
+	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ingenier\'ia \par}
+	\vspace{3cm}
+	{\scshape\Huge Automatización de Túnel de Viento \par}
+	{\itshape\Large -ESQUEMÁTICOS DE LAS PLACAS- \par}
+	
+	
+	\vspace{3cm}
+	{\itshape\Large Proyecto Final de Carrera\\ - Ingeniería Electrónica - \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
+	\vfill
+	{\Large Diciembre 2021 \par}
+\end{center}
+
+
+
+
+
+\newpage
+
+
+
+\section{Esquemático de la placa implementada}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{A_Placa_2.png}
+	\captionof{figure}{Esquema del microcontrolador}
+\end{figure}
+\begin{figure}[H]
+	\centering	\includegraphics[scale=0.8,angle =90]{A_Placa_1.png}
+	\captionof{figure}{Esquema de la placa adaptadora de la señal del sensor de presión diferencial.}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{A_Placa_3.png}
+	
+	\caption{Esquema de entradas y salidas del microcontrolador hacia el variador.} 
+\end{figure}
+\begin{figure}[H]
+	\centering	\includegraphics[scale=0.8]{A_Placa_4.png}
+\end{figure}	
+\captionof{figure}{Esquema de la placa reguladora de tensión.}
+\begin{figure}[H]
+	\centering	\includegraphics[scale=1]{A_Placa_5.png}
+	\captionof{figure}{Esquema de sensores}
+\end{figure}
+
+
+\newpage
+
+
+
+
 \begin{center}
 		{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
 	\vspace{1cm}
@@ -47,6 +108,17 @@ El siguiente proyecto con sus respectivos archivos se encuentra para ser descarg
 
 
 \section{Manual de usuario de la aplicación}
+\subsection{Descargas}
+El siguiente proyecto con sus respectivos archivos se encuentra para ser descargado en el repositorio GitHub.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{gitTunel.png}
+	\captionof{figure}{Repositorio en Github}
+	\label{fig:git}
+\end{figure}
+
+\url{https://github.com/UNPSJB-YC/Automatizacion_Tunel_UNPSJB}
+
 \subsection{Requerimientos del sistema}
 \begin{itemize}
 	\item Windows preferentemente 64bits.
@@ -116,7 +188,7 @@ El eje vertical del gráfico en tiempo real puede ser modificado según necesida
 \end{figure}
 
 \subsection{AutoFuncion}
-El modo de auto-función carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun” (Figura \ref{fig:autof2}). El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno (Figura \ref{fig:autof22}).
+El modo de AutoFuncion carga un archivo “.csv” que se encuentra dentro de la carpeta “autofun” (Figura \ref{fig:autof2}). El archivo “.csv” posee los datos pertenecientes a los escalones de velocidad deseados y el tiempo de ejecución de cada uno (Figura \ref{fig:autof22}).
 
 \begin{figure}[H]
 	\centering
@@ -155,7 +227,7 @@ Este sistema de datos puede tener hasta 6 valores de velocidad preestablecidos.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.5]{capt1.png}
-	\captionof{figure}{Aplicación en modo Autofunción}
+	\captionof{figure}{Aplicación en modo AutoFuncion}
 	\label{fig:autof1}
 \end{figure}
 
@@ -213,14 +285,19 @@ El encabezado de la tabla (Figura \ref{fig:capt5}) muestra las siguientes leyend
 	\item \textit{ControlAutomatico:} indicación de comienzo y fin del control automático.
 		
 \end{itemize}
-
-Para hacer lectura o interpretación de los datos se recomienda utilizar el script de Matlab \textit{captura\_datos.m} ubicado dentro de la carpeta donde fue guardado el archivo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{capt5.png}
+	\captionof{figure}{Archivo .csv generado}
+	\label{fig:capt5}
+\end{figure}
+Para hacer lectura o interpretación de los datos se recomienda utilizar el script de Matlab \textit{Leer\_datos.m} (Figura \ref{fig:matlab1}) dentro de la carpeta dónde son guardados los archivos ("\textit{data1}"). El script está preparado para poder cambiar el nombre del archivo que se necesita leer y posee 3 ejemplos para observar el comportamiento.\\ En caso que el control esté apagado y se esté trabajando a lazo abierto, la línea punteada roja valdrá 0 y la velocidad de referencia será estimada.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{capt5.png}
+	\includegraphics[scale=0.7]{matlab1.png}
 	\captionof{figure}{Archivo .csv generado}
-	\label{fig:capt5}
+	\label{fig:matlab1}
 \end{figure}
 
 \subsection{Falla externa}
@@ -229,62 +306,6 @@ Para hacer lectura o interpretación de los datos se recomienda utilizar el scri
 \newpage
 
 
-
-
-
-
-\begin{center}
-	{\includegraphics[width=0.2\textwidth]{unpsjb.png}\par}
-	\vspace{1cm}
-	{\bfseries\LARGE Universidad Nacional de la Patagonia\\ San Juan Bosco \par}
-	\vspace{1cm}
-	{\scshape\Large Facultad de Ingenier\'ia \par}
-	\vspace{3cm}
-	{\scshape\Huge Automatización de Túnel de Viento \par}
-	{\itshape\Large -ESQUEMÁTICOS DE LAS PLACAS- \par}
-	
-	
-	\vspace{3cm}
-	{\itshape\Large Proyecto Final de Carrera\\ - Ingeniería Electrónica - \par}
-	\vfill
-	{\Large Autores: \par}
-	{\Large Caamiña Quineros, Daniela Beatriz\\ Yapura, Cristian Alejandro \par}
-	\vfill
-	{\Large Diciembre 2021 \par}
-\end{center}
-
-
-
-
-
-\newpage
-
-
-
-\section{Esquemático de la placa implementada}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1]{A_Placa_2.png}
-	\captionof{figure}{Esquema del microcontrolador}
-\end{figure}
-\begin{figure}[H]
-	\centering	\includegraphics[scale=0.8,angle =90]{A_Placa_1.png}
-	\captionof{figure}{Esquema de la placa adaptadora de la señal del sensor de presión diferencial.}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{A_Placa_3.png}
-	
-	\caption{Esquema de entradas y salidas del microcontrolador hacia el variador.} 
-\end{figure}
-\begin{figure}[H]
-	\centering	\includegraphics[scale=0.8]{A_Placa_4.png}
-\end{figure}	
-	\captionof{figure}{Esquema de la placa reguladora de tensión.}
-\begin{figure}[H]
-	\centering	\includegraphics[scale=1]{A_Placa_5.png}
-	\captionof{figure}{Esquema de sensores}
-\end{figure}
 
 
 
