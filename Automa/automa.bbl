@@ -36,7 +36,7 @@
     \field{year}{2013}
   \endentry
 
-  \entry{CANopenMmanual}{article}{}
+  \entry{ComManual}{article}{}
     \name{author}{1}{}{%
       {{hash=ES}{%
          family={Electric},
@@ -49,10 +49,10 @@
     \strng{fullhash}{ES1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{CANopen communication manual}
-    \field{journaltitle}{Altivar312- Variable speed drives for asynchronous
-  motors}
-    \field{year}{2012}
+    \field{title}{Communication variables manual}
+    \field{journaltitle}{Altivar312- Variadores de velocidad para motores
+  as{'i}ncronos}
+    \field{year}{2009}
   \endentry
 \enddatalist
 \endinput

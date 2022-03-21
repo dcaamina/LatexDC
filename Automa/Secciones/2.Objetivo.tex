@@ -1,7 +1,7 @@
 Un banco de pruebas de un motor cuenta con un punto de apoyo donde se conecta el motor y sus componentes mecánicos, ademas dentro de esta plataforma existe un sistema de medición que posee sensores, variador y PLC para los procedimientos de prueba.
 Un banco de pruebas puede ser un prototipo de un gran desarrollo industrial o simplemente un banco formado para realizar pruebas educativas. \\
 
-El objetivo de este trabajo final para la cátedra de Automatización Industrial es construir un banco de pruebas para ser utilizado por cualquier persona dentro el laboratorio de Automatización y Control. Se espera generar un banco de pruebas que cuente con:
+El objetivo de este trabajo final para la cátedra de Automatización Industrial es construir un banco de pruebas para ser utilizado por cualquier persona dentro el laboratorio de Automatización y Control. Se espera generar un banco de pruebas que sea capaz de controlar la presión o caudal de agua a través de un sistema construido por nosotros mismos que cuente con:
 \begin{itemize}
     \item Motor trifásico 1,5kW (Altium)\textit{-Proporcionado por la cátedra-}
     \item PLC (Schneider - M340) \textit{-Proporcionado por la cátedra-}
@@ -19,4 +19,47 @@ El objetivo de este trabajo final para la cátedra de Automatización Industrial
         \subitem Control general del banco
 \end{itemize}
 
+
+\newpage
+
+\section{Definiciones}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Motor eléctrico]
+	Los motores eléctricos son máquinas que transforman la energía eléctrica en movimiento (energía cinética). Estos aparatos se componen, básicamente, del rotor y de un estator donde tiene bobinas inductoras desfasadas entre sí 120°
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Variador de velocidad]
+	Es utilizado para controlar la velocidad de giro de un motor.
+	Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene una curva propia de funcionamiento. Un variador es capaz de generar elementos control de aceleración, frenado, seguridad, control del torque y operaciones que mejoran la eficiencia energética.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=PLC]
+	Es una computadora que se utiliza en la ingeniería de automatización para controlar procesos en las industrias.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=SoMove]
+	Software que permite configurar variadores de velocidad pertenecientes a la empresa \textbf{Schneider Electric}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Unity Pro]
+	Software común de programación, puesta a punto y
+	explotación de los autómatas Modicon, M340, Premium, Quantum y
+	coprocesadores Atrium de la empresa \textbf{Schneider Electric}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=CANopen]
+	CANopen es un protocolo con aplicación industrial de bajo nivel para aplicaciones de automatización. Conecta dispositivos entre sí mediante mensajes entre pares. Basado en el estándar de comunicaciones físicas CAN. Se utiliza en redes de comunicación tipo esclavo, multimaestro. \fcolorbox{red}{yellow}{no me cierra esta definicion, buscar otra}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=ModBus]
+	ModBus es un protocolo de comunicaciones utilizado para transmitir información a través de redes en serie entre dispositivos electrónicos, basado en la arquitectura maestro/esclavo o cliente/servidor, diseñado en 1979 por Modicon para su gama de PLC. Convertido en un protocolo de comunicaciones estándar en la industria. Además, esta red de comunicación industrial usa los protocolos RS232/RS485/RS422.
+	%http://microelecblog.blogspot.com/2013/12/configuracion-atv312-para-red-modbus.html
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=HMI - SCADA]
+	Ambas tecnologías, HMI y SCADA, son utilizadas en conjunto en la industria de la automatización. SCADA proporciona funciones de supervisión, alarmas y control, mientras que HMI proporciona las herramientas que necesita para desarrollar imágenes que los operadores pueden usar para monitorear su proceso. El HMI se utiliza para monitorear o visualizar lo ejecutado por SCADA.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=iFIX]
+	Software desarrollado por General Electric donde se puede desarrollar aplicaciones sencillas típicas de HMI, o bien, aplicaciones SCADA más complejas como la gestión de elementos y distribución de alarmas.
+\end{tcolorbox}
 \newpage
