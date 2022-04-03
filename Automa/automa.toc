@@ -17,41 +17,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Banco de pruebas}{9}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Presupuesto}{10}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Transductor de presión}{10}{subsubsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Preliminares}{11}{section.5}%
+\contentsline {subsubsection}{\numberline {4.4.2}Sensor de caudal}{10}{subsubsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Programación variador de velocidad}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {4.4.3}Diagrama}{11}{subsubsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Comunicación variador de velocidad - PLC}{12}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {4.4.4}Presupuesto}{11}{subsubsection.4.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Lectura de registros}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {5}Preliminares}{12}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Programación Unity Pro}{13}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.1}Programación variador de velocidad}{12}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Desarrollo}{17}{section.6}%
+\contentsline {subsection}{\numberline {5.2}Comunicación variador de velocidad - PLC}{13}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Programa final Unity PRO}{17}{subsection.6.1}%
+\contentsline {subsection}{\numberline {5.3}Lectura de registros}{14}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Direcciones utilizadas}{17}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1}Programación Unity Pro}{14}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Adquisición de datos}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {5.4}Medición de caudal}{17}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Uso de Matlab}{18}{subsubsection.6.2.1}%
+\contentsline {section}{\numberline {6}Desarrollo}{18}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}Estimación de la planta}{18}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.1}Programa final Unity PRO}{18}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}SCADA}{18}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.1.1}Direcciones utilizadas}{18}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Configuración iFix o Configuracion MBE?}{19}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.2}Adquisición de datos}{18}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.1.1}MBE}{19}{paragraph.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1}Uso de Matlab}{19}{subsubsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}DataBase}{19}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.2}Estimación de la planta}{19}{subsubsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.2.1}Lista de direcciones utilizadas}{19}{paragraph.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3}SCADA}{19}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.2.2}Pruebas mediante ModSim}{19}{paragraph.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.1}Configuración iFix o Configuracion MBE?}{20}{subsubsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {6.3.1.1}MBE}{20}{paragraph.6.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.2}DataBase}{20}{subsubsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {6.3.2.1}Lista de direcciones utilizadas}{20}{paragraph.6.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {6.3.2.2}Pruebas mediante ModSim}{20}{paragraph.6.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.3}Distintas pantallas}{20}{subsubsection.6.3.3}%
 \defcounter {refsection}{0}\relax 

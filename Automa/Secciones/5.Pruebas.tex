@@ -139,6 +139,14 @@ Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAME
 	\label{fig:read}
 \end{figure}
 
+\subsection{Medición de caudal}
+Según el caudal que pase por el caudalímetro, este entregaría pulsos que debían ser leídos con un módulo externo del PLC por la baja resolución que posee. Para esto se planteó utilizar un ESP8266 capaz de obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP/IP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para realizar la conversión de pulsos a caudal (Figura\ref{fig:modtcp}). Tanto para este módulo, como el caudalímetro se usó una fuente externa de 3,3V para su alimentación.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1]{esp_mod.png}
+	\captionof{figure}{Diagrama de flujo del caudalimetro} 
+	\label{fig:modtcp}
+\end{figure}
 \newpage
 
 %\url{

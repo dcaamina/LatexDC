@@ -25,7 +25,47 @@ Como se nombró en el objetivo, se busca realizar el control de caudal o presió
 	\caption{Banco de Pruebas} \label{fig:banco}
 \end{figure}
 
+\subsubsection{Transductor de presión}
+Para este proyecto se utilizan dos transductores de presión de montaje en línea modelo EJA530E de la familia  DPharp de Yokogawa (Figura \ref{fig:transd}.a).\\
+Las características del EJA530E son:
+\begin{itemize}
+	\item Precisión: ±0,055\% de precisión
+	\item Fiabilidad: ±0,1\% Estabilidad por 10 años
+	\item Tiempo de respuesta: 90mseg.
+	\item Lazo de corriente de 4-20mA
+	\item Se puede configurar en la unidad necesaria, en este caso mBar.
+\end{itemize}
 
+
+\subsubsection{Sensor de caudal}
+Se utilizó un sensor de caudal (Figura \ref{fig:transd}.b) genérico con las siguientes características:
+\begin{itemize}
+	\item Rango de caudal: 2- 60L/min
+	\item Máxima presión de agua: 1,75MPa
+	\item Conversión de caudal: aprox 477pulsos/L $\pm$ 10\%
+\end{itemize}
+
+
+\begin{figure}[htbp]
+	\centering
+	\subfigure[Transductor de presión]{\includegraphics[height=40mm]{tran_pre.png}}
+	\subfigure[Sensor de caudal]{\includegraphics[height=40mm]{sens_pre.png}}
+	\caption{Transductores} \label{fig:transd}
+\end{figure}
+
+
+
+
+
+\subsubsection{Diagrama}
+Colocar el diagrama \fcolorbox{red}{yellow}{tipo imagen} pero ver si se agrega el variador y el plc FIGURA\ref{fig:diag}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{diag.png}
+	\captionof{figure}{Diagrama i\&pd}
+	\label{fig:diag}
+\end{figure}
 
 \subsubsection{Presupuesto}
 \fcolorbox{red}{yellow}{falta lo de la bomba}
