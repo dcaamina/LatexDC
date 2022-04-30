@@ -53,28 +53,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Diagrama de flujo del caudalimetro\relax }}{17}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Configuración OPC\relax }}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Configuración OPC\relax }}{18}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{18}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{18}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Conexión servidor OPC\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Conexión servidor OPC\relax }}{18}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OPC Factory Server}}}{19}{figure.caption.22}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OPC Factory Server}}}{18}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFS Client}}}{19}{figure.caption.22}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFS Client}}}{18}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Cliente OPC en Simulink\relax }}{19}{figure.caption.23}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Cliente OPC en Simulink\relax }}{19}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{19}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{19}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Placa con sensores\relax }}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Placa con sensores\relax }}{20}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Pantalla SCADA\relax }}{20}{figure.caption.25}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Pantalla SCADA\relax }}{20}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces ModSim\relax }}{21}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces ModSim\relax }}{21}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Pantalla SCADA\relax }}{21}{figure.caption.27}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Pantalla SCADA\relax }}{22}{figure.caption.29}%

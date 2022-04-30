@@ -58,9 +58,44 @@ Dónde:
 	\item T= Retardo
 \end{itemize}
 
+Los valores correspondientes de cada elemento para cada planta son los siguientes: 
+\fcolorbox{red}{yellow}{los saque de lectura\_csv\_vs\_mod y de cvs drive}
+\begin{table}[]
+	\centering
+	\begin{tabular}{llll}
+		& PIT001 & PIT002 & FT001 \\
+		Ay & 1.4208 & 13.29 & 4.18 \\
+		Au & 200 & 200 & 300 \\
+		T & 0.6 & 1.1 &  \\
+		\textbackslash{}tau & 1.7 & 2 & 
+	\end{tabular}
+\end{table}
+
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=1]{1erorden.png}
 	\captionof{figure}{Placa con sensores}
 	\label{fig:1erorden}
 \end{figure}
+
+
+\subsubsection{PID calculado}
+Cada PID se calculó con \fcolorbox{red}{yellow}{Tune PID controllers}, se buscó que las respuestas sean \fcolorbox{red}{yellow}{críticamente amortiguado}, los valores recomendados son:
+\begin{table}[]
+	\centering
+	\begin{tabular}{llll}
+		& PIT001 & PIT002 & FT001 \\
+		Kp & ??? & ??? & ??? \\
+		Ki & ??? & ??? & ??? \\
+		Kd & ??? & ??? & ??? \\
+	\end{tabular}
+\end{table}
+
+Se puede observar que el controlador PID es del tipo proporcional integrador, se realizó de esta forma ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
+
+
+\fcolorbox{red}{yellow}{Estuve viendo las curvas con escalones donde se ve que la ganancia estática se modifica frente a diferentes escalones. Si el objetivo fuese calcular un controlador para ese sistema una buena opción seria un controlador PI. De esta forma, la acción integral va a tratar de hacer que el error de estado estacionario sea cero frente a una entrada escalón. Además, los problemas que pueden existir en el envejecimiento de componentes, errores en el modelado y variaciones en la ganancia estática se van a mitigar con la parte integral del controlador. Obviamente al cambiar la planta la respuesta va a cambiar pero se va a cumplir la consigna de seguir la referencia. Para mostrar esto es posible calcular un controlador para un sistema y luego probar el controlador en los dos sistemas. Eso hice en el pdf que les adjunto con un sistema con 3 polos reales. Más detalles pueden encontrar en el libro de Ogata o Control avanzado de Karl Astrom, capitulo 3.
+De esta forma, me da la sensación que para los objetivos de esta materia plantear un controlador PI para un controlador me parece bien.}
+
+
