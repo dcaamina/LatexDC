@@ -44,3 +44,23 @@ En el entorno Simulink se procedió a configurar un bloque de cliente OPC con la
 
 
 \subsubsection{Estimación de la planta}
+
+Para realizar la estimación de las plantas se utilizó el método matemático de sistema de primer orden con retardo (Figura \ref{fig:1erorden}), cuya función de transferencia es: \\
+\begin{equation}
+	G(s)\;=\;\frac K{1\;+\;\tau\;.\;s}e^{-T.s}
+\end{equation}
+
+
+Dónde:
+\begin{itemize}
+	\item K:  Ganancia del sistema $K = \frac{\triangle y}{\triangle u}$
+	\item $\tau$: constante de tiempo
+	\item T= Retardo
+\end{itemize}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=1]{1erorden.png}
+	\captionof{figure}{Placa con sensores}
+	\label{fig:1erorden}
+\end{figure}
