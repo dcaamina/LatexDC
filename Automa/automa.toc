@@ -1,94 +1,47 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {spanish}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introducción}{4}{section.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Objetivo}{5}{section.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Definiciones}{6}{section.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Elementos}{8}{section.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Motor}{8}{subsection.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Variador de velocidad}{8}{subsection.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Módulo Didáctico PLC M340}{8}{subsection.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Banco de pruebas}{9}{subsection.4.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Transductor de presión}{10}{subsubsection.4.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Sensor de caudal}{10}{subsubsection.4.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Diagrama}{11}{subsection.4.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Presupuesto}{11}{subsection.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Preliminares}{12}{section.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Programación variador de velocidad}{12}{subsection.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Comunicación variador de velocidad - PLC}{13}{subsection.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Lectura de registros}{14}{subsection.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Programación Unity Pro}{14}{subsubsection.5.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Medición de caudal}{17}{subsection.5.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Desarrollo}{18}{section.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Programa final Unity PRO}{18}{subsection.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Direcciones utilizadas}{18}{subsubsection.6.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Adquisición de datos}{18}{subsection.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Uso de Matlab}{19}{subsubsection.6.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}Estimación de la planta}{19}{subsubsection.6.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.3}PID calculado}{19}{subsubsection.6.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}SCADA}{20}{subsection.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Configuración iFix o Configuracion MBE?}{21}{subsubsection.6.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.1.1}MBE}{21}{paragraph.6.3.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}DataBase}{21}{subsubsection.6.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.2.1}Lista de direcciones utilizadas}{21}{paragraph.6.3.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.3.2.2}Pruebas mediante ModSim}{21}{paragraph.6.3.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3}Distintas pantallas}{21}{subsubsection.6.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Alarmas}{21}{subsection.6.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}iHistorian}{21}{subsection.6.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}Direcciones}{21}{subsection.6.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusiones}{21}{section.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Bibliografia}{22}{section.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Anexos}{22}{section.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Manual SCADA}{22}{section.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Secciones}{22}{subsection.10.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.1}Diagrama}{22}{subsubsection.10.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.2}Estado del variador - motor}{22}{subsubsection.10.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.3}Modo local - Modo remoto}{22}{subsubsection.10.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {10.1.3.1}Control de presión o caudal}{22}{paragraph.10.1.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.4}Alarmas}{22}{subsubsection.10.1.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.5}iHistorian}{22}{subsubsection.10.1.5}%
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducci^^c3^^b3n}{5}{section.1}%
+\contentsline {section}{\numberline {2}Objetivo}{6}{section.2}%
+\contentsline {section}{\numberline {3}Definiciones}{7}{section.3}%
+\contentsline {section}{\numberline {4}Elementos}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Motor}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Variador de velocidad}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}M^^c3^^b3dulo Did^^c3^^a1ctico PLC M340}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Banco de pruebas}{10}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Transmisor de presi^^c3^^b3n}{11}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Sensor de caudal}{11}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Diagrama}{12}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Presupuesto}{12}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Preliminares}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Programaci^^c3^^b3n variador de velocidad}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Comunicaci^^c3^^b3n variador de velocidad - PLC}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Lectura de registros}{15}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Programaci^^c3^^b3n Unity Pro}{15}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}Medici^^c3^^b3n de caudal}{18}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Desarrollo}{19}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Programa final Unity PRO}{19}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Direcciones utilizadas}{19}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}Adquisici^^c3^^b3n de datos}{19}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Uso de Matlab}{20}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Estimaci^^c3^^b3n de la planta}{20}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}PID calculado}{20}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}SCADA}{21}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Configuraci^^c3^^b3n iFix o Configuracion MBE?}{22}{subsubsection.6.3.1}%
+\contentsline {paragraph}{\numberline {6.3.1.1}MBE}{22}{paragraph.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}DataBase}{22}{subsubsection.6.3.2}%
+\contentsline {paragraph}{\numberline {6.3.2.1}Lista de direcciones utilizadas}{22}{paragraph.6.3.2.1}%
+\contentsline {paragraph}{\numberline {6.3.2.2}Pruebas mediante ModSim}{22}{paragraph.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Distintas pantallas}{22}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Alarmas}{22}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}iHistorian}{22}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Direcciones}{22}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Conclusiones}{22}{section.7}%
+\contentsline {section}{\numberline {8}Bibliografia}{23}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{23}{section.9}%
+\contentsline {section}{\numberline {10}Manual SCADA}{23}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Secciones}{23}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Diagrama}{23}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Estado del variador - motor}{23}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Modo local - Modo remoto}{23}{subsubsection.10.1.3}%
+\contentsline {paragraph}{\numberline {10.1.3.1}Control de presi^^c3^^b3n o caudal}{23}{paragraph.10.1.3.1}%
+\contentsline {subsubsection}{\numberline {10.1.4}Alarmas}{23}{subsubsection.10.1.4}%
+\contentsline {subsubsection}{\numberline {10.1.5}iHistorian}{23}{subsubsection.10.1.5}%
