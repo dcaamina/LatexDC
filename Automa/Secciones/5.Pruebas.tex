@@ -26,7 +26,7 @@ Una vez realizado esto se procedió a generar un nuevo proyecto donde se eligió
 \end{figure}
 
 
-Para realizar esta primera configuración se realizó la comunicación de la PC con el variador a través del protocolo \textbf{Modbus} (Figura\ref{fig:pcvar}) a través de un cable que en un extremo poseía ficha RJ45 y un conversor RS485 y en el otro ficha USB (Figura \ref{fig:paramsomove1}). 
+Para realizar esta primera configuración se realizó la comunicación de la computadora con el variador a través del protocolo \textbf{Modbus} (Figura\ref{fig:pcvar}) por medio de un cable que en un extremo poseía una ficha RJ45 con un conversor RS485 y en el otro, ficha USB (Figura \ref{fig:paramsomove1}). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{pc_var.png}
@@ -43,7 +43,7 @@ Para realizar esta primera configuración se realizó la comunicación de la PC 
 
 
 \subsection{Comunicación variador de velocidad - PLC}
-Para poder realizar la comunicación entre el variador y el PLC es necesario contar con un cable que realice la conexión desde la salida CANOpen a RS485, para esto se necesitó hacer un cable con las fichas correspondientes en cada extremo según las conexiones que muestran en la Figura \ref{fig:cable}
+Para poder realizar la comunicación entre el variador y el PLC es necesario contar con un cable que realice la conexión desde la salida CANOpen a RS485, para esto se necesitó hacer un cable con las fichas correspondientes en cada extremo según las conexiones que muestran en la Figura \ref{fig:cable}, colocando a su vez resistencia de 120 $\Omega$ en cada punta para evitar ruidos eléctricos y fenómenos de reflexión en la línea.
 
 \begin{figure}[htbp]
     \centering
@@ -116,9 +116,9 @@ Para generar la base del proyecto para trabajar, se debe descargar desde la pág
 	\label{fig:inter}
 \end{figure}
 
-Una vez que se completó la configuración de la comunicación variador - PLC se procedió a crear una Pantalla de operador dentro del mismo programa donde por esto se es capaz de observar a través de un simple HMI parámetros del motor brindados por el variador de velocidad.
-
- En la figura \ref{fig:previo} se ve una interfaz humano máquina (HMI) simple dónde se observan y se puede interactuar con los selectores, configurar velocidad, observar las señales luminosas y distintos valores de funcionamiento del motor proporcionados por el variador de velocidad. 
+Una vez que se completó la configuración de la comunicación variador - PLC se procedió a crear una \textit{Pantalla de operador} dentro del mismo programa (Figura \ref{fig:previo})
+la cual fue utilizada para interactuar y observar diversos parámetros, como modificar velocidades, observar señales luminosas y ver distintos valores proporcionados por el variador de velocidad.
+ 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{3.previo.png}
@@ -126,11 +126,11 @@ Una vez que se completó la configuración de la comunicación variador - PLC se
 	\label{fig:previo}
 \end{figure}
 
-Para realizar este HMI se utilizó los bloques de funciones de movimiento (Motion Function Block, MFB) del software UnityPro. Estos bloques necesitan de un bloque maestro ``CAN\_HANDLER'' el cual permite comprobar la comunicación CANopen, así como la coherencia
+Para realizar la programación del HMI se utilizó los bloques de funciones de movimiento (Motion Function Block, MFB) del software UnityPro (Figura \ref{fig:read}). Estos bloques necesitan de un bloque maestro ``CAN\_HANDLER'' el cual permite comprobar la comunicación CANopen, así como la coherencia
 entre las configuraciones de software y física.
 \\
 Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAMETER'' que se utiliza para leer, mediante mensajes Service Data Object
-(SDO), una variable del variador definida en una dirección CANOpen dada por el mismo variador \cite{ComManual} (Figura \ref{fig:read}).
+(SDO), una variable del variador definida en una dirección CANOpen dada por el fabricante \cite{ComManual}.
 
 \begin{figure}[H]
 	\centering
@@ -140,7 +140,7 @@ Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAME
 \end{figure}
 
 \subsection{Medición de caudal}
-Según el caudal que pase por el caudalímetro, este entregaría pulsos que debían ser leídos con un módulo externo del PLC por la baja resolución que posee. Para esto se planteó utilizar un ESP8266 capaz de obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP/IP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para realizar la conversión de pulsos a caudal (Figura\ref{fig:modtcp}). Tanto para este módulo, como el caudalímetro se usó una fuente externa de 3,3V para su alimentación.
+Según la cantidad de flujo que pase por el caudalímetro, este entregaría pulsos que debían ser leídos con un módulo externo del PLC por la baja resolución que posee. Para esto se planteó utilizar un ESP8266 capaz de obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP/IP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para realizar la conversión de pulsos a caudal (Figura\ref{fig:modtcp}). Tanto para el módulo, como para el caudalímetro se usó una fuente externa de 3,3 V de alimentación.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1]{esp_mod.png}

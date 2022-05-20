@@ -1,5 +1,15 @@
 Para realizar la pantalla de supervisión, control y adquisición de datos operador (SCADA) se utilizó el software iFix perteneciente al grupo \textbf{General Electric}.\\
-En la pantalla principal se creó un esquemático del circuito hidráulico físico que se posee con las respectivas variables de presión y caudal, a las cuales se sumó variables propias del motor, otra sección se destinó a las alarmas, al control de las variables y la última al Historian (Figura \ref{fig:scada1}).
+El sistema HMI creado (Figura \ref{fig:scada1}) se dividió en las siguientes secciones:
+\begin{itemize}
+	\item Esquemático del circuito hidráulico físico con las variables de presión y caudal en tiempo real.
+	\item Valores de funcionamiento del motor obtenidos por el variador de velocidad.
+	\item Alarmero, dónde se observa de forma visual valores críticos alcanzados en el sistema.
+	\item Indicador de modo de funcionamiento físico o remoto.
+	\item Modo de control a lazo abierto o lazo cerrado.
+	\subitem Para el modo de lazo cerrado se creó una ventana individual para cada sistema de presión y caudal.
+	\item Botón para gráficos en tiempo real dónde se divide según la variable a observar.
+	\item Botón para ingresar a la pantalla donde se observa datos históricos y se puede generar un archivo \textit{.csv} con la información de la variable elegida en un determinado período de tiempo.
+\end{itemize} 
 
 \begin{figure}[htb]
 	\centering
