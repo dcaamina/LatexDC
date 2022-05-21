@@ -1,4 +1,5 @@
-Para realizar la pantalla de supervisión, control y adquisición de datos operador (SCADA) se utilizó el software iFix perteneciente al grupo \textbf{General Electric}.\\
+Para realizar la pantalla de supervisión, control y adquisición de datos operador (SCADA) se utilizó el software iFix perteneciente al grupo \textbf{General Electric}.
+
 El sistema HMI creado (Figura \ref{fig:scada1}) se dividió en las siguientes secciones:
 \begin{itemize}
 	\item Esquemático del circuito hidráulico físico con las variables de presión y caudal en tiempo real.
@@ -7,29 +8,41 @@ El sistema HMI creado (Figura \ref{fig:scada1}) se dividió en las siguientes se
 	\item Indicador de modo de funcionamiento físico o remoto.
 	\item Modo de control a lazo abierto o lazo cerrado.
 	\subitem Para el modo de lazo cerrado se creó una ventana individual para cada sistema de presión y caudal.
-	\item Botón para gráficos en tiempo real dónde se divide según la variable a observar.
-	\item Botón para ingresar a la pantalla donde se observa datos históricos y se puede generar un archivo \textit{.csv} con la información de la variable elegida en un determinado período de tiempo.
+	\item Pantalla para observar gráficos en tiempo real dónde se divide según la variable a observar, con botones para abrir el control PID del sistema.
+	\item Pantalla donde se observa datos históricos y se puede generar un archivo \textit{.txt} con la información de la variable elegida en un determinado período de tiempo.
 \end{itemize} 
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.5]{scada2.png}
+	\includegraphics[scale=0.5]{scada1.png}
 	\captionof{figure}{Pantalla SCADA}
 	\label{fig:scada1}
 \end{figure}
 
 
-\subsubsection{Configuración iFix o Configuracion MBE?}
-Para realizar la configuración de cada ícono con su respectiva variable se debió crear un MBE dónde se estipula la dirección y los mapas de memorias que luego serán utilizadas por el DataBase. 
+\subsubsection{Comunicación SCADA- Computadora}
+Para realizar la configuración de cada ícono de la pantalla SCADA con su respectiva variable, se debió crear un MBE Driver (Figura \ref{fig:mbe}) dónde se estipula la dirección IP y el mapa de memoria con sus respectivas secciones que luego serán utilizadas por el DataBase (Figura \ref{fig:database}). 
+
+Una vez creado el MBE Driver se debe generar la tabla \textit{DataBase} en dónde estará el nombre, dirección IP, tipo de elemento, descripción, alarma asociada, entre otros puntos de cada elemento.
+
+La lista se encontrará unificada con las direcciones de \textit{UnityPro} (Tabla..\fcolorbox{red}{yellow}{..}).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{mbe.png}
+	\captionof{figure}{Configuración MBE}
+	\label{fig:mbe}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{database.png}
+	\captionof{figure}{Configuración MBE}
+	\label{fig:database}
+\end{figure}
 
 
-\paragraph{MBE}
-\subsubsection{DataBase}
-
-\paragraph{Lista de direcciones utilizadas}
-Poner lista que esta en drive
 \paragraph{Pruebas mediante ModSim}
-Para realizar pruebas previas a la implementación final se utilizó el programa ModSim, donde se generó los distintos mapas de memoria utilizados y allí se podían modificar variables para observarlas en SCADA.
+Para realizar pruebas intermedias antes de unir SCADA con el programado para el PLC se utilizó el software ModSim, dónde se generó los distintos mapas de memoria utilizados y allí se podían modificar variables para observar el correcto funcionamiento de distintos elementos en el HMI.
 
 \begin{figure}[htb]
 	\centering
@@ -38,13 +51,12 @@ Para realizar pruebas previas a la implementación final se utilizó el programa
 	\label{fig:modsim1}
 \end{figure}
 
-\subsubsection{Distintas pantallas}
 
 
-\subsection{Alarmas}
+\subsubsection{Alarmas}
 Dentro de la pantalla principal es posible observar el alarmero. Estas alarmas están compuestas por las variables de la siguiente \fcolorbox{red}{yellow}{tabla} con sus respectivos valores y prioridades.\\
 \fcolorbox{red}{yellow}{Poner lista que esta en drive}
-\subsection{iHistorian}
+\subsubsection{iHistorian}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.5]{scada3.png}
@@ -52,5 +64,3 @@ Dentro de la pantalla principal es posible observar el alarmero. Estas alarmas e
 	\label{fig:scada3}
 \end{figure}
 
-\subsection{Direcciones}
-Poner acá las de ifix y unity? como la utilizada en drive?

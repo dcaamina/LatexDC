@@ -1,11 +1,5 @@
-\subsection{Programa final Unity PRO}
 
-A partir del programa utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.\\
-
-
-\subsubsection{Direcciones utilizadas}
-\fcolorbox{red}{yellow}{Las direcciones utilizadas para unity + ifix ponerlo despues de SCADA?}
-
+A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.\\
 
 \subsection{Adquisición de datos}
 En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal, para lograr lo estipulado. Como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres plantas observadas en  FIGURA\ref{fig:diag} y que serán llamadas:
@@ -79,10 +73,7 @@ Los valores correspondientes de cada elemento para cada planta son los observado
  \begin{minipage}{\linewidth}
 	\centering
 	\begin{minipage}{0.45\linewidth}
-	
 			\centering
-			
-			\label{tab:parametros}
 			\begin{tabular}{|l|l|l|l|}
 				\hline
 				& PIT001 & PIT002 & FT001 \\ \hline
@@ -92,14 +83,12 @@ Los valores correspondientes de cada elemento para cada planta son los observado
 				$\tau$ & 1.7 & 2 & \\ \hline
 			\end{tabular}
 			\captionof{table}{Variables para el cálculo de las funciones de transferencia}
+			\label{tab:parametros}
 	
 	\end{minipage}
 	\hspace{0.05\linewidth}
 	\begin{minipage}{0.45\linewidth}
-	
 			\centering
-		
-			\label{tab:pid}
 			\begin{tabular}{|l|l|l|l|}
 				\hline
 				& PIT001 & PIT002 & FT001 \\ \hline
@@ -109,29 +98,22 @@ Los valores correspondientes de cada elemento para cada planta son los observado
 				N & ??? & ??? & ??? \\ \hline
 			\end{tabular}
 				\captionof{table}{Valores de PID}
-
+				\label{tab:pid}
 	\end{minipage}
 \end{minipage}
+
 		\end{table}
-
-
-
-
-
-
-
-
 
 
 Las funciones de transferencia calculadas son:
 \fcolorbox{red}{yellow}{poner ecuaciones}
 
-\subsubsection{PID calculado}
+\subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean \fcolorbox{red}{yellow}{críticamente amortiguado para....}.\\
-Los valores obtenidos del software Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software.
 
+Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software.
 
-Se observa que los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
+Se observa que algunos de los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
 
 \begin{comment}
 \fcolorbox{red}{yellow}{Estuve viendo las curvas con escalones donde se ve que la ganancia estática se modifica frente a diferentes escalones. Si el objetivo fuese calcular un controlador para ese sistema una buena opción seria un controlador PI. De esta forma, la acción integral va a tratar de hacer que el error de estado estacionario sea cero frente a una entrada escalón. Además, los problemas que pueden existir en el envejecimiento de componentes, errores en el modelado y variaciones en la ganancia estática se van a mitigar con la parte integral del controlador. Obviamente al cambiar la planta la respuesta va a cambiar pero se va a cumplir la consigna de seguir la referencia. Para mostrar esto es posible calcular un controlador para un sistema y luego probar el controlador en los dos sistemas. Eso hice en el pdf que les adjunto con un sistema con 3 polos reales. Más detalles pueden encontrar en el libro de Ogata o Control avanzado de Karl Astrom, capitulo 3.
