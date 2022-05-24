@@ -44,7 +44,43 @@ En el entorno Simulink se procedió a configurar un bloque de cliente OPC con la
 
 
 \subsubsection{Estimación de la planta}
+Para realizar la estimación de las plantas se utilizó el Método de Strejc con retardo (Figura \ref{fig:norden})\cite{pomares2011sistemas}.
+Este método se emplea para la identificación de sistemas de polos múltiples,
+mediante los parámetros Tu y Ta obtenidos sobre la respuesta del sistema.
+Tras obtener el valor de las variables Tu y Ta, se obtiene el valor de Tu/Ta este valor determinará el número de polos múltiples ``n''. 
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{norden.png}
+	\captionof{figure}{Parámetros de Strejc con retardo}
+	\label{fig:norden}
+\end{figure}
 
+La función de transferencia general para un sistema de polos múltiples es:
+\begin{equation}
+	G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
+\end{equation}
+
+Para obtener el orden de la función de transferencia se realizó un script en Matlab que dió como resultado las funciones de transferencia nombradas a continuación:
+\begin{itemize}
+	\item Planta de presión PIT001:
+	\begin{equation}
+	 G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
+	\end{equation}
+	\item Planta de presión PIT002: 	
+	\begin{equation}
+		G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
+	\end{equation}
+	\item Planta de caudal FT001:
+		\begin{equation}
+		G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
+	\end{equation}
+\end{itemize}
+
+\paragraph{Comparación numérica- real}
+En las siguientes imágenes se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
+\fcolorbox{red}{yellow}{imagenes con fondo blanco}
+
+\begin{comment}
 Para realizar la estimación de las plantas se utilizó el método matemático de sistema de primer orden con retardo (Figura \ref{fig:1erorden}), cuya función de transferencia es: \\
 \begin{equation}
 	G(s)\;=\;\frac K{1\;+\;\tau\;.\;s}e^{-T.s}
@@ -64,6 +100,8 @@ Dónde:
 	\captionof{figure}{Sistema de primer orden}
 	\label{fig:1erorden}
 \end{figure}
+
+
 Los valores correspondientes de cada elemento para cada planta son los observados en la tabla \ref{tab:parametros} 
 \fcolorbox{red}{yellow}{los saque de lectura\_csv\_vs\_mod y de cvs drive}?\\
 	\fcolorbox{red}{yellow}{ ver que sistema queda y agregar líneas a las filas y columnas}
@@ -107,13 +145,39 @@ Los valores correspondientes de cada elemento para cada planta son los observado
 
 Las funciones de transferencia calculadas son:
 \fcolorbox{red}{yellow}{poner ecuaciones}
-
+\end{comment}
 \subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean \fcolorbox{red}{yellow}{críticamente amortiguado para....}.\\
 
 Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software.
-
+\begin{comment}
 Se observa que algunos de los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
+\end{comment}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		& PIT001 & PIT002 & FT001 \\ \hline
+		$K_p$ & ??? & ??? & ??? \\ \hline
+		$K_i$ & ??? & ??? & ??? \\ \hline
+		$K_d$ & ??? & ??? & ??? \\ \hline
+		N & ??? & ??? & ??? \\ \hline
+	\end{tabular}
+	\captionof{table}{Valores de PID}
+	\label{tab:pid}
+\end{table}
+
+\subsubsection{Pruebas de control}
+Para observar la respuesta del sistema de control se generaron perturbaciones con las válvulas del banco de prueba. FIGURA \ref{fig:pert1}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.6]{pert1.png}
+	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
+	\label{fig:pert1}
+\end{figure}
+
+
 
 \begin{comment}
 \fcolorbox{red}{yellow}{Estuve viendo las curvas con escalones donde se ve que la ganancia estática se modifica frente a diferentes escalones. Si el objetivo fuese calcular un controlador para ese sistema una buena opción seria un controlador PI. De esta forma, la acción integral va a tratar de hacer que el error de estado estacionario sea cero frente a una entrada escalón. Además, los problemas que pueden existir en el envejecimiento de componentes, errores en el modelado y variaciones en la ganancia estática se van a mitigar con la parte integral del controlador. Obviamente al cambiar la planta la respuesta va a cambiar pero se va a cumplir la consigna de seguir la referencia. Para mostrar esto es posible calcular un controlador para un sistema y luego probar el controlador en los dos sistemas. Eso hice en el pdf que les adjunto con un sistema con 3 polos reales. Más detalles pueden encontrar en el libro de Ogata o Control avanzado de Karl Astrom, capitulo 3.

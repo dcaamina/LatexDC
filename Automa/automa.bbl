@@ -54,5 +54,30 @@
   as{'i}ncronos}
     \field{year}{2009}
   \endentry
+
+  \entry{pomares2011sistemas}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PJ}{%
+         family={Pomares},
+         familyi={P\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MBA}{%
+         family={Mart{\'\i}nez\bibnamedelima Bueno},
+         familyi={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={{\'A}ngel},
+         giveni={{\'A}\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJMBA1}
+    \strng{fullhash}{PJMBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Sistemas de Control Autom{\'a}tico. Identificaci{\'o}n
+  experimental de sistemas}
+    \field{journaltitle}{Sistemas de Control Autom{\'a}tico}
+    \field{year}{2011}
+  \endentry
 \enddatalist
 \endinput

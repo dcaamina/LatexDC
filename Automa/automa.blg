@@ -22,47 +22,53 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: automa-blx.bib
 Database file #2: bibliogr.bib
+You're missing a field name---line 16 of file bibliogr.bib
+ : 
+ : %author = "Andreas Schlegel",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 3 entries,
+You've used 4 entries,
             6393 wiz_defined-function locations,
-            1211 strings with 9139 characters,
-and the built_in function-call counts, 8618 in all, are:
-= -- 475
-> -- 234
-< -- 35
-+ -- 178
-- -- 82
-* -- 450
-:= -- 1007
+            1216 strings with 9324 characters,
+and the built_in function-call counts, 14532 in all, are:
+= -- 909
+> -- 333
+< -- 56
++ -- 295
+- -- 120
+* -- 901
+:= -- 1634
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 14
+call.type$ -- 4
+change.case$ -- 21
 chr.to.int$ -- 44
-cite$ -- 4
-duplicate$ -- 819
-empty$ -- 841
-format.name$ -- 94
-if$ -- 1847
+cite$ -- 6
+duplicate$ -- 1359
+empty$ -- 1413
+format.name$ -- 157
+if$ -- 3084
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 56
-num.names$ -- 82
-pop$ -- 711
+newline$ -- 80
+num.names$ -- 120
+pop$ -- 1058
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 33
 quote$ -- 0
-skip$ -- 381
+skip$ -- 544
 stack$ -- 0
-substring$ -- 689
-swap$ -- 193
-text.length$ -- 56
+substring$ -- 1543
+swap$ -- 307
+text.length$ -- 79
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 90
+type$ -- 124
 warning$ -- 0
-while$ -- 151
+while$ -- 221
 width$ -- 0
-write$ -- 54
+write$ -- 77
+(There was 1 error message)
