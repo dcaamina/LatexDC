@@ -2,11 +2,11 @@
 A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.\\
 
 \subsection{Adquisición de datos}
-En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal, para lograr lo estipulado. Como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres plantas observadas en  FIGURA\ref{fig:diag} y que serán llamadas:
+En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres sistemas con los que se trabajará:
 \begin{itemize}
 	\item PIT001: Presión 1 medida a la salida de la bomba.
-	\item PIT002: Presión 2 medida luego de la columna que deiva el fluido.
-	\item FT001: Caudal que pasa por presión 2.
+	\item PIT002: Presión 2 medida luego de la columna que deriva el fluido.
+	\item FT001: Caudal que pasa por PIT002.
 \end{itemize}
 Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con Matlab. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en UnityPro donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
 
@@ -47,7 +47,7 @@ En el entorno Simulink se procedió a configurar un bloque de cliente OPC con la
 Para realizar la estimación de las plantas se utilizó el Método de Strejc con retardo (Figura \ref{fig:norden})\cite{pomares2011sistemas}.
 Este método se emplea para la identificación de sistemas de polos múltiples,
 mediante los parámetros Tu y Ta obtenidos sobre la respuesta del sistema.
-Tras obtener el valor de las variables Tu y Ta, se obtiene el valor de Tu/Ta este valor determinará el número de polos múltiples ``n''. 
+Tras obtener el valor de los parámetros, se determinará la multiplicidad del polo. 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.5]{norden.png}
@@ -59,95 +59,78 @@ La función de transferencia general para un sistema de polos múltiples es:
 \begin{equation}
 	G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
 \end{equation}
-
-Para obtener el orden de la función de transferencia se realizó un script en Matlab que dió como resultado las funciones de transferencia nombradas a continuación:
-\begin{itemize}
-	\item Planta de presión PIT001:
-	\begin{equation}
-	 G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
-	\end{equation}
-	\item Planta de presión PIT002: 	
-	\begin{equation}
-		G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
-	\end{equation}
-	\item Planta de caudal FT001:
-		\begin{equation}
-		G(s)\;=\;\frac K{(1\;+\;\tau\;.\;s)^n}\;.\;e^{-T.s}
-	\end{equation}
-\end{itemize}
-
-\paragraph{Comparación numérica- real}
-En las siguientes imágenes se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
-\fcolorbox{red}{yellow}{imagenes con fondo blanco}
-
-\begin{comment}
-Para realizar la estimación de las plantas se utilizó el método matemático de sistema de primer orden con retardo (Figura \ref{fig:1erorden}), cuya función de transferencia es: \\
-\begin{equation}
-	G(s)\;=\;\frac K{1\;+\;\tau\;.\;s}e^{-T.s}
-\end{equation}
-
-
 Dónde:
 \begin{itemize}
 	\item K:  Ganancia del sistema $K = \frac{\triangle y}{\triangle u}$
 	\item $\tau$: constante de tiempo
 	\item T= Retardo
 \end{itemize}
+Para obtener la función de transferencia se realizó un script en Matlab que dió como resultado los siguientes sistemas:
+\begin{itemize}
+	\item Planta de presión PIT001:
+	\begin{equation}
+	 G(s)\;=\;\frac {0,135}{(1\;+\;1,3783\;.\;s)^3}\;.\;e^{-1,2.s}
+	\end{equation}
+	\item Planta de presión PIT002: 	
+	\begin{equation}
+		G(s)\;=\;\frac {0,125}{(1\;+\;1,054\;.\;s)^3}\;.\;e^{-s}
+	\end{equation}
+	\item Planta de caudal FT001:
+		\begin{equation}
+		G(s)\;=\;\frac {0,003784}{(1\;+\;0,7027\;.\;s)^3}\;.\;e^{-s}
+	\end{equation}
+\end{itemize}
+
+\paragraph{Comparación numérica- real}
+En las siguientes imágenes se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
+\fcolorbox{red}{yellow}{imagenes con fondo blanco}
+\begin{comment}
+$C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\Prueba_PLANTA\Imaagenes Calculo Plantas\FIT001
+Strenj_RESPUESTA.png$
+\end{comment}
+\fcolorbox{red}{yellow}{concluir las imagenes}
+Cabe destacar que las plantas fueron calculadas para los rangos medios que normalmente se utilizará dado que los sistemas de presiones no presentan una ganancia estática constante.
+\begin{comment}
+no borrar opr las dudas que quisimos poner esto
+ 
+ dónde el motor no era esforzado a calentarse ni la bomba era sobreexigida
+
+escalones ubicados en la parte central del rango útil estipulado .
+
+ además obtener un control apropiado al sistema: algo no muy rapido ni muy lento
+\end{comment}
+
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=1]{1erorden.png}
-	\captionof{figure}{Sistema de primer orden}
-	\label{fig:1erorden}
+	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA.png}
+	\captionof{figure}{ft001}
+	\label{fig:ft001}
+\end{figure}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA1.png}
+	\captionof{figure}{PIT001}
+	\label{PIT001}
 \end{figure}
 
 
-Los valores correspondientes de cada elemento para cada planta son los observados en la tabla \ref{tab:parametros} 
-\fcolorbox{red}{yellow}{los saque de lectura\_csv\_vs\_mod y de cvs drive}?\\
-	\fcolorbox{red}{yellow}{ ver que sistema queda y agregar líneas a las filas y columnas}
 
 
-	\begin{table}[h]
- \begin{minipage}{\linewidth}
+\begin{figure}[htb]
 	\centering
-	\begin{minipage}{0.45\linewidth}
-			\centering
-			\begin{tabular}{|l|l|l|l|}
-				\hline
-				& PIT001 & PIT002 & FT001 \\ \hline
-				Ay & 1.4208 & 13.29 & 4.18 \\ \hline
-				Au & 200 & 200 & 300 \\ \hline
-				T & 0.6 & 1.1 &  \\ \hline
-				$\tau$ & 1.7 & 2 & \\ \hline
-			\end{tabular}
-			\captionof{table}{Variables para el cálculo de las funciones de transferencia}
-			\label{tab:parametros}
-	
-	\end{minipage}
-	\hspace{0.05\linewidth}
-	\begin{minipage}{0.45\linewidth}
-			\centering
-			\begin{tabular}{|l|l|l|l|}
-				\hline
-				& PIT001 & PIT002 & FT001 \\ \hline
-				Kp & ??? & ??? & ??? \\ \hline
-				Ki & ??? & ??? & ??? \\ \hline
-				Kd & ??? & ??? & ??? \\ \hline
-				N & ??? & ??? & ??? \\ \hline
-			\end{tabular}
-				\captionof{table}{Valores de PID}
-				\label{tab:pid}
-	\end{minipage}
-\end{minipage}
-
-		\end{table}
+	\includegraphics[width=0.9\linewidth]{Strenj_respuesta2.png}
+	\captionof{figure}{PIT002}
+	\label{fig:PIT002}
+\end{figure}
 
 
-Las funciones de transferencia calculadas son:
-\fcolorbox{red}{yellow}{poner ecuaciones}
-\end{comment}
+
+
+
+
 \subsubsection{Cálculo del controlador PID}
-El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean \fcolorbox{red}{yellow}{críticamente amortiguado para....}.\\
+El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
 
 Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software.
 \begin{comment}
@@ -159,24 +142,30 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	\begin{tabular}{|l|l|l|l|}
 		\hline
 		& PIT001 & PIT002 & FT001 \\ \hline
-		$K_p$ & ??? & ??? & ??? \\ \hline
-		$K_i$ & ??? & ??? & ??? \\ \hline
-		$K_d$ & ??? & ??? & ??? \\ \hline
-		N & ??? & ??? & ??? \\ \hline
+		$K_p$ & 3,11 & 3,36 & 117,1 \\ \hline
+		$K_i$ & 0,35 & 0,46 & 0,62 \\ \hline
+		$K_d$ & 0 & 0 & 0 \\ \hline
+		N & 100 & 100 & 100 \\ \hline
 	\end{tabular}
 	\captionof{table}{Valores de PID}
 	\label{tab:pid}
 \end{table}
 
+\begin{comment}
+	C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\22-05\Comparacion PID y PLANTAS\FT001
+	Respuesta_Strenj
+\end{comment}
+\fcolorbox{red}{yellow}{concluir las imagenes}
+
 \subsubsection{Pruebas de control}
 Para observar la respuesta del sistema de control se generaron perturbaciones con las válvulas del banco de prueba. FIGURA \ref{fig:pert1}
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.6]{pert1.png}
+	\includegraphics[width=0.7\linewidth]{pert1.png}
 	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
 	\label{fig:pert1}
 \end{figure}
-
+\fcolorbox{red}{yellow}{poner con el diagrama de p Y id cual fue la q se cerró} acá solo se cerró
 
 
 \begin{comment}
