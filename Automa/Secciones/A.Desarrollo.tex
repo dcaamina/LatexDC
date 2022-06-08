@@ -36,7 +36,7 @@ En el entorno Simulink se procedió a configurar un bloque de cliente OPC con la
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[]{\includegraphics[width=40mm]{ofs5.png}}
+	\subfigure[]{\includegraphics[width=60mm]{ofs5.png}}
 	\subfigure[]{\includegraphics[width=60mm]{ofs6.png}}
 	\caption{Cliente OPC en Simulink} \label{fig:opcsimu}
 \end{figure}
@@ -50,7 +50,7 @@ mediante los parámetros Tu y Ta obtenidos sobre la respuesta del sistema.
 Tras obtener el valor de los parámetros, se determinará la multiplicidad del polo. 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.5]{norden.png}
+	\includegraphics[width=0.9\linewidth]{norden.png}
 	\captionof{figure}{Parámetros de Strejc con retardo}
 	\label{fig:norden}
 \end{figure}
@@ -82,14 +82,14 @@ Para obtener la función de transferencia se realizó un script en Matlab que di
 \end{itemize}
 
 \paragraph{Comparación numérica- real}
-En las siguientes imágenes se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
-\fcolorbox{red}{yellow}{imagenes con fondo blanco}
+En las siguientes imágenes (Figura \ref{fig:PIT001} ,\ref{fig:PIT002} y \ref{fig:ft001}) se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
 \begin{comment}
 $C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\Prueba_PLANTA\Imaagenes Calculo Plantas\FIT001
 Strenj_RESPUESTA.png$
 \end{comment}
-\fcolorbox{red}{yellow}{concluir las imagenes}
+
 Cabe destacar que las plantas fueron calculadas para los rangos medios que normalmente se utilizará dado que los sistemas de presiones no presentan una ganancia estática constante.
+Se puede observar que los sistemas de tercer orden se adaptan bien a los datos obtenidos durante las pruebas.
 \begin{comment}
 no borrar opr las dudas que quisimos poner esto
  
@@ -104,14 +104,14 @@ escalones ubicados en la parte central del rango útil estipulado .
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA.png}
-	\captionof{figure}{ft001}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para FT001}
 	\label{fig:ft001}
 \end{figure}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA1.png}
-	\captionof{figure}{PIT001}
-	\label{PIT001}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT001}
+	\label{fig:PIT001}
 \end{figure}
 
 
@@ -120,7 +120,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Strenj_respuesta2.png}
-	\captionof{figure}{PIT002}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT002}
 	\label{fig:PIT002}
 \end{figure}
 
@@ -132,7 +132,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 \subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
 
-Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software.
+Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de resetear los PID del sistema en el sistema SCADA (CITAR LA SECCION DONDE SE EXPLICA ESE BOTON).
 \begin{comment}
 Se observa que algunos de los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
 \end{comment}
@@ -161,7 +161,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 Para observar la respuesta del sistema de control se generaron perturbaciones con las válvulas del banco de prueba. FIGURA \ref{fig:pert1}
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.7\linewidth]{pert1.png}
+	\includegraphics[width=0.9\linewidth]{pert1.png}
 	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
 	\label{fig:pert1}
 \end{figure}
