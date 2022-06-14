@@ -63,9 +63,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.3}iHistorian}{25}{subsubsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusiones}{25}{section.7}%
+\contentsline {subsection}{\numberline {6.3}Paradas por bloqueo}{25}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Bibliografia}{26}{section.8}%
+\contentsline {section}{\numberline {7}Conclusiones}{26}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Bibliografia}{27}{section.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9}Anexos}{27}{section.9}%
 \defcounter {refsection}{0}\relax 
@@ -73,16 +75,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.1}Características generales}{27}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Pantallas}{27}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Pantallas}{28}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.2.1}Pantalla principal}{27}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.1}Pantalla principal}{28}{subsubsection.10.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {10.2.1.1}Alarmas}{27}{paragraph.10.2.1.1}%
+\contentsline {paragraph}{\numberline {10.2.1.1}Alarmas}{28}{paragraph.10.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.2.2}Pantallas de control}{27}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.2}Pantallas de control}{28}{subsubsection.10.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.2.3}Pantallas gráficas}{27}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.3}Pantallas gráficas}{28}{subsubsection.10.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {10.2.3.1}Gráficos en tiempo real}{27}{paragraph.10.2.3.1}%
+\contentsline {paragraph}{\numberline {10.2.3.1}Gráficos en tiempo real}{28}{paragraph.10.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {10.2.3.2}Gráficos históricos}{27}{paragraph.10.2.3.2}%
+\contentsline {paragraph}{\numberline {10.2.3.2}Gráficos históricos}{28}{paragraph.10.2.3.2}%

@@ -1,5 +1,5 @@
 
-A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.\\
+A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.
 
 \subsection{Adquisición de datos}
 En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres sistemas con los que se trabajará:
@@ -103,7 +103,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA.png}
+	\includegraphics[width=0.8\linewidth]{Strenj_RESPUESTA.png}
 	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para FT001}
 	\label{fig:ft001}
 \end{figure}
@@ -131,8 +131,9 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 \subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
+Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
 
-Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de resetear los PID del sistema en el sistema SCADA (CITAR LA SECCION DONDE SE EXPLICA ESE BOTON).
+Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA (CITAR LA SECCION DONDE SE EXPLICA ESE BOTON).
 \begin{comment}
 Se observa que algunos de los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
 \end{comment}
@@ -155,7 +156,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\22-05\Comparacion PID y PLANTAS\FT001
 	Respuesta_Strenj
 \end{comment}
-\fcolorbox{red}{yellow}{concluir las imagenes}
+
 
 
 
