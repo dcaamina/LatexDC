@@ -7,6 +7,15 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{rotating} %table rotate
+\usepackage{array}
+\usepackage{lscape} %pagina horizontal
+
+
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage[table,hyperref]{xcolor} % for cell colors  %color rgb para links
+\usepackage{changepage,threeparttable} % for wide tables
+\usepackage{longtable}
 
 \usepackage{tcolorbox} %cajas de definiciones
 \usepackage{color}%resaltador
@@ -43,37 +52,41 @@
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 
-\begin{comment}
-\usepackage{remreset}
-\makeatletter
-\@removefromreset{figure}{chapter}
-\renewcommand{\thefigure}{\arabic{section}.\arabic{subsection}.\arabic{figure}}
-\@addtoreset{figure}{section}
-\makeatother
-\end{comment}
-%comentadooooooooooo
+\usepackage{appendix}
+\renewcommand{\appendixpagename}{Anexos}
 
 
-
-
-
+\usepackage{fancyhdr}%encabezado y pie de pagina
 \usepackage{caption}
 \usepackage{mwe}
 \usepackage{url} %url
 \usepackage{hyperref} %indice con hipervínculo
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=[RGB]{4,41,64},
     filecolor=white,      
     urlcolor=blue,
     citecolor=blue,
 }
 \usepackage{float} 
 \usepackage{mathpazo} % Palatino font
-\usepackage[left=2.50cm, right=2.50cm, top=1.50cm, bottom=1.50cm]{geometry}
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
 \author{Caamiña, Daniela \and Yapura, Cristian}
 \title{Trabajo final \\Automatización industrial}
 \graphicspath{ {images/} }
+
+
+%encabezado y pie de pagina
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyhead[C]{\textbf{Automatización Industrial - Trabajo Final}}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{Autores: Caamiña - Yapura}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{2pt}
+
 	
 \begin{document}
 \begin{titlepage} %Carátula 			
@@ -145,19 +158,8 @@
 \subsection{SCADA}
 \input{Secciones/C.ifix}
 
-%\subsection{Unity Pro}
-%\input{Secciones/B.Unity}
 
-%\subsection{VARIOS}
-%\input{Secciones/varios}
-
-
-
-%\section{HMI SCADA}
-%\input{Secciones/6.HMI}
-
-
-
+\newpage
 \section{Conclusiones}
 \input{Secciones/8.Conclusion}
 
@@ -167,7 +169,7 @@
 
 \printbibliography
 
-\section*{Versión de programas utilizados}
+\section*{Versiones de programas utilizados}
 
 \begin{itemize}
 	\item \textbf{\textit{Unity Pro XL}} (V11.0) Schneider Electric Industries SAS (2015) 
@@ -181,8 +183,13 @@
 	\item \textbf{\textit{OPC Factory Server}} (V3.6) Schneider Electric Industries SAS (2015)
 	
 \end{itemize}
+\newpage
+\appendix
+\clearpage
+%\addappheadtotoc
+\appendixpage
 
-\section{Anexos}
+
 \input{Secciones/10.Anexo}
 
 

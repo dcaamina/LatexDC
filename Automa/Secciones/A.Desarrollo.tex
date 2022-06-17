@@ -1,12 +1,19 @@
 
-A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones que se creyeron necesarias a la hora de implementar el proyecto.
+A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto quedando un mapa de memoria como el de la figura \ref{fig:memoria}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{memoria.png}
+	\captionof{figure}{Esquema de memoria}
+	\label{fig:memoria}
+\end{figure}
+
 
 \subsection{Adquisición de datos}
 En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres sistemas con los que se trabajará:
 \begin{itemize}
-	\item PIT001: Presión 1 medida a la salida de la bomba.
-	\item PIT002: Presión 2 medida luego de la columna que deriva el fluido.
-	\item FT001: Caudal que pasa por PIT002.
+	\item PIT01: Presión 1 medida a la salida de la bomba.
+	\item PIT02: Presión 2 medida luego de la columna que deriva el fluido.
+	\item FT01: Caudal que pasa por PIT02.
 \end{itemize}
 Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con Matlab. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en UnityPro donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
 
@@ -67,22 +74,22 @@ Dónde:
 \end{itemize}
 Para obtener la función de transferencia se realizó un script en Matlab que dió como resultado los siguientes sistemas:
 \begin{itemize}
-	\item Planta de presión PIT001:
+	\item Planta de presión PIT01:
 	\begin{equation}
 	 G(s)\;=\;\frac {0,135}{(1\;+\;1,3783\;.\;s)^3}\;.\;e^{-1,2.s}
 	\end{equation}
-	\item Planta de presión PIT002: 	
+	\item Planta de presión PIT02: 	
 	\begin{equation}
 		G(s)\;=\;\frac {0,125}{(1\;+\;1,054\;.\;s)^3}\;.\;e^{-s}
 	\end{equation}
-	\item Planta de caudal FT001:
+	\item Planta de caudal FT01:
 		\begin{equation}
 		G(s)\;=\;\frac {0,003784}{(1\;+\;0,7027\;.\;s)^3}\;.\;e^{-s}
 	\end{equation}
 \end{itemize}
 
 \paragraph{Comparación numérica- real}
-En las siguientes imágenes (Figura \ref{fig:PIT001} ,\ref{fig:PIT002} y \ref{fig:ft001}) se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
+En las siguientes imágenes (Figura \ref{fig:PIT01} ,\ref{fig:PIT02} y \ref{fig:FT01}) se observa la gráfica de cada planta estimada comparada con los datos obtenidos en las mediciones.
 \begin{comment}
 $C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\Prueba_PLANTA\Imaagenes Calculo Plantas\FIT001
 Strenj_RESPUESTA.png$
@@ -104,14 +111,14 @@ escalones ubicados en la parte central del rango útil estipulado .
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Strenj_RESPUESTA.png}
-	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para FT001}
-	\label{fig:ft001}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para FT01}
+	\label{fig:FT01}
 \end{figure}
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Strenj_RESPUESTA1.png}
-	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT001}
-	\label{fig:PIT001}
+	\includegraphics[width=0.8\linewidth]{Strenj_RESPUESTA1.png}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT01}
+	\label{fig:PIT01}
 \end{figure}
 
 
@@ -119,9 +126,9 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Strenj_respuesta2.png}
-	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT002}
-	\label{fig:PIT002}
+	\includegraphics[width=0.8\linewidth]{Strenj_respuesta2.png}
+	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT02}
+	\label{fig:PIT02}
 \end{figure}
 
 
@@ -130,10 +137,24 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 
 \subsubsection{Cálculo del controlador PID}
-El controlador PID de cada planta se calculó con \textit{Tune PID controllers}, dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
+El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
 Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
 
-Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA (CITAR LA SECCION DONDE SE EXPLICA ESE BOTON).
+Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA presionando el botón C (Figura \ref{fig:LCs}).
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.7]{pidmatlab.png}
+	\captionof{figure}{PID Controller}
+	\label{fig:PIDcontr}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=60mm]{p_4a.png}
+	\captionof{figure}{Modo lazo cerrado}
+	\label{fig:LCs}
+\end{figure}
+
 \begin{comment}
 Se observa que algunos de los controladores PID son del tipo proporcional integrador, dando así ya que la ganancia en los diferentes escalones en la planta no era constante. Al utilizar un PI genera una salida con error de estado estacionario cero. 
 \end{comment}
@@ -142,7 +163,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	\centering
 	\begin{tabular}{|l|l|l|l|}
 		\hline
-		& PIT001 & PIT002 & FT001 \\ \hline
+		& PIT01 & PIT02 & FT01 \\ \hline
 		$K_p$ & 3,11 & 3,36 & 117,1 \\ \hline
 		$K_i$ & 0,35 & 0,46 & 0,62 \\ \hline
 		$K_d$ & 0 & 0 & 0 \\ \hline
@@ -153,7 +174,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 \end{table}
 
 \begin{comment}
-	C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\22-05\Comparacion PID y PLANTAS\FT001
+	C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\22-05\Comparacion PID y PLANTAS\FT01
 	Respuesta_Strenj
 \end{comment}
 
@@ -164,26 +185,26 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[FT1B]{\includegraphics[width=80mm]{FT1b.png}}
+	\subfigure[]{\includegraphics[width=80mm]{FT1b.png}}
 \hspace{-4mm}
-	\subfigure[FT1c]{\includegraphics[width=80mm]{FT1c.png}}
-	\caption{ft} \label{fig:FT1}
+	\subfigure[]{\includegraphics[width=80mm]{FT1c.png}}
+	\caption{Comparación PID para FT01} \label{fig:FT1}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[PIT1a]{\includegraphics[width=80mm]{PIT1b.png}}
+	\subfigure[]{\includegraphics[width=80mm]{PIT1b.png}}
 \hspace{-4mm}
-	\subfigure[pit1c]{\includegraphics[width=80mm]{PIT1c.png}}
-	\caption{pit1} \label{fig:PIT1}
+	\subfigure[]{\includegraphics[width=80mm]{PIT1c.png}}
+	\caption{Comparación PID para PIT01} \label{fig:PIT1}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[PIT2a]{\includegraphics[width=80mm]{PIT2a.png}}
+	\subfigure[]{\includegraphics[width=80mm]{PIT2a.png}}
 	\hspace{-4mm}
-	\subfigure[pit2b]{\includegraphics[width=80mm]{PIT2b.png}}
-	\caption{pit2} \label{fig:PIT2}
+	\subfigure[]{\includegraphics[width=80mm]{PIT2b.png}}
+	\caption{Comparación PID para PIT02} \label{fig:PIT2}
 \end{figure}
 
 
@@ -196,6 +217,43 @@ Para observar la respuesta del sistema de control se generaron perturbaciones co
 	\label{fig:pert1}
 \end{figure}
 \fcolorbox{red}{yellow}{poner con el diagrama de p Y id cual fue la q se cerró} acá solo se cerró
+
+
+\subsubsection{Valores extremos/críticos de estudio}
+
+\paragraph{Máxima presión}
+
+Para esta prueba se llevó al motor a su máxima frecuencia (60Hz) de trabajo, se dejó la válvula FV03 totalmente abierta y se cerraron las válvulas FV01 y FV02 (Figura  \ref{fig:diag}). Esto provocó que la bomba llegue a su máxima presión que se obtiene al momento en que el caudal que circula por PIT01 se hace muy próximo a cero.\\
+\textbf{\textit{Máxima presión:}} 938 mbar
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Presion_Max.png}
+	\captionof{figure}{Máxima presión}
+	\label{fig:PMAX}
+\end{figure}
+
+\paragraph{Mínima presión}
+Para obtener el valor de mínima presión de trabajo se configuró el VSD a 20 Hz y se abrieron todas las válvulas (Figura  \ref{fig:diag}), ésto generó que la bomba impulse el caudal con el menor esfuerzo. \\
+\textbf{\textit{Mínima presión:}} 65,43 mbar
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Presion_Min.png}
+	\captionof{figure}{Mínima presión}
+	\label{fig:Pmin}
+\end{figure}
+
+\paragraph{Máximo caudal}
+Para obtener el valor de caudal máximo se llevó al motor a su máxima frecuencia (60 Hz), se abrió completamente la válvula FV03 y FV02, y se cerró la válvula de BYPASS FV01 (Figura  \ref{fig:diag}).
+Esto provoca que todo el caudal impulsado por la bomba circule por el caudalímetro FT01.\\
+\textbf{\textit{Máximo caudal: }}11,69 L/min
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Caudal_Max.png}
+	\captionof{figure}{Máximo caudal}
+	\label{fig:CM}
+\end{figure}
+
+
 
 
 \begin{comment}

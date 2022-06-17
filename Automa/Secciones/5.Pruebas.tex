@@ -140,14 +140,89 @@ Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAME
 
 
 \subsubsection{Entradas analógicas}
-ESCRIBIR CRISTIAN
-\underline{\textit{\textbf{rango-- escalado- 4 a 20mA}}}
-\subsubsection{Entradas analógicas TC/RTD}
-\textbf{TC/RTD} TERMOCUPLAS RESISTENCIAAAAAAA ??????
-ESCRIBIR CRISTIAN
+En el rack del PLC se encuentra un módulo AMI0410 el cual consiste en cuatro entradas analógicas (Tensión/Corriente) aisladas del siguiente tipo:
+\begin{itemize}
+	\item Corriente +/- 20 mA
+\item 	Corriente 0 a 20 mA
+\item 	Corriente 4 a 20 mA
+\item 	Tensión +/- 10 V
+\item 	Tensión +/- 5 V
+\item 	Tensión 0 a 10 V
+\item 	Tensión 0 a 5 V
+\item 	Tensión 1 a 5 V
+	
+\end{itemize}
+
+El módulo dispone de 20 bornes accesibles al usuario siendo el diagrama de conexión tanto para entradas de tensión o corriente el mostrado en la figura \ref{fig:modulo}.
+
+Para la configuración en Unity PRO se eligen de las opciones anteriores la que se va a utilizar, en nuestro caso de 4 a 20 mA y el escalado predefinido de fábrica es de 0 a 10000 cuentas pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bit. También es posible añadir un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
+
+Con el rango de cuentas del módulo determinado, se requiere escalar la variable para obtener el valor físico y así utilizarla para la visualización y control del banco de pruebas.
+Para el escalado de la señal de entrada se realizó un nuevo bloque FB derivado, que fue construido en base a elementos primarios, para evitar realizar un proceso repetitivo para el escalado de varias señales (Figura \ref{fig:escalado}).
+
+En la variable de entrada se coloca la señal que se desea escalar. En los límites de entrada se escribe el rango del módulo visto anteriormente, y en los límites de salida, los escalados obtenidos del instrumento utilizado. A la salida del bloque se obtiene el valor físico visualizado o transmitido por el instrumento.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{modulo.png}
+	\captionof{figure}{Módulo AMI0410}
+	\label{fig:modulo}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{param.png}
+	\captionof{figure}{Rango y escalado}
+	\label{fig:param}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{escalado.png}
+	\captionof{figure}{Bloques de escalado}
+	\label{fig:escalado}
+\end{figure}
 
 
+\subsubsection{Entradas analogicas para termocuplas o detectores de temperatura resistivos (RTD)}
+Se utiliza el módulo ART0414 que consiste en cuatro entradas aisladas en las que se pueden conectar sensores de temperatura del tipo termocupla y RTD con las siguientes características:
+\begin{itemize}
+	\item RTD IEC Pt100/Pt1000, US/JIS Pt100/Pt1000, Cu10, Cu50, Cu100, Ni100/Ni1000 en 2, 3 o 4 conductores
+	\item Termoelemento del tipo B, E, J, K, L, N, R, S, T, U
+\item 	Tensión $+/-$ 40 mV a 1,28 V
+	
+\end{itemize}
 
+Para la conexión de sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}). Y se tienen las siguientes formas de conexión dependiendo el tipo de sensor (Figura \ref{fig:ABE2}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{ABE.png}
+	\captionof{figure}{Accesorio TELEFAST ABE-7CPA412}
+	\label{fig:ABE}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{ABE2.png}
+	\captionof{figure}{Conexión según sensor}
+	\label{fig:ABE2}
+\end{figure}
+
+Para su configuración en Unity Pro se selecciona en Rango las características del sensor y en escala se modifica los valores para que coincidan con los máximos y mínimos del sensor. Para el caso de RTD y Termocupla los valores son múltiplos de 10 respecto a la temperatura en °C o °F. 
+En la imagen \ref{fig:ABE3} se observan dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{ABE3.png}
+	\captionof{figure}{Rango y escalado}
+	\label{fig:ABE3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{ABE4.png}
+	\captionof{figure}{Bloque de escalado}
+	\label{fig:ABE4}
+\end{figure}
 
 \subsubsection{Medición de caudal}
 Según la cantidad de flujo que pase por el caudalímetro, este entregaría pulsos que debían ser leídos con un módulo externo del PLC por la baja resolución que posee. Para esto se planteó utilizar un ESP8266 como interfaz para obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para realizar la conversión de pulsos a caudal (Figura \ref{fig:modtcp}). Tanto para el módulo, como para el caudalímetro se usó una fuente externa de 3,3 V de alimentación.
