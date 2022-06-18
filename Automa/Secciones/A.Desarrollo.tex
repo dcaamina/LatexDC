@@ -1,5 +1,5 @@
 
-A partir de lo programado en \textbf{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto quedando un mapa de memoria como el de la figura \ref{fig:memoria}
+A partir de lo programado en \textit{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto dónde quedó un mapa de memoria como el de la Figura \ref{fig:memoria}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.6]{memoria.png}
@@ -9,13 +9,13 @@ A partir de lo programado en \textbf{Unity PRO} utilizado para obtener los prime
 
 
 \subsection{Adquisición de datos}
-En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, reconociendo en el banco de pruebas tres sistemas con los que se trabajará:
+En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, dónde se distinguen en el banco de pruebas tres sistemas con los que se trabajará:
 \begin{itemize}
 	\item PIT01: Presión 1 medida a la salida de la bomba.
 	\item PIT02: Presión 2 medida luego de la columna que deriva el fluido.
 	\item FT01: Caudal que pasa por PIT02.
 \end{itemize}
-Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con Matlab. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en UnityPro donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
+Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con \textit{Matlab}. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en \textit{UnityPro} donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
 
 \begin{figure}[htbp]
 	\centering
@@ -25,7 +25,7 @@ Para realizar las estimaciones de las plantas del sistema se utilizó el protoco
 \end{figure}
 
 
-Una vez configurado el servidor se abre el programa \textbf{OPC Factory Server} dando inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación esta establecida de forma correcta, se utilizó el programa \textbf{OFS Client} dónde se debió agregar el tag correspondiente a la variable a observar (Figura \ref{fig:opc2}.b)
+Una vez configurado el servidor se abre el programa \textit{OPC Factory Server} y se da inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación esta establecida de forma correcta, se utilizó el programa \textit{OFS Client} dónde se debió agregar el tag correspondiente a la variable a observar (Figura \ref{fig:opc2}.b)
 
 \begin{figure}[htbp]
 	\centering
@@ -34,11 +34,11 @@ Una vez configurado el servidor se abre el programa \textbf{OPC Factory Server} 
 	\caption{Conexión servidor OPC} \label{fig:opc2}
 \end{figure}
 
-Una vez corroborada la comunicación con el servidor OPC, se procedió a crear un cliente OPC en \textbf{Simulink} (perteneciente a \textbf{Matlab}) para adquirir y guardar las variables necesarias. 
+Una vez corroborada la comunicación con el servidor OPC, se procedió a crear un cliente OPC en \textit{Simulink} (perteneciente a \textit{Matlab}) para adquirir y guardar las variables necesarias. 
 
 
 \subsubsection{Uso de Matlab}
-En el entorno \textbf{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b). 
+En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b). 
 
 
 \begin{figure}[htbp]
@@ -72,7 +72,7 @@ Dónde:
 	\item $\tau$: constante de tiempo
 	\item T= Retardo
 \end{itemize}
-Para obtener la función de transferencia se realizó un script en \textbf{Matlab} que dió como resultado los siguientes sistemas:
+Para obtener la función de transferencia se realizó un programa en \textit{Matlab} que dió como resultado los siguientes sistemas:
 \begin{itemize}
 	\item Planta de presión PIT01:
 	\begin{equation}
@@ -140,7 +140,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
 Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
 
-Los valores obtenidos de la aplicación perteneciente a \textbf{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textbf{\textit{UnityPro}} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA presionando el botón C (Figura \ref{fig:LCs}).
+Los valores obtenidos de la aplicación perteneciente a \textit{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA al presionar el botón C (Figura \ref{fig:LCs}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{pidmatlab.png}
@@ -164,10 +164,10 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	\begin{tabular}{|l|l|l|l|}
 		\hline
 		& PIT01 & PIT02 & FT01 \\ \hline
-		$K_p$ & 3,11 & 3,36 & 117,1 \\ \hline
-		$K_i$ & 0,35 & 0,46 & 0,62 \\ \hline
+		$K_p$ & 3,05 & 5,453 & 104,3 \\ \hline
+		$K_i$ & 0,396 & 0,348 & 0,719 \\ \hline
 		$K_d$ & 0 & 0 & 0 \\ \hline
-		N & 100 & 100 & 100 \\ \hline
+		N & 1000 & 1000 & 1000 \\ \hline
 	\end{tabular}
 	\captionof{table}{Valores de PID}
 	\label{tab:pid}
@@ -209,14 +209,28 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 
 
 \subsubsection{Pruebas de control}
-Para observar la respuesta del sistema de control se generaron perturbaciones con las válvulas del banco de prueba. FIGURA \ref{fig:pert1}
+\paragraph{Perturbación al control con PIT02}
+En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 250 mbar; aproximadamente a los 15 segundos de comenzar la prueba se abre totalmente la válvula de derivación FV01, y disminuye la presión notablemente. Al pasar el tiempo y una vez que la presión llegó nuevamente a su punto de trabajo, se incrementó su valor a 300 mbar, se puede apreciar en el gráfico que la presión se acerca pero no llega a la referencia debido a que el motor, ya en su máxima frecuencia de trabajo, no logra elevar más la presión. Luego a los 100 segundos de empezar la prueba se cierra la válvula de derivación completamente y se observa como la presión se incrementa y luego es reducida por con el control hasta llegar al punto correspondiente.
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{pert1.png}
-	\captionof{figure}{Comportamiento del sistema ante perturbaciones}
-	\label{fig:pert1}
+	\includegraphics[width=0.9\linewidth]{Per2.png}
+	\captionof{figure}{Perturbación al control con PIT02}
+	\label{fig:per2}
 \end{figure}
-\fcolorbox{red}{yellow}{poner con el diagrama de p Y id cual fue la q se cerró} acá solo se cerró
+
+\paragraph{Perturbación al control de FT01}
+Para la prueba de control con FT01 (Figura \ref{fig:per1} como variable de proceso, se fijó el valor de referencia en 3,5 L/min a los 20 segundos se empezar la prueba, luego se abrió la válvula FV01 completamente y se observó la disminución del caudal sobre FT01, la acción de control elevó las revoluciones del motor hasta llegar a su punto de trabajo. Aproximadamente a los 125 segundos se configura el valor de referencia en 2 L/min y se cierra la válvula FV01, esto provoca que todo el caudal circule por FT01 incrementándose de forma repentina. La acción de control disminuye las revoluciones del motor hasta llegar el valor del caudal al de referencia.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\linewidth]{PerF1.png}
+	\captionof{figure}{Perturbación al control con FT01}
+	\label{fig:per1}
+\end{figure}
+
+
+
+
 
 
 \subsubsection{Valores extremos/críticos de estudio}
@@ -243,7 +257,7 @@ Para obtener el valor de mínima presión de trabajo se configuró el VSD a 20 H
 \end{figure}
 
 \paragraph{Máximo caudal}
-Para obtener el valor de caudal máximo se llevó al motor a su máxima frecuencia (60 Hz), se abrió completamente la válvula FV03 y FV02, y se cerró la válvula de BYPASS FV01 (Figura  \ref{fig:diag}).
+Para obtener el valor de caudal máximo se llevó al motor a su máxima frecuencia (60 Hz), se abrió completamente la válvula FV03 y FV02, y se cerró la válvula de derivación FV01 (Figura  \ref{fig:diag}).
 Esto provoca que todo el caudal impulsado por la bomba circule por el caudalímetro FT01.\\
 \textbf{\textit{Máximo caudal: }}11,69 L/min
 \begin{figure}[h!]

@@ -30,45 +30,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 4 entries,
+You've used 5 entries,
             6393 wiz_defined-function locations,
-            1216 strings with 9324 characters,
-and the built_in function-call counts, 14532 in all, are:
-= -- 909
-> -- 333
-< -- 56
-+ -- 295
-- -- 120
-* -- 901
-:= -- 1634
+            1222 strings with 9433 characters,
+and the built_in function-call counts, 20383 in all, are:
+= -- 1336
+> -- 432
+< -- 77
++ -- 412
+- -- 158
+* -- 1345
+:= -- 2254
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 21
+call.type$ -- 5
+change.case$ -- 28
 chr.to.int$ -- 44
-cite$ -- 6
-duplicate$ -- 1359
-empty$ -- 1413
-format.name$ -- 157
-if$ -- 3084
+cite$ -- 8
+duplicate$ -- 1899
+empty$ -- 1978
+format.name$ -- 220
+if$ -- 4307
 int.to.chr$ -- 0
-int.to.str$ -- 8
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 80
-num.names$ -- 120
-pop$ -- 1058
+newline$ -- 104
+num.names$ -- 158
+pop$ -- 1405
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 46
 quote$ -- 0
-skip$ -- 544
+skip$ -- 707
 stack$ -- 0
-substring$ -- 1543
-swap$ -- 307
-text.length$ -- 79
+substring$ -- 2376
+swap$ -- 421
+text.length$ -- 102
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 124
+type$ -- 158
 warning$ -- 0
-while$ -- 221
+while$ -- 291
 width$ -- 0
-write$ -- 77
+write$ -- 100
 (There was 1 error message)

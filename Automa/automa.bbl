@@ -36,6 +36,30 @@
     \field{year}{2013}
   \endentry
 
+  \entry{ISA}{article}{}
+    \name{author}{2}{}{%
+      {{hash=STI}{%
+         family={Systems},
+         familyi={S\bibinitperiod},
+         given={The\bibnamedelima Instrumentation},
+         giveni={T\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Society},
+         familyi={S\bibinitperiod},
+         given={Automation},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{STISA1}
+    \strng{fullhash}{STISA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Instrumentation Symbols and Identification}
+    \field{journaltitle}{ISA-5.1}
+    \field{year}{1992}
+  \endentry
+
   \entry{ComManual}{article}{}
     \name{author}{1}{}{%
       {{hash=ES}{%

@@ -9,7 +9,7 @@
 \end{figure}
 
 \newpage
-\section{Anexo: Tabla de Direcciones} \label{Anexo1}
+\section{Anexo: Tabla de Direcciones ModBus} \label{Anexo1}
 
 
 \begin{longtable}{|p{1.2cm} |p{4cm} |p{4cm} |p{1.5cm} |p{3.2cm} |}
@@ -39,7 +39,7 @@
 	DO & PLC\_XSDES & Desenclave de bomba & Boolean & Device0:000006 \\ \hline
 	DO & PID\_XSA0 & PID modo automatico & Boolean & Device0:000008 \\ \hline
 	DO & PID\_XSM0 & PID modo manual & Boolean & Device0:000009 \\ \hline
-	DO & VSD\_XSFO & Reset fallas VSD & Boolean & Device0:000010 \\ \hline
+	DO & VSD\_XSFO & Restablecer fallas VSD & Boolean & Device0:000010 \\ \hline
 	DI & VSD\_YHS0 & Parada de emergencia fisico & Boolean & Device0:000011 \\ \hline
 	DI & VSD\_YLR0 & Modo fisico o scada & Boolean & Device0:000012 \\ \hline
 	DI & PID\_YMA0 & Estado manual automatico & Boolean & Device0:000013 \\ \hline
@@ -181,7 +181,7 @@ Se observan los valores de presión y caudal en un diagrama similar al banco de 
 \end{figure}
 
 \paragraph{Estado del variador - Motor}
-En esta sección se ve de forma lumínica en color rojo si el motor está prendido indicando señal de cuidado o alerta; mientras que en color verde que el motor está apagado. Se observan variables de velocidad del motor, frecuencia del motor, temperatura obtenida por el termistor, corriente, torque y potencia consumida por el motor.
+En esta sección se ve de forma lumínica en color rojo si el motor está prendido indica señal de cuidado o alerta; mientras que en color verde que el motor está apagado. Se observan variables de velocidad del motor, frecuencia del motor, temperatura obtenida por el termistor, corriente, torque y potencia consumida por el motor.
 \paragraph{Alarmas}
 Sección destinada al alarmero dónde muestra el período de tiempo que ocurrió el hecho, el nombre de la variable y el valor alcanzado.
 \paragraph{Modo remoto/ Modo local}
@@ -189,9 +189,9 @@ Sección destinada al alarmero dónde muestra el período de tiempo que ocurrió
 	\item Modo Local\\
 	Si la llave selectora del banco de prueba se encuentra seleccionado el modo local, se observará el cartel en esta sección centrado que expresará que se encuentra en modo local (Figura \ref{fig:localremoto}.a).
 	\item Modo Remoto\\
-	Si la llave selectora del banco de prueba se encuentra seleccionado el modo remoto, el sistema está preparado para recibir órdenes desde el sistema SCADA. El motor puede encenderse con velocidad 0 presionando la tecla A o encender a una velocidad preestablecida colocando previamente un valor entero en RPM entre 0 y 3600 y luego presionar la tecla A (Figura \ref{fig:localremoto}.b). 
+	Si la llave selectora del banco de prueba se encuentra seleccionado el modo remoto, el sistema está preparado para recibir órdenes desde el sistema SCADA. El motor puede encenderse con velocidad 0 al presionar la tecla A o encender a una velocidad preestablecida colocando previamente un valor entero en RPM entre 0 y 3600 y luego presionar la tecla A (Figura \ref{fig:localremoto}.b). 
 	
-	Si se desea se puede abrir cada ventana del lazo de control (Figura \ref{fig:LC}) botones B dónde muestra el valor de cada variable PID, pudiéndose colocar otros valores usando la coma como separador decimal. Con el botón C, se podrá restablecer los valores del PID cuyos valores fueron fijados al momento de realizar el proyecto, dónde las respuestas se muestran en las figuras PONER TIPO LA COMPARACION DE PID PERO CON SOLO EL QUE SE UTILIZA Y Q SE LEEAN LOS VALORES DE PID. 
+	Si se desea se puede abrir cada ventana del lazo de control (Figura \ref{fig:LC}) botones B dónde muestra el valor de cada variable PID, pudiéndose colocar otros valores mientras que se use la coma como separador decimal. Con el botón C, se podrá restablecer los valores del PID cuyos valores fueron fijados al momento de realizar el proyecto, dónde las respuestas se muestran en las figuras PONER TIPO LA COMPARACION DE PID PERO CON SOLO EL QUE SE UTILIZA Y Q SE LEEAN LOS VALORES DE PID. 
 	
 	Al presionar el botón automático (D), se cierra el lazo del sistema y puede establecerse la presión o caudal deseado en E, dónde la coma será el separador decimal y los rangos serán según tabla \ref{tab:rang}. En caso de presionar y que quede manual (D) los valores se establecerán según \textit{Manual} (Figura \ref{fig:localremoto}.b). 
 \end{itemize}
@@ -239,7 +239,7 @@ En la figura \ref{fig:scadaTR} se puede observar la pantalla de los datos en tie
 
 \subsubsection{Pantalla datos histórico}
 
-Para interpretar datos históricos se puede por dos métodos, uno es generando un archivo .txt y el otro es de forma gráfica. 
+Para interpretar datos históricos se puede por dos métodos, uno es generar un archivo .txt y el otro es de forma gráfica. 
 Se generó una pantalla SCADA prediseñada de iFix dónde al conectar con el servidor Historian, busca los datos históricos de la variable elegida y guarda un archivo .txt con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas sino que generará en el mismo archivos más filas (Figura \ref{fig:grafhist} a).\\
 Otra de las opciones es observar datos históricos en un gráfico de tiempo, estas variables están preestablecidas y son las presiones y el caudal con sus respectivos valores de referencias (Figura \ref{fig:grafhist} b).
 

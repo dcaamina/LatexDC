@@ -1,4 +1,4 @@
-Para realizar la pantalla de supervisión, control y adquisición de datos operador se utilizó el software iFix perteneciente al grupo \textbf{General Electric}.
+Para realizar la pantalla de supervisión, control y adquisición de datos operador se utilizó el software iFix perteneciente al grupo \textit{General Electric}.
 
 El sistema SCADA creado (Figura \ref{fig:scada1}) se dividió en las siguientes secciones:
 \begin{itemize}
@@ -25,8 +25,6 @@ Para realizar la configuración de cada ícono de la pantalla SCADA con su respe
 
 Una vez creado el MBE Driver se debe generar la tabla \textit{DataBase} en dónde estará el nombre, dirección IP, tipo de elemento, descripción, alarma asociada, entre otros puntos de cada elemento.
 
-La lista se encontrará unificada con las direcciones de \textit{UnityPro} (Tabla..\fcolorbox{red}{yellow}{..}).
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{mbe.png}
@@ -42,7 +40,7 @@ La lista se encontrará unificada con las direcciones de \textit{UnityPro} (Tabl
 
 
 \paragraph{Pruebas mediante ModSim}
-Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se utilizó el software \textbf{ModSim}, dónde se generó los distintos mapas de memoria utilizados para modificar variables y observar el correcto funcionamiento de distintos elementos en el SCADA (Figura \ref{fig:modsim1}).
+Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se utilizó el software \textit{ModSim}, dónde se generó los distintos mapas de memoria utilizados para modificar variables y observar el correcto funcionamiento de distintos elementos en el SCADA (Figura \ref{fig:modsim1}).
 
 \begin{figure}[h!]
 	\centering
@@ -75,7 +73,7 @@ El banco de pruebas está preparado para detener el motor si ocurriese alguna an
 
 
 \subsubsection{Datos históricos}
-Para interpretar datos históricos se puede por dos métodos, uno es generando un archivo .txt y el otro es de forma gráfica. 
+Para interpretar datos históricos se puede por dos métodos, uno es generar un archivo .txt y el otro es de forma gráfica. 
 Se generó una pantalla SCADA prediseñada de iFix dónde al conectar con el servidor Historian, busca los datos históricos de la variable elegida y guarda un archivo .txt con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas sinó que generará en el mismo archivos más filas (Figura \ref{fig:scada33}.a).\\
 Otra de las opciones es observar datos históricos en un gráfico de tiempo, estas variables están preestablecidas y son las presiones y el caudal con sus respectivos valores de referencias (Figura \ref{fig:scada33}.b).
 
