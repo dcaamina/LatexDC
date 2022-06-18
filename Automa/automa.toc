@@ -35,7 +35,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.3.1}Entradas analógicas}{20}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2}Entradas analogicas para termocuplas o detectores de temperatura resistivos (RTD)}{22}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2}Entradas analogicas para termocuplas o RTD}{22}{subsubsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.3.3}Medición de caudal}{24}{subsubsection.5.3.3}%
 \defcounter {refsection}{0}\relax 

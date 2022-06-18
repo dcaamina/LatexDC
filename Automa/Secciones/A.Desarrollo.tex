@@ -1,5 +1,5 @@
 
-A partir de lo programado en Unity PRO utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto quedando un mapa de memoria como el de la figura \ref{fig:memoria}
+A partir de lo programado en \textbf{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto quedando un mapa de memoria como el de la figura \ref{fig:memoria}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.6]{memoria.png}
@@ -25,7 +25,7 @@ Para realizar las estimaciones de las plantas del sistema se utilizó el protoco
 \end{figure}
 
 
-Una vez configurado el servidor se abre el programa \textbf{OPC Factory Server} dando inicio al servidor (Figura \ref{fig:opc2}a). Para observar si la comunicación esta establecida de forma correcta, se utilizó el programa \textbf{OFS Client} dónde se debió agregar el tag correspondiente a la variable a observar (Figura \ref{fig:opc2}b)
+Una vez configurado el servidor se abre el programa \textbf{OPC Factory Server} dando inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación esta establecida de forma correcta, se utilizó el programa \textbf{OFS Client} dónde se debió agregar el tag correspondiente a la variable a observar (Figura \ref{fig:opc2}.b)
 
 \begin{figure}[htbp]
 	\centering
@@ -34,11 +34,11 @@ Una vez configurado el servidor se abre el programa \textbf{OPC Factory Server} 
 	\caption{Conexión servidor OPC} \label{fig:opc2}
 \end{figure}
 
-Una vez corroborada la comunicación con el servidor OPC, se procedió a crear un cliente OPC en Simulink (perteneciente a Matlab) para adquirir y guardar las variables necesarias. 
+Una vez corroborada la comunicación con el servidor OPC, se procedió a crear un cliente OPC en \textbf{Simulink} (perteneciente a \textbf{Matlab}) para adquirir y guardar las variables necesarias. 
 
 
 \subsubsection{Uso de Matlab}
-En el entorno Simulink se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu} a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu} b). 
+En el entorno \textbf{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b). 
 
 
 \begin{figure}[htbp]
@@ -72,7 +72,7 @@ Dónde:
 	\item $\tau$: constante de tiempo
 	\item T= Retardo
 \end{itemize}
-Para obtener la función de transferencia se realizó un script en Matlab que dió como resultado los siguientes sistemas:
+Para obtener la función de transferencia se realizó un script en \textbf{Matlab} que dió como resultado los siguientes sistemas:
 \begin{itemize}
 	\item Planta de presión PIT01:
 	\begin{equation}
@@ -95,7 +95,7 @@ $C:\Users\glori\Desktop\DANIELA\VISUAL_DANI\Automa\MATLAB\Prueba_PLANTA\Imaagene
 Strenj_RESPUESTA.png$
 \end{comment}
 
-Cabe destacar que las plantas fueron calculadas para los rangos medios que normalmente se utilizará dado que los sistemas de presiones no presentan una ganancia estática constante.
+Cabe destacar que las plantas fueron calculadas para los rangos medios que normalmente se utilizará dado que los sistemas de presión no presentan una ganancia estática constante.
 Se puede observar que los sistemas de tercer orden se adaptan bien a los datos obtenidos durante las pruebas.
 \begin{comment}
 no borrar opr las dudas que quisimos poner esto
@@ -140,7 +140,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
 Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
 
-Los valores obtenidos de la aplicación perteneciente a Matlab se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA presionando el botón C (Figura \ref{fig:LCs}).
+Los valores obtenidos de la aplicación perteneciente a \textbf{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textbf{\textit{UnityPro}} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA presionando el botón C (Figura \ref{fig:LCs}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{pidmatlab.png}
