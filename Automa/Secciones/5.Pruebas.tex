@@ -127,7 +127,7 @@ la cual fue utilizada para interactuar y observar diversos parámetros, como mod
 Para realizar la programación del HMI se utilizó los MFB del software \textit{UnityPro} (Figura \ref{fig:read}). Estos bloques necesitan de un bloque maestro ``CAN\_HANDLER'' el cual permite comprobar la comunicación \textit{CANopen}, así como la coherencia
 entre las configuraciones de software y física.
 \\
-Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAMETER'' que se utiliza para leer, mediante mensajes SDO, una variable del variador definida en una dirección \textit{CANOpen} dada por el fabricante \cite{ComManual}.
+Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAMETER'' que se utiliza para leer, mediante mensajes SDO, una variable del variador definida en una dirección \textit{CANopen} dada por el fabricante \cite{ComManual}.
 
 \begin{figure}[H]
 	\centering
@@ -152,14 +152,14 @@ En el rack del PLC se encuentra un módulo AMI0410 el cual consiste en cuatro en
 	
 \end{itemize}
 
-El módulo dispone de 20 bornes accesibles al usuario dónde el diagrama de conexión tanto para entradas de tensión o corriente el mostrado en la figura \ref{fig:modulo}.
+El módulo dispone de 20 bornes accesibles al usuario dónde el diagrama de conexión tanto para entradas de tensión o de corriente es el mostrado en la figura \ref{fig:modulo}.
 
-Para la configuración en \textit{Unity PRO} se eligen de las opciones anteriores la que se va a utilizar, en nuestro caso de 4 a 20 mA y el escalado predefinido de fábrica es de 0 a 10000 cuentas pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bit. También es posible añadir un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
+Para realizar la configuración en \textit{Unity PRO} se elige, de las opciones nombradas anteriormente la que se va a utilizar, en este caso será de 4 a 20 mA y el escalado predefinido de fábrica que es de 0 a 10000 cuentas pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bits. También es posible añadir un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
 
 Con el rango de cuentas del módulo determinado, se requiere escalar la variable para obtener el valor físico y así utilizarla para la visualización y control del banco de pruebas.
-Para el escalado de la señal de entrada se realizó un nuevo bloque FB derivado, que fue construido en base a elementos primarios, para evitar realizar un proceso repetitivo para el escalado de varias señales (Figura \ref{fig:escalado}).
+Para el escalado de la señal de entrada se realizó un nuevo bloque FB derivado, a partir elementos primarios, para evitar realizar un proceso repetitivo para el escalado de varias señales (Figura \ref{fig:escalado}).
 
-En la variable de entrada se coloca la señal que se desea escalar. En los límites de entrada se escribe el rango del módulo visto anteriormente, y en los límites de salida, los escalados obtenidos del instrumento utilizado. A la salida del bloque se obtiene el valor físico visualizado o transmitido por el instrumento.
+En la variable de entrada se coloca la señal que se desea escalar. En los límites de entrada se escribe el rango del módulo visto anteriormente, y en los límites de salida, los escalados obtenidos del instrumento a utilizar. Finalmente, a la salida del bloque se obtiene el valor físico visualizado o transmitido por el instrumento.
 
 \begin{figure}[H]
 	\centering
@@ -191,7 +191,7 @@ Se utiliza el módulo ART0414 que consiste en cuatro entradas aisladas en las qu
 	
 \end{itemize}
 
-Para la conexión de sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}). Y se tienen las siguientes formas de conexión depende el tipo de sensor (Figura \ref{fig:ABE2}).
+Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}). Y se tienen las siguientes formas de conexión depende el tipo de sensor (Figura \ref{fig:ABE2}).
 
 \begin{figure}[H]
 	\centering
@@ -207,6 +207,7 @@ Para la conexión de sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figu
 \end{figure}
 
 Para su configuración en Unity Pro se selecciona en Rango las características del sensor y en escala se modifica los valores para que coincidan con los máximos y mínimos del sensor. Para el caso de RTD y termocupla los valores son múltiplos de 10 respecto a la temperatura en °C o °F. 
+
 En la imagen \ref{fig:ABE3} se observan dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
 
 \begin{figure}[H]

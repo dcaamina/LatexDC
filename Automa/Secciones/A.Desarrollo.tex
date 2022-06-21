@@ -2,7 +2,7 @@
 A partir de lo programado en \textit{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto dónde quedó un mapa de memoria como el de la Figura \ref{fig:memoria}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{memoria.png}
+	\includegraphics[scale=0.7]{memoria.png}
 	\captionof{figure}{Esquema de memoria}
 	\label{fig:memoria}
 \end{figure}
@@ -15,6 +15,7 @@ En el objetivo se propuso que el sistema sea capaz de controlar presión o cauda
 	\item PIT02: Presión 2 medida luego de la columna que deriva el fluido.
 	\item FT01: Caudal que pasa por PIT02.
 \end{itemize}
+
 Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con \textit{Matlab}. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en \textit{UnityPro} donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
 
 \begin{figure}[htbp]
@@ -96,6 +97,7 @@ Strenj_RESPUESTA.png$
 \end{comment}
 
 Cabe destacar que las plantas fueron calculadas para los rangos medios que normalmente se utilizará dado que los sistemas de presión no presentan una ganancia estática constante.
+
 Se puede observar que los sistemas de tercer orden se adaptan bien a los datos obtenidos durante las pruebas.
 \begin{comment}
 no borrar opr las dudas que quisimos poner esto
@@ -137,7 +139,8 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 
 \subsubsection{Cálculo del controlador PID}
-El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. \\
+El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. 
+
 Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
 
 Los valores obtenidos de la aplicación perteneciente a \textit{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA al presionar el botón C (Figura \ref{fig:LCs}).

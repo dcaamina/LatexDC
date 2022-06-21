@@ -43,13 +43,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Adquisición de datos}{25}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{25}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{27}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.2}Estimación de la planta}{27}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {6.1.2.1}Comparación numérica- real}{28}{paragraph.6.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{28}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{29}{subsubsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.4}Pruebas de control}{30}{subsubsection.6.1.4}%
 \defcounter {refsection}{0}\relax 
@@ -61,11 +61,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {6.1.5.1}Máxima presión}{32}{paragraph.6.1.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{33}{paragraph.6.1.5.2}%
+\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{32}{paragraph.6.1.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.3}Máximo caudal}{34}{paragraph.6.1.5.3}%
+\contentsline {paragraph}{\numberline {6.1.5.3}Máximo caudal}{32}{paragraph.6.1.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}SCADA}{34}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}SCADA}{33}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.1}Configuración driver Modbus}{35}{subsubsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -75,36 +75,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.3}Paradas por bloqueo}{35}{subsubsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{36}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{37}{subsubsection.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusiones}{39}{section.7}%
+\contentsline {section}{\numberline {7}Mejoras futuras}{39}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Bibliografia}{40}{section.8}%
+\contentsline {section}{\numberline {8}Conclusión}{41}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Anexo: Diagrama P \& ID}{42}{appendix.Alph1}%
+\contentsline {section}{\numberline {9}Bibliografia}{42}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Anexo: Tabla de Direcciones ModBus}{43}{appendix.Alph2}%
+\contentsline {section}{\numberline {A}Anexo: Diagrama P \& ID}{44}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Anexo: Causa efecto de alarmas}{45}{appendix.Alph3}%
+\contentsline {section}{\numberline {B}Anexo: Tabla de Direcciones ModBus}{45}{appendix.Alph2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Anexo: Manual BANCO-SCADA}{46}{appendix.Alph4}%
+\contentsline {section}{\numberline {C}Anexo: Manual BANCO-SCADA}{47}{appendix.Alph3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.1}Características generales}{46}{subsection.Alph4.1}%
+\contentsline {subsection}{\numberline {C.1}Características generales}{47}{subsection.Alph3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.2}Guía de uso}{46}{subsection.Alph4.2}%
+\contentsline {subsection}{\numberline {C.2}Guía de uso}{47}{subsection.Alph3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.2.1}Pantalla PRINCIPAL}{46}{subsubsection.Alph4.2.1}%
+\contentsline {subsubsection}{\numberline {C.2.1}Pantalla PRINCIPAL}{47}{subsubsection.Alph3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D.2.1.1}Diagrama del banco de pruebas}{46}{paragraph.Alph4.2.1.1}%
+\contentsline {paragraph}{\numberline {C.2.1.1}Diagrama del banco de pruebas}{47}{paragraph.Alph3.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D.2.1.2}Estado del variador - Motor}{47}{paragraph.Alph4.2.1.2}%
+\contentsline {paragraph}{\numberline {C.2.1.2}Estado del variador - Motor}{48}{paragraph.Alph3.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D.2.1.3}Alarmas}{47}{paragraph.Alph4.2.1.3}%
+\contentsline {paragraph}{\numberline {C.2.1.3}Alarmas}{48}{paragraph.Alph3.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D.2.1.4}Modo remoto/ Modo local}{47}{paragraph.Alph4.2.1.4}%
+\contentsline {paragraph}{\numberline {C.2.1.4}Modo remoto/ Modo local}{48}{paragraph.Alph3.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D.2.1.5}Fallas y ventanas de gráficos}{48}{paragraph.Alph4.2.1.5}%
+\contentsline {paragraph}{\numberline {C.2.1.5}Fallas y ventanas de gráficos}{49}{paragraph.Alph3.2.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.2.2}Pantalla datos en tiempo real}{49}{subsubsection.Alph4.2.2}%
+\contentsline {subsubsection}{\numberline {C.2.2}Pantalla datos en tiempo real}{50}{subsubsection.Alph3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.2.3}Pantalla datos histórico}{49}{subsubsection.Alph4.2.3}%
+\contentsline {subsubsection}{\numberline {C.2.3}Pantalla datos histórico}{50}{subsubsection.Alph3.2.3}%
