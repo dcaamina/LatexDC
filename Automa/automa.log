@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  20 JUN 2022 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  22 JUN 2022 21:34
 entering extended mode
 **./automa.tex
 (automa.tex
@@ -1328,30 +1328,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
-7.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-Underfull \hbox (badness 2142) in paragraph at lines 44--47
+Underfull \hbox (badness 2142) in paragraph at lines 43--46
 []\T1/ppl/m/n/12 Software co-mún de pro-gra-ma-ción, pues-ta a pun-to y ex-plo-
 ta-ción de los
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 50--51
+Underfull \hbox (badness 2671) in paragraph at lines 49--50
 []\T1/ppl/m/n/12 CANopen es un pro-to-co-lo con apli-ca-ción in-dus-trial de ba
 -jo ni-vel pa-ra
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 54--56
-[]\T1/ppl/m/n/12 ModBus es un pro-to-co-lo de co-mu-ni-ca-cio-nes uti-li-za-do 
+Underfull \hbox (badness 6461) in paragraph at lines 53--55
+[]\T1/ppl/m/n/12 Modbus es un pro-to-co-lo de co-mu-ni-ca-cio-nes uti-li-za-do 
 pa-ra trans-mi-tir
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 59--60
+Underfull \hbox (badness 1082) in paragraph at lines 58--59
 \T1/ppl/m/n/12 de-sa-rro-llar imá-ge-nes que los ope-ra-do-res pue-den usar pa-
 ra mo-ni-to-rear su
  []
@@ -1365,7 +1360,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Underfull \hbox (badness 6078) in paragraph at lines 63--64
+Underfull \hbox (badness 6078) in paragraph at lines 62--63
 []\T1/ppl/m/n/12 Software de-sa-rro-lla-do por \T1/ppl/m/it/12 Ge-ne-ral Elec-t
 ric \T1/ppl/m/n/12 don-de se pue-de de-sa-rro-llar
  []
@@ -1463,26 +1458,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10 <./images//motor-eps-converted-to.pdf> <./images//variador-eps-converted-to
 .pdf>]) (Secciones/7.Banco.tex
-Underfull \hbox (badness 1496) in paragraph at lines 3--5
-\T1/ppl/m/n/12 co-ne-xio-nes, y se agre-gó ele-men-tos adi-cio-na-les: 3 se-ña-
-les lu-mi-no-sas, lla-ve
- []
-
 <images//bancofull.png, id=464, 1606.0pt x 903.375pt>
 File: images//bancofull.png Graphic file (type png)
 <use images//bancofull.png>
-Package pdftex.def Info: images//bancofull.png  used on input line 15.
+Package pdftex.def Info: images//bancofull.png  used on input line 17.
 (pdftex.def)             Requested size: 409.71692pt x 230.46095pt.
 <images//banc1 (1).jpg, id=465, 4015.0pt x 3011.25pt>
 File: images//banc1 (1).jpg Graphic file (type jpg)
 <use images//banc1 (1).jpg>
-Package pdftex.def Info: images//banc1 (1).jpg  used on input line 23.
+Package pdftex.def Info: images//banc1 (1).jpg  used on input line 25.
 (pdftex.def)             Requested size: 4014.99026pt x 3011.24269pt.
 <images/banc1 (2).jpg, id=466, 4015.0pt x 3011.25pt>
 File: images/banc1 (2).jpg Graphic file (type jpg)
 <use images/banc1 (2).jpg>
-Package pdftex.def Info: images/banc1 (2).jpg  used on input line 24.
+Package pdftex.def Info: images/banc1 (2).jpg  used on input line 26.
 (pdftex.def)             Requested size: 4014.99026pt x 3011.24269pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1492,6 +1483,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11 <./images//educativo.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3
+4.
+
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1502,7 +1499,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12 <./images//bancofull.png> <./images//banc1 (1).jpg> <./images/banc1 (2).jpg
 >]
-Underfull \hbox (badness 3049) in paragraph at lines 41--43
+Underfull \hbox (badness 3049) in paragraph at lines 43--45
 []\T1/ppl/m/n/12 Se uti-li-zó un sen-sor de cau-dal (Fi-gu-ra [][]4.6[][].b) ge
 -né-ri-co con las si-guien-tes
  []
@@ -1510,22 +1507,22 @@ Underfull \hbox (badness 3049) in paragraph at lines 41--43
 <images//tran_pre.png, id=482, 244.66406pt x 325.215pt>
 File: images//tran_pre.png Graphic file (type png)
 <use images//tran_pre.png>
-Package pdftex.def Info: images//tran_pre.png  used on input line 51.
+Package pdftex.def Info: images//tran_pre.png  used on input line 53.
 (pdftex.def)             Requested size: 85.6225pt x 113.81102pt.
 
-Underfull \hbox (badness 2799) in paragraph at lines 51--51
+Underfull \hbox (badness 2799) in paragraph at lines 53--53
 []\T1/ppl/m/n/10 (a) Trans-mi-sor de
  []
 
 <images//sens_pre.png, id=483, 277.78781pt x 262.73157pt>
 File: images//sens_pre.png Graphic file (type png)
 <use images//sens_pre.png>
-Package pdftex.def Info: images//sens_pre.png  used on input line 52.
+Package pdftex.def Info: images//sens_pre.png  used on input line 54.
 (pdftex.def)             Requested size: 120.3323pt x 113.81102pt.
 <images//diag.png, id=487, 571.4148pt x 265.7127pt>
 File: images//diag.png Graphic file (type png)
 <use images//diag.png>
-Package pdftex.def Info: images//diag.png  used on input line 65.
+Package pdftex.def Info: images//diag.png  used on input line 68.
 (pdftex.def)             Requested size: 455.24411pt x 211.69469pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1597,11 +1594,6 @@ File: images//pc_var.png Graphic file (type png)
 Package pdftex.def Info: images//pc_var.png  used on input line 32.
 (pdftex.def)             Requested size: 318.66948pt x 64.75302pt.
 
-Underfull \hbox (badness 2790) in paragraph at lines 29--35
-[]\T1/ppl/m/n/12 Para rea-li-zar es-ta pri-me-ra con-fi-gu-ra-ción se reali-zó 
-la co-mu-ni-ca-ción de la
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1619,12 +1611,12 @@ Package pdftex.def Info: images//paramsomove1.png  used on input line 39.
 <images//canconectores.png, id=531, 297.36093pt x 182.93344pt>
 File: images//canconectores.png Graphic file (type png)
 <use images//canconectores.png>
-Package pdftex.def Info: images//canconectores.png  used on input line 50.
+Package pdftex.def Info: images//canconectores.png  used on input line 51.
 (pdftex.def)             Requested size: 170.71652pt x 105.02121pt.
 <images//candb9.png, id=532, 341.77687pt x 176.15813pt>
 File: images//candb9.png Graphic file (type png)
 <use images//candb9.png>
-Package pdftex.def Info: images//candb9.png  used on input line 51.
+Package pdftex.def Info: images//candb9.png  used on input line 52.
 (pdftex.def)             Requested size: 227.62204pt x 117.32376pt.
 
 
@@ -1637,22 +1629,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17 <./images//pc_var.png> <./images//paramsomove1.png (PNG copy)> <./images//c
 anconectores.png> <./images//candb9.png>]
-Underfull \hbox (badness 1337) in paragraph at lines 68--71
-[]\T1/ppl/m/n/12 Se de-be con-fi-gu-rar el mó-du-lo Ether-net des-de el ex-plo-
-ra-dor de Pro-yec-tos
- []
-
-<images//unit1.png, id=549, 554.07pt x 520.19344pt>
+<images//unit1.png, id=551, 554.07pt x 520.19344pt>
 File: images//unit1.png Graphic file (type png)
 <use images//unit1.png>
 Package pdftex.def Info: images//unit1.png  used on input line 94.
 (pdftex.def)             Requested size: 364.19667pt x 341.93172pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 95.
 See the caption package documentation for explanation.
 
-<images//unity1.png, id=550, 800.9925pt x 392.21532pt>
+<images//unity1.png, id=552, 800.9925pt x 392.21532pt>
 File: images//unity1.png Graphic file (type png)
 <use images//unity1.png>
 Package pdftex.def Info: images//unity1.png  used on input line 97.
@@ -1661,6 +1649,22 @@ Package pdftex.def Info: images//unity1.png  used on input line 97.
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 98.
 See the caption package documentation for explanation.
+
+<images//2.ethern.png, id=553, 731.73375pt x 323.70938pt>
+File: images//2.ethern.png Graphic file (type png)
+<use images//2.ethern.png>
+Package pdftex.def Info: images//2.ethern.png  used on input line 112.
+(pdftex.def)             Requested size: 409.71692pt x 181.25626pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images//vcan.png, id=554, 213.04594pt x 279.29344pt>
+File: images//vcan.png Graphic file (type png)
+<use images//vcan.png>
+Package pdftex.def Info: images//vcan.png  used on input line 119.
+(pdftex.def)             Requested size: 170.43697pt x 223.43504pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1671,20 +1675,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18 <./images//unit1.png> <./images//unity1.png>]
-<images//1.direcc.png, id=560, 386.19281pt x 140.02313pt>
-File: images//1.direcc.png Graphic file (type png)
-<use images//1.direcc.png>
-Package pdftex.def Info: images//1.direcc.png  used on input line 104.
-(pdftex.def)             Requested size: 386.19185pt x 140.02278pt.
-<images//2.ethern.png, id=561, 731.73375pt x 323.70938pt>
-File: images//2.ethern.png Graphic file (type png)
-<use images//2.ethern.png>
-Package pdftex.def Info: images//2.ethern.png  used on input line 112.
-(pdftex.def)             Requested size: 409.71692pt x 181.25626pt.
-<images//3.previo.png, id=563, 612.78937pt x 271.76532pt>
+<images//3.previo.png, id=565, 612.78937pt x 271.76532pt>
 File: images//3.previo.png Graphic file (type png)
 <use images//3.previo.png>
-Package pdftex.def Info: images//3.previo.png  used on input line 122.
+Package pdftex.def Info: images//3.previo.png  used on input line 129.
 (pdftex.def)             Requested size: 409.71692pt x 181.70445pt.
 
 
@@ -1695,17 +1689,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19 <./images//1.direcc.png> <./images//2.ethern.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
-\T1/ppl/m/n/12 Otros de los blo-ques más uti-li-za-dos den-tro del pro-gra-ma f
-ue-ron
+[19 <./images//2.ethern.png> <./images//vcan.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+[]\T1/ppl/m/n/12 Otros de los blo-ques más uti-li-za-dos den-tro del pro-gra-ma
+ fue
  []
 
-<images//4.read.png, id=572, 482.55281pt x 179.16937pt>
+<images//4.read.png, id=574, 755.82375pt x 255.20343pt>
 File: images//4.read.png Graphic file (type png)
 <use images//4.read.png>
-Package pdftex.def Info: images//4.read.png  used on input line 134.
-(pdftex.def)             Requested size: 409.71692pt x 152.13065pt.
+Package pdftex.def Info: images//4.read.png  used on input line 140.
+(pdftex.def)             Requested size: 409.71692pt x 138.34128pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1715,15 +1709,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./images//3.previo.png> <./images//4.read.png>]
-<images//modulo.png, id=583, 333.49594pt x 360.59718pt>
+<images//modulo.png, id=585, 333.49594pt x 360.59718pt>
 File: images//modulo.png Graphic file (type png)
 <use images//modulo.png>
-Package pdftex.def Info: images//modulo.png  used on input line 166.
+Package pdftex.def Info: images//modulo.png  used on input line 175.
 (pdftex.def)             Requested size: 273.14923pt x 295.36696pt.
-<images//param.png, id=584, 502.87875pt x 205.5178pt>
+<images//param.png, id=586, 502.87875pt x 205.5178pt>
 File: images//param.png Graphic file (type png)
 <use images//param.png>
-Package pdftex.def Info: images//param.png  used on input line 172.
+Package pdftex.def Info: images//param.png  used on input line 181.
 (pdftex.def)             Requested size: 409.71692pt x 167.44379pt.
 
 
@@ -1735,20 +1729,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21 <./images//modulo.png>]
-<images//escalado.png, id=590, 563.10374pt x 194.97844pt>
+<images//escalado.png, id=592, 563.10374pt x 194.97844pt>
 File: images//escalado.png Graphic file (type png)
 <use images//escalado.png>
-Package pdftex.def Info: images//escalado.png  used on input line 179.
+Package pdftex.def Info: images//escalado.png  used on input line 188.
 (pdftex.def)             Requested size: 409.71692pt x 141.86894pt.
-<images//ABE.png, id=593, 511.9125pt x 296.60812pt>
+<images//ABE.png, id=595, 511.9125pt x 296.60812pt>
 File: images//ABE.png Graphic file (type png)
 <use images//ABE.png>
-Package pdftex.def Info: images//ABE.png  used on input line 198.
+Package pdftex.def Info: images//ABE.png  used on input line 207.
 (pdftex.def)             Requested size: 409.71692pt x 237.39543pt.
-<images//ABE2.png, id=594, 548.0475pt x 174.6525pt>
+<images//ABE2.png, id=596, 548.0475pt x 174.6525pt>
 File: images//ABE2.png Graphic file (type png)
 <use images//ABE2.png>
-Package pdftex.def Info: images//ABE2.png  used on input line 204.
+Package pdftex.def Info: images//ABE2.png  used on input line 213.
 (pdftex.def)             Requested size: 409.71692pt x 130.57065pt.
 
 
@@ -1760,15 +1754,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <./images//param.png> <./images//escalado.png>]
-Underfull \hbox (badness 1515) in paragraph at lines 211--212
-[]\T1/ppl/m/n/12 En la ima-gen [][]5.18[][] se ob-ser-van dos ele-men-tos ya qu
-e se pro-bó rea-li-zar la
+Underfull \hbox (badness 2134) in paragraph at lines 220--221
+[]\T1/ppl/m/n/12 En la ima-gen [][]5.18[][] se ob-ser-va dos ele-men-tos ya que
+ se pro-bó rea-li-zar la
  []
 
-<images//ABE3.png, id=604, 525.46312pt x 201.00093pt>
+<images//ABE3.png, id=606, 525.46312pt x 201.00093pt>
 File: images//ABE3.png Graphic file (type png)
 <use images//ABE3.png>
-Package pdftex.def Info: images//ABE3.png  used on input line 215.
+Package pdftex.def Info: images//ABE3.png  used on input line 224.
 (pdftex.def)             Requested size: 409.71692pt x 156.731pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1779,18 +1773,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23 <./images//ABE.png> <./images//ABE2.png>]
-<images//ABE4.png, id=611, 287.57437pt x 97.11281pt>
+<images//ABE4.png, id=613, 287.57437pt x 97.11281pt>
 File: images//ABE4.png Graphic file (type png)
 <use images//ABE4.png>
-Package pdftex.def Info: images//ABE4.png  used on input line 222.
+Package pdftex.def Info: images//ABE4.png  used on input line 231.
 (pdftex.def)             Requested size: 273.14923pt x 92.24478pt.
-<images//esp_mod.png, id=613, 492.33937pt x 49.68562pt>
+<images//esp_mod.png, id=615, 492.33937pt x 49.68562pt>
 File: images//esp_mod.png Graphic file (type png)
 <use images//esp_mod.png>
-Package pdftex.def Info: images//esp_mod.png  used on input line 231.
+Package pdftex.def Info: images//esp_mod.png  used on input line 240.
 (pdftex.def)             Requested size: 492.33815pt x 49.6855pt.
 
-Overfull \hbox (37.09404pt too wide) in paragraph at lines 231--232
+Overfull \hbox (37.09404pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
@@ -1804,27 +1798,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24 <./images//ABE3.png> <./images//ABE4.png> <./images//esp_mod.png>])
 (Secciones/A.Desarrollo.tex
-<images//memoria.png, id=625, 256.70906pt x 284.56313pt>
+<images//memoria.png, id=627, 256.70906pt x 284.56313pt>
 File: images//memoria.png Graphic file (type png)
 <use images//memoria.png>
 Package pdftex.def Info: images//memoria.png  used on input line 5.
 (pdftex.def)             Requested size: 179.6951pt x 199.19283pt.
-<images//ofs1.png, id=627, 483.30562pt x 350.81062pt>
+<images//ofs1.png, id=629, 483.30562pt x 350.81062pt>
 File: images//ofs1.png Graphic file (type png)
 <use images//ofs1.png>
 Package pdftex.def Info: images//ofs1.png  used on input line 23.
 (pdftex.def)             Requested size: 199.16928pt x 144.56664pt.
-<images//ofs2.png, id=628, 421.575pt x 306.39468pt>
+<images//ofs2.png, id=630, 421.575pt x 306.39468pt>
 File: images//ofs2.png Graphic file (type png)
 <use images//ofs2.png>
 Package pdftex.def Info: images//ofs2.png  used on input line 24.
 (pdftex.def)             Requested size: 199.16928pt x 144.75356pt.
-<images//ofs3.png, id=631, 273.27094pt x 307.1475pt>
+<images//ofs3.png, id=633, 273.27094pt x 307.1475pt>
 File: images//ofs3.png Graphic file (type png)
 <use images//ofs3.png>
 Package pdftex.def Info: images//ofs3.png  used on input line 33.
 (pdftex.def)             Requested size: 113.81102pt x 127.91844pt.
-<images//ofs4.png, id=632, 483.30562pt x 218.31563pt>
+<images//ofs4.png, id=634, 483.30562pt x 218.31563pt>
 File: images//ofs4.png Graphic file (type png)
 <use images//ofs4.png>
 Package pdftex.def Info: images//ofs4.png  used on input line 34.
@@ -1849,17 +1843,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26 <./images//ofs1.png> <./images//ofs2.png> <./images//ofs3.png> <./images//o
 fs4.png>]
-<images//ofs5.png, id=653, 161.85469pt x 109.91063pt>
+<images//ofs5.png, id=655, 161.85469pt x 109.91063pt>
 File: images//ofs5.png Graphic file (type png)
 <use images//ofs5.png>
 Package pdftex.def Info: images//ofs5.png  used on input line 47.
 (pdftex.def)             Requested size: 170.71652pt x 115.93446pt.
-<images//ofs6.png, id=654, 192.72pt x 148.30406pt>
+<images//ofs6.png, id=656, 192.72pt x 148.30406pt>
 File: images//ofs6.png Graphic file (type png)
 <use images//ofs6.png>
 Package pdftex.def Info: images//ofs6.png  used on input line 48.
 (pdftex.def)             Requested size: 170.71652pt x 131.37013pt.
-<images//norden.png, id=657, 572.1375pt x 340.27126pt>
+<images//norden.png, id=659, 572.1375pt x 340.27126pt>
 File: images//norden.png Graphic file (type png)
 <use images//norden.png>
 Package pdftex.def Info: images//norden.png  used on input line 61.
@@ -1874,18 +1868,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27 <./images//ofs5.png> <./images//ofs6.png> <./images//norden.png>]
-<images//Strenj_RESPUESTA.png, id=671, 1200.73593pt x 593.21625pt>
+<images//Strenj_RESPUESTA.png, id=673, 1200.73593pt x 593.21625pt>
 File: images//Strenj_RESPUESTA.png Graphic file (type png)
 <use images//Strenj_RESPUESTA.png>
 Package pdftex.def Info: images//Strenj_RESPUESTA.png  used on input line 115.
 (pdftex.def)             Requested size: 364.19667pt x 179.93047pt.
-<images//Strenj_RESPUESTA1.png, id=672, 1201.48875pt x 599.23875pt>
+<images//Strenj_RESPUESTA1.png, id=674, 1201.48875pt x 599.23875pt>
 File: images//Strenj_RESPUESTA1.png Graphic file (type png)
 <use images//Strenj_RESPUESTA1.png>
 Package pdftex.def Info: images//Strenj_RESPUESTA1.png  used on input line 121.
 
 (pdftex.def)             Requested size: 364.19667pt x 181.6383pt.
-<images//Strenj_respuesta2.png, id=673, 1202.99437pt x 599.23875pt>
+<images//Strenj_respuesta2.png, id=675, 1202.99437pt x 599.23875pt>
 File: images//Strenj_respuesta2.png Graphic file (type png)
 <use images//Strenj_respuesta2.png>
 Package pdftex.def Info: images//Strenj_respuesta2.png  used on input line 131.
@@ -1901,7 +1895,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28 <./images//Strenj_RESPUESTA.png>]
-<images//pidmatlab.png, id=690, 398.23781pt x 231.11343pt>
+<images//pidmatlab.png, id=692, 398.23781pt x 231.11343pt>
 File: images//pidmatlab.png Graphic file (type png)
 <use images//pidmatlab.png>
 Package pdftex.def Info: images//pidmatlab.png  used on input line 149.
@@ -1910,7 +1904,7 @@ Package pdftex.def Info: images//pidmatlab.png  used on input line 149.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//p_4a.png, id=691, 396.7322pt x 380.17032pt>
+<images//p_4a.png, id=693, 396.7322pt x 380.17032pt>
 File: images//p_4a.png Graphic file (type png)
 <use images//p_4a.png>
 Package pdftex.def Info: images//p_4a.png  used on input line 156.
@@ -1921,37 +1915,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//FT1b.png, id=692, 421.575pt x 316.0608pt>
+<images//FT1b.png, id=694, 421.575pt x 316.0608pt>
 File: images//FT1b.png Graphic file (type png)
 <use images//FT1b.png>
 Package pdftex.def Info: images//FT1b.png  used on input line 191.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//FT1c.png, id=693, 421.575pt x 316.0608pt>
+<images//FT1c.png, id=695, 421.575pt x 316.0608pt>
 File: images//FT1c.png Graphic file (type png)
 <use images//FT1c.png>
 Package pdftex.def Info: images//FT1c.png  used on input line 193.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//PIT1b.png, id=694, 421.575pt x 316.0608pt>
+<images//PIT1b.png, id=696, 421.575pt x 316.0608pt>
 File: images//PIT1b.png Graphic file (type png)
 <use images//PIT1b.png>
 Package pdftex.def Info: images//PIT1b.png  used on input line 199.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//PIT1c.png, id=695, 421.575pt x 316.0608pt>
+<images//PIT1c.png, id=697, 421.575pt x 316.0608pt>
 File: images//PIT1c.png Graphic file (type png)
 <use images//PIT1c.png>
 Package pdftex.def Info: images//PIT1c.png  used on input line 201.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//PIT2a.png, id=696, 421.575pt x 316.0608pt>
+<images//PIT2a.png, id=698, 421.575pt x 316.0608pt>
 File: images//PIT2a.png Graphic file (type png)
 <use images//PIT2a.png>
 Package pdftex.def Info: images//PIT2a.png  used on input line 207.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//PIT2b.png, id=697, 421.575pt x 316.0608pt>
+<images//PIT2b.png, id=699, 421.575pt x 316.0608pt>
 File: images//PIT2b.png Graphic file (type png)
 <use images//PIT2b.png>
 Package pdftex.def Info: images//PIT2b.png  used on input line 209.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//Per2.png, id=699, 981.6675pt x 551.81157pt>
+<images//Per2.png, id=701, 981.6675pt x 551.81157pt>
 File: images//Per2.png Graphic file (type png)
 <use images//Per2.png>
 Package pdftex.def Info: images//Per2.png  used on input line 219.
@@ -1985,12 +1979,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [31 <./images//FT1b.png (PNG copy)> <./images//FT1c.png (PNG copy)> <./images//
 PIT1b.png (PNG copy)> <./images//PIT1c.png (PNG copy)> <./images//PIT2a.png (PN
 G copy)> <./images//PIT2b.png (PNG copy)>]
-<images//PerF1.png, id=725, 970.3753pt x 555.57562pt>
+<images//PerF1.png, id=727, 970.3753pt x 555.57562pt>
 File: images//PerF1.png Graphic file (type png)
 <use images//PerF1.png>
 Package pdftex.def Info: images//PerF1.png  used on input line 229.
 (pdftex.def)             Requested size: 409.71692pt x 234.57787pt.
-<images//Presion_Max.png, id=727, 987.69pt x 563.10374pt>
+<images//Presion_Max.png, id=729, 987.69pt x 563.10374pt>
 File: images//Presion_Max.png Graphic file (type png)
 <use images//Presion_Max.png>
 Package pdftex.def Info: images//Presion_Max.png  used on input line 247.
@@ -1999,7 +1993,7 @@ Package pdftex.def Info: images//Presion_Max.png  used on input line 247.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Presion_Min.png, id=729, 967.36406pt x 536.0025pt>
+<images//Presion_Min.png, id=731, 967.36406pt x 536.0025pt>
 File: images//Presion_Min.png Graphic file (type png)
 <use images//Presion_Min.png>
 Package pdftex.def Info: images//Presion_Min.png  used on input line 257.
@@ -2007,7 +2001,7 @@ Package pdftex.def Info: images//Presion_Min.png  used on input line 257.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Caudal_Max.png, id=731, 976.39781pt x 557.83406pt>
+<images//Caudal_Max.png, id=733, 976.39781pt x 557.83406pt>
 File: images//Caudal_Max.png Graphic file (type png)
 <use images//Caudal_Max.png>
 Package pdftex.def Info: images//Caudal_Max.png  used on input line 268.
@@ -2043,12 +2037,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34 <./images//Presion_Min.png> <./images//Caudal_Max.png>]
-<images//scada1.png, id=750, 910.15031pt x 500.62032pt>
+<images//scada1.png, id=752, 910.15031pt x 500.62032pt>
 File: images//scada1.png Graphic file (type png)
 <use images//scada1.png>
 Package pdftex.def Info: images//scada1.png  used on input line 17.
 (pdftex.def)             Requested size: 409.71692pt x 225.36108pt.
-<images//mbe.png, id=753, 483.30562pt x 419.31656pt>
+<images//mbe.png, id=755, 483.30562pt x 419.31656pt>
 File: images//mbe.png Graphic file (type png)
 <use images//mbe.png>
 Package pdftex.def Info: images//mbe.png  used on input line 30.
@@ -2057,7 +2051,7 @@ Package pdftex.def Info: images//mbe.png  used on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//database.png, id=754, 528.47438pt x 260.47313pt>
+<images//database.png, id=756, 528.47438pt x 260.47313pt>
 File: images//database.png Graphic file (type png)
 <use images//database.png>
 Package pdftex.def Info: images//database.png  used on input line 36.
@@ -2065,7 +2059,7 @@ Package pdftex.def Info: images//database.png  used on input line 36.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//modsim1.png, id=756, 624.83438pt x 411.78844pt>
+<images//modsim1.png, id=758, 624.83438pt x 411.78844pt>
 File: images//modsim1.png Graphic file (type png)
 <use images//modsim1.png>
 Package pdftex.def Info: images//modsim1.png  used on input line 47.
@@ -2094,12 +2088,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36 <./images//mbe.png> <./images//database.png>]
-<images//scada33.png, id=773, 910.90312pt x 500.62032pt>
+<images//scada33.png, id=775, 910.90312pt x 500.62032pt>
 File: images//scada33.png Graphic file (type png)
 <use images//scada33.png>
 Package pdftex.def Info: images//scada33.png  used on input line 118.
 (pdftex.def)             Requested size: 455.24411pt x 250.20259pt.
-<images//scada3.png, id=774, 901.86937pt x 475.02469pt>
+<images//scada3.png, id=776, 901.86937pt x 475.02469pt>
 File: images//scada3.png Graphic file (type png)
 <use images//scada3.png>
 Package pdftex.def Info: images//scada3.png  used on input line 119.
@@ -2316,12 +2310,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [46]
-<images//pantalla1.png, id=823, 910.15031pt x 496.85625pt>
+<images//pantalla1.png, id=825, 910.15031pt x 496.85625pt>
 File: images//pantalla1.png Graphic file (type png)
 <use images//pantalla1.png>
 Package pdftex.def Info: images//pantalla1.png  used on input line 121.
 (pdftex.def)             Requested size: 409.71692pt x 223.66663pt.
-<images//p_partes.png, id=824, 916.92563pt x 502.87875pt>
+<images//p_partes.png, id=826, 916.92563pt x 502.87875pt>
 File: images//p_partes.png Graphic file (type png)
 <use images//p_partes.png>
 Package pdftex.def Info: images//p_partes.png  used on input line 127.
@@ -2330,7 +2324,7 @@ Package pdftex.def Info: images//p_partes.png  used on input line 127.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//p_p1.png, id=826, 505.89pt x 226.59656pt>
+<images//p_p1.png, id=828, 505.89pt x 226.59656pt>
 File: images//p_p1.png Graphic file (type png)
 <use images//p_p1.png>
 Package pdftex.def Info: images//p_p1.png  used on input line 136.
@@ -2353,12 +2347,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48 <./images//p_partes.png> <./images//p_p1.png>]
-<images//p_4c.png, id=848, 408.02437pt x 382.42876pt>
+<images//p_4c.png, id=850, 408.02437pt x 382.42876pt>
 File: images//p_4c.png Graphic file (type png)
 <use images//p_4c.png>
 Package pdftex.def Info: images//p_4c.png  used on input line 159.
 (pdftex.def)             Requested size: 170.71652pt x 160.00626pt.
-<images//p_4b.png, id=849, 408.02437pt x 381.67593pt>
+<images//p_4b.png, id=851, 408.02437pt x 381.67593pt>
 File: images//p_4b.png Graphic file (type png)
 <use images//p_4b.png>
 Package pdftex.def Info: images//p_4b.png  used on input line 160.
@@ -2381,7 +2375,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49 <./images//p_4c.png> <./images//p_4b.png>]
-<images//scadaTR.png, id=860, 917.67844pt x 499.11469pt>
+<images//scadaTR.png, id=862, 917.67844pt x 499.11469pt>
 File: images//scadaTR.png Graphic file (type png)
 <use images//scadaTR.png>
 Package pdftex.def Info: images//scadaTR.png  used on input line 193.
@@ -2418,7 +2412,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 )
 Package rerunfilecheck Info: File `automa.out' has not changed.
-(rerunfilecheck)             Checksum: C581FDBCC9BD113B4C95B7BF8044BF1D;9098.
+(rerunfilecheck)             Checksum: 8E19437EA0B0BC5C0BD939212F27C753;9101.
 Package logreq Info: Writing requests to 'automa.run.xml'.
 \openout1 = `automa.run.xml'.
 
@@ -2429,9 +2423,9 @@ Package logreq Info: Writing requests to 'automa.run.xml'.
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31696 strings out of 479334
- 572572 string characters out of 2866960
- 1229655 words of memory out of 3000000
+ 31697 strings out of 479334
+ 572553 string characters out of 2866960
+ 1229676 words of memory out of 3000000
  48259 multiletter control sequences out of 15000+200000
  461146 words of font info for 141 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2445,9 +2439,9 @@ athpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program File
 s/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on automa.pdf (52 pages, 8697412 bytes).
+Output written on automa.pdf (52 pages, 8631691 bytes).
 PDF statistics:
- 989 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 991 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
  780 words of extra memory for PDF output out of 10000 (max. 10000000)
 

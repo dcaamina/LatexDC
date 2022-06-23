@@ -1,10 +1,12 @@
 Como se nombró en el objetivo, se busca realizar el control de caudal o presión de un sistema hidráulico. Para esto fue necesario realizar la implementación de un banco de pruebas que cuente de tres partes (Figura \ref{fig:bancofull}).
 \begin{itemize}
-	\item Soporte para el motor y variador de velocidad,  diseñado y construido por el profesor Gerardo Arthz. A estos elementos se realizó las correspondientes conexiones, y se agregó elementos adicionales: 3 señales luminosas, llave selectora de dos puntos para seleccionar el modo de comunicación, llave selectora de tres puntos (encendido y sentido del motor) y un pulsador de parada de emergencia (Figura \ref{fig:banco}.a).
+	\item Soporte para el motor y variador de velocidad,  diseñado y construido por el profesor Gerardo Arthz. 
+Al que se añadió 3 señales luminosas, llave selectora de dos puntos para seleccionar el modo de comunicación, llave selectora de tres puntos (encendido y sentido del motor) y un pulsador de parada de emergencia (Figura \ref{fig:banco}.a).
+
 	Tanto el motor y los elementos adicionales fueron cableados (Figura \ref{fig:banco}.b) hacia las borneras del variador de velocidad y se tuvo en cuenta para esto las características y funciones del bornero de control proporcionado por el manual del variador de velocidad\cite{InstaManual}. 
 	
-	\item Soporte para una bomba en desuso, de características no conocidas con su bobinado quemado.
-	\item Circuito hidráulico, que incluye un tanque, válvulas y sensores de caudal y presión.
+	\item Soporte para una bomba en desuso de características no conocidas, con su bobinado quemado.
+	\item Circuito hidráulico cerrado, que incluye un tanque, válvulas y sensores de caudal y presión.
 \end{itemize}
 
 
@@ -29,18 +31,18 @@ Como se nombró en el objetivo, se busca realizar el control de caudal o presió
 Para este proyecto se utilizan dos transmisores de presión de montaje en línea modelo EJA530E de la familia  \textit{DPharp de Yokogawa} (Figura \ref{fig:transd}.a).\\
 Las características del EJA530E son:
 \begin{itemize}
-	\item Precisión: ±0,055\% de precisión
-	\item Fiabilidad: ±0,1\% Estabilidad por 10 años
+	\item Precisión: ±0,055\% 
+	\item Fiabilidad: ±0,1\% (estabilidad por 10 años)
 	\item Tiempo de respuesta: 90mseg.
 	\item Lazo de corriente de 4-20mA
-	\item Se puede configurar en la unidad necesaria, en este caso mBar.
+	\item Se puede configurar en la unidad necesaria, en este caso mbar.
 \end{itemize}
 
 
 \subsubsection{Sensor de caudal}
 Se utilizó un sensor de caudal (Figura \ref{fig:transd}.b) genérico con las siguientes características:
 \begin{itemize}
-	\item Rango de caudal: 2- 60L/min
+	\item Rango de caudal: 2- 60 l/min
 	\item Máxima presión de agua: 1,75MPa
 	\item Conversión de caudal: aprox 477pulsos/L $\pm$ 10\%
 \end{itemize}
@@ -58,7 +60,8 @@ Se utilizó un sensor de caudal (Figura \ref{fig:transd}.b) genérico con las si
 
 
 \subsection{Diagrama}
-En la figura \ref{fig:diag} se observa el diagrama P\&ID realizado en base al banco de pruebas armado dónde están los respectivos elementos, sus nombres y las conexiones eléctricas, hidráulicas y mecánicas. En el Anexo \ref{anexopid} se encuentra la imagen con mayor tamaño. Para realizar la nomenclatura de los instrumentos utilizados se empleó las normas ISA-S5.1 \cite{ISA}. 
+La figura \ref{fig:diag} corresponde al diagrama P\&ID realizado en base al banco de pruebas dónde se observa los respectivos elementos, sus nombres y las conexiones eléctricas, hidráulicas y mecánicas. En el Anexo \ref{anexopid} se encuentra la imagen con mayor tamaño.
+ Para realizar la nomenclatura de los instrumentos utilizados se empleó las normas ISA-S5.1 \cite{ISA}. 
 
 \begin{figure}[htb]
 	\centering

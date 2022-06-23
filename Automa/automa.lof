@@ -5,7 +5,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Variador Altivar 312\relax }}{10}{figure.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Módulo Didáctico PLC M340\relax }}{11}{figure.3}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Módulo didáctico PLC M340\relax }}{11}{figure.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Banco de pruebas completo\relax }}{12}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Lista de parámetros modificados\relax }}{16}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diegrama comunicación PC- Variador\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrama de comunicación PC- variador\relax }}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Cable de comunicación\relax }}{17}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
@@ -43,9 +43,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Módulos PLC\relax }}{18}{figure.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Dirección IP\relax }}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Dirección módulo Ethernet\relax }}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Dirección módulo Ethernet\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Configuración variador CANopen\relax }}{19}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.11}{\ignorespaces HMI simple\relax }}{20}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 

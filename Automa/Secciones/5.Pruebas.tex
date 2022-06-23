@@ -4,7 +4,7 @@
 
 Para realizar la configuración del variador de velocidad con los parámetros del motor se utilizó el software \textit{SoMove} a través del protocolo \textit{ModBus}. Se descargó la ultima versión desde la página oficial de \textit{Schneider Electric}\footnote{\url{https://www.se.com/ar/es/product-range-presentation/2714-somove/}} y luego, la librería DTM correspondiente al variador a utilizado \footnote{\url{https://www.se.com/ar/es/download/document/Altivar_DTM_Library/}}.
 
-Una vez realizado esto se procedió a generar un nuevo proyecto donde se eligió las características del variador (Figura \ref{fig:so1} y \ref{fig:so2}). El próximo paso fue realizar por medio del software la carga de los parámetros del motor (Figura \ref{fig:paramsomove}) y establecer el modo de funcionamiento de las entradas y el protocolo de comunicación.
+Una vez instalado se procedió a generar un nuevo proyecto donde se eligió las características del variador (Figura \ref{fig:so1} y \ref{fig:so2}). El próximo paso fue realizar por medio del software la carga de los parámetros del motor (Figura \ref{fig:paramsomove}), establecer el modo de funcionamiento de las entradas y configurar el protocolo de comunicación.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{somove1.png}
@@ -26,11 +26,11 @@ Una vez realizado esto se procedió a generar un nuevo proyecto donde se eligió
 \end{figure}
 
 
-Para realizar esta primera configuración se realizó la comunicación de la computadora con el variador a través del protocolo \textit{ModBus} (Figura\ref{fig:pcvar}) por medio de un cable que en un extremo poseía una ficha RJ45 con un conversor RS485 y en el otro, ficha USB (Figura \ref{fig:paramsomove1}). 
+Para realizar esta primera configuración se comunicó la computadora con el variador a través del protocolo \textit{Modbus RTU} (Figura \ref{fig:pcvar}) por medio de un cable RJ45 / par trenzado y un conversor RS485 / USB (Figura \ref{fig:paramsomove1}). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{pc_var.png}
-	\captionof{figure}{Diegrama comunicación PC- Variador}
+	\captionof{figure}{Diagrama de comunicación PC- variador}
 	\label{fig:pcvar}
 \end{figure}
 
@@ -43,7 +43,8 @@ Para realizar esta primera configuración se realizó la comunicación de la com
 
 
 \subsection{Comunicación variador de velocidad - PLC}
-Para poder realizar la comunicación entre el variador y el PLC es necesario contar con un cable que realice la conexión desde la salida \textit{CANOpen} a RS485, para esto se necesitó hacer un cable con las fichas correspondientes en cada extremo según las conexiones que muestran en la Figura \ref{fig:cable}, se colocó a su vez resistencia de 120 $\Omega$ en cada punta para evitar ruidos eléctricos y fenómenos de reflexión en la línea.
+Para poder realizar la comunicación entre el variador y el PLC fue necesario contar con un cable RJ45 (variador) a DB9 (PLC) a través del protocolo CANopen (Figura \ref{fig:cable}), y se colocó en los finales de línea una resistencia de 120 $\Omega$ para evitar ruidos eléctricos y fenómenos de reflexión en la línea.
+
 
 \begin{figure}[htbp]
     \centering
@@ -57,21 +58,20 @@ Para poder realizar la comunicación entre el variador y el PLC es necesario con
 \subsection{Programación Unity Pro}
 
 
-Para generar la base del proyecto para trabajar, se debe descargar desde la página oficial e instalar el software \textit{Unity Pro XL} y la librería DTM utilizada en el software \textit{soMove} correspondiente al variador que se posee. Una vez que esto está instalado se abre un nuevo proyecto y se configura a través de los siguientes pasos.
+Para generar la base del proyecto de trabajo, se descargó e instaló el software \textit{Unity Pro XL} y la librería DTM utilizada en el software \textit{soMove} correspondiente al variador que se posee. Una vez que fue instalado se creó y configuró un nuevo proyecto a través de los siguientes pasos.
 \begin{enumerate}
-	\item Se selecciona el bastidor que se posee.
-	\item En la configuración gráfica del bastidor (Figura \ref{fig:uni0})
-	podemos introducir los módulos
-	deseados al hacer un clic en la
-	posición seleccionada (Figura \ref{fig:uni1}).
-	El laboratorio cuenta con un PLC modular didáctico de la marca \textit{Schneider Electric} de la familia \textit{Modicon} modelo \textit{M340} con los módulos nombrados anteriormente (Sección \ref{sec:didac}). 
-	\item Se debe configurar el módulo Ethernet desde el explorador de
-	Proyectos desplegamos la
-	carpeta Comunicación y se realiza clic con el botón derecho sobre Redes y luego en Nueva Red, Ethernet (Figura  \ref{fig:inter}).
-	\item Se creó una nueva sección para lenguaje FDB para ver parámetros básicos.
+	\item Se seleccionó el bastidor (Figura \ref{fig:uni0}).
+	\item En la configuración gráfica del bastidor 
+se introdujo los módulos
+	deseados (Figura \ref{fig:uni1}) correspondientes al PLC didáctico del laboratorio (Sección \ref{sec:didac}). 
+	\item Se configuró el módulo Ethernet, desde el explorador de
+	proyectos se desplegó la
+	carpeta \textit{Comunicación} y se creó una nueva red, Ethernet (Figura \ref{fig:inter}).
+	\item Se añadió en el bus CANopen el variador utilizado (Figura \ref{fig:vcan}). En nuestro caso se eligió el ATV31 para usar los bloques de funciones de control de movimiento preestablecidos por el software.
+	\item Se creó una nueva sección de lenguaje FDB para visualizar los parámetros básicos.
 	\begin{itemize}
-		\item Los Diagramas de Bloques de Función consisten en un Editor gráfico orientado al dibujo
-		de bloques. El lenguaje consiste en los Bloques de Funciones reusables elementales y
+		\item Los \textit{Diagramas de Bloques de Función} consisten en un editor gráfico orientado al dibujo
+		de bloques. Este se basa en la utilización de funciones reusables elementales y
 		derivados.
 	\end{itemize}
 %\item Para realizar la conexión del PLC con la computadora se utiliza protocolo TCP/IP a través de la dirección 192.168.10.187 (Dirección que el PLC tiene configurada internamente)(Figura \ref{fig:direcc}) y (Figura \ref{fig:inter})
@@ -99,12 +99,12 @@ Para generar la base del proyecto para trabajar, se debe descargar desde la pág
 	\label{fig:uni0}
 \end{center}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=1]{1.direcc.png}
-	\captionof{figure}{Dirección IP}
-	\label{fig:direcc}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale=1]{1.direcc.png}
+%	\captionof{figure}{Dirección IP}
+%	\label{fig:direcc}
+%\end{figure}
 
 
 \begin{figure}[h]
@@ -114,8 +114,15 @@ Para generar la base del proyecto para trabajar, se debe descargar desde la pág
 	\label{fig:inter}
 \end{figure}
 
-Una vez que se completó la configuración de la comunicación variador - PLC se procedió a crear una \textit{Pantalla de operador} dentro del mismo programa (Figura \ref{fig:previo})
-la cual fue utilizada para interactuar y observar diversos parámetros, como modificar velocidades, observar señales luminosas y ver distintos valores proporcionados por el variador de velocidad.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{vcan.png}
+	\captionof{figure}{Configuración variador CANopen}
+	\label{fig:vcan}
+\end{figure}
+
+
+Una vez que se completó la configuración de la comunicación variador - PLC se procedió a crear un HMI simple en\textit{ iFix} (Figura \ref{fig:previo}), el cual fue utilizado para interactuar y observar diversos parámetros, modificar velocidades, observar señales luminosas y ver distintos valores proporcionados por el variador de velocidad.
  
 \begin{figure}[H]
 	\centering
@@ -124,10 +131,9 @@ la cual fue utilizada para interactuar y observar diversos parámetros, como mod
 	\label{fig:previo}
 \end{figure}
 
-Para realizar la programación del HMI se utilizó los MFB del software \textit{UnityPro} (Figura \ref{fig:read}). Estos bloques necesitan de un bloque maestro ``CAN\_HANDLER'' el cual permite comprobar la comunicación \textit{CANopen}, así como la coherencia
-entre las configuraciones de software y física.
-\\
-Otros de los bloques más utilizados dentro del programa fueron ``MC\_READPARAMETER'' que se utiliza para leer, mediante mensajes SDO, una variable del variador definida en una dirección \textit{CANopen} dada por el fabricante \cite{ComManual}.
+Para observar en el HMI se utilizó los MFB del software \textit{UnityPro} (Figura \ref{fig:read}), los cuales necesitan de un bloque maestro ``CAN\_HANDLER'' el cual permite comprobar la comunicación \textit{CANopen}.
+
+Otros de los bloques más utilizados dentro del programa fue ``MC\_READPARAMETER'' que se utiliza para leer, mediante mensajes SDO, una variable del variador definida en una dirección \textit{CANopen} dada por el fabricante \cite{ComManual}.
 
 \begin{figure}[H]
 	\centering
@@ -154,12 +160,15 @@ En el rack del PLC se encuentra un módulo AMI0410 el cual consiste en cuatro en
 
 El módulo dispone de 20 bornes accesibles al usuario dónde el diagrama de conexión tanto para entradas de tensión o de corriente es el mostrado en la figura \ref{fig:modulo}.
 
-Para realizar la configuración en \textit{Unity PRO} se elige, de las opciones nombradas anteriormente la que se va a utilizar, en este caso será de 4 a 20 mA y el escalado predefinido de fábrica que es de 0 a 10000 cuentas pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bits. También es posible añadir un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
+Para realizar la configuración en \textit{Unity PRO} se elige, de las opciones nombradas anteriormente, la que se utilizó en este caso de 4 a 20 mA y el escalado predefinido de fábrica de 0 a 10000 cuentas, pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bits. También se agregó un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
 
-Con el rango de cuentas del módulo determinado, se requiere escalar la variable para obtener el valor físico y así utilizarla para la visualización y control del banco de pruebas.
-Para el escalado de la señal de entrada se realizó un nuevo bloque FB derivado, a partir elementos primarios, para evitar realizar un proceso repetitivo para el escalado de varias señales (Figura \ref{fig:escalado}).
+Con el rango de cuentas del módulo determinado, se requirió escalar la variable para obtener el valor físico y así utilizarla para la visualización y control del banco de pruebas.
 
-En la variable de entrada se coloca la señal que se desea escalar. En los límites de entrada se escribe el rango del módulo visto anteriormente, y en los límites de salida, los escalados obtenidos del instrumento a utilizar. Finalmente, a la salida del bloque se obtiene el valor físico visualizado o transmitido por el instrumento.
+Para el escalado de la señal de entrada se realizó un nuevo bloque FB derivado, a partir elementos primarios, para evitar realizar un proceso repetitivo en el escalado de varias señales (Figura \ref{fig:escalado}).
+
+En la variable de entrada se coloca la señal que se desea escalar, en los límites de entrada se escribe el rango del módulo visto anteriormente, y en los límites de salida, los escalados obtenidos del instrumento que se utilizó.
+
+ Finalmente, a la salida del bloque se obtuvo el valor físico visualizado o transmitido por el instrumento.
 
 \begin{figure}[H]
 	\centering
@@ -182,8 +191,8 @@ En la variable de entrada se coloca la señal que se desea escalar. En los lími
 \end{figure}
 
 
-\subsubsection{Entradas analogicas para termocuplas o RTD}
-Se utiliza el módulo ART0414 que consiste en cuatro entradas aisladas en las que se pueden conectar sensores de temperatura del tipo termocupla y RTD con las siguientes características:
+\subsubsection{Entradas analógicas para termocuplas o RTD}
+Se utilizó el módulo ART0414 que consiste en cuatro entradas aisladas en las que se pueden conectar sensores de temperatura del tipo termocupla y RTD con las siguientes características:
 \begin{itemize}
 	\item RTD IEC Pt100/Pt1000, US/JIS Pt100/Pt1000, Cu10, Cu50, Cu100, Ni100/Ni1000 en 2, 3 o 4 conductores
 	\item Termoelemento del tipo B, E, J, K, L, N, R, S, T, U
@@ -191,7 +200,7 @@ Se utiliza el módulo ART0414 que consiste en cuatro entradas aisladas en las qu
 	
 \end{itemize}
 
-Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}). Y se tienen las siguientes formas de conexión depende el tipo de sensor (Figura \ref{fig:ABE2}).
+Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}) y se tiene las formas de conexión, de la figura \ref{fig:ABE2}, dependientes del tipo de sensor.
 
 \begin{figure}[H]
 	\centering
@@ -206,9 +215,9 @@ Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412
 	\label{fig:ABE2}
 \end{figure}
 
-Para su configuración en Unity Pro se selecciona en Rango las características del sensor y en escala se modifica los valores para que coincidan con los máximos y mínimos del sensor. Para el caso de RTD y termocupla los valores son múltiplos de 10 respecto a la temperatura en °C o °F. 
+Para configurar en \textit{Unity Pro} se seleccionó en \textit{rango} las características del sensor y en \textit{escala} se modificó los valores para que coincidan con los máximos y mínimos del sensor. En el caso de RTD y termocupla los valores son múltiplos de 10 respecto a la temperatura en °C o °F. 
 
-En la imagen \ref{fig:ABE3} se observan dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
+En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
 
 \begin{figure}[H]
 	\centering

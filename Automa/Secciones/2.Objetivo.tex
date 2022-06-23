@@ -1,5 +1,5 @@
-El banco de pruebas cuenta con un punto de apoyo donde se conecta el motor y sus componentes mecánicos, ademas dentro de esta plataforma existe un sistema de medición que posee sensores, variador y PLC para los procedimientos de prueba.
-Un banco de pruebas puede ser un prototipo de un gran desarrollo industrial o simplemente un banco formado para realizar pruebas educativas. \\
+El banco de pruebas cuenta con un punto de apoyo donde se conecta el motor y sus componentes mecánicos, ademas dentro de esta plataforma existe un sistema de medición que posee sensores, variador y PLC para poder realizar prácticas de laboratorio.
+Un banco de pruebas puede ser un prototipo de gran desarrollo industrial o simplemente un banco formado para realizar pruebas educativas. \\
 
 El objetivo de este trabajo final para la cátedra de Automatización Industrial es construir un banco de pruebas para ser utilizado por cualquier persona dentro el laboratorio de Automatización y Control. Se espera realizar uno que sea capaz de controlar la presión o caudal de agua a través de un sistema ideado y construido por nosotros, que cuente con:
 \begin{itemize}
@@ -10,7 +10,6 @@ El objetivo de este trabajo final para la cátedra de Automatización Industrial
         \subitem Botón de emergencia
         \subitem Encendido/ apagado
         \subitem Potenciómetro para variar velocidad
-        \subitem Display para observar velocidad
         \subitem Alarmas visuales
     \item HMI
         \subitem Control general del banco
@@ -24,12 +23,12 @@ El objetivo de este trabajo final para la cátedra de Automatización Industrial
 
 \section{Definiciones}
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Motor eléctrico]
-	Los motores eléctricos son máquinas que transforman la energía eléctrica en movimiento (energía cinética). Estos aparatos se componen, básicamente, del rotor y de un estator donde tiene bobinas inductoras desfasadas entre sí 120°
+	Los motores eléctricos son máquinas que transforman la energía eléctrica en energía mecánica a través de la generación de campos magnéticos.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Variador de velocidad]
 	Es utilizado para controlar la velocidad de giro de un motor.
-	Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene una curva propia de funcionamiento. Un variador es capaz de generar elementos control de aceleración, frenado, seguridad, control del torque y operaciones que mejoran la eficiencia energética.
+	Para regular las revoluciones, se debe tener en cuenta las características del motor, ya que este tiene una curva propia de funcionamiento. Un variador es capaz de generar elementos control de aceleración, frenado, seguridad, control de torque y operaciones que mejoran la eficiencia energética del motor.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=PLC]
@@ -51,12 +50,12 @@ El objetivo de este trabajo final para la cátedra de Automatización Industrial
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=ModBus]
-	ModBus es un protocolo de comunicaciones utilizado para transmitir información a través de redes en serie entre dispositivos electrónicos, basado en la arquitectura maestro/esclavo o cliente/servidor, diseñado en 1979 por Modicon para su gama de PLC. Convertido en un protocolo de comunicaciones estándar en la industria. Además, esta red de comunicación industrial usa los protocolos RS232/RS485/RS422.
+	Modbus es un protocolo de comunicaciones utilizado para transmitir información a través de redes en serie entre dispositivos electrónicos, basado en la arquitectura maestro/esclavo o cliente/servidor, diseñado en 1979 por Modicon para su gama de PLC. Convertido en un protocolo de comunicaciones estándar en la industria. Además, esta red de comunicación industrial usa los protocolos RS232/RS485/RS422.
 	%http://microelecblog.blogspot.com/2013/12/configuracion-atv312-para-red-modbus.html
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=HMI - SCADA]
-	Ambas tecnologías, HMI y SCADA, son utilizadas en conjunto en la industria de la automatización. SCADA proporciona funciones de supervisión, alarmas y control, mientras que HMI proporciona las herramientas que necesita para desarrollar imágenes que los operadores pueden usar para monitorear su proceso. El HMI se utiliza para monitorear o visualizar lo ejecutado por SCADA.
+	Ambas tecnologías, HMI y SCADA, son utilizadas en conjunto en la industria de la automatización. SCADA proporciona funciones de supervisión, alarmas y control, mientras que HMI proporciona las herramientas que necesita para desarrollar imágenes que los operadores pueden usar para monitorear su proceso.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=iFIX]
