@@ -160,7 +160,7 @@ En el rack del PLC se encuentra un módulo AMI0410 el cual consiste en cuatro en
 
 El módulo dispone de 20 bornes accesibles al usuario dónde el diagrama de conexión tanto para entradas de tensión o de corriente es el mostrado en la figura \ref{fig:modulo}.
 
-Para realizar la configuración en \textit{Unity PRO} se elige, de las opciones nombradas anteriormente, la que se utilizó en este caso de 4 a 20 mA y el escalado predefinido de fábrica de 0 a 10000 cuentas, pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bits. También se agregó un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
+Para realizar la configuración de los transmisores de presión en \textit{Unity PRO} se elige, de las opciones nombradas anteriormente, la que se utilizó en este caso de 4 a 20 mA y el escalado predefinido de fábrica de 0 a 10000 cuentas, pero modificable por el usuario entre -32768 a 32767 ya que la resolución de las entradas analógicas es de 16 bits. También se agregó un filtro de primer orden a cada entrada por software (Figura \ref{fig:param}).
 
 Con el rango de cuentas del módulo determinado, se requirió escalar la variable para obtener el valor físico y así utilizarla para la visualización y control del banco de pruebas.
 
@@ -176,12 +176,16 @@ En la variable de entrada se coloca la señal que se desea escalar, en los lími
 	\captionof{figure}{Módulo AMI0410}
 	\label{fig:modulo}
 \end{figure}
-\begin{figure}[H]
+
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.9\linewidth]{param.png}
-	\captionof{figure}{Rango y escalado}
-	\label{fig:param}
+	\subfigure[Rango]{\includegraphics[width=60mm]{parama.png}}
+	\subfigure[Escalado]{\includegraphics[width=40mm]{param.png}}
+	\caption{Rango y escalado} \label{fig:param}
 \end{figure}
+
+
+
 
 \begin{figure}[H]
 	\centering
@@ -192,7 +196,7 @@ En la variable de entrada se coloca la señal que se desea escalar, en los lími
 
 
 \subsubsection{Entradas analógicas para termocuplas o RTD}
-Se utilizó el módulo ART0414 que consiste en cuatro entradas aisladas en las que se pueden conectar sensores de temperatura del tipo termocupla y RTD con las siguientes características:
+Se utilizó el módulo ART0414 que consiste en cuatro entradas aisladas en las que se puede conectar sensores de temperatura del tipo termocupla y RTD con las siguientes características:
 \begin{itemize}
 	\item RTD IEC Pt100/Pt1000, US/JIS Pt100/Pt1000, Cu10, Cu50, Cu100, Ni100/Ni1000 en 2, 3 o 4 conductores
 	\item Termoelemento del tipo B, E, J, K, L, N, R, S, T, U
@@ -200,7 +204,7 @@ Se utilizó el módulo ART0414 que consiste en cuatro entradas aisladas en las q
 	
 \end{itemize}
 
-Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}) y se tiene las formas de conexión, de la figura \ref{fig:ABE2}, dependientes del tipo de sensor.
+Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412 (Figura \ref{fig:ABE}) y según el tipo de sensor se tiene las conexiones que se muestran en la figura \ref{fig:ABE2}.
 
 \begin{figure}[H]
 	\centering
@@ -211,11 +215,11 @@ Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{ABE2.png}
-	\captionof{figure}{Conexión según sensor}
+	\captionof{figure}{Tipos de conexión}
 	\label{fig:ABE2}
 \end{figure}
 
-Para configurar en \textit{Unity Pro} se seleccionó en \textit{rango} las características del sensor y en \textit{escala} se modificó los valores para que coincidan con los máximos y mínimos del sensor. En el caso de RTD y termocupla los valores son múltiplos de 10 respecto a la temperatura en °C o °F. 
+Para configurar en \textit{Unity Pro} se seleccionó en \textit{rango} la característica resistiva del sensor. En el caso de RTD y termocupla los valores de salida son múltiplos de 10 de la temperatura. 
 
 En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
 
@@ -234,7 +238,7 @@ En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar l
 \end{figure}
 
 \subsubsection{Medición de caudal}
-Según la cantidad de flujo que pase por el caudalímetro, este entregaría pulsos que debían ser leídos con un módulo externo del PLC por la baja resolución que posee. Para esto se planteó utilizar un ESP8266 como interfaz para obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para realizar la conversión de pulsos a caudal (Figura \ref{fig:modtcp}). Tanto para el módulo, como para el caudalímetro se usó una fuente externa de 3,3 V de alimentación.
+A la salida del caudalímetro se obtiene pulsos con frecuencia proporcional al flujo. Para ser procesados por el PLC se utilizó un módulo externo al PLC por la baja tasa de refresco que posee el módulo de entradas digitales. Para esto se planteó utilizar un ESP8266 como interfaz para obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para generar la conversión de pulsos a caudal (Figura \ref{fig:modtcp}). El módulo y el caudalímetro alimentó mediante una fuente externa de 3,3 V.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1]{esp_mod.png}

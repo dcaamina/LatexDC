@@ -32,7 +32,7 @@
     \field{labeltitlesource}{title}
     \field{title}{Manual de instalaci{\'o}n}
     \field{journaltitle}{Altivar312- Variadores de velocidad para motores
-  as{'i}ncronos}
+  as{\'i}ncronos}
     \field{year}{2013}
   \endentry
 
@@ -75,7 +75,7 @@
     \field{labeltitlesource}{title}
     \field{title}{Communication variables manual}
     \field{journaltitle}{Altivar312- Variadores de velocidad para motores
-  as{'i}ncronos}
+  as{\'i}ncronos}
     \field{year}{2009}
   \endentry
 
@@ -88,7 +88,7 @@
          giveni={J\bibinitperiod},
       }}%
       {{hash=MBA}{%
-         family={Mart{\'\i}nez\bibnamedelima Bueno},
+         family={Mart{\'i}nez\bibnamedelima Bueno},
          familyi={M\bibinitperiod\bibinitdelim B\bibinitperiod},
          given={{\'A}ngel},
          giveni={{\'A}\bibinitperiod},

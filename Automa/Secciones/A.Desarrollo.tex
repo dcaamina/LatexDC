@@ -1,32 +1,33 @@
 
-A partir de lo programado en \textit{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}) que se creyeron necesarias a la hora de implementar el proyecto dónde quedó un mapa de memoria como el de la Figura \ref{fig:memoria}
+A partir de lo programado en \textit{Unity PRO} utilizado para obtener los primeros registros, se realizó modificaciones necesarias donde se eliminó y agregó variables de la lista de direcciones (Tabla {\ref{tab:direc} en Anexo \ref{Anexo1}). El mapa de memoria del proyecto se divide según la figura \ref{fig:memoria}.
+	
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{memoria.png}
-	\captionof{figure}{Esquema de memoria}
+	\captionof{figure}{Mapa de memoria}
 	\label{fig:memoria}
 \end{figure}
 
 
 \subsection{Adquisición de datos}
-En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, dónde se distinguen en el banco de pruebas tres sistemas con los que se trabajará:
+En el objetivo se propuso que el sistema sea capaz de controlar presión o caudal. Para lograr lo estipulado, como en cualquier sistema de control, es necesario conocer las plantas con las que se trabajará, dónde se distinguen en el banco de pruebas tres sistemas distintos:
 \begin{itemize}
-	\item PIT01: Presión 1 medida a la salida de la bomba.
-	\item PIT02: Presión 2 medida luego de la columna que deriva el fluido.
+	\item PIT01: Presión medida a la salida de la bomba.
+	\item PIT02: Presión medida luego de la columna de derivación.
 	\item FT01: Caudal que pasa por PIT02.
 \end{itemize}
 
-Para realizar las estimaciones de las plantas del sistema se utilizó el protocolo OPC en conjunto con \textit{Matlab}. Por medio de OFS, se procedió a crear y configurar un servidor con la dirección correspondiente y se seleccionó el programa realizado en \textit{UnityPro} donde se encontraban las variables necesarias (Figura \ref{fig:opc1}).
+Para realizar las estimaciones de los sistemas se utilizó el protocolo OPC en conjunto con \textit{Matlab}. Por medio de OFS, se procedió a crear y configurar un servidor(Figura \ref{fig:opc1}).
 
 \begin{figure}[htbp]
 	\centering
 	\subfigure[]{\includegraphics[width=70mm]{ofs1.png}}
 	\subfigure[]{\includegraphics[width=70mm]{ofs2.png}}
-	\caption{Configuración OPC} \label{fig:opc1}
+	\caption{Configuración OFS} \label{fig:opc1}
 \end{figure}
 
 
-Una vez configurado el servidor se abre el programa \textit{OPC Factory Server} y se da inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación esta establecida de forma correcta, se utilizó el programa \textit{OFS Client} dónde se debió agregar el tag correspondiente a la variable a observar (Figura \ref{fig:opc2}.b)
+Una vez configurado, se abre el programa \textit{OPC Factory Server} y se da inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación se estableció de forma correcta, se utilizó el programa \textit{OFS Client} (Figura \ref{fig:opc2}.b).
 
 \begin{figure}[htbp]
 	\centering
@@ -39,7 +40,7 @@ Una vez corroborada la comunicación con el servidor OPC, se procedió a crear u
 
 
 \subsubsection{Uso de Matlab}
-En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b). 
+En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b) para luego ser guardados en un archivo \textit{.csv} .
 
 
 \begin{figure}[htbp]
@@ -54,8 +55,8 @@ En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente O
 \subsubsection{Estimación de la planta}
 Para realizar la estimación de las plantas se utilizó el Método de Strejc con retardo (Figura \ref{fig:norden})\cite{pomares2011sistemas}.
 Este método se emplea para la identificación de sistemas de polos múltiples,
-mediante los parámetros Tu y Ta obtenidos sobre la respuesta del sistema.
-Tras obtener el valor de los parámetros, se determinará la multiplicidad del polo. 
+mediante los parámetros \textit{Tu} y \textit{Ta} obtenidos sobre la respuesta del sistema.
+Tras obtener el valor de los parámetros, se determina la multiplicidad del polo. 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{norden.png}
@@ -73,6 +74,7 @@ Dónde:
 	\item $\tau$: constante de tiempo
 	\item T= Retardo
 \end{itemize}
+
 Para obtener la función de transferencia se realizó un programa en \textit{Matlab} que dió como resultado los siguientes sistemas:
 \begin{itemize}
 	\item Planta de presión PIT01:
@@ -141,9 +143,9 @@ escalones ubicados en la parte central del rango útil estipulado .
 \subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que las respuestas sean capaces de mitigar los cambios producidos por la ganancia, y además obtener un control apropiado al sistema. 
 
-Se realizaron pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se observan que las respuestas se buscaron que no sean tan rápidas ni con tanto sobre paso.
+Se realizó pruebas con diversos PID para observar la respuesta a cada sistema, en las figuras \ref{fig:FT1} , \ref{fig:PIT1} y \ref{fig:PIT2} se comparan dos PI para cada planta. Se buscó que las respuestas no sean tan rápidas ni con tanto sobre paso.
 
-Los valores obtenidos de la aplicación perteneciente a \textit{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer los PID del sistema en la pantalla SCADA al presionar el botón C (Figura \ref{fig:LCs}).
+Los valores obtenidos de la aplicación perteneciente a \textit{Matlab} se muestran en la tabla \ref{tab:pid}, los cuales se ingresaron en los bloques de \textit{UnityPro} con las respectivas modificaciones numéricas según lo establecido por el software. Los valores mostrados en dicha tabla serán usados al momento de restablecer la configuración de los PID al presionar el botón C de la pantalla SCADA (Figura \ref{fig:LCs}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{pidmatlab.png}
@@ -213,7 +215,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 
 \subsubsection{Pruebas de control}
 \paragraph{Perturbación al control con PIT02}
-En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 250 mbar; aproximadamente a los 15 segundos de comenzar la prueba se abre totalmente la válvula de derivación FV01, y disminuye la presión notablemente. Al pasar el tiempo y una vez que la presión llegó nuevamente a su punto de trabajo, se incrementó su valor a 300 mbar, se puede apreciar en el gráfico que la presión se acerca pero no llega a la referencia debido a que el motor, ya en su máxima frecuencia de trabajo, no logra elevar más la presión. Luego a los 100 segundos de empezar la prueba se cierra la válvula de derivación completamente y se observa como la presión se incrementa y luego es reducida por con el control hasta llegar al punto correspondiente.
+En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 250 mbar; aproximadamente a los 15 segundos de comenzar la prueba se abrió totalmente la válvula de derivación FV01, y disminuyó la presión notablemente. Al pasar el tiempo y una vez que la presión llegó nuevamente a su punto de trabajo, se incrementó su valor a 300 mbar, se puede apreciar en el gráfico que la presión se acerca pero no llega a la referencia debido a que el motor, ya en su máxima frecuencia de trabajo, no logra elevar más la presión. Luego, a los 100 segundos de empezar la prueba, se cerró la válvula de derivación completamente y se observa como la presión se incrementó y disminuyó hasta que llegó al punto de referencia.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Per2.png}
@@ -222,7 +224,7 @@ En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 
 \end{figure}
 
 \paragraph{Perturbación al control de FT01}
-Para la prueba de control con FT01 (Figura \ref{fig:per1} como variable de proceso, se fijó el valor de referencia en 3,5 L/min a los 20 segundos se empezar la prueba, luego se abrió la válvula FV01 completamente y se observó la disminución del caudal sobre FT01, la acción de control elevó las revoluciones del motor hasta llegar a su punto de trabajo. Aproximadamente a los 125 segundos se configura el valor de referencia en 2 L/min y se cierra la válvula FV01, esto provoca que todo el caudal circule por FT01 incrementándose de forma repentina. La acción de control disminuye las revoluciones del motor hasta llegar el valor del caudal al de referencia.
+Para la prueba de control con FT01 (Figura \ref{fig:per1}) como variable de proceso, se fijó el valor de referencia en 3,5 l/min a los 20 segundos se empezar la prueba. Luego, se abrió la válvula FV01 completamente y se observó la disminución del caudal, la acción de control elevó las revoluciones del motor hasta llegar a su punto de trabajo. Aproximadamente a los 125 segundos se configuró el valor de referencia en 2 L/min y se cerró la válvula FV01, esto provocó que todo el caudal circule por FT01. La acción de control disminuyó las revoluciones del motor hasta llegar el valor del caudal al de referencia.
 
 \begin{figure}[htb]
 	\centering
@@ -232,16 +234,12 @@ Para la prueba de control con FT01 (Figura \ref{fig:per1} como variable de proce
 \end{figure}
 
 
-
-
-
-
 \subsubsection{Valores extremos/críticos de estudio}
 
 \paragraph{Máxima presión}
 
 Para esta prueba se llevó al motor a su máxima frecuencia (60Hz) de trabajo, se dejó la válvula FV03 totalmente abierta y se cerraron las válvulas FV01 y FV02 (Figura  \ref{fig:diag}). Esto provocó que la bomba llegue a su máxima presión que se obtiene al momento en que el caudal que circula por PIT01 se hace muy próximo a cero.\\
-\textbf{\textit{Máxima presión:}} 938 mbar
+\textbf{\textit{Máxima presión:}} 938 mbar.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Presion_Max.png}
@@ -261,8 +259,8 @@ Para obtener el valor de mínima presión de trabajo se configuró el VSD a 20 H
 
 \paragraph{Máximo caudal}
 Para obtener el valor de caudal máximo se llevó al motor a su máxima frecuencia (60 Hz), se abrió completamente la válvula FV03 y FV02, y se cerró la válvula de derivación FV01 (Figura  \ref{fig:diag}).
-Esto provoca que todo el caudal impulsado por la bomba circule por el caudalímetro FT01.\\
-\textbf{\textit{Máximo caudal: }}11,69 L/min
+Esto provocó que todo el caudal impulsado por la bomba circule por el caudalímetro FT01.\\
+\textbf{\textit{Máximo caudal: }}11,69 l/min
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Caudal_Max.png}

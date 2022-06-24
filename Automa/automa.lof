@@ -55,21 +55,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Rango y escalado\relax }}{22}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rango}}}{22}{figure.caption.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Escalado}}}{22}{figure.caption.22}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Bloques de escalado\relax }}{22}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Accesorio TELEFAST ABE-7CPA412\relax }}{23}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Conexión según sensor\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Tipos de conexión\relax }}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Rango y escalado\relax }}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Rango y escalado\relax }}{23}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Bloque de escalado\relax }}{24}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Diagrama de flujo del caudalimetro\relax }}{24}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de memoria\relax }}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mapa de memoria\relax }}{25}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Configuración OPC\relax }}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Configuración OFS\relax }}{26}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
@@ -119,11 +123,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.14}{\ignorespaces Perturbación al control con PIT02\relax }}{32}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Perturbación al control con FT01\relax }}{33}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Perturbación al control con FT01\relax }}{32}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.16}{\ignorespaces Máxima presión\relax }}{33}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Mínima presión\relax }}{34}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Mínima presión\relax }}{33}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.18}{\ignorespaces Máximo caudal\relax }}{34}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
@@ -137,9 +141,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.23}{\ignorespaces Datos históricos\relax }}{38}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla datos históricos}}}{38}{figure.caption.53}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{38}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guardar datos históricos}}}{38}{figure.caption.53}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{38}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama p\&id\relax }}{44}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
@@ -161,6 +165,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {C.7}{\ignorespaces Datos históricos\relax }}{51}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla datos históricos}}}{51}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gráficos de datos históricos}}}{51}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guardar datos históricos}}}{51}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guardado de datos históricos}}}{51}{figure.caption.64}%

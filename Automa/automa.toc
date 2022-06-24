@@ -43,13 +43,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Adquisición de datos}{25}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{27}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{25}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.2}Estimación de la planta}{27}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {6.1.2.1}Comparación numérica- real}{28}{paragraph.6.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{29}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{28}{subsubsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.4}Pruebas de control}{30}{subsubsection.6.1.4}%
 \defcounter {refsection}{0}\relax 
@@ -61,11 +61,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {6.1.5.1}Máxima presión}{32}{paragraph.6.1.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{32}{paragraph.6.1.5.2}%
+\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{33}{paragraph.6.1.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.3}Máximo caudal}{32}{paragraph.6.1.5.3}%
+\contentsline {paragraph}{\numberline {6.1.5.3}Máximo caudal}{34}{paragraph.6.1.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}SCADA}{33}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}SCADA}{34}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.1}Configuración driver Modbus}{35}{subsubsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -75,7 +75,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.3}Paradas por bloqueo}{35}{subsubsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{37}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{36}{subsubsection.6.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Mejoras futuras}{39}{section.7}%
 \defcounter {refsection}{0}\relax 

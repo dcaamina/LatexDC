@@ -5,7 +5,7 @@ El sistema SCADA creado (Figura \ref{fig:scada1}) se dividió en las siguientes 
 	\item Esquemático del circuito hidráulico físico con las variables de presión y caudal en tiempo real.
 	\item Valores de funcionamiento del motor obtenidos por el variador de velocidad.
 	\item Alarmero, dónde se observa de forma visual valores críticos alcanzados en el sistema.
-	\item Indicador de modo de funcionamiento físico o remoto.
+	\item Indicador de modo de funcionamiento local o remoto.
 	\item Modo de control a lazo abierto o lazo cerrado.
 	\subitem Para el modo de lazo cerrado se creó una ventana individual para cada sistema de presión y caudal.
 	\item Pantalla para observar gráficos en tiempo real dónde se divide según la variable a observar, con botones para abrir el control PID del sistema.
@@ -21,9 +21,9 @@ El sistema SCADA creado (Figura \ref{fig:scada1}) se dividió en las siguientes 
 
 
 \subsubsection{Configuración driver Modbus}
-Para realizar la configuración de cada ícono de la pantalla SCADA con su respectiva variable, se debió crear un MBE Driver (Figura \ref{fig:mbe}) dónde se estipula la dirección IP y el mapa de memoria con sus respectivas secciones que luego serán utilizadas por el DataBase (Figura \ref{fig:database}). 
+Para realizar la configuración de cada ícono de la pantalla SCADA con su respectiva variable, se debió crear un \textit{MBE Driver} (Figura \ref{fig:mbe}) dónde se estipula la dirección IP y el mapa de memoria con sus respectivas secciones que luego fueron utilizadas por el \textit{DataBase} (Figura \ref{fig:database}). 
 
-Una vez creado el MBE Driver se debe generar la tabla \textit{DataBase} en dónde estará el nombre, dirección IP, tipo de elemento, descripción, alarma asociada, entre otros puntos de cada elemento.
+Una vez creado el \textit{MBE Driver} se debe generar la tabla \textit{DataBase} en dónde estará el nombre, dirección IP, tipo de elemento, descripción, alarma asociada, entre otros puntos de cada elemento.
 
 \begin{figure}[h!]
 	\centering
@@ -40,7 +40,7 @@ Una vez creado el MBE Driver se debe generar la tabla \textit{DataBase} en dónd
 
 
 \paragraph{Pruebas mediante ModSim}
-Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se utilizó el software \textit{ModSim}, dónde se generó los distintos mapas de memoria utilizados para modificar variables y observar el correcto funcionamiento de distintos elementos en el SCADA (Figura \ref{fig:modsim1}).
+Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se utilizó el software \textit{ModSim}, dónde se generó los distintos mapas de memoria utilizados para modificar variables y observar el correcto funcionamiento de los elementos en el SCADA (Figura \ref{fig:modsim1}).
 
 \begin{figure}[h!]
 	\centering
@@ -54,7 +54,7 @@ Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se
 
 
 \subsubsection{Alarmas}
-Dentro de la pantalla principal es posible observar el alarmero. El la Tabla {\ref{c2_tabla_segento_tcp} se observa el diagrama causa efecto de cada alarma.  Por ejemplo, si la temperatura del motor es 50 °C, la alarma se activará informando alta temperatura, y si la temperatura llega a 70 °C, el variador de velocidad hará que el motor se detenga para que no se produzca un daño al bobinado.
+Dentro de la pantalla principal es posible observar el alarmero. En la Tabla {\ref{c2_tabla_segento_tcp} se observa la matriz causa efecto de cada alarma, donde \textit{P} significa paro de motor.  Por ejemplo, si la temperatura del motor es 50 °C, la alarma se activará informando alta temperatura, y si la temperatura llega a 70 °C, el PLC hará que el motor se detenga para que no se produzca un daño al bobinado.
 
 	\begin{table}[h!]
 	\centering
@@ -86,7 +86,7 @@ Dentro de la pantalla principal es posible observar el alarmero. El la Tabla {\r
 			
 		}
 	}
-	\caption{Causa- Efecto de las alarmas}
+	\caption{Matriz causa- efecto de las alarmas}
 	\label{c2_tabla_segento_tcp}
 	
 \end{table}
@@ -108,15 +108,16 @@ El banco de pruebas está preparado para detener el motor si ocurriese alguna an
 
 
 \subsubsection{Datos históricos}
-Para interpretar datos históricos se puede por dos métodos, uno es generar un archivo .txt y el otro es de forma gráfica. 
-Se generó una pantalla SCADA prediseñada de iFix dónde al conectar con el servidor Historian, busca los datos históricos de la variable elegida y guarda un archivo .txt con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas sinó que generará en el mismo archivos más filas (Figura \ref{fig:scada33}.a).
+Para la interpretación de datos históricos se puede realizar de dos formas, una es generar un archivo .txt y la otra es de forma gráfica. 
+
+Se generó una pantalla SCADA prediseñada de iFix dónde al conectar con el servidor Historian, busca los datos históricos de la variable elegida y guarda un archivo .txt con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas si no que generará en el mismo archivos más filas (Figura \ref{fig:scada33}.a).
 
 Otra de las opciones es observar datos históricos en un gráfico de tiempo, estas variables están preestablecidas y son las presiones y el caudal con sus respectivos valores de referencias (Figura \ref{fig:scada33}.b).
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[Pantalla datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
-	\subfigure[Guardar datos históricos]{\includegraphics[width=1\linewidth]{scada3.png}}
+	\subfigure[Pantalla para guardar datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
+	\subfigure[Datos históricos de forma gráfica]{\includegraphics[width=1\linewidth]{scada3.png}}
 	\caption{Datos históricos} \label{fig:scada33}
 \end{figure}
 
