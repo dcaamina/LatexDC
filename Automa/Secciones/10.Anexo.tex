@@ -83,7 +83,7 @@
 	DR & YS\_SP2 & Sin Sensor P2 & Boolean & Device0:400103:3 \\ \hline
 	DR & YS\_AT & Alta Temp & Boolean & Device0:400103:4 \\ \hline
 	DR & FT01\_YCOM & Sin Caudal & Boolean & Device0:400103:5 \\ \hline
-	DR & VSD\_YCOM & Sin comu con variador & Boolean & Device0:400103:6 \\ \hline
+	DR & VSD\_YCOM & Sin comunicación con variador & Boolean & Device0:400103:6 \\ \hline
 	%	\\*
 	%	\caption{Tabla de variables y direcciones}
 	%	\label{tab:direc}  	
@@ -96,25 +96,28 @@
 \section{Anexo: Manual BANCO-SCADA}
 \subsection{Características generales}
 \begin{itemize}
-	\item Utilizado en sistema operativo Windows 10 o mayor.
-	\item Posibilidad de utilizar el banco de pruebas de modo remoto o local.
-	\item Generado para controlar tres variables distintas, dos de presión o caudal.
-\item Posibilidad de generar perturbaciones en el sistema para observar distintas respuestas.
-	\item Fácil de transportar.
-\item Posibilidad de guardar valores como históricos y ver datos en tiempo real.
+	\item Para sistemas operativos Windows 7 y Windows 10.
+	\item Se puede utilizar el banco de pruebas en modo local o remoto.
+	\item Diseñado para controlar tres variables distintas, dos de presión o caudal.
+		\item Fácil de transportar.
+	\item Posibilidad de generar perturbaciones en el sistema para observar distintas respuestas.
+\item Posibilidad de guardar valores históricos y ver datos en tiempo real.
 \end{itemize}
 
 
 \subsection{Guía de uso}
 \begin{enumerate}
-	\item Conectar el banco de pruebas con los respectivos sensores y transductores en el módulo correspondiente del PLC.
-	\item Conectar cable Ethernet en el PLC a un router o PC.
-	\item Alimentar el sistema con alimentación trifásica y 220V.
-	\item Abrir iFix y la tabla de variables y el archivo con extensión .mbe dónde se procederá a conectar el sistema SCADA a la misma red en la que se encuentra el PLC.
-	\item Comprobar comunicación al correr SCADA.
+	\item Conectar el banco de pruebas con los respectivos sensores y transmisores en el módulo correspondiente del PLC.
+	\item Conectar cable Ethernet entre PLC y router o PC.
+	\item Alimentar el sistema del variador con tensión trifásica y la fuente del PLC con tensión monofásica.
+	\item Verificar que los dispositivos se encuentren en la misma red.
+	\item Abrir iFix, la base de datos y el\textit{ driver MBE} dónde se procederá a conectar el sistema SCADA. 
+
+	\item Comprobar comunicación al ejecutar la pantalla SCADA.
 \end{enumerate}
 
-\subsubsection{Pantalla PRINCIPAL}
+\subsubsection{Pantalla principal}
+En la figura \ref{fig:pantalla1} se observa la pantalla principal del SCADA y en la figura \ref{fig:partes} se divide en varias secciones.
 
 \begin{figure}[h!]
 	\centering
@@ -130,7 +133,9 @@
 \end{figure}
 
 \paragraph{Diagrama del banco de pruebas}
-Se observan los valores de presión y caudal en un diagrama similar al banco de prueba físico. A la izquierda se mostrará el último error el cúal puede observarse en la tabla que se abre al hacer click en el botón A. Si se desea restaurar el valor se debe presionar el botón B (Figura \ref{fig:pp1}).
+Se observan los valores de presión y caudal en un diagrama similar al banco de pruebas físico.
+
+En caso de ocurrir un error sobre el VSD, se observará el código del lado izquierdo (A), a su vez al presionar sobre el botón \textit{Códigos} se mostrará la tabla de errores. Si se desea reconocer el error se debe presionar el botón B (Figura \ref{fig:pp1}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{p_p1.png}
@@ -138,20 +143,40 @@ Se observan los valores de presión y caudal en un diagrama similar al banco de 
 	\label{fig:pp1}
 \end{figure}
 
+También en la parte izquierda de la pantalla, se mostrará la indicación de parada de emergencia física.
+
 \paragraph{Estado del variador - Motor}
-En esta sección se ve de forma lumínica en color rojo si el motor está prendido indica señal de cuidado o alerta; mientras que en color verde que el motor está apagado. Se observan variables de velocidad del motor, frecuencia del motor, temperatura obtenida por el termistor, corriente, torque y potencia consumida por el motor.
+En esta sección se ve una señal piloto de color rojo, si es que el motor se encuentra en funcionamiento, lo que indica señal de cuidado o alerta; mientras que en color verde si el motor está apagado. Se observan variables de velocidad y frecuencia del motor, temperatura obtenida por el RTD y corriente, torque y potencia consumida por el motor.
 \paragraph{Alarmas}
 Sección destinada al alarmero dónde muestra el período de tiempo que ocurrió el hecho, el nombre de la variable y el valor alcanzado.
 \paragraph{Modo remoto/ Modo local}
 \begin{itemize}
-	\item Modo Local\\
-	Si la llave selectora del banco de pruebas se encuentra seleccionado el modo local, se observará el cartel en esta sección centrado que expresará que se encuentra en modo local (Figura \ref{fig:localremoto}.a).
-	\item Modo Remoto\\
-	Si la llave selectora del banco de pruebas se encuentra seleccionado el modo remoto, el sistema está preparado para recibir órdenes desde el sistema SCADA. El motor puede encenderse con velocidad 0 al presionar la tecla A o encender a una velocidad preestablecida colocando previamente un valor entero en RPM entre 0 y 3600 y luego presionar la tecla A (Figura \ref{fig:localremoto}.b). 
+	\item Modo Local
 	
-	Si se desea se puede abrir cada ventana del lazo de control (Figura \ref{fig:LC}) botones B dónde muestra el valor de cada variable PID, pudiéndose colocar otros valores mientras que se use la coma como separador decimal. Con el botón C, se podrá restablecer los valores del PID cuyos valores fueron fijados al momento de realizar el proyecto, dónde las respuestas se muestran en las figuras PONER TIPO LA COMPARACION DE PID PERO CON SOLO EL QUE SE UTILIZA Y Q SE LEEAN LOS VALORES DE PID. 
+	Si la llave selectora del banco de pruebas se encuentra en modo local, se observará el cartel que indica \textit{Modo Local} (Figura \ref{fig:localremoto}.a).
 	
-	Al presionar el botón automático (D), se cierra el lazo del sistema y puede establecerse la presión o caudal deseado en E, dónde la coma será el separador decimal y los rangos serán según tabla \ref{tab:rang}. En caso de presionar y que quede manual (D) los valores se establecerán según \textit{Manual} (Figura \ref{fig:localremoto}.b). 
+	\item Modo Remoto
+	
+	Si la llave selectora del banco de pruebas se encuentra en modo remoto, el sistema está preparado para recibir órdenes desde SCADA. El motor puede encenderse con velocidad 0 al presionar la tecla A o encender a una velocidad preestablecida fijada previamente con un valor entero en RPM entre 0 y 3600 (Figura \ref{fig:localremoto}.b). 
+	
+	Si desea se puede abrir cada ventana del lazo de control (Figura \ref{fig:LC}) ``botones B'' dónde muestra el valor de cada constante del PID, se puede colocar otros valores mientras que se use la coma como separador decimal. Con el ``botón C'', se podrá restablecer los valores del PID cuyos valores fueron fijados al momento de realizar el proyecto (Tabla \ref{tab:pid2}).
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			& PIT01 & PIT02 & FT01 \\ \hline
+			$K_p$ & 3,05 & 5,453 & 104,3 \\ \hline
+			$K_i$ & 0,396 & 0,348 & 0,719 \\ \hline
+			$K_d$ & 0 & 0 & 0 \\ \hline
+			N & 1000 & 1000 & 1000 \\ \hline
+		\end{tabular}
+		\captionof{table}{Valores de los PID}
+		\label{tab:pid2}
+	\end{table}
+	
+		
+	Al presionar el botón automático (D), se cierra el lazo del sistema y puede establecerse la presión o caudal deseado en ``E'' y los rangos serán establecidos según la tabla \ref{tab:rang}. En caso de que se encuentre en modo manual (D) los valores se establecerán según la entrada de valor \textit{Manual} (Figura \ref{fig:localremoto}.b). 
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -182,34 +207,34 @@ Sección destinada al alarmero dónde muestra el período de tiempo que ocurrió
 \end{table}
 
 \paragraph{Fallas y ventanas de gráficos}
-En la pantalla 5 se observan los carteles de eventuales fallas que puedan ocurrir en el sistema, pudiéndolo reanudar con el botón que tiene la letra R.
+En la pantalla 5 se observan los carteles de eventuales fallas que puedan ocurrir en el sistema, y se pueden reanudar con el botón \textit{R}.
 
-Otra de las cosas que tiene esta subpantalla es la fecha y hora y dos botones dónde al presionarlos se abren pantallas para observar gráficamente datos en tiempo real o de forma histórica.
+Otra de las cosas que tiene esta subpantalla es la fecha, hora y dos botones dónde al presionarlos se abren pantallas para observar gráficamente datos en tiempo real o de forma histórica (Sección \ref{sec:graf} y \ref{sec:graf2}).
 
-\subsubsection{Pantalla datos en tiempo real}
-En la figura \ref{fig:scadaTR} se puede observar la pantalla de los datos en tiempo real (la imagen no corresponde a valores reales tomados durante las pruebas).
+\subsubsection{Pantalla de datos en tiempo real} \label{sec:graf}
+En la figura \ref{fig:scadaTR} se puede observar la pantalla con valores instantáneos (la imagen no corresponde a valores reales tomados durante las pruebas).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{scadaTR.png}
-	\captionof{figure}{Pantalla datos en tiempo real}
+	\captionof{figure}{Pantalla de datos en tiempo real}
 	\label{fig:scadaTR}
 \end{figure}
 
-\subsubsection{Pantalla datos histórico}
+\subsubsection{Pantalla de datos históricos} \label{sec:graf2}
+Para la interpretación de datos históricos se puede realizar de dos formas, una es crear un archivo .txt y la otra es de forma gráfica. 
 
-Para interpretar datos históricos se puede por dos métodos, uno es generar un archivo .txt y el otro es de forma gráfica. 
-Se generó una pantalla SCADA prediseñada de \textit{iFix} dónde al conectar con el servidor \textit{Historian}, busca los datos históricos de la variable elegida y guarda un archivo \textit{.txt} con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas sino que generará en el mismo archivos más filas (Figura \ref{fig:grafhist} a).\\
-Otra de las opciones es observar datos históricos en un gráfico de tiempo, estas variables están preestablecidas y son las presiones y el caudal con sus respectivos valores de referencias (Figura \ref{fig:grafhist} b).
+Para observar los datos históricos en el gráfico de tiempo, se debe presionar alguna opción de los botones superiores izquierdos, además se selecciona el período de tiempo que se desea visualizar (Figura \ref{fig:scada3a3}.b).
+
+Para generar el archivo \textit{.txt} con los valores históricos se presiona el botón \textit{Exportar}, se conecta con el servidor Historian y se selecciona las variables de interés con el período que se quiera guardar.
+Finalmente se le asigna un nombre al archivo y se presiona \textit{Export} (Figura \ref{fig:scada3a3}.a).
 
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[Gráficos de datos históricos]{\includegraphics[width=1\linewidth]{scada3.png}}
-	\subfigure[Guardado de datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
-	\caption{Datos históricos} \label{fig:grafhist}
+	\subfigure[Pantalla para guardar datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
+	\subfigure[Datos históricos de forma gráfica]{\includegraphics[width=1\linewidth]{scada3.png}}
+	\caption{Datos históricos} \label{fig:scada3a3}
 \end{figure}
-
-
 
 
 

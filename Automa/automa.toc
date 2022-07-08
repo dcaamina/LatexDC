@@ -1,67 +1,65 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introducción}{6}{section.1}%
+\contentsline {section}{\numberline {1}Introducción}{8}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Objetivo}{7}{section.2}%
+\contentsline {section}{\numberline {2}Objetivo}{9}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Definiciones}{8}{section.3}%
+\contentsline {section}{\numberline {3}Definiciones}{10}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Elementos}{10}{section.4}%
+\contentsline {section}{\numberline {4}Elementos}{12}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Motor}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Motor}{12}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Variador de velocidad}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Variador de velocidad}{12}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Módulo didáctico PLC M340}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Módulo didáctico PLC M340}{12}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Banco de pruebas}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Banco de pruebas}{13}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Transmisor de presión}{12}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Transmisor de presión}{14}{subsubsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Sensor de caudal}{13}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2}Sensor de caudal}{15}{subsubsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Diagrama}{13}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Diagrama}{15}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Presupuesto}{13}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Preliminares}{16}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Preliminares}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Programación variador de velocidad}{16}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Programación variador de velocidad}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Comunicación variador de velocidad - PLC}{18}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Comunicación variador de velocidad - PLC}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Programación Unity Pro}{19}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Programación Unity Pro}{17}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Entradas analógicas}{23}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Entradas analógicas}{20}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Entradas analógicas para termocuplas o RTD}{26}{subsubsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2}Entradas analógicas para termocuplas o RTD}{22}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Medición de caudal}{28}{subsubsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.3}Medición de caudal}{24}{subsubsection.5.3.3}%
+\contentsline {section}{\numberline {6}Desarrollo}{29}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Desarrollo}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Adquisición de datos}{29}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Adquisición de datos}{25}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{29}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Uso de Matlab}{25}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Estimación de la planta}{32}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Estimación de la planta}{27}{subsubsection.6.1.2}%
+\contentsline {paragraph}{\numberline {6.1.2.1}Comparación numérica- real}{33}{paragraph.6.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.2.1}Comparación numérica- real}{28}{paragraph.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{33}{subsubsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.3}Cálculo del controlador PID}{28}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Pruebas de control}{33}{subsubsection.6.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.4}Pruebas de control}{30}{subsubsection.6.1.4}%
+\contentsline {paragraph}{\numberline {6.1.4.1}Perturbación al control con PIT02}{33}{paragraph.6.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.4.1}Perturbación al control con PIT02}{30}{paragraph.6.1.4.1}%
+\contentsline {paragraph}{\numberline {6.1.4.2}Perturbación al control de FT01}{33}{paragraph.6.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.4.2}Perturbación al control de FT01}{30}{paragraph.6.1.4.2}%
+\contentsline {subsubsection}{\numberline {6.1.5}Valores extremos/críticos de estudio}{34}{subsubsection.6.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.5}Valores extremos/críticos de estudio}{32}{subsubsection.6.1.5}%
+\contentsline {paragraph}{\numberline {6.1.5.1}Máxima presión}{34}{paragraph.6.1.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.1}Máxima presión}{32}{paragraph.6.1.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{33}{paragraph.6.1.5.2}%
+\contentsline {paragraph}{\numberline {6.1.5.2}Mínima presión}{34}{paragraph.6.1.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {6.1.5.3}Máximo caudal}{34}{paragraph.6.1.5.3}%
 \defcounter {refsection}{0}\relax 
@@ -75,36 +73,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.3}Paradas por bloqueo}{35}{subsubsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{36}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4}Datos históricos}{35}{subsubsection.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Mejoras futuras}{39}{section.7}%
+\contentsline {section}{\numberline {7}Mejoras futuras}{37}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Conclusión}{41}{section.8}%
+\contentsline {section}{\numberline {8}Conclusiones}{38}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Bibliografia}{42}{section.9}%
+\contentsline {section}{\numberline {9}Referencias y Versiones de programas utilizados}{39}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Anexo: Diagrama P \& ID}{44}{appendix.Alph1}%
+\contentsline {section}{\numberline {A}Anexo: Diagrama P \& ID}{50}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Anexo: Tabla de Direcciones ModBus}{45}{appendix.Alph2}%
+\contentsline {section}{\numberline {B}Anexo: Tabla de Direcciones ModBus}{51}{appendix.Alph2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Anexo: Manual BANCO-SCADA}{47}{appendix.Alph3}%
+\contentsline {section}{\numberline {C}Anexo: Manual BANCO-SCADA}{53}{appendix.Alph3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1}Características generales}{47}{subsection.Alph3.1}%
+\contentsline {subsection}{\numberline {C.1}Características generales}{53}{subsection.Alph3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.2}Guía de uso}{47}{subsection.Alph3.2}%
+\contentsline {subsection}{\numberline {C.2}Guía de uso}{53}{subsection.Alph3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {C.2.1}Pantalla PRINCIPAL}{47}{subsubsection.Alph3.2.1}%
+\contentsline {subsubsection}{\numberline {C.2.1}Pantalla principal}{53}{subsubsection.Alph3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C.2.1.1}Diagrama del banco de pruebas}{47}{paragraph.Alph3.2.1.1}%
+\contentsline {paragraph}{\numberline {C.2.1.1}Diagrama del banco de pruebas}{54}{paragraph.Alph3.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C.2.1.2}Estado del variador - Motor}{48}{paragraph.Alph3.2.1.2}%
+\contentsline {paragraph}{\numberline {C.2.1.2}Estado del variador - Motor}{54}{paragraph.Alph3.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C.2.1.3}Alarmas}{48}{paragraph.Alph3.2.1.3}%
+\contentsline {paragraph}{\numberline {C.2.1.3}Alarmas}{54}{paragraph.Alph3.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C.2.1.4}Modo remoto/ Modo local}{48}{paragraph.Alph3.2.1.4}%
+\contentsline {paragraph}{\numberline {C.2.1.4}Modo remoto/ Modo local}{55}{paragraph.Alph3.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C.2.1.5}Fallas y ventanas de gráficos}{49}{paragraph.Alph3.2.1.5}%
+\contentsline {paragraph}{\numberline {C.2.1.5}Fallas y ventanas de gráficos}{55}{paragraph.Alph3.2.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {C.2.2}Pantalla datos en tiempo real}{50}{subsubsection.Alph3.2.2}%
+\contentsline {subsubsection}{\numberline {C.2.2}Pantalla de datos en tiempo real}{56}{subsubsection.Alph3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {C.2.3}Pantalla datos histórico}{50}{subsubsection.Alph3.2.3}%
+\contentsline {subsubsection}{\numberline {C.2.3}Pantalla de datos históricos}{56}{subsubsection.Alph3.2.3}%

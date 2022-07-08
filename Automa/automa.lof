@@ -1,170 +1,178 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Motor Altium\relax }}{10}{figure.1}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Motor\relax }}{12}{figure.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Variador Altivar 312\relax }}{10}{figure.2}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Variador de velocidad\relax }}{12}{figure.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Módulo didáctico PLC M340\relax }}{11}{figure.3}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Módulo didáctico PLC M340\relax }}{13}{figure.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Banco de pruebas completo\relax }}{12}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Banco de pruebas completo\relax }}{14}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Banco de pruebas\relax }}{12}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Banco de pruebas\relax }}{14}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Transmisores\relax }}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Transmisores\relax }}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{13}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{13}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Transmisor de presión}}}{13}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Transmisor de presión}}}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Sensor de caudal}}}{13}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Sensor de caudal}}}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagrama p\&id\relax }}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagrama p\&id\relax }}{16}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Elección de Altivar 312\relax }}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Elección de Altivar 312\relax }}{17}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Parámetros del variador\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Parámetros del variador\relax }}{17}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Lista de parámetros modificados\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Lista de parámetros modificados\relax }}{18}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrama de comunicación PC- variador\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrama de comunicación PC- variador\relax }}{18}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Cable de comunicación\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Cable de comunicación\relax }}{18}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Conexión fichas RJ45- DB9\relax }}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Conexión fichas RJ45- DB9\relax }}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ficha entrada/salida variador}}}{17}{figure.caption.16}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ficha entrada/salida variador}}}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ficha entrada/salida PLC}}}{17}{figure.caption.16}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ficha entrada/salida PLC}}}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Elección del bastidor\relax }}{18}{figure.7}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Elección del bastidor\relax }}{20}{figure.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Módulos PLC\relax }}{18}{figure.8}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Módulos PLC\relax }}{20}{figure.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Dirección módulo Ethernet\relax }}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Dirección módulo Ethernet\relax }}{21}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Configuración variador CANopen\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces HMI simple\relax }}{21}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces HMI simple\relax }}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Configuración variador CANopen\relax }}{22}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Programa con bloques MFB\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Programa con bloques MFB\relax }}{22}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Módulo AMI0410\relax }}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Configuración variador CANopen\relax }}{23}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Rango y escalado\relax }}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Módulo AMI0410\relax }}{24}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rango}}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Rango y escalado\relax }}{25}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Escalado}}}{22}{figure.caption.22}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{25}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Bloques de escalado\relax }}{22}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{25}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Accesorio TELEFAST ABE-7CPA412\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Bloques de escalado\relax }}{26}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Tipos de conexión\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Accesorio TELEFAST ABE-7CPA412\relax }}{27}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Rango y escalado\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Tipos de conexión\relax }}{27}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Bloque de escalado\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Rango y escalado\relax }}{28}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Diagrama de flujo del caudalimetro\relax }}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Bloque de escalado\relax }}{28}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Mapa de memoria\relax }}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Diagrama de flujo del caudalimetro\relax }}{28}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Configuración OFS\relax }}{26}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{28}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{28}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mapa de memoria\relax }}{29}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Conexión servidor OPC\relax }}{26}{figure.caption.31}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Configuración OFS\relax }}{30}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OPC Factory Server}}}{26}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFS Client}}}{26}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Cliente OPC en Simulink\relax }}{27}{figure.caption.32}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Conexión servidor OPC\relax }}{31}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}{figure.caption.32}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OPC Factory Server}}}{31}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}{figure.caption.32}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFS Client}}}{31}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Parámetros de Strejc con retardo\relax }}{27}{figure.caption.33}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Cliente OPC en Simulink\relax }}{32}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para FT01\relax }}{28}{figure.caption.34}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para PIT01\relax }}{29}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para PIT02\relax }}{29}{figure.caption.36}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Parámetros de Strejc con retardo\relax }}{40}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces PID Controller\relax }}{30}{figure.caption.37}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Parámetros de Strejc con retardo\relax }}{41}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Modo lazo cerrado\relax }}{30}{figure.caption.38}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para FT01\relax }}{41}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Comparación PID para FT01\relax }}{31}{figure.caption.40}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para PIT01\relax }}{42}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.caption.40}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Comparación de la planta estimada y los valores obtenidos para PIT02\relax }}{42}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.caption.40}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces PID Controller\relax }}{42}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Comparación PID para PIT01\relax }}{31}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Modo lazo cerrado\relax }}{43}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Comparación PID para FT01\relax }}{43}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.caption.41}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Comparación PID para PIT02\relax }}{31}{figure.caption.42}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Comparación PID para PIT01\relax }}{43}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.caption.42}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Perturbación al control con PIT02\relax }}{32}{figure.caption.43}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Perturbación al control con FT01\relax }}{32}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Comparación PID para PIT02\relax }}{44}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Máxima presión\relax }}{33}{figure.caption.45}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Mínima presión\relax }}{33}{figure.caption.46}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Máximo caudal\relax }}{34}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Perturbación al control con PIT02\relax }}{44}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Pantalla SCADA\relax }}{35}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Perturbación al control con FT01\relax }}{45}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Configuración MBE\relax }}{36}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Máxima presión\relax }}{45}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Database con MBE\relax }}{36}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Mínima presión\relax }}{46}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.22}{\ignorespaces ModSim\relax }}{37}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Máximo caudal\relax }}{46}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.23}{\ignorespaces Datos históricos\relax }}{38}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Pantalla SCADA\relax }}{47}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{38}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Configuración MBE\relax }}{47}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{38}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Database con MBE\relax }}{48}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama p\&id\relax }}{44}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.23}{\ignorespaces ModSim\relax }}{48}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Pantalla principal\relax }}{47}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Datos históricos\relax }}{49}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Partes del sistema SCADA\relax }}{48}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{49}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Subpantalla 1\relax }}{48}{figure.caption.59}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{49}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Subpantalla 4\relax }}{49}{figure.caption.60}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama p\&id\relax }}{50}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modo local}}}{49}{figure.caption.60}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Pantalla principal\relax }}{53}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Modo remoto}}}{49}{figure.caption.60}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Partes del sistema SCADA\relax }}{54}{figure.caption.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Modo lazo cerrado\relax }}{49}{figure.caption.61}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Subpantalla 1\relax }}{54}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Pantalla datos en tiempo real\relax }}{50}{figure.caption.63}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Subpantalla 4\relax }}{55}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Datos históricos\relax }}{51}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modo local}}}{55}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gráficos de datos históricos}}}{51}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Modo remoto}}}{55}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guardado de datos históricos}}}{51}{figure.caption.64}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Modo lazo cerrado\relax }}{56}{figure.caption.65}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Pantalla de datos en tiempo real\relax }}{57}{figure.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Datos históricos\relax }}{58}{figure.caption.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{58}{figure.caption.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{58}{figure.caption.68}%

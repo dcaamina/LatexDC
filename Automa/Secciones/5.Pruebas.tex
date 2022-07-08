@@ -67,7 +67,7 @@ se introdujo los módulos
 	\item Se configuró el módulo Ethernet, desde el explorador de
 	proyectos se desplegó la
 	carpeta \textit{Comunicación} y se creó una nueva red, Ethernet (Figura \ref{fig:inter}).
-	\item Se añadió en el bus CANopen el variador utilizado (Figura \ref{fig:vcan}). En nuestro caso se eligió el ATV31 para usar los bloques de funciones de control de movimiento preestablecidos por el software.
+	\item Se añadió en el bus CANopen el variador utilizado (Figura \ref{fig:vcan}). En nuestro caso se eligió el ATV31 para usar los bloques de funciones de control de movimiento preestablecidos por el software. Dentro de las configuraciones de este protocolo se configuró la velocidad de transmisión de este dispositivo. \ref{fig:CAN01}
 	\item Se creó una nueva sección de lenguaje FDB para visualizar los parámetros básicos.
 	\begin{itemize}
 		\item Los \textit{Diagramas de Bloques de Función} consisten en un editor gráfico orientado al dibujo
@@ -109,18 +109,24 @@ se introdujo los módulos
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{2.ethern.png}
+	\includegraphics[width=0.8\linewidth]{2.ethern.png}
 	\captionof{figure}{Dirección módulo Ethernet}
 	\label{fig:inter}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.8]{vcan.png}
+	\includegraphics[width=0.6\linewidth]{vcan.png}
 	\captionof{figure}{Configuración variador CANopen}
 	\label{fig:vcan}
 \end{figure}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{CAN01.png}
+	\captionof{figure}{Configuración variador CANopen}
+	\label{fig:CAN01}
+\end{figure}
 
 Una vez que se completó la configuración de la comunicación variador - PLC se procedió a crear un HMI simple en\textit{ iFix} (Figura \ref{fig:previo}), el cual fue utilizado para interactuar y observar diversos parámetros, modificar velocidades, observar señales luminosas y ver distintos valores proporcionados por el variador de velocidad.
  
@@ -179,8 +185,8 @@ En la variable de entrada se coloca la señal que se desea escalar, en los lími
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[Rango]{\includegraphics[width=60mm]{parama.png}}
-	\subfigure[Escalado]{\includegraphics[width=40mm]{param.png}}
+	\subfigure[]{\includegraphics[scale=0.8]{parama.png}}
+	\subfigure[]{\includegraphics[scale=1]{param.png}}
 	\caption{Rango y escalado} \label{fig:param}
 \end{figure}
 
@@ -189,8 +195,9 @@ En la variable de entrada se coloca la señal que se desea escalar, en los lími
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{escalado.png}
-	\captionof{figure}{Bloques de escalado}
+	\subfigure[]{\includegraphics[scale=0.5]{escalado01.png}}
+	\subfigure[]{\includegraphics[scale=0.5]{escalado02.png}}
+	\caption{Bloques de escalado}
 	\label{fig:escalado}
 \end{figure}
 
@@ -221,7 +228,7 @@ Para la conexión de estos sensores se utiliza el accesorio TELEFAST ABE-7CPA412
 
 Para configurar en \textit{Unity Pro} se seleccionó en \textit{rango} la característica resistiva del sensor. En el caso de RTD y termocupla los valores de salida son múltiplos de 10 de la temperatura. 
 
-En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 dónde el valor obtenido se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
+En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar la configuración con una termocupla y un RTD. Finalmente se eligió el RTD PT1000 ya que dispone de una superficie plana que mejora el contacto con la carcasa del motor. El valor obtenido a la salida del módulo se divide por 10 y se genera el valor de temperatura en °C con un decimal  (Figura \ref{fig:ABE3}).
 
 \begin{figure}[H]
 	\centering

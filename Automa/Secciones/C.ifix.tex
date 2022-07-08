@@ -1,4 +1,4 @@
-Para realizar la pantalla de supervisión, control y adquisición de datos operador se utilizó el software iFix perteneciente al grupo \textit{General Electric}.
+Para realizar la pantalla de supervisión, control y adquisición de datos operador se utilizó el software iFix.
 
 El sistema SCADA creado (Figura \ref{fig:scada1}) se dividió en las siguientes secciones:
 \begin{itemize}
@@ -51,12 +51,9 @@ Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se
 
 
 
-
-
 \subsubsection{Alarmas}
-Dentro de la pantalla principal es posible observar el alarmero. En la Tabla {\ref{c2_tabla_segento_tcp} se observa la matriz causa efecto de cada alarma, donde \textit{P} significa paro de motor.  Por ejemplo, si la temperatura del motor es 50 °C, la alarma se activará informando alta temperatura, y si la temperatura llega a 70 °C, el PLC hará que el motor se detenga para que no se produzca un daño al bobinado.
 
-	\begin{table}[h!]
+\begin{table}[p]
 	\centering
 	\rotatebox{90}{		
 		\resizebox{21cm}{!} {
@@ -92,7 +89,7 @@ Dentro de la pantalla principal es posible observar el alarmero. En la Tabla {\r
 \end{table}
 
 
-
+Dentro de la pantalla principal es posible observar el alarmero. En la Tabla {\ref{c2_tabla_segento_tcp} se observa la matriz causa efecto de cada alarma, donde \textit{P} significa paro de motor.  Por ejemplo, si la temperatura del motor es 50 °C, la alarma se activará informando alta temperatura, y si la temperatura llega a 70 °C, el PLC hará que el motor se detenga para que no se produzca un daño al bobinado.
 
 \subsubsection{Paradas por bloqueo}
 El banco de pruebas está preparado para detener el motor si ocurriese alguna anomalía y mostrar la falla en la pantalla SCADA en la parte inferior derecha. Se programó para que reconozca los siguientes errores en el sistema: 
@@ -108,17 +105,17 @@ El banco de pruebas está preparado para detener el motor si ocurriese alguna an
 
 
 \subsubsection{Datos históricos}
-Para la interpretación de datos históricos se puede realizar de dos formas, una es generar un archivo .txt y la otra es de forma gráfica. 
+Para la interpretación de datos históricos se puede realizar de dos formas, una es crear un archivo .txt y la otra es de forma gráfica. 
 
 Se generó una pantalla SCADA prediseñada de iFix dónde al conectar con el servidor Historian, busca los datos históricos de la variable elegida y guarda un archivo .txt con el horario y valores. Se puede elegir más de una variable, pero se debe tener en cuenta que no se generan columnas nuevas si no que generará en el mismo archivos más filas (Figura \ref{fig:scada33}.a).
 
 Otra de las opciones es observar datos históricos en un gráfico de tiempo, estas variables están preestablecidas y son las presiones y el caudal con sus respectivos valores de referencias (Figura \ref{fig:scada33}.b).
 
-\begin{figure}[htbp]
+\begin{figure}[p]
 	\centering
-	\subfigure[Pantalla para guardar datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
+	\subfigure[Pantalla para guardar datos históricos]{\includegraphics[width=0.8\linewidth]{scada33.png}}
 	\subfigure[Datos históricos de forma gráfica]{\includegraphics[width=1\linewidth]{scada3.png}}
 	\caption{Datos históricos} \label{fig:scada33}
 \end{figure}
 
-
+%\newpage

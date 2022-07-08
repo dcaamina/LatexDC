@@ -21,8 +21,8 @@ Para realizar las estimaciones de los sistemas se utilizó el protocolo OPC en c
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[]{\includegraphics[width=70mm]{ofs1.png}}
-	\subfigure[]{\includegraphics[width=70mm]{ofs2.png}}
+	\subfigure[]{\includegraphics[scale=0.6]{ofs1.png}}
+	\subfigure[]{\includegraphics[scale=0.5]{ofs2.png}}
 	\caption{Configuración OFS} \label{fig:opc1}
 \end{figure}
 
@@ -31,8 +31,8 @@ Una vez configurado, se abre el programa \textit{OPC Factory Server} y se da ini
 
 \begin{figure}[htbp]
 	\centering
-	\subfigure[OPC Factory Server]{\includegraphics[width=40mm]{ofs3.png}}
-	\subfigure[OFS Client]{\includegraphics[width=80mm]{ofs4.png}}
+	\subfigure[OPC Factory Server]{\includegraphics[scale=0.7]{ofs3.png}}
+	\subfigure[OFS Client]{\includegraphics[scale=0.6]{ofs4.png}}
 	\caption{Conexión servidor OPC} \label{fig:opc2}
 \end{figure}
 
@@ -43,11 +43,22 @@ Una vez corroborada la comunicación con el servidor OPC, se procedió a crear u
 En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente OPC con la dirección IP donde se encuentra el servidor previamente creado. Luego, para leer las variables necesarias se creó un bloque de lectura OPC (Figura \ref{fig:opcsimu}.a) y con un bloque \textit{Scope}, se activó la opción para que se guarden los vectores de las variables a estudiar (Figura \ref{fig:opcsimu}.b) para luego ser guardados en un archivo \textit{.csv} .
 
 
+
+
+
 \begin{figure}[htbp]
 	\centering
 	\subfigure[]{\includegraphics[width=60mm]{ofs5.png}}
 	\subfigure[]{\includegraphics[width=60mm]{ofs6.png}}
 	\caption{Cliente OPC en Simulink} \label{fig:opcsimu}
+\end{figure}
+
+Se configuró el bloque OPC Read (Figura \ref{fig:muestr}) con una frecuencia de muestreo de 50 ms ya que el valor es 10 veces más rápido que el polo del sistema más rápido.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\linewidth]{frecmuestreo.png}
+	\captionof{figure}{Parámetros de Strejc con retardo}
+	\label{fig:muestr}
 \end{figure}
 
 
@@ -174,7 +185,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 		$K_d$ & 0 & 0 & 0 \\ \hline
 		N & 1000 & 1000 & 1000 \\ \hline
 	\end{tabular}
-	\captionof{table}{Valores de PID}
+	\captionof{table}{Valores de los PID}
 	\label{tab:pid}
 \end{table}
 
