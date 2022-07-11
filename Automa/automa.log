@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  7 JUL 2022 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  10 JUL 2022 20:02
 entering extended mode
 **./automa.tex
 (automa.tex
@@ -2023,11 +2023,11 @@ File: images//PIT2b.png Graphic file (type png)
 <use images//PIT2b.png>
 Package pdftex.def Info: images//PIT2b.png  used on input line 222.
 (pdftex.def)             Requested size: 227.62204pt x 170.65582pt.
-<images//Per2.png, id=737, 981.6675pt x 551.81157pt>
+<images//Per2.png, id=737, 572.89032pt x 356.0803pt>
 File: images//Per2.png Graphic file (type png)
 <use images//Per2.png>
 Package pdftex.def Info: images//Per2.png  used on input line 232.
-(pdftex.def)             Requested size: 409.71692pt x 230.30263pt.
+(pdftex.def)             Requested size: 409.71692pt x 254.66069pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2037,33 +2037,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [33]
-<images//PerF1.png, id=743, 970.3753pt x 555.57562pt>
+<images//PerF1.png, id=743, 571.38469pt x 359.09157pt>
 File: images//PerF1.png Graphic file (type png)
 <use images//PerF1.png>
 Package pdftex.def Info: images//PerF1.png  used on input line 242.
-(pdftex.def)             Requested size: 409.71692pt x 234.57787pt.
-<images//Presion_Max.png, id=745, 987.69pt x 563.10374pt>
+(pdftex.def)             Requested size: 409.71692pt x 257.4937pt.
+<images//Presion_Max.png, id=745, 581.17125pt x 363.60844pt>
 File: images//Presion_Max.png Graphic file (type png)
 <use images//Presion_Max.png>
 Package pdftex.def Info: images//Presion_Max.png  used on input line 256.
-(pdftex.def)             Requested size: 409.71692pt x 233.58058pt.
+(pdftex.def)             Requested size: 409.71692pt x 256.34398pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Presion_Min.png, id=747, 967.36406pt x 536.0025pt>
+<images//Presion_Min.png, id=747, 575.14874pt x 360.59718pt>
 File: images//Presion_Min.png Graphic file (type png)
 <use images//Presion_Min.png>
 Package pdftex.def Info: images//Presion_Min.png  used on input line 266.
-(pdftex.def)             Requested size: 409.71692pt x 227.01698pt.
+(pdftex.def)             Requested size: 409.71692pt x 256.88414pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Caudal_Max.png, id=749, 976.39781pt x 557.83406pt>
+<images//Caudal_Max.png, id=749, 571.38469pt x 355.3275pt>
 File: images//Caudal_Max.png Graphic file (type png)
 <use images//Caudal_Max.png>
 Package pdftex.def Info: images//Caudal_Max.png  used on input line 277.
-(pdftex.def)             Requested size: 409.71692pt x 234.0759pt.
+(pdftex.def)             Requested size: 409.71692pt x 254.79459pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2555,7 +2555,7 @@ athpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program File
 s/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on automa.pdf (59 pages, 8262876 bytes).
+Output written on automa.pdf (59 pages, 8249583 bytes).
 PDF statistics:
  1048 PDF objects out of 1200 (max. 8388607)
  235 named destinations out of 1000 (max. 500000)
