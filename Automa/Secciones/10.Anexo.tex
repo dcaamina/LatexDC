@@ -1,3 +1,4 @@
+\clearpage
 \newpage
 \section{Anexo: Diagrama P \& ID} \label{anexopid}
 	
@@ -7,7 +8,7 @@
 	\includegraphics[scale=0.9 ,angle =90]{diag.png}
 	\captionof{figure}{Diagrama p\&id}
 \end{figure}
-
+\clearpage
 \newpage
 \section{Anexo: Tabla de Direcciones ModBus} \label{Anexo1}
 
@@ -46,6 +47,7 @@
 	DI & PID0PIT1\_XRST & Restablecer valores PID & Boolean & Device0:000014 \\ \hline
 	DI & PID0PIT2\_XRST & Restablecer valores PID & Boolean & Device0:000015 \\ \hline
 	DI & PID0FT1\_XRST & Restablecer valores PID& Boolean & Device0:000016 \\ \hline
+	DI & VSD\_YERR & Muestra error de VSD& Boolean & Device0:000017 \\ \hline
 	AI & FT01 & Caudal & Float & Device0:400001 \\ \hline
 	AI & VSD\_AI1C & Valor del pote & Float & Device0:400003 \\ \hline
 	AI & VSD\_IC000 & Corriente & Float & Device0:400005 \\ \hline
@@ -90,7 +92,7 @@
 	
 	
 \end{longtable}
-
+\clearpage
 \newpage
 
 \section{Anexo: Manual BANCO-SCADA}
@@ -127,7 +129,7 @@ En la figura \ref{fig:pantalla1} se observa la pantalla principal del SCADA y en
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{p_partes.png}
+	\includegraphics[width=0.8\linewidth]{p_partes.png}
 	\captionof{figure}{Partes del sistema SCADA}
 	\label{fig:partes}
 \end{figure}
@@ -138,7 +140,7 @@ Se observan los valores de presión y caudal en un diagrama similar al banco de 
 En caso de ocurrir un error sobre el VSD, se observará el código del lado izquierdo (A), a su vez al presionar sobre el botón \textit{Códigos} se mostrará la tabla de errores. Si se desea reconocer el error se debe presionar el botón B (Figura \ref{fig:pp1}).
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{p_p1.png}
+	\includegraphics[width=0.8\linewidth]{p_p1.png}
 	\captionof{figure}{Subpantalla 1}
 	\label{fig:pp1}
 \end{figure}
@@ -155,28 +157,15 @@ Sección destinada al alarmero dónde muestra el período de tiempo que ocurrió
 	
 	Si la llave selectora del banco de pruebas se encuentra en modo local, se observará el cartel que indica \textit{Modo Local} (Figura \ref{fig:localremoto}.a).
 	
+	En modo manual, permite comandar el motor con la llave selectora y modificar la velocidad con el potenciómetro ubicado en la parte derecha de la caja. En la subpantalla 1 (Figura \ref{fig:pp1}) se podrá ver las variables del sistema y abajo de la leyenda\textit{ Modo Local} el porcentaje de la velocidad total a la que está girando el motor. En la parte superior de la caja se encuentra un pulsador para activar la parada de emergencia del sistema que puede utilizarse en cualquier modo (Modo remoto / local). 
+	
 	\item Modo Remoto
 	
-	Si la llave selectora del banco de pruebas se encuentra en modo remoto, el sistema está preparado para recibir órdenes desde SCADA. El motor puede encenderse con velocidad 0 al presionar la tecla A o encender a una velocidad preestablecida fijada previamente con un valor entero en RPM entre 0 y 3600 (Figura \ref{fig:localremoto}.b). 
+	Si la llave selectora se encuentra en modo remoto, el sistema está preparado para recibir órdenes desde SCADA. El motor puede encenderse al presionar la tecla A con una velocidad en RPM preestablecida previamente con un valor entero entre 0 y 3600 dentro de la casilla \textit{Manual (B)}  (Figura \ref{fig:localremoto}.b). 
 	
-	Si desea se puede abrir cada ventana del lazo de control (Figura \ref{fig:LC}) ``botones B'' dónde muestra el valor de cada constante del PID, se puede colocar otros valores mientras que se use la coma como separador decimal. Con el ``botón C'', se podrá restablecer los valores del PID cuyos valores fueron fijados al momento de realizar el proyecto (Tabla \ref{tab:pid2}).
-	
-	\begin{table}[h]
-		\centering
-		\begin{tabular}{|l|l|l|l|}
-			\hline
-			& PIT01 & PIT02 & FT01 \\ \hline
-			$K_p$ & 3,05 & 5,453 & 104,3 \\ \hline
-			$K_i$ & 0,396 & 0,348 & 0,719 \\ \hline
-			$K_d$ & 0 & 0 & 0 \\ \hline
-			N & 1000 & 1000 & 1000 \\ \hline
-		\end{tabular}
-		\captionof{table}{Valores de los PID}
-		\label{tab:pid2}
-	\end{table}
-	
-		
-	Al colocar el selector en automático (D), se cierra el lazo del sistema y puede establecerse la presión o caudal deseado en ``E'' y los rangos serán establecidos según la tabla \ref{tab:rang}. En caso de que se encuentre el selector en manual (D) los valores se establecerán según la entrada de valor \textit{Manual} en RPM del motor. (Figura \ref{fig:localremoto}.b). 
+	El banco solo puede realizar el control de una variable a la vez independientes entre si, debido a esto, para controlar el lazo requerido (PIT01, PIT02, FT01) se selecciona el botón deseado (Figura \ref{fig:LC} - B). Se abrirá una pantalla con los parámetros actuales del PID, los cuales se pueden modificar para realizar ensayos con diferentes respuestas (se debe usar la coma como separador decimal). Con el ``botón C'', se podrá restablecer los parámetros del PID cuyos valores fueron fijados al momento de realizar el proyecto.
+			
+	Al colocar el selector en automático (D), se cierra el lazo del sistema y puede establecerse la presión o caudal deseado en ``Ref'' (E). Los rangos serán establecidos según la tabla \ref{tab:rang}. 
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -225,17 +214,39 @@ Para la interpretación de datos históricos se puede realizar de dos formas, un
 
 Para observar los datos históricos en el gráfico de tiempo, se debe presionar alguna opción de los botones superiores izquierdos, además se selecciona el período de tiempo que se desea visualizar (Figura \ref{fig:scada3a3}.b).
 
-Para generar el archivo \textit{.txt} con los valores históricos se presiona el botón \textit{Exportar}, se conecta con el servidor Historian y se selecciona las variables de interés con el período que se quiera guardar.
-Finalmente se le asigna un nombre al archivo y se presiona \textit{Export} (Figura \ref{fig:scada3a3}.a).
 
-
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[Pantalla para guardar datos históricos]{\includegraphics[width=1\linewidth]{scada33.png}}
 	\subfigure[Datos históricos de forma gráfica]{\includegraphics[width=1\linewidth]{scada3.png}}
 	\caption{Datos históricos} \label{fig:scada3a3}
 \end{figure}
 
+Para generar el archivo \textit{.txt} con los valores históricos se presiona el botón \textit{Exportar}, se conecta con el servidor Historian y se selecciona las variables de interés con el período que se quiera guardar.
+Finalmente se le asigna un nombre al archivo y se presiona \textit{Export} (Figura \ref{fig:scada3a3}.a).
+Estos archivos luego pueden ser procesados con un script de Matlab generado para tal fin (\ref{fig:matlabH}).
 
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{matlab_Historicos.png}
+	\captionof{figure}{Pantalla de datos en tiempo real}
+	\label{fig:matlabH}
+\end{figure}
+
+\clearpage
 \newpage
+
+\section{Anexo: Archivos extras}
+Dentro del repositorio de Github \fcolorbox{red}{yellow}{PONER LINK} se encuentran archivos de ejemplos y script de Matlab nombrados a continuación:
+\begin{itemize}
+	\item \textit{Cargo\_Historico.m}: Se utiliza para interpretar y graficar datos históricos obtenidos del archivo que se guarda por medio de SCADA.
+	\item \textit{distintos\_PID.m}: compara distintos escalones y PID de las variables con ejemplos ya guardados.
+	\item \textit{Graficos.m}: Script preparado para graficar las variables PIT01, PIT02 y FT01 vs. tiempo.
+	\item \textit{metodo\_string.m}: utilizado para realizar la estimación de la planta según método String.
+	\item \textit{Levanto\_datos\_CSV\_V3.m}: Con este archivo se guardan datos a través de un cliente OPC.
+	\item \textit{LECTURA\_DATOS\_OPC\_V3.slx}:	Archivo simulink utilizado en conjunto con \textit{Levanto\_datos\_CSV\_V3.m}
+	\item \textit{informe.pdf}: Este informe.
+	\item \textit{Ejemplos/Referencias.png}: Datos de variable, PID y escalones de los ejemplos encontrados en la carpeta.
+	\item Carpeta \textit{APP}: Archivos de ejemplo para utilizar con \textit{Cargo\_Historico.m}.
+\end{itemize}

@@ -56,7 +56,7 @@ En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente O
 Se configuró el bloque OPC Read (Figura \ref{fig:muestr}) con una frecuencia de muestreo de 50 ms ya que el valor es 10 veces más rápido que el polo del sistema más rápido.
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{frecmuestreo.png}
+	\includegraphics[width=0.6\linewidth]{frecmuestreo.png}
 	\captionof{figure}{Parámetros de Strejc con retardo}
 	\label{fig:muestr}
 \end{figure}
@@ -123,13 +123,13 @@ escalones ubicados en la parte central del rango útil estipulado .
 \end{comment}
 
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Strenj_RESPUESTA.png}
 	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para FT01}
 	\label{fig:FT01}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Strenj_RESPUESTA1.png}
 	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT01}
@@ -139,7 +139,7 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Strenj_respuesta2.png}
 	\captionof{figure}{Comparación de la planta estimada y los valores obtenidos para PIT02}
@@ -199,7 +199,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 
 
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[]{\includegraphics[width=80mm]{FT1b.png}}
 \hspace{-4mm}
@@ -207,7 +207,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	\caption{Comparación PID para FT01} \label{fig:FT1}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[]{\includegraphics[width=80mm]{PIT1b.png}}
 \hspace{-4mm}
@@ -215,7 +215,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 	\caption{Comparación PID para PIT01} \label{fig:PIT1}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[]{\includegraphics[width=80mm]{PIT2a.png}}
 	\hspace{-4mm}
@@ -227,7 +227,7 @@ Se observa que algunos de los controladores PID son del tipo proporcional integr
 \subsubsection{Pruebas de control}
 \paragraph{Perturbación al control con PIT02}
 En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 250 mbar; aproximadamente a los 15 segundos de comenzar la prueba se abrió totalmente la válvula de derivación FV01, y disminuyó la presión notablemente. Al pasar el tiempo y una vez que la presión llegó nuevamente a su punto de trabajo, se incrementó su valor a 300 mbar, se puede apreciar en el gráfico que la presión se acerca pero no llega a la referencia debido a que el motor, ya en su máxima frecuencia de trabajo, no logra elevar más la presión. Luego, a los 100 segundos de empezar la prueba, se cerró la válvula de derivación completamente y se observa como la presión se incrementó y disminuyó hasta que llegó al punto de referencia.
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Per2.png}
 	\captionof{figure}{Perturbación al control con PIT02}
@@ -237,7 +237,7 @@ En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 
 \paragraph{Perturbación al control de FT01}
 Para la prueba de control con FT01 (Figura \ref{fig:per1}) como variable de proceso, se fijó el valor de referencia en 3,5 l/min a los 20 segundos se empezar la prueba. Luego, se abrió la válvula FV01 completamente y se observó la disminución del caudal, la acción de control elevó las revoluciones del motor hasta llegar a su punto de trabajo. Aproximadamente a los 125 segundos se configuró el valor de referencia en 2 L/min y se cerró la válvula FV01, esto provocó que todo el caudal circule por FT01. La acción de control disminuyó las revoluciones del motor hasta llegar el valor del caudal al de referencia.
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{PerF1.png}
 	\captionof{figure}{Perturbación al control con FT01}
