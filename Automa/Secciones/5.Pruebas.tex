@@ -245,7 +245,7 @@ En la imagen \ref{fig:ABE3} se observa dos elementos ya que se probó realizar l
 \end{figure}
 
 \subsubsection{Medición de caudal}
-A la salida del caudalímetro se obtiene pulsos con frecuencia proporcional al flujo. Para ser procesados por el PLC se utilizó un módulo externo al PLC por la baja tasa de refresco que posee el módulo de entradas digitales. Para esto se planteó utilizar un ESP8266 como interfaz para obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP cada 20ms al PLC. En la sección de programación del PLC se realizó las cuentas correspondientes para generar la conversión de pulsos a caudal (Figura \ref{fig:modtcp}). El módulo y el caudalímetro alimentó mediante una fuente externa de 3,3 V.
+A la salida del caudalímetro se obtiene pulsos con frecuencia proporcional al flujo. Para ser procesados por el PLC se utilizó un módulo externo al PLC por la baja tasa de refresco que posee el módulo de entradas digitales. Para esto se planteó utilizar un ESP8266 como interfaz para obtener los pulsos, colocarlos en un registro y enviarlos por un servidor Modbus TCP cada 20ms al PLC. En la sección de programación del PLC se realizaron las cuentas correspondientes para generar la conversión de pulsos a caudal (Figura \ref{fig:modtcp}). El módulo y el caudalímetro alimentó mediante una fuente externa de 3,3 V.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1]{esp_mod.png}
