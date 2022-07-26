@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  24 JUL 2022 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.19)  25 JUL 2022 20:06
 entering extended mode
 **./automa.tex
 (automa.tex
@@ -2596,6 +2596,12 @@ Underfull \hbox (badness 1337) in paragraph at lines 241--243
 -chi-vos de
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[]\T1/ppl/m/it/12 Lectura_-Da-tos_-OPC_-V3.slx\T1/ppl/m/n/12 : Ar-chi-vo si-mu-
+link uti-li-za-do en con-jun-to con
+ []
+
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2640,7 +2646,7 @@ athpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program File
 s/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on automa.pdf (60 pages, 8282319 bytes).
+Output written on automa.pdf (60 pages, 8282522 bytes).
 PDF statistics:
  1058 PDF objects out of 1200 (max. 8388607)
  237 named destinations out of 1000 (max. 500000)
