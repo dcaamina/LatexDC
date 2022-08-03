@@ -18,11 +18,16 @@ En un futuro se espera que alumnos de la carrera realicen mejoras en el banco de
 
 \newpage
 \section{Conclusiones}
-Se concluye que el banco de pruebas construido es una herramienta útil para alumnos de las carreras de ingeniería que sigan ramas orientadas al control automatizado, ya que se tiene la posibilidad de generar perturbaciones en el sistema y observar distintas respuestas.
 
-Se generó un sistema SCADA dónde se puede observar diversas variables en tiempo real y realizar estudios de ellas a través de datos históricos. Además, en la pantalla, se puede observar distintos tipos de anomalías causadas por el variador y los instrumentos utilizados en el proyecto, para facilitar la detección de errores y poder solucionarlos adecuadamente.
 
-Se logró tener control eficaz sobre tres variables distintas mediante la variación de la frecuencia del motor, dónde esta es la única acción de control en el banco de pruebas.
+Se concluye que el banco de pruebas construido es una herramienta útil para alumnos de las carreras de ingeniería que sigan ramas orientadas al control automatizado, ya que se tiene la posibilidad de iniciarse en el uso y configuración de variadores de velocidad, programación de PLC, uso de protocolos de comunicación industriales como Modbus para sistema SCADA y CANopen para VSD- PLC.
+
+Al decidir el objetivo, se necesitó utilizar como carga del motor una bomba periférica en desuso que se acopló mecánicamente, a raíz de esto fue necesario diseñar y construir un circuito hidráulico para generar de forma manual perturbaciones en el sistema y estudiar distintas respuestas. También con el fin de controlar caudal se implementó un prototipo capaz de medir los pulsos obtenidos de un caudalímetro a paleta y transmitirlo al PLC por Modbus TCP. 
+
+Se logró obtener el control esperado sobre tres variables distintas mediante la variación de la frecuencia del motor, dónde esta es la única acción de control en el banco de pruebas. Para realizar esto se modeló matemáticamente cada sistema y se diseñó los tres controladores PI que se implementaron.
+
+
+Se generó un sistema SCADA dónde se puede observar diversas variables en tiempo real y realizar estudios de ellas a través de datos históricos. Además, en la pantalla, se puede visualizar distintos tipos de anomalías causadas por el variador y los instrumentos utilizados en el proyecto, para facilitar la detección de errores y poder solucionarlos adecuadamente.
 
 Finalmente, la realización del proyecto tuvo un gran aporte para consolidar los conocimientos obtenidos durante la cursada de la materia \textit{Automatización Industrial} y también para el crecimiento personal y profesional.
 
