@@ -3,7 +3,7 @@ A partir de lo programado en \textit{Unity PRO} utilizado para obtener los prime
 	
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.7]{memoria.png}
+	\includegraphics[scale=0.6]{memoria.png}
 	\captionof{figure}{Mapa de memoria}
 	\label{fig:memoria}
 \end{figure}
@@ -19,7 +19,7 @@ En el objetivo se propuso que el sistema sea capaz de controlar presión o cauda
 
 Para realizar las estimaciones de los sistemas se utilizó el protocolo OPC en conjunto con \textit{Matlab}. Por medio de OFS, se procedió a crear y configurar un servidor(Figura \ref{fig:opc1}).
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[]{\includegraphics[scale=0.6]{ofs1.png}}
 	\subfigure[]{\includegraphics[scale=0.5]{ofs2.png}}
@@ -29,7 +29,7 @@ Para realizar las estimaciones de los sistemas se utilizó el protocolo OPC en c
 
 Una vez configurado, se abre el programa \textit{OPC Factory Server} y se da inicio al servidor (Figura \ref{fig:opc2}.a). Para observar si la comunicación se estableció de forma correcta, se utilizó el programa \textit{OFS Client} (Figura \ref{fig:opc2}.b).
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[OPC Factory Server]{\includegraphics[scale=0.7]{ofs3.png}}
 	\subfigure[OFS Client]{\includegraphics[scale=0.6]{ofs4.png}}
@@ -46,7 +46,7 @@ En el entorno \textit{Simulink} se procedió a configurar un bloque de cliente O
 
 
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\subfigure[]{\includegraphics[width=60mm]{ofs5.png}}
 	\subfigure[]{\includegraphics[width=60mm]{ofs6.png}}
@@ -70,7 +70,7 @@ Para realizar la estimación de las plantas se utilizó el Método de Strejc con
 Este método se emplea para la identificación de sistemas de polos múltiples,
 mediante los parámetros \textit{Tu} y \textit{Ta} obtenidos sobre la respuesta del sistema.
 Tras obtener el valor de los parámetros, se determina la multiplicidad del polo. 
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{norden.png}
 	\captionof{figure}{Parámetros de Strejc con retardo}
@@ -151,8 +151,8 @@ escalones ubicados en la parte central del rango útil estipulado .
 
 
 
-\clearpage
 
+\clearpage
 \subsubsection{Cálculo del controlador PID}
 El controlador PID de cada planta se calculó con \textit{Tune PID controllers} (Figura \ref{fig:PIDcontr}), dónde se buscó que la respuesta al escalón en estado estacionario sea nula y además sea capaz de mitigar los cambios producidos por la ganancia variable en los sistemas de presión ocasionados por la característica de la bomba. 
 
@@ -220,14 +220,14 @@ Los valores obtenidos de la aplicación perteneciente a \textit{Matlab} se muest
 \subsubsection{Pruebas de control}
 
 Para corroborar que cada sistema funcione correctamente ante perturbaciones se abrió y cerró las válvulas del banco de pruebas mostradas en el diagrama P\&ID de la figura \ref{fig:diag2} que causan distintas alteraciones a la presión y caudal.
-\begin{figure}[htb]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{diag.png}
 	\captionof{figure}{Diagrama p\&id}
 	\label{fig:diag2}
 \end{figure}
 
-\clearpage
+
 \paragraph{Perturbación al control con PIT02}
 En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 250 mbar; aproximadamente a los 15 segundos de comenzar la prueba se abrió totalmente la válvula de derivación FV01, y disminuyó la presión notablemente. Al pasar el tiempo y una vez que la presión llegó nuevamente a su punto de trabajo, se incrementó su valor a 300 mbar, se puede apreciar en el gráfico que la presión se acerca pero no llega a la referencia debido a que el motor, ya en su máxima frecuencia de trabajo, no logra elevar más la presión. Luego, a los 100 segundos de empezar la prueba, se cerró la válvula de derivación completamente y se observa como la presión se incrementó y disminuyó hasta que llegó al punto de referencia.
 \begin{figure}[h!]
@@ -236,7 +236,7 @@ En la figura \ref{fig:per2} se observa que el valor de referencia inicial es de 
 	\captionof{figure}{Perturbación al control con PIT02}
 	\label{fig:per2}
 \end{figure}
-\clearpage
+
 \paragraph{Perturbación al control de FT01}
 Para la prueba de control con FT01 (Figura \ref{fig:per1}) como variable de proceso, se fijó el valor de referencia en 3,5 L/min a los 20 segundos se empezar la prueba. Luego, se abrió la válvula FV01 completamente y se observó la disminución del caudal, la acción de control elevó las revoluciones del motor hasta llegar a su punto de trabajo. Aproximadamente a los 125 segundos se configuró el valor de referencia en 2 L/min y se cerró la válvula FV01, esto provocó que todo el caudal circule por FT01. La acción de control disminuyó las revoluciones del motor hasta llegar al valor de caudal de referencia.
 
@@ -247,7 +247,7 @@ Para la prueba de control con FT01 (Figura \ref{fig:per1}) como variable de proc
 	\label{fig:per1}
 \end{figure}
 
-\clearpage
+
 \subsubsection{Valores extremos/críticos de estudio}
 En estas sub-secciones se muestra valores máximos de presión y caudal alcanzados en el banco de pruebas y el valor mínimo de presión a velocidad baja del motor.
 
@@ -261,7 +261,7 @@ Para esta prueba se llevó al motor a su máxima frecuencia (60Hz) de trabajo, s
 	\captionof{figure}{Máxima presión}
 	\label{fig:PMAX}
 \end{figure}
-\clearpage
+
 \paragraph{Mínima presión}
 Para obtener el valor de mínima presión de trabajo se configuró el VSD a 20 Hz y se abrieron todas las válvulas (Figura  \ref{fig:diag}), ésto generó que la bomba impulse el caudal con el menor esfuerzo. \\
 \textbf{\textit{Mínima presión:}} 65,43 mbar
@@ -271,7 +271,7 @@ Para obtener el valor de mínima presión de trabajo se configuró el VSD a 20 H
 	\captionof{figure}{Mínima presión}
 	\label{fig:Pmin}
 \end{figure}
-\clearpage
+
 \paragraph{Máximo caudal}
 Para obtener el valor de caudal máximo se llevó al motor a su máxima frecuencia (60 Hz), se abrió completamente la válvula FV03 y FV02, y se cerró la válvula de derivación FV01 (Figura  \ref{fig:diag}).
 Esto provocó que todo el caudal impulsado por la bomba circule por el caudalímetro FT01.\\
@@ -284,7 +284,7 @@ Esto provocó que todo el caudal impulsado por la bomba circule por el caudalím
 \end{figure}
 
 
-\clearpage
+
 
 \begin{comment}
 \fcolorbox{red}{yellow}{Estuve viendo las curvas con escalones donde se ve que la ganancia estática se modifica frente a diferentes escalones. Si el objetivo fuese calcular un controlador para ese sistema una buena opción seria un controlador PI. De esta forma, la acción integral va a tratar de hacer que el error de estado estacionario sea cero frente a una entrada escalón. Además, los problemas que pueden existir en el envejecimiento de componentes, errores en el modelado y variaciones en la ganancia estática se van a mitigar con la parte integral del controlador. Obviamente al cambiar la planta la respuesta va a cambiar pero se va a cumplir la consigna de seguir la referencia. Para mostrar esto es posible calcular un controlador para un sistema y luego probar el controlador en los dos sistemas. Eso hice en el pdf que les adjunto con un sistema con 3 polos reales. Más detalles pueden encontrar en el libro de Ogata o Control avanzado de Karl Astrom, capitulo 3.

@@ -20,7 +20,7 @@ El sistema SCADA creado (Figura \ref{fig:scada1}) se dividió en las siguientes 
 	\label{fig:scada1}
 \end{figure}
 
-\clearpage
+
 \subsubsection{Configuración driver Modbus}
 Para realizar la configuración de cada ícono de la pantalla SCADA con su respectiva variable, se debió crear un \textit{MBE Driver} (Figura \ref{fig:mbe}) dónde se estipula la dirección IP y el mapa de memoria con sus respectivas secciones que luego fueron utilizadas por el \textit{DataBase} (Figura \ref{fig:database}). 
 
@@ -91,7 +91,7 @@ Para realizar pruebas intermedias antes de unir SCADA con el programa del PLC se
 
 
 Dentro de la pantalla principal es posible observar el alarmero. En la Tabla {\ref{c2_tabla_segento_tcp} se observa la matriz causa efecto de cada alarma, donde \textit{P} significa paro de motor.  Por ejemplo, si la temperatura del motor es 50 °C, la alarma se activará informando alta temperatura, y si la temperatura llega a 70 °C, el PLC hará que el motor se detenga para que no se produzca un daño al bobinado.
-\clearpage
+
 \subsubsection{Paradas por bloqueo}
 El banco de pruebas está preparado para detener el motor si ocurriese alguna anomalía y mostrar la falla en la pantalla SCADA en la parte inferior derecha. Se programó para que reconozca los siguientes errores en el sistema: 
 
