@@ -8,6 +8,17 @@
 	\includegraphics[scale=0.9 ,angle =90]{diag.png}
 	\captionof{figure}{Diagrama p\&id}
 \end{figure}
+\newpage
+\section{Anexo: Esquemático de conexión} \label{anexoesquema}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{esquema01.png}
+	\captionof{figure}{Esquemático de conexión}
+\end{figure}
+
+
 
 \newpage
 \section{Anexo: Tabla de Direcciones ModBus} \label{Anexo1}
@@ -238,17 +249,20 @@ Estos archivos luego pueden ser procesados con un script de Matlab generado para
 \newpage
 
 \section{Anexo: Archivos extras}
-Dentro del repositorio de Github \fcolorbox{red}{yellow}{PONER LINK} se encuentra la carpeta \textit{ArchivosMatlab} con ejemplos y scripts de Matlab nombrados a continuación:
+Dentro del repositorio de Github (Figura \ref{fig:tarjetagit}) se encuentra:
 \begin{itemize}
-	\item \textit{Cargo\_Historico.m}: Se utiliza para interpretar y graficar datos históricos obtenidos del archivo que se guarda por medio de SCADA.
-	\item \textit{distintos\_PID.m}: compara distintos escalones y PID de las variables con ejemplos ya guardados.
-	\item \textit{Graficos.m}: Script preparado para graficar las variables PIT01, PIT02 y FT01 vs. tiempo.
-	\item \textit{metodo\_string.m}: utilizado para realizar la estimación de la planta según método String.
-	\item \textit{Levanto\_datos\_CSV\_V3.m}: Con este archivo se guardan datos a través de un cliente OPC.
-	\item \textit{Lectura\_Datos\_OPC\_V3.slx}:	Archivo simulink utilizado en conjunto con \textit{Levanto\_datos\_CSV\_V3.m}
-	\item \textit{Ejemplos/Referencias.png}: Datos de variable, PID y escalones de los ejemplos encontrados en la carpeta.
-	\item Carpeta \textit{EjHist}: Archivos de ejemplo para utilizar con \textit{Cargo\_Historico.m}.
-	\item Carpeta \textit{Carpeta01}: Carpeta dónde se guardarán los archivos generados con  \textit{Levanto\_datos\_CSV\_V3.m}
+	\item Este informe en formato PDF
+	\item Presentación en formato PDF realizada el día de la exposición
+	\item Carpeta \textit{Archivos Matlab}
+	\item Carpeta \textit{Archivos iFix}
+	\item Carpeta \textit{Archivos UnityPro}
+	\item Carpeta \textit{Videos de ejemplo}
 \end{itemize}
 
-En este mismo repositorio se encuentra este informe, la presentación dada el día de la exposición y los archivos de los software \textit{UnityPro} y \textit{iFix} utilizados para este trabajo.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{tarjetagit.png}
+	\captionof{figure}{Tarjeta Github}
+	\label{fig:tarjetagit}
+\end{figure}

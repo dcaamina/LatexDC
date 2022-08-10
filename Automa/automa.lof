@@ -155,26 +155,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama p\&id\relax }}{48}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Pantalla principal\relax }}{51}{figure.caption.60}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Esquemático de conexión\relax }}{49}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Partes del sistema SCADA\relax }}{52}{figure.caption.61}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Pantalla principal\relax }}{52}{figure.caption.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Subpantalla 1\relax }}{52}{figure.caption.62}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Partes del sistema SCADA\relax }}{53}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Subpantalla 4\relax }}{53}{figure.caption.63}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Subpantalla 1\relax }}{53}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modo local}}}{53}{figure.caption.63}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Subpantalla 4\relax }}{54}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Modo remoto}}}{53}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modo local}}}{54}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Modo lazo cerrado\relax }}{54}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Modo remoto}}}{54}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Pantalla de datos en tiempo real\relax }}{55}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Modo lazo cerrado\relax }}{55}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Datos históricos\relax }}{56}{figure.caption.67}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Pantalla de datos en tiempo real\relax }}{56}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{56}{figure.caption.67}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Datos históricos\relax }}{57}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{56}{figure.caption.67}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pantalla para guardar datos históricos}}}{57}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Programa para lectura de datos Históricos\relax }}{57}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos históricos de forma gráfica}}}{57}{figure.caption.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Programa para lectura de datos Históricos\relax }}{58}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Tarjeta Github\relax }}{59}{figure.caption.70}%
